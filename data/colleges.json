@@ -1,0 +1,157 @@
+[
+  {
+    "slug": "iit-bombay",
+    "name": "Indian Institute of Technology Bombay",
+    "shortName": "IIT Bombay",
+    "type": "IIT",
+    "location": "Mumbai",
+    "state": "Maharashtra",
+    "nirf": 3,
+    "established": 1958,
+    "affiliation": "Autonomous",
+    "website": "https://www.iitb.ac.in",
+    "description": "IIT Bombay is recognized worldwide as a leader in the field of engineering education and research. Reputed for the outstanding calibre of students graduating from its undergraduate and postgraduate programmes, the institute attracts the best students from the country.",
+    "branches": [
+      { "branch": "Computer Science Engineering", "counselling": "JoSAA", "category": "General", "openRank": 1, "closeRank": 67 },
+      { "branch": "Electrical Engineering", "counselling": "JoSAA", "category": "General", "openRank": 95, "closeRank": 481 }
+    ],
+    "fees": [{ "branch": "All B.Tech Programs", "annualFees": 230000, "totalFees": 920000, "hostelFees": 35000 }],
+    "placements": { "avgPackage": "21.82 LPA", "highestPackage": "3.67 CPA", "topRecruiters": ["Microsoft", "Google", "Qualcomm"] }
+  },
+  {
+    "slug": "vjti-mumbai",
+    "name": "Veermata Jijabai Technological Institute",
+    "shortName": "VJTI Mumbai",
+    "type": "Autonomous",
+    "location": "Mumbai",
+    "state": "Maharashtra",
+    "established": 1887,
+    "affiliation": "University of Mumbai",
+    "website": "https://vjti.ac.in",
+    "description": "Established in 1887, VJTI is one of India's oldest and most prestigious engineering institutes. It is consistently ranked among the top colleges in Maharashtra for its rigorous academic standards and elite placements.",
+    "entranceExams": ["MHT-CET", "JEE Main"],
+    "branches": [
+      { "branch": "Computer Engineering", "counselling": "MHT-CET", "category": "General", "openRank": 20, "closeRank": 200 },
+      { "branch": "Information Technology", "counselling": "MHT-CET", "category": "General", "openRank": 50, "closeRank": 350 }
+    ]
+  },
+  {
+    "slug": "ict-mumbai",
+    "name": "Institute of Chemical Technology",
+    "shortName": "ICT Mumbai",
+    "type": "Autonomous",
+    "location": "Mumbai",
+    "state": "Maharashtra",
+    "established": 1933,
+    "affiliation": "Deemed University",
+    "website": "https://www.ictmumbai.edu.in",
+    "description": "A premier deemed university and a global leader in chemical engineering, technology, and pharmacy. Formerly known as UDCT, it is renowned for its research output and industry-ready graduates.",
+    "entranceExams": ["MHT-CET", "JEE Main"],
+    "branches": [
+      { "branch": "Chemical Engineering", "counselling": "MHT-CET", "category": "General" }
+    ],
+    "fees": [{ "branch": "All Programs", "annualFees": 85350 }]
+  },
+  {
+    "slug": "spit-mumbai",
+    "name": "Sardar Patel Institute of Technology",
+    "shortName": "SPIT Mumbai",
+    "type": "Autonomous",
+    "location": "Mumbai",
+    "state": "Maharashtra",
+    "established": 1962,
+    "affiliation": "University of Mumbai",
+    "website": "https://www.spit.ac.in",
+    "description": "An autonomous private engineering college affiliated with Mumbai University. Highly sought after for its Computer Science and IT programs, known for excellent technical pedagogy.",
+    "entranceExams": ["MHT-CET", "JEE Main"],
+    "branches": [
+      { "branch": "Computer Engineering", "counselling": "MHT-CET", "category": "General" }
+    ],
+    "fees": [{ "branch": "All B.Tech Programs", "annualFees": 170000 }]
+  },
+  {
+    "slug": "dj-sanghvi-mumbai",
+    "name": "Dwarkadas J. Sanghvi College of Engineering",
+    "shortName": "DJ Sanghvi",
+    "type": "Private",
+    "location": "Mumbai",
+    "state": "Maharashtra",
+    "established": 1994,
+    "affiliation": "University of Mumbai",
+    "website": "https://www.djsce.ac.in",
+    "description": "A premier private engineering institution known for its state-of-the-art infrastructure and strong performance in university examinations. It maintains close ties with the tech industry in Mumbai.",
+    "entranceExams": ["MHT-CET", "JEE Main"],
+    "branches": [
+      { "branch": "Computer Engineering", "counselling": "MHT-CET", "category": "General" }
+    ],
+    "fees": [{ "branch": "All B.Tech Programs", "annualFees": 220000 }]
+  },
+  {
+    "slug": "coep-pune",
+    "name": "COEP Technological University",
+    "shortName": "COEP",
+    "type": "State",
+    "location": "Pune",
+    "state": "Maharashtra",
+    "established": 1854,
+    "affiliation": "COEP Tech University",
+    "website": "https://www.coeptech.ac.in",
+    "description": "One of the oldest engineering colleges in Asia, COEP recently gained university status. It continues to be a top choice for students due to its rich heritage and massive corporate network.",
+    "entranceExams": ["MHT-CET"],
+    "branches": [
+      { "branch": "Computer Engineering", "counselling": "MHT-CET", "category": "General", "openRank": 1, "closeRank": 120 }
+    ],
+    "fees": [{ "branch": "All B.Tech Programs", "annualFees": 90600, "totalFees": 360000, "hostelFees": 40000 }]
+  },
+  {
+    "slug": "pict-pune",
+    "name": "Pune Institute of Computer Technology",
+    "shortName": "PICT",
+    "type": "Private",
+    "location": "Pune",
+    "state": "Maharashtra",
+    "established": 1983,
+    "affiliation": "Savitribai Phule Pune University",
+    "website": "https://pict.edu",
+    "description": "A specialized institute widely regarded as one of the best for Computer Engineering and Information Technology. It is famous for high placement rates in top global tech companies.",
+    "entranceExams": ["MHT-CET", "JEE Main"],
+    "branches": [
+      { "branch": "Computer Engineering", "counselling": "MHT-CET", "category": "General" }
+    ],
+    "fees": [{ "branch": "All B.Tech Programs", "annualFees": 125000 }]
+  },
+  {
+    "slug": "vnit-nagpur",
+    "name": "Visvesvaraya National Institute of Technology",
+    "shortName": "VNIT Nagpur",
+    "type": "NIT",
+    "location": "Nagpur",
+    "state": "Maharashtra",
+    "nirf": 41,
+    "established": 1960,
+    "affiliation": "Autonomous",
+    "website": "https://vnit.ac.in",
+    "description": "VNIT Nagpur is one of the thirty-one National Institutes of Technology in the country. It is a premier institute for technical education and research.",
+    "entranceExams": ["JEE Main"],
+    "branches": [
+      { "branch": "Computer Science Engineering", "counselling": "JoSAA", "category": "General", "openRank": 2000, "closeRank": 7500 }
+    ],
+    "fees": [{ "branch": "All B.Tech Programs", "annualFees": 150000 }]
+  },
+  {
+    "slug": "walchand-sangli",
+    "name": "Walchand College of Engineering",
+    "shortName": "Walchand Sangli",
+    "type": "Autonomous",
+    "location": "Sangli",
+    "state": "Maharashtra",
+    "established": 1947,
+    "affiliation": "Shivaji University",
+    "website": "https://www.walchandsangli.ac.in",
+    "description": "One of the most prestigious govt-aided autonomous colleges in Maharashtra, known for its strong technical culture and alumni base.",
+    "entranceExams": ["MHT-CET", "JEE Main"],
+    "branches": [
+      { "branch": "Computer Science Engineering", "counselling": "MHT-CET", "category": "General" }
+    ]
+  }
+]
