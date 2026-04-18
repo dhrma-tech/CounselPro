@@ -67,7 +67,7 @@ export default function EligibilityChecker({ onClose }: { onClose: () => void })
       >
         <div className="sticky top-0 bg-white border-b border-border px-6 py-4 flex items-center justify-between rounded-t-2xl">
           <div className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-brand-amber" />
+            <CheckCircle className="w-5 h-5 text-brand-violet" />
             <h2 className="font-ui font-bold text-[18px] text-text-primary">Eligibility Checker</h2>
           </div>
           <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-light text-text-muted transition-colors">
@@ -154,7 +154,7 @@ export default function EligibilityChecker({ onClose }: { onClose: () => void })
               <button
                 onClick={check}
                 disabled={!answers.category || !answers.gender || !answers.income}
-                className="w-full bg-brand-amber text-white font-semibold py-3 rounded-xl hover:bg-[#b45309] disabled:opacity-40 disabled:cursor-not-allowed transition-all mt-2"
+                className="w-full bg-brand-violet text-white font-semibold py-3 rounded-xl hover:bg-[#6d28d9] disabled:opacity-40 disabled:cursor-not-allowed transition-all mt-2"
               >
                 Find Matching Scholarships →
               </button>
@@ -162,7 +162,7 @@ export default function EligibilityChecker({ onClose }: { onClose: () => void })
           ) : (
             <div>
               <div className="flex items-center gap-2 mb-5">
-                <Award className="w-5 h-5 text-brand-amber" />
+                <Award className="w-5 h-5 text-brand-violet" />
                 <p className="font-semibold text-text-primary">
                   {results.length} scholarships you may be eligible for
                 </p>
@@ -174,7 +174,7 @@ export default function EligibilityChecker({ onClose }: { onClose: () => void })
                     <div className="flex-1">
                       <p className="font-semibold text-[14px] text-text-primary">{s.name}</p>
                       <p className="text-[12px] text-text-muted">{s.provider}</p>
-                      <p className="text-brand-amber font-bold text-[13px] mt-1">{s.amount}</p>
+                      <p className="text-brand-violet font-bold text-[13px] mt-1">{s.amount}</p>
                     </div>
                     <Link href={`/scholarships/${s.slug}`} className="text-brand-blue text-[12px] hover:underline shrink-0">
                       View →

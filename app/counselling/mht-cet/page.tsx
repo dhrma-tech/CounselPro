@@ -126,7 +126,7 @@ export default function MHTCETPage() {
 
           <section id="mistakes">
             <h2 className="heading-lg mb-6 flex items-center gap-3">
-              <AlertTriangle className="text-brand-amber w-8 h-8" /> 
+              <AlertTriangle className="text-brand-violet w-8 h-8" /> 
               Common mistakes to avoid
             </h2>
             <Accordion items={mistakes} />

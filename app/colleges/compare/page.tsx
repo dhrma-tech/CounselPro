@@ -62,10 +62,15 @@ function CompareContent() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-10 overflow-x-auto">
+      <div className="max-w-6xl mx-auto px-6 py-10 overflow-x-auto overflow-y-visible">
         {/* COLLEGE HEADER ROW */}
-        <div className={`grid gap-4 mb-8 ${selectedColleges.length === 3 ? 'grid-cols-4' : 'grid-cols-3'}`}>
-          <div />
+        <div 
+          className={`grid gap-4 mb-4 sticky z-30 transition-all duration-300 ease-in-out py-4 ${
+            selectedColleges.length === 3 ? 'grid-cols-4' : 'grid-cols-3'
+          }`}
+          style={{ top: 'var(--header-offset)' }}
+        >
+          <div className="hidden md:block bg-surface-white/50 backdrop-blur-sm rounded-xl" />
           {selectedColleges.map(c => (
             <div key={c.slug} className="bg-surface-white border border-border rounded-xl p-5">
               <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold mb-3 ${typeColors[c.type] || ''}`}>

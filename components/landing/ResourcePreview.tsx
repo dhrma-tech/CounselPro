@@ -36,7 +36,7 @@ export default function ResourcePreview() {
       link: "/branches", linkText: "Explore Branches"
     },
     {
-      icon: Award, color: 'text-brand-amber', bg: 'bg-amber-50',
+      icon: Award, color: 'text-brand-violet', bg: 'bg-violet-50',
       title: "Scholarships", count: `${scholarships.length} scholarships`,
       desc: "Government and private scholarships you may be eligible for.",
       link: "/scholarships", linkText: "Find Scholarships"
@@ -73,7 +73,7 @@ export default function ResourcePreview() {
                 <res.icon className={`w-6 h-6 ${res.color}`} />
               </div>
               <h3 className="heading-sm mb-1 group-hover:text-brand-blue transition-colors">{res.title}</h3>
-              {res.count && <p className="text-[12px] font-bold text-brand-amber mb-2 uppercase tracking-tight">{res.count}</p>}
+              {res.count && <p className="text-[12px] font-bold text-brand-violet mb-2 uppercase tracking-tight">{res.count}</p>}
               <p className="body-md flex-1 mb-6 text-text-secondary">{res.desc}</p>
               <Link href={res.link} className="text-brand-blue font-ui font-medium text-[15px] inline-flex items-center gap-1 hover:gap-2 transition-all">
                 {res.linkText} &rarr;

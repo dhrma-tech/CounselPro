@@ -11,7 +11,7 @@ export default function ScholarshipCard({ scholarship }: { scholarship: Scholars
     'PwD': 'bg-purple-50 text-purple-700',
     'General': 'bg-surface-light text-text-secondary',
     'EWS': 'bg-green-50 text-green-700',
-    'Merit-based': 'bg-amber-50 text-amber-700',
+    'Merit-based': 'bg-violet-50 text-amber-700',
     'Maharashtra': 'bg-teal-50 text-teal-700',
   };
 
@@ -36,7 +36,7 @@ export default function ScholarshipCard({ scholarship }: { scholarship: Scholars
       <p className="text-[11px] text-text-muted mb-4 uppercase tracking-wider font-semibold">{scholarship.provider}</p>
 
       {/* Amount */}
-      <div className="inline-flex items-center gap-1.5 bg-amber-50 border border-amber-100 text-brand-amber text-[13px] font-bold py-1.5 px-3 rounded-lg mb-4 self-start">
+      <div className="inline-flex items-center gap-1.5 bg-violet-50 border border-amber-100 text-brand-violet text-[13px] font-bold py-1.5 px-3 rounded-lg mb-4 self-start">
         {scholarship.amount}
       </div>
 

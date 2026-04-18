@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Mail, Phone } from 'lucide-react';
+import { LinkedInIcon } from '@/components/shared/SocialIcons';
 
 export default function Footer() {
   return (
@@ -14,15 +15,48 @@ export default function Footer() {
             <p className="text-sm leading-relaxed mb-6 max-w-xs">
               Expert college admission counselling for JoSAA and MHT CET students across India.
             </p>
-            <a 
-              href="https://wa.me/919876543210" 
-              target="_blank" 
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 text-white hover:text-green-400 transition-colors text-sm font-medium"
-            >
-              <MessageCircle className="w-5 h-5" />
-              WhatsApp Us
-            </a>
+            <div className="flex flex-col gap-3">
+              <a 
+                href="https://wa.me/919876543210" 
+                target="_blank" 
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-green-400 transition-colors text-sm font-medium"
+              >
+                <div className="w-8 h-8 bg-green-500/10 rounded-lg flex items-center justify-center text-green-500">
+                  <MessageCircle className="w-4 h-4" />
+                </div>
+                WhatsApp Us
+              </a>
+              <a 
+                href="tel:+919876543210" 
+                className="inline-flex items-center gap-2 text-white/80 hover:text-brand-blue transition-colors text-sm font-medium"
+              >
+                <div className="w-8 h-8 bg-brand-blue/10 rounded-lg flex items-center justify-center text-brand-blue">
+                  <Phone className="w-4 h-4" />
+                </div>
+                +91 98765 43210
+              </a>
+              <a 
+                href="mailto:contact@counselpro.in" 
+                className="inline-flex items-center gap-2 text-white/80 hover:text-brand-blue transition-colors text-sm font-medium"
+              >
+                <div className="w-8 h-8 bg-brand-blue/10 rounded-lg flex items-center justify-center text-brand-blue">
+                  <Mail className="w-4 h-4" />
+                </div>
+                contact@counselpro.in
+              </a>
+              <a 
+                href="https://linkedin.com/company/counselpro" 
+                target="_blank" 
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-blue-400 transition-colors text-sm font-medium"
+              >
+                <div className="w-8 h-8 bg-blue-400/10 rounded-lg flex items-center justify-center text-blue-400">
+                  <LinkedInIcon className="w-4 h-4" />
+                </div>
+                LinkedIn
+              </a>
+            </div>
           </div>
 
           {/* Col 2 */}
@@ -42,6 +76,7 @@ export default function Footer() {
               <li><Link href="/resources" className="hover:text-white transition-colors">Resource Hub</Link></li>
               <li><Link href="/colleges" className="hover:text-white transition-colors">College Directory</Link></li>
               <li><Link href="/branches" className="hover:text-white transition-colors">Branch Explorer</Link></li>
+              <li><Link href="/updates" className="hover:text-white transition-colors">Latest Updates</Link></li>
             </ul>
           </div>
 
@@ -58,9 +93,28 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-white/40 text-[13px] gap-4">
-          <p>© {new Date().getFullYear()} CounselPro. All rights reserved.</p>
-          <p>Made for Indian students.</p>
+        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col items-center gap-8">
+          <div className="flex flex-row items-center gap-3 group cursor-pointer">
+            <span className="text-white/30 text-[10px] uppercase tracking-[0.2em] font-bold whitespace-nowrap">Design & Developed</span>
+            <a 
+              href="https://linkedin.com/in/dhrma-tech" 
+              target="_blank" 
+              rel="noreferrer"
+              className="flex items-center gap-2 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:border-brand-blue/50 transition-all duration-500"
+            >
+              <LinkedInIcon className="w-3.5 h-3.5 text-brand-blue" />
+              <span className="font-display text-[14px] text-white tracking-wide group-hover:text-brand-blue transition-colors">@dhrma-tech</span>
+            </a>
+          </div>
+          
+          <div className="flex flex-col md:flex-row justify-between items-center w-full text-white/30 text-[12px] pt-2 border-t border-white/5">
+            <p>© {new Date().getFullYear()} CounselPro. All rights reserved.</p>
+            <p className="flex items-center gap-4">
+              <span className="hover:text-white/60 transition-colors cursor-pointer">Security</span>
+              <span className="hover:text-white/60 transition-colors cursor-pointer">Status</span>
+              <span className="hover:text-white/60 transition-colors cursor-pointer">India</span>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

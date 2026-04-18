@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { X } from 'lucide-react';
+import { X, Bell } from 'lucide-react';
 import { useEffect } from 'react';
 
 export default function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
@@ -39,6 +39,13 @@ export default function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClos
         <Link href="/syllabus" onClick={onClose} className="flex items-center h-12 text-[16px] font-medium text-text-primary border-b border-border/50">Syllabus</Link>
         <Link href="/faq" onClick={onClose} className="flex items-center h-12 text-[16px] font-medium text-text-primary border-b border-border/50">FAQ</Link>
         <Link href="/about" onClick={onClose} className="flex items-center h-12 text-[16px] font-medium text-text-primary border-b border-border/50">About</Link>
+        <Link href="/updates" onClick={onClose} className="flex items-center h-12 text-[16px] font-medium text-text-primary border-b border-border/50 gap-2">
+          <div className="relative">
+            <Bell className="w-5 h-5 text-brand-blue" />
+            <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-brand-teal rounded-full border-2 border-white" />
+          </div>
+          Latest Updates
+        </Link>
       </div>
 
       <div className="p-6 border-t border-border mt-auto">

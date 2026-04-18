@@ -6,7 +6,10 @@ import { ArrowDown, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-surface-white pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Base Background Layer */}
+      <div className="absolute inset-0 bg-surface-white -z-20" />
+      
       {/* Radial gradient background — subtle, centered */}
       <div
         className="absolute inset-0 pointer-events-none -z-10"
@@ -14,6 +17,60 @@ export default function Hero() {
           background: 'radial-gradient(ellipse 90% 70% at 50% 10%, rgba(26,86,219,0.07) 0%, transparent 65%)'
         }}
       />
+      {/* Curved Text Ribbon Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <svg
+          viewBox="0 0 1440 900"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-full"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          <path
+            id="curvePath"
+            d="M-200,600 C200,600 400,100 700,400 S1200,900 1800,400"
+            stroke="transparent"
+            fill="transparent"
+          />
+          <path
+            id="loopPath"
+            d="M50,150 C250,50 350,550 150,650 S-150,450 50,250 C250,50 850,850 1250,450 S1650,50 1850,250"
+            stroke="transparent"
+            fill="transparent"
+          />
+          
+          {/* Main Wave Ribbon */}
+          <path
+            d="M-200,600 C200,600 400,100 700,400 S1200,900 1800,400"
+            stroke="#1A56DB"
+            strokeWidth="100"
+            strokeLinecap="round"
+            className="opacity-[0.08]"
+          />
+          
+          <text className="font-display font-bold text-[32px] tracking-[0.2em] fill-brand-blue opacity-20">
+            <textPath href="#curvePath" startOffset="0%">
+              ADMISSIONS 2026 • JOSAA COUNSELLING • CHOICE FILLING • MHT CET • SEAT ALLOTMENT • EXPERT GUIDANCE • ADMISSIONS 2026 • JOSAA COUNSELLING • CHOICE FILLING
+            </textPath>
+          </text>
+
+          {/* Secondary Loop Ribbon */}
+          <path
+            d="M50,150 C250,50 350,550 150,650 S-150,450 50,250 C250,50 850,850 1250,450 S1650,50 1850,250"
+            stroke="#0694A2"
+            strokeWidth="80"
+            strokeLinecap="round"
+            className="opacity-[0.05]"
+          />
+          
+          <text className="font-display font-medium text-[20px] tracking-[0.4em] fill-brand-teal uppercase opacity-15">
+            <textPath href="#loopPath" startOffset="5%">
+              FUTURE READY • SECURE YOUR DREAM COLLEGE • TOP ENGINEERING BRANCHES • SUCCESS STORIES • FUTURE READY • SECURE YOUR DREAM COLLEGE
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
       {/* Dotted grid texture */}
       <div
         className="absolute inset-0 pointer-events-none -z-10 opacity-30"
@@ -23,19 +80,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-blue/8 rounded-full mb-8"
-        >
-          <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
-          <span className="text-brand-blue font-ui font-semibold text-[13px] uppercase tracking-[0.08em]">
-            Admissions Season 2024–25 Is Open
-          </span>
-        </motion.div>
-
+      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

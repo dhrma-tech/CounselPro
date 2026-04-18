@@ -17,7 +17,7 @@ const config: Config = {
           navy: '#0F2D5E',
           blue: '#1A56DB',
           teal: '#0694A2',
-          amber: '#D97706',
+          violet: '#7C3AED',
         },
         surface: {
           white: '#FAFAF8',

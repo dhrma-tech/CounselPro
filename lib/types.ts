@@ -4,6 +4,7 @@ export interface College {
   shortName: string;
   type: 'IIT' | 'NIT' | 'IIIT' | 'GFTI' | 'State' | 'Private' | 'Autonomous';
   location: string;
+  city?: string;
   state: string;
   nirf?: number;
   established?: number;
@@ -15,15 +16,40 @@ export interface College {
   website?: string;
   entranceExams?: string[];
   hostelAvailable?: boolean;
-  accreditation?: string[];        // ['NAAC A+', 'NBA']
-  campusSize?: string;             // '550 acres'
-  genderAdmission?: 'Co-ed' | 'Boys' | 'Girls';
+  accreditation?: string[];
+  campusSize?: string;
+  genderAdmission?: 'Co-ed' | 'Boys' | 'Girls' | 'Co-educational';
   ranking?: {
     nirf?: number;
     outlook?: number;
+    year?: number;
+    category?: string;
   };
-  highlights?: string[];           // ['IIT Brand', 'Top Research', 'Strong Alumni']
-  tags?: string[];                 // for filtering: ['Top Placement', 'Government', 'Mumbai']
+  highlights?: string[];
+  tags?: string[];
+  contact?: {
+    email?: string;
+    phone?: string;
+    address?: string;
+  };
+  transportation?: {
+    railway?: { name: string; distance: string };
+    airport?: { name: string; distance: string };
+  };
+  campusFacilities?: string[];
+  studentSocieties?: string[];
+  placementStats?: Array<{
+    year: string;
+    avgPackage: string;
+    highestPackage: string;
+    placementRate: string;
+  }>;
+  reviews?: {
+    overall: number;
+    faculty: number;
+    placements: number;
+    infrastructure: number;
+  };
 }
 
 export interface CompareItem {
@@ -59,8 +85,14 @@ export interface Branch {
   name: string;
   domain: 'CS & IT' | 'Electronics' | 'Mechanical' | 'Civil' | 'Chemical' | 'Electrical' | 'Other';
   description: string;
+  longDescription?: string;
   coreSubjects: string[];
+  specializationTracks?: string[];
   careerPaths: string[];
+  skillRequirements?: {
+    technical: string[];
+    soft: string[];
+  };
   topColleges?: string[];
 }
 
@@ -86,6 +118,22 @@ export interface University {
   semester1: Subject[];
   semester2: Subject[];
   pdfLink?: string;
+  officialWebsite?: string;
+  latestPattern?: string;
+  keyFramework?: string;
+  academicEvolution?: string;
+  pedagogy?: {
+    overview: string;
+    evaluationBreakdown?: Array<{ title: string; marks: number; desc: string }>;
+  };
+  detailedDatabase?: Array<{
+    branch: string;
+    year: string;
+    pattern: string;
+    link: string;
+  }>;
+  technicalInsights?: string;
+  specialRules?: string;
 }
 
 export interface Subject {

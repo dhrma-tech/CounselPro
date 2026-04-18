@@ -6,7 +6,6 @@ import WhyCounselPro from '@/components/landing/WhyCounselPro';
 import ResourcePreview from '@/components/landing/ResourcePreview';
 import Testimonials from '@/components/landing/Testimonials';
 import FAQStrip from '@/components/landing/FAQStrip';
-import FinalCTA from '@/components/landing/FinalCTA';
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <ResourcePreview />
       <Testimonials />
       <FAQStrip />
-      <FinalCTA />
     </>
   );
 }

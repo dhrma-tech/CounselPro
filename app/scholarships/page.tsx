@@ -56,7 +56,7 @@ export default function ScholarshipsPage() {
       {/* HEADER */}
       <div className="py-20 bg-surface-light border-b border-border px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="label text-brand-amber mb-3 inline-block">
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="label text-brand-violet mb-3 inline-block">
             Financial Aid Directory
           </motion.span>
           <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="heading-xl mb-4">
@@ -70,7 +70,7 @@ export default function ScholarshipsPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
             onClick={() => setShowChecker(true)}
-            className="inline-flex items-center gap-2 bg-brand-amber text-white font-ui font-semibold px-6 py-3 rounded-xl hover:bg-[#b45309] transition-all shadow-md"
+            className="inline-flex items-center gap-2 bg-brand-violet text-white font-ui font-semibold px-6 py-3 rounded-xl hover:bg-[#6d28d9] transition-all shadow-md"
           >
             <CheckCircle className="w-4 h-4" />
             Check My Eligibility
@@ -79,7 +79,10 @@ export default function ScholarshipsPage() {
       </div>
 
       {/* FILTERS */}
-      <div className="sticky top-16 z-40 bg-white/80 backdrop-blur-md border-b border-border shadow-sm">
+      <div 
+        className="sticky z-40 bg-white/80 backdrop-blur-md border-b border-border shadow-sm transition-all duration-300 ease-in-out"
+        style={{ top: 'var(--header-offset)' }}
+      >
         <div className="max-w-6xl mx-auto px-6 py-3 space-y-3">
           <div className="flex gap-3 flex-col sm:flex-row items-center">
             {/* Search */}

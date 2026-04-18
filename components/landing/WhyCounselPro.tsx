@@ -25,10 +25,10 @@ export default function WhyCounselPro() {
   const reasons = [
     { icon: Target, color: 'text-brand-blue', bg: 'bg-blue-50', title: "Rank-based Shortlisting", desc: "Your college list is built around your exact rank and category." },
     { icon: Map, color: 'text-brand-teal', bg: 'bg-teal-50', title: "Round-by-Round Strategy", desc: "We guide you through every JoSAA / CAP round, not just the first." },
-    { icon: Users, color: 'text-brand-amber', bg: 'bg-amber-50', title: "Parent-Inclusive Process", desc: "We communicate with parents too, so the family decides together." },
+    { icon: Users, color: 'text-brand-violet', bg: 'bg-violet-50', title: "Parent-Inclusive Process", desc: "We communicate with parents too, so the family decides together." },
     { icon: Shield, color: 'text-brand-blue', bg: 'bg-blue-50', title: "No Spam, No Pressure", desc: "We never push you toward a college. Your preference is final." },
     { icon: BookOpen, color: 'text-brand-teal', bg: 'bg-teal-50', title: "Deep Counselling Knowledge", desc: "We know the system: candidatures, TFWS, NCL, and more." },
-    { icon: Clock, color: 'text-brand-amber', bg: 'bg-amber-50', title: "Time-Sensitive Support", desc: "Counselling rounds move fast. We're available when it matters." },
+    { icon: Clock, color: 'text-brand-violet', bg: 'bg-violet-50', title: "Time-Sensitive Support", desc: "Counselling rounds move fast. We're available when it matters." },
   ];
 
   return (

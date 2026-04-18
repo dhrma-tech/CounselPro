@@ -50,7 +50,7 @@ export default async function ScholarshipDetailPage({ params }: { params: Promis
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
           <div className="bg-surface-light border border-border rounded-xl p-5 text-center">
             <div className="label mb-2">Amount</div>
-            <div className="text-brand-amber font-display text-[22px]">{scholarship.amount}</div>
+            <div className="text-brand-violet font-display text-[22px]">{scholarship.amount}</div>
           </div>
           <div className="bg-surface-light border border-border rounded-xl p-5 text-center">
             <div className="label mb-2">Deadline</div>

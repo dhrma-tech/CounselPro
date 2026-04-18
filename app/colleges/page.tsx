@@ -124,7 +124,10 @@ export default function CollegesPage() {
       </div>
 
       {/* STICKY FILTER BAR */}
-      <div className="sticky top-16 z-40 bg-white/80 backdrop-blur-md border-b border-border shadow-sm">
+      <div 
+        className="sticky z-40 bg-white/80 backdrop-blur-md border-b border-border shadow-sm transition-all duration-300 ease-in-out"
+        style={{ top: 'var(--header-offset)' }}
+      >
         <div className="max-w-6xl mx-auto px-6 py-3 flex flex-col md:flex-row gap-3 items-center">
           {/* Search */}
           <div className="relative w-full md:w-72 shrink-0">
