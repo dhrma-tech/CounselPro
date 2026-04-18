@@ -15,6 +15,21 @@ export interface College {
   website?: string;
   entranceExams?: string[];
   hostelAvailable?: boolean;
+  accreditation?: string[];        // ['NAAC A+', 'NBA']
+  campusSize?: string;             // '550 acres'
+  genderAdmission?: 'Co-ed' | 'Boys' | 'Girls';
+  ranking?: {
+    nirf?: number;
+    outlook?: number;
+  };
+  highlights?: string[];           // ['IIT Brand', 'Top Research', 'Strong Alumni']
+  tags?: string[];                 // for filtering: ['Top Placement', 'Government', 'Mumbai']
+}
+
+export interface CompareItem {
+  slug: string;
+  name: string;
+  shortName: string;
 }
 
 export interface BranchCutoff {
@@ -60,6 +75,7 @@ export interface Scholarship {
   renewable: boolean;
   applyLink?: string;
   documents?: string[];
+  howToApply?: string[];
 }
 
 export interface University {

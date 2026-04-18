@@ -21,28 +21,25 @@ const itemVariants = {
   }
 };
 
+import { scholarships } from '@/data/scholarships';
+
 export default function ResourcePreview() {
   const resources = [
     {
-      icon: <Building2 className="w-6 h-6 text-brand-blue" />,
-      title: "Colleges",
-      desc: "500+ colleges with branch-wise cutoffs, fees, and placement data.",
-      link: "/colleges",
-      linkText: "Browse Colleges"
+      icon: Building2, color: 'text-brand-blue', bg: 'bg-blue-50',
+      title: "Colleges", desc: "500+ colleges with branch-wise cutoffs, fees, and placement data.",
+      link: "/colleges", linkText: "Browse Colleges"
     },
     {
-      icon: <BookOpen className="w-6 h-6 text-brand-blue" />,
-      title: "Branches",
-      desc: "Understand each engineering branch — scope, careers, and top colleges offering it.",
-      link: "/branches",
-      linkText: "Explore Branches"
+      icon: BookOpen, color: 'text-brand-teal', bg: 'bg-teal-50',
+      title: "Branches", desc: "Understand each engineering branch — scope, careers, and top colleges offering it.",
+      link: "/branches", linkText: "Explore Branches"
     },
     {
-      icon: <Award className="w-6 h-6 text-brand-blue" />,
-      title: "Scholarships",
+      icon: Award, color: 'text-brand-amber', bg: 'bg-amber-50',
+      title: "Scholarships", count: `${scholarships.length} scholarships`,
       desc: "Government and private scholarships you may be eligible for.",
-      link: "/scholarships",
-      linkText: "Find Scholarships"
+      link: "/scholarships", linkText: "Find Scholarships"
     }
   ];
 
@@ -70,12 +67,13 @@ export default function ResourcePreview() {
             <motion.div 
               key={i} 
               variants={itemVariants}
-              className="bg-surface-white border border-border rounded-xl p-6 shadow-[0_1px_4px_rgba(0,0,0,0.07)] hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col h-full group"
+              className="bg-surface-white border border-border rounded-2xl p-6 shadow-[0_1px_4px_rgba(0,0,0,0.07)] hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col h-full group"
             >
-              <div className="w-12 h-12 bg-brand-blue/5 rounded-xl flex items-center justify-center mb-5 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                {res.icon}
+              <div className={`w-12 h-12 ${res.bg} rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                <res.icon className={`w-6 h-6 ${res.color}`} />
               </div>
-              <h3 className="heading-sm mb-3 group-hover:text-brand-blue transition-colors">{res.title}</h3>
+              <h3 className="heading-sm mb-1 group-hover:text-brand-blue transition-colors">{res.title}</h3>
+              {res.count && <p className="text-[12px] font-bold text-brand-amber mb-2 uppercase tracking-tight">{res.count}</p>}
               <p className="body-md flex-1 mb-6 text-text-secondary">{res.desc}</p>
               <Link href={res.link} className="text-brand-blue font-ui font-medium text-[15px] inline-flex items-center gap-1 hover:gap-2 transition-all">
                 {res.linkText} &rarr;

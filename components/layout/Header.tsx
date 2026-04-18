@@ -12,36 +12,37 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let lastScroll = 0;
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScroll = window.scrollY;
       
-      // Scrolled state for background change
-      setScrolled(currentScrollY > 60);
+      // Update scrolled state for background
+      setScrolled(currentScroll > 50);
 
-      // Visibility logic (Smart Header)
-      if (currentScrollY <= 60) {
+      // Smart hide/show logic with 10px threshold
+      if (currentScroll <= 100) {
         setVisible(true);
-      } else if (currentScrollY > lastScrollY) {
+      } else if (currentScroll > lastScroll + 10) {
         setVisible(false); // Scrolling down
-      } else {
+      } else if (currentScroll < lastScroll - 10) {
         setVisible(true); // Scrolling up
       }
       
-      setLastScrollY(currentScrollY);
+      lastScroll = currentScroll;
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
           visible ? 'translate-y-0' : '-translate-y-full'
         } ${
           scrolled 
-            ? 'glass-panel h-16 shadow-lg' 
+            ? 'bg-white/90 backdrop-blur-lg h-16 shadow-sm border-b border-border' 
             : 'bg-transparent h-20'
         }`}
       >

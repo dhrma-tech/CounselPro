@@ -23,36 +23,12 @@ const itemVariants = {
 
 export default function WhyCounselPro() {
   const reasons = [
-    {
-      icon: <Target className="w-6 h-6 text-brand-blue" />,
-      title: "Rank-based Shortlisting",
-      desc: "Your college list is built around your exact rank and category."
-    },
-    {
-      icon: <Map className="w-6 h-6 text-brand-blue" />,
-      title: "Round-by-Round Strategy",
-      desc: "We guide you through every JoSAA / CAP round, not just the first."
-    },
-    {
-      icon: <Users className="w-6 h-6 text-brand-blue" />,
-      title: "Parent-Inclusive Process",
-      desc: "We communicate with parents too, so the family decides together."
-    },
-    {
-      icon: <Shield className="w-6 h-6 text-brand-blue" />,
-      title: "No Spam, No Pressure",
-      desc: "We never push you toward a college. Your preference is final."
-    },
-    {
-      icon: <BookOpen className="w-6 h-6 text-brand-blue" />,
-      title: "Deep Counselling Knowledge",
-      desc: "We know the system: candidatures, TFWS, NCL, and more."
-    },
-    {
-      icon: <Clock className="w-6 h-6 text-brand-blue" />,
-      title: "Time-Sensitive Support",
-      desc: "Counselling rounds move fast. We're available when it matters."
-    }
+    { icon: Target, color: 'text-brand-blue', bg: 'bg-blue-50', title: "Rank-based Shortlisting", desc: "Your college list is built around your exact rank and category." },
+    { icon: Map, color: 'text-brand-teal', bg: 'bg-teal-50', title: "Round-by-Round Strategy", desc: "We guide you through every JoSAA / CAP round, not just the first." },
+    { icon: Users, color: 'text-brand-amber', bg: 'bg-amber-50', title: "Parent-Inclusive Process", desc: "We communicate with parents too, so the family decides together." },
+    { icon: Shield, color: 'text-brand-blue', bg: 'bg-blue-50', title: "No Spam, No Pressure", desc: "We never push you toward a college. Your preference is final." },
+    { icon: BookOpen, color: 'text-brand-teal', bg: 'bg-teal-50', title: "Deep Counselling Knowledge", desc: "We know the system: candidatures, TFWS, NCL, and more." },
+    { icon: Clock, color: 'text-brand-amber', bg: 'bg-amber-50', title: "Time-Sensitive Support", desc: "Counselling rounds move fast. We're available when it matters." },
   ];
 
   return (
@@ -64,7 +40,7 @@ export default function WhyCounselPro() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="heading-lg">Why students choose us</h2>
+          <h2 className="heading-lg underline-accent">Why students choose us</h2>
         </motion.div>
 
         <motion.div 
@@ -75,12 +51,12 @@ export default function WhyCounselPro() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8 text-left"
         >
           {reasons.map((item, i) => (
-            <motion.div key={i} variants={itemVariants} className="flex flex-col group">
-              <div className="w-12 h-12 bg-surface-white border border-border shadow-sm rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                {item.icon}
+            <motion.div key={i} variants={itemVariants} className="flex flex-col group border-l-2 border-transparent hover:border-brand-blue/20 pl-4 transition-all duration-300">
+              <div className={`w-12 h-12 ${item.bg} border border-border rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <item.icon className={`w-6 h-6 ${item.color}`} />
               </div>
               <h3 className="heading-sm mb-2 group-hover:text-brand-blue transition-colors">{item.title}</h3>
-              <p className="body-md leading-snug">{item.desc}</p>
+              <p className="body-md leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </motion.div>

@@ -8,8 +8,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const scholarship = scholarships.find(s => s.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const scholarship = scholarships.find(s => s.slug === slug);
   if (!scholarship) return { title: 'Scholarship Not Found' };
   
   return {
@@ -18,8 +19,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function ScholarshipDetailPage({ params }: { params: { slug: string } }) {
-  const scholarship = scholarships.find(s => s.slug === params.slug);
+export default async function ScholarshipDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const scholarship = scholarships.find(s => s.slug === slug);
 
   if (!scholarship) {
     return <div className="py-40 text-center">Scholarship Not Found</div>;
@@ -45,20 +47,18 @@ export default function ScholarshipDetailPage({ params }: { params: { slug: stri
         </div>
 
         {/* Quick Stats Bar */}
-        <div className="bg-surface-light border border-border rounded-xl p-6 mb-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
-          <div>
-            <div className="text-[12px] text-text-muted uppercase font-semibold mb-1">Amount</div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+          <div className="bg-surface-light border border-border rounded-xl p-5 text-center">
+            <div className="label mb-2">Amount</div>
             <div className="text-brand-amber font-display text-[22px]">{scholarship.amount}</div>
           </div>
-          <div className="hidden md:block w-px bg-border h-full mx-auto"></div>
-          <div>
-            <div className="text-[12px] text-text-muted uppercase font-semibold mb-1">Deadline</div>
-            <div className="text-text-primary font-ui font-semibold text-[16px] mt-2">{scholarship.deadline || 'Varies'}</div>
+          <div className="bg-surface-light border border-border rounded-xl p-5 text-center">
+            <div className="label mb-2">Deadline</div>
+            <div className="font-semibold text-text-primary mt-1">{scholarship.deadline || 'Varies'}</div>
           </div>
-          <div className="hidden md:block w-px bg-border h-full mx-auto"></div>
-          <div>
-            <div className="text-[12px] text-text-muted uppercase font-semibold mb-1">Renewable?</div>
-            <div className="text-text-primary font-ui font-semibold text-[16px] mt-2">{scholarship.renewable ? 'Yes' : 'No'}</div>
+          <div className="bg-surface-light border border-border rounded-xl p-5 text-center">
+            <div className="label mb-2">Renewable?</div>
+            <div className="font-semibold text-text-primary mt-1">{scholarship.renewable ? '✓ Yes' : '✗ No'}</div>
           </div>
         </div>
 
@@ -93,15 +93,17 @@ export default function ScholarshipDetailPage({ params }: { params: { slug: stri
           <section>
             <h2 className="heading-md mb-4 pb-2 border-b border-border">How to Apply</h2>
             <ol className="list-decimal list-outside space-y-3 text-text-secondary leading-relaxed ml-5">
-              <li>Check your eligibility criteria before applying.</li>
-              <li>Gather all required documents in digital format.</li>
-              <li>Visit the official portal using the link below.</li>
-              <li>Register as a new user and fill in your details accurately.</li>
-              <li>Upload documents and submit the final application before the deadline.</li>
+              {(scholarship.howToApply ?? [
+                'Check your eligibility criteria before applying.',
+                'Gather all required documents in digital format.',
+                'Visit the official portal using the link below.',
+                'Register and fill in your details accurately.',
+                'Upload documents and submit the final application before the deadline.',
+              ]).map((step, i) => <li key={i}>{step}</li>)}
             </ol>
             
             {scholarship.applyLink && (
-              <div className="mt-8">
+              <div className="mt-8 flex gap-3">
                 <a 
                   href={scholarship.applyLink} 
                   target="_blank" 
