@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Bell } from 'lucide-react';
+import { Menu, X, Bell, GraduationCap } from 'lucide-react';
 import MobileNav from './MobileNav';
 
 export default function Header() {
@@ -65,10 +65,15 @@ export default function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
-          {/* LEFT: Logo */}
+          {/* LEFT: Logo - Positioned on the left side of the ribbon */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="font-display text-[22px] text-brand-navy flex items-baseline group">
-              CounselPro<span className="text-brand-blue font-bold text-3xl leading-[0] transition-transform group-hover:scale-125 duration-300">.</span>
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center shadow-lg shadow-brand-blue/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+                <GraduationCap className="w-6 h-6 text-white" />
+              </div>
+              <span className="font-display text-[24px] text-brand-navy flex items-baseline leading-none pt-1">
+                CounselPro<span className="text-brand-blue font-bold text-3xl leading-[0] transition-transform group-hover:scale-125 duration-300 ml-0.5">.</span>
+              </span>
             </Link>
           </div>
 
