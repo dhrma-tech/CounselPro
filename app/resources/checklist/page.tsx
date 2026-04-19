@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Breadcrumb from '@/components/shared/Breadcrumb';
 import { 
@@ -90,6 +91,7 @@ export default function DocumentChecklistPage() {
             </button>
           </div>
         </div>
+      </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-6 py-12">

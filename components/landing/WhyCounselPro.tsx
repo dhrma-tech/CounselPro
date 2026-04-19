@@ -32,7 +32,7 @@ export default function WhyCounselPro() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-surface-light overflow-hidden">
+    <section className="py-16 md:py-24 overflow-hidden" style={{ background: 'rgba(173, 216, 230, 0.30)' }}>
       <div className="max-w-6xl mx-auto px-6">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}

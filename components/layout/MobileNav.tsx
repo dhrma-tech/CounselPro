@@ -31,8 +31,16 @@ export default function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClos
       </div>
 
       <div className="flex-1 overflow-y-auto py-4 px-6 flex flex-col gap-2">
-        <Link href="/counselling/josaa" onClick={onClose} className="flex items-center h-12 text-[16px] font-medium text-text-primary border-b border-border/50">JoSAA Counselling</Link>
-        <Link href="/counselling/mht-cet" onClick={onClose} className="flex items-center h-12 text-[16px] font-medium text-text-primary border-b border-border/50">MHT CET Counselling</Link>
+        <h4 className="text-[11px] font-bold text-text-muted uppercase tracking-wider mt-4 mb-2">Counselling Services</h4>
+        <Link href="/counselling/josaa" onClick={onClose} className="flex items-center h-10 text-[15px] font-medium text-text-primary px-2 hover:bg-surface-light rounded-lg">JoSAA (IIT/NIT)</Link>
+        <Link href="/counselling/csab" onClick={onClose} className="flex items-center h-10 text-[15px] font-medium text-text-primary px-2 hover:bg-surface-light rounded-lg">CSAB Special Rounds</Link>
+        <Link href="/counselling/mht-cet" onClick={onClose} className="flex items-center h-10 text-[15px] font-medium text-text-primary px-2 hover:bg-surface-light rounded-lg">MHT-CET (Engineering)</Link>
+        <Link href="/counselling/mcc-all-india" onClick={onClose} className="flex items-center h-10 text-[15px] font-medium text-text-primary px-2 hover:bg-surface-light rounded-lg">MCC All India Quota</Link>
+        <Link href="/counselling/mht-state-neet" onClick={onClose} className="flex items-center h-10 text-[15px] font-medium text-text-primary px-2 hover:bg-surface-light rounded-lg">MHT State NEET</Link>
+        <Link href="/counselling/nursing" onClick={onClose} className="flex items-center h-10 text-[15px] font-medium text-text-primary px-2 hover:bg-surface-light rounded-lg">MHT-CET (Nursing)</Link>
+        <Link href="/counselling/agri" onClick={onClose} className="flex items-center h-10 text-[15px] font-medium text-text-primary px-2 hover:bg-surface-light rounded-lg">MHT-CET (Agriculture)</Link>
+        
+        <h4 className="text-[11px] font-bold text-text-muted uppercase tracking-wider mt-4 mb-2">Explore</h4>
         <Link href="/colleges" onClick={onClose} className="flex items-center h-12 text-[16px] font-medium text-text-primary border-b border-border/50">Colleges</Link>
         <Link href="/branches" onClick={onClose} className="flex items-center h-12 text-[16px] font-medium text-text-primary border-b border-border/50">Branches</Link>
         <Link href="/scholarships" onClick={onClose} className="flex items-center h-12 text-[16px] font-medium text-text-primary border-b border-border/50">Scholarships</Link>

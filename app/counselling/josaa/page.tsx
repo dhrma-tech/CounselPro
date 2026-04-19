@@ -106,20 +106,20 @@ export default function JoSAAPage() {
             </div>
           </section>
 
-          <section id="how-we-help" className="bg-brand-navy text-white p-8 rounded-2xl">
-            <h2 className="font-display text-[28px] mb-6">How CounselPro helps</h2>
+          <section id="how-we-help" className="p-8 rounded-2xl" style={{ background: 'rgba(173, 216, 230, 0.30)' }}>
+            <h2 className="font-display text-[28px] mb-6 text-brand-navy">How CounselPro helps</h2>
             <div className="grid md:grid-cols-3 gap-6">
                <div className="bg-white/10 p-5 rounded-xl">
-                 <h4 className="font-semibold mb-2">Choice Strategy</h4>
-                 <p className="text-sm text-white/80">We optimize your order of preference to ensure you never miss an upgrade opportunity.</p>
+                 <h4 className="font-semibold mb-2 text-brand-navy">Choice Strategy</h4>
+                 <p className="text-sm text-text-secondary">We optimize your order of preference to ensure you never miss an upgrade opportunity.</p>
                </div>
                <div className="bg-white/10 p-5 rounded-xl">
-                 <h4 className="font-semibold mb-2">Personalized List</h4>
-                 <p className="text-sm text-white/80">Tailored shortlists based on your specific rank, category, home state, and engineering interests.</p>
+                 <h4 className="font-semibold mb-2 text-brand-navy">Personalized List</h4>
+                 <p className="text-sm text-text-secondary">Tailored shortlists based on your specific rank, category, home state, and engineering interests.</p>
                </div>
                <div className="bg-white/10 p-5 rounded-xl">
-                 <h4 className="font-semibold mb-2">Round Guidance</h4>
-                 <p className="text-sm text-white/80">Step-by-step advice on whether to Float, Slide, or Freeze after every single round.</p>
+                 <h4 className="font-semibold mb-2 text-brand-navy">Round Guidance</h4>
+                 <p className="text-sm text-text-secondary">Step-by-step advice on whether to Float, Slide, or Freeze after every single round.</p>
                </div>
             </div>
           </section>

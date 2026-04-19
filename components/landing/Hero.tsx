@@ -6,7 +6,7 @@ import { ArrowDown, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-[var(--header-height,80px)]">
       {/* Radial gradient background — subtle, centered */}
       <div
         className="absolute inset-x-0 top-0 h-screen pointer-events-none -z-10"

@@ -106,20 +106,20 @@ export default function MHTCETPage() {
             </div>
           </section>
 
-          <section id="how-we-help" className="bg-brand-navy text-white p-8 rounded-2xl">
-            <h2 className="font-display text-[28px] mb-6">How CounselPro helps</h2>
+          <section id="how-we-help" className="p-8 rounded-2xl" style={{ background: 'rgba(173, 216, 230, 0.30)' }}>
+            <h2 className="font-display text-[28px] mb-6 text-brand-navy">How CounselPro helps</h2>
             <div className="grid md:grid-cols-3 gap-6">
-               <div className="bg-white/10 p-5 rounded-xl border-t-2 border-brand-teal">
-                 <h4 className="font-semibold mb-2">Candidature Support</h4>
-                 <p className="text-sm text-white/80">Helping you claim the right type (A-E), TFWS, or minority status.</p>
+               <div className="bg-white/70 p-5 rounded-xl border-t-2 border-brand-teal backdrop-blur-sm shadow-sm">
+                 <h4 className="font-semibold mb-2 text-brand-navy">Candidature Support</h4>
+                 <p className="text-sm text-text-secondary">Helping you claim the right type (A-E), TFWS, or minority status.</p>
                </div>
-               <div className="bg-white/10 p-5 rounded-xl border-t-2 border-brand-teal">
-                 <h4 className="font-semibold mb-2">Option Form Order</h4>
-                 <p className="text-sm text-white/80">300 options carefully ordered so you never get auto-freezed into a bad choice.</p>
+               <div className="bg-white/70 p-5 rounded-xl border-t-2 border-brand-teal backdrop-blur-sm shadow-sm">
+                 <h4 className="font-semibold mb-2 text-brand-navy">Option Form Order</h4>
+                 <p className="text-sm text-text-secondary">300 options carefully ordered so you never get auto-freezed into a bad choice.</p>
                </div>
-               <div className="bg-white/10 p-5 rounded-xl border-t-2 border-brand-teal">
-                 <h4 className="font-semibold mb-2">Betterment Strategy</h4>
-                 <p className="text-sm text-white/80">When to pay the seat acceptance fee and push for betterment in Round 2 & 3.</p>
+               <div className="bg-white/70 p-5 rounded-xl border-t-2 border-brand-teal backdrop-blur-sm shadow-sm">
+                 <h4 className="font-semibold mb-2 text-brand-navy">Betterment Strategy</h4>
+                 <p className="text-sm text-text-secondary">When to pay the seat acceptance fee and push for betterment in Round 2 & 3.</p>
                </div>
             </div>
           </section>

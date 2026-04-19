@@ -41,7 +41,9 @@ export default function RootLayout({
         <GlobalBackground />
         <Header />
         <PageTransition>
-          {children}
+          <main className="pt-[var(--header-height,80px)]">
+            {children}
+          </main>
         </PageTransition>
         <Footer />
       </body>

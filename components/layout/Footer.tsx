@@ -97,7 +97,7 @@ export default function Footer() {
           <div className="flex flex-row items-center gap-3 group cursor-pointer">
             <span className="text-white/30 text-[10px] uppercase tracking-[0.2em] font-bold whitespace-nowrap">Design & Developed</span>
             <a 
-              href="https://linkedin.com/in/dhrma-tech" 
+              href="https://www.linkedin.com/in/dharma-a-921432260/" 
               target="_blank" 
               rel="noreferrer"
               className="flex items-center gap-2 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:border-brand-blue/50 transition-all duration-500"
@@ -107,14 +107,7 @@ export default function Footer() {
             </a>
           </div>
           
-          <div className="flex flex-col md:flex-row justify-between items-center w-full text-white/30 text-[12px] pt-2 border-t border-white/5">
-            <p>© {new Date().getFullYear()} CounselPro. All rights reserved.</p>
-            <p className="flex items-center gap-4">
-              <span className="hover:text-white/60 transition-colors cursor-pointer">Security</span>
-              <span className="hover:text-white/60 transition-colors cursor-pointer">Status</span>
-              <span className="hover:text-white/60 transition-colors cursor-pointer">India</span>
-            </p>
-          </div>
+          {/* Removed copyright/policy bar as requested */}
         </div>
       </div>
     </footer>

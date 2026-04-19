@@ -1,10 +1,20 @@
 "use client";
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
+
+const RIBBON_PAGES = ['/', '/apply'];
 
 const GlobalBackground = () => {
+  const pathname = usePathname();
+  
+  // Only show ribbons on landing page and application page
+  if (!RIBBON_PAGES.some(p => pathname === p || pathname?.startsWith('/apply'))) {
+    return null;
+  }
+
   return (
-    <div className="absolute inset-x-0 top-0 w-full pointer-events-none select-none -z-10 overflow-hidden" style={{ height: '6000px' }}>
+    <div className="absolute inset-0 w-full pointer-events-none select-none -z-10 overflow-hidden">
       <svg
         viewBox="0 0 1440 6000"
         fill="none"
