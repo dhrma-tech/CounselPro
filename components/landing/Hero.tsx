@@ -6,26 +6,26 @@ import { ArrowDown, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-[var(--header-height,80px)]">
+    <section className="relative min-h-[85vh] sm:min-h-screen flex items-center justify-center overflow-hidden py-20">
       {/* Radial gradient background — subtle, centered */}
       <div
         className="absolute inset-x-0 top-0 h-screen pointer-events-none -z-10"
         style={{
-          background: 'radial-gradient(ellipse 90% 70% at 50% 10%, rgba(26,86,219,0.07) 0%, transparent 65%)'
+          background: 'radial-gradient(ellipse 90% 70% at 50% 10%, #DBEAFE 0%, transparent 65%)'
         }}
       />
 
-      <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center relative z-10">
+      <div className="content-container text-center relative z-10">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="heading-xl mb-6"
+          className="heading-xl mb-6 px-2"
         >
           Your college journey,{' '}
           <br className="hidden sm:block" />
           <span
-            className="font-display"
+            className="font-display inline-block"
             style={{
               background: 'linear-gradient(135deg, #1A56DB 0%, #0694A2 100%)',
               WebkitBackgroundClip: 'text',
@@ -41,7 +41,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-[17px] sm:text-[18px] md:text-[20px] font-ui leading-[1.65] text-text-secondary max-w-lg mx-auto mb-10"
+          className="body-lg max-w-2xl mx-auto mb-10 px-4"
         >
           Expert Engineering, Medical and more counselling — from choice-filling to seat confirmation. We guide 10,000+ students every year.
         </motion.p>
@@ -50,7 +50,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-3 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center px-6"
         >
           <Link
             href="/apply"
@@ -72,9 +72,9 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-[13px] sm:text-[14px] text-text-muted"
+          className="mt-16 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 body-sm"
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <div className="flex -space-x-2">
               {['A', 'B', 'M', 'R'].map((letter, i) => (
                 <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-brand-blue/10 text-brand-blue flex items-center justify-center text-[10px] font-bold shadow-sm">
@@ -84,23 +84,23 @@ export default function Hero() {
             </div>
             <span><strong className="text-text-primary">10,000+</strong> students guided</span>
           </div>
-          <span className="hidden sm:block w-px h-4 bg-border" />
-          <span><strong className="text-text-primary">98%</strong> satisfaction rate</span>
-          <span className="hidden sm:block w-px h-4 bg-border" />
-          <span><strong className="text-text-primary">4+ Yrs</strong> of experience</span>
+          <span className="hidden md:block w-px h-4 bg-border" />
+          <span className="flex items-center gap-1.5"><strong className="text-text-primary">98%</strong> satisfaction rate</span>
+          <span className="hidden md:block w-px h-4 bg-border" />
+          <span className="flex items-center gap-1.5"><strong className="text-text-primary">4+ Yrs</strong> of experience</span>
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator - hide on very small phones */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-text-muted"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-text-muted"
       >
-        <span className="text-[11px] uppercase tracking-widest font-medium">Scroll</span>
+        <span className="text-[10px] uppercase tracking-[0.2em] font-bold">Scroll</span>
         <motion.div
-          animate={{ y: [0, 6, 0] }}
+          animate={{ y: [0, 4, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
         >
           <ArrowDown className="w-4 h-4" />

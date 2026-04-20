@@ -7,7 +7,7 @@ import { Search, X, GitCompare, Trash2, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
-const TYPE_FILTERS = ['All', 'IIT', 'NIT', 'IIIT', 'State', 'Autonomous', 'Private'];
+const TYPE_FILTERS = ['All', 'IIT', 'NIT', 'IIIT', 'Government', 'State', 'Autonomous', 'Private'];
 const SORT_OPTIONS = [
   { value: 'nirf', label: 'NIRF Rank' },
   { value: 'name', label: 'Name A–Z' },
@@ -51,7 +51,7 @@ export default function CollegesPage() {
         c.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         c.shortName.toLowerCase().includes(searchTerm.toLowerCase()) ||
         c.location.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchType = activeFilter === 'All' || c.type === activeFilter;
+      const matchType = activeFilter === 'All' || c.type.toLowerCase() === activeFilter.toLowerCase();
       const matchCounselling =
         counsellingFilter === 'All' ||
         c.branches.some(b => b.counselling === counsellingFilter);
