@@ -68,45 +68,48 @@ export default function Header() {
             : 'bg-white/40 backdrop-blur-md h-20'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
-          {/* LEFT: Logo - Positioned on the left side of the ribbon */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 bg-brand-blue rounded-xl flex items-center justify-center shadow-lg shadow-brand-blue/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 overflow-hidden">
+        <div className="content-container h-full flex items-center justify-between gap-4">
+          {/* Logo Section */}
+          <div className="flex-shrink-0">
+            <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#DBEAFE] rounded-lg sm:rounded-xl flex items-center justify-center shadow-sm transition-all duration-300 group-hover:scale-105 overflow-hidden">
                 <img 
                   src="/logo.png" 
                   alt="CounselPro" 
-                  className="w-6 h-6 sm:w-7 sm:h-7 object-contain" 
+                  className="w-5 h-5 sm:w-7 sm:h-7 object-contain scale-110" 
                 />
               </div>
-              <span className="font-display text-[20px] sm:text-[24px] text-brand-navy flex items-baseline leading-none pt-1">
-                CounselPro<span className="text-brand-blue font-bold text-3xl leading-[0] transition-transform group-hover:scale-125 duration-300 ml-0.5">.</span>
+              <span className="font-display text-[18px] sm:text-[24px] text-brand-navy flex items-baseline leading-none pt-0.5">
+                CounselPro<span className="text-brand-blue font-bold text-2xl sm:text-3xl leading-[0] ml-0.5">.</span>
               </span>
             </Link>
           </div>
 
-          <nav className="hidden md:flex items-center gap-[28px] absolute left-1/2 -translate-x-1/2">
-            <div className="relative group flex items-center h-full">
-              <span className="text-[14px] font-medium cursor-pointer text-text-primary hover:text-brand-blue flex items-center transition-colors">
+          {/* Center Navigation - Flexible for Tablet */}
+          <nav className="hidden xl:flex items-center gap-8">
+            <div className="relative group flex items-center h-full py-4">
+              <span className="text-[14px] font-medium cursor-pointer text-text-primary hover:text-brand-blue transition-colors">
                 Counselling
               </span>
-              <div className="absolute top-[calc(100%-8px)] left-1/2 -translate-x-1/2 mt-1 w-[480px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-border rounded-xl shadow-xl p-6 grid grid-cols-2 gap-8">
-                <div>
-                  <h4 className="text-[12px] font-bold text-text-muted uppercase tracking-wider mb-3">Engineering</h4>
-                  <div className="flex flex-col gap-1">
-                    <Link href="/counselling/josaa" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">JoSAA Support</Link>
-                    <Link href="/counselling/csab" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">CSAB Special Rounds</Link>
-                    <Link href="/counselling/mht-cet" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MHT-CET (Engineering)</Link>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pt-2">
+                <div className="bg-white border border-border rounded-xl shadow-xl p-6 grid grid-cols-2 gap-8 w-[480px]">
+                  <div>
+                    <h4 className="text-[11px] font-bold text-text-muted uppercase tracking-wider mb-3">Engineering</h4>
+                    <div className="flex flex-col gap-1">
+                      <Link href="/counselling/josaa" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">JoSAA Support</Link>
+                      <Link href="/counselling/csab" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">CSAB Special Rounds</Link>
+                      <Link href="/counselling/mht-cet" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MHT-CET (Engineering)</Link>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h4 className="text-[12px] font-bold text-text-muted uppercase tracking-wider mb-3">Medical & Others</h4>
-                  <div className="flex flex-col gap-1">
-                    <Link href="/counselling/mcc-all-india" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MCC All India Quota</Link>
-                    <Link href="/counselling/mht-state-neet" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MHT State NEET</Link>
-                    <div className="h-px bg-border my-1 mx-3" />
-                    <Link href="/counselling/nursing" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MHT-CET (Nursing)</Link>
-                    <Link href="/counselling/agri" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MHT-CET (Agriculture)</Link>
+                  <div>
+                    <h4 className="text-[11px] font-bold text-text-muted uppercase tracking-wider mb-3">Medical & Others</h4>
+                    <div className="flex flex-col gap-1">
+                      <Link href="/counselling/mcc-all-india" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MCC All India Quota</Link>
+                      <Link href="/counselling/mht-state-neet" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MHT State NEET</Link>
+                      <div className="h-px bg-border my-1 mx-3" />
+                      <Link href="/counselling/nursing" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MHT-CET (Nursing)</Link>
+                      <Link href="/counselling/agri" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">MHT-CET (Agriculture)</Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -116,44 +119,47 @@ export default function Header() {
             <Link href="/branches" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Branches</Link>
             <Link href="/scholarships" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Scholarships</Link>
 
-            <div className="relative group flex items-center h-full">
-              <span className="text-[14px] font-medium cursor-pointer text-text-primary hover:text-brand-blue flex items-center transition-colors">
+            <div className="relative group flex items-center h-full py-4">
+              <span className="text-[14px] font-medium cursor-pointer text-text-primary hover:text-brand-blue transition-colors">
                 Resources
               </span>
-              <div className="absolute top-[calc(100%-8px)] left-1/2 -translate-x-1/2 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-border rounded-xl shadow-lg p-2 flex flex-col">
-                <Link href="/libraries" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">Libraries</Link>
-                <Link href="/syllabus" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">Syllabus</Link>
-                <Link href="/faq" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">FAQ</Link>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pt-2">
+                <div className="bg-white border border-border rounded-xl shadow-lg p-2 flex flex-col w-40">
+                  <Link href="/libraries" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">Libraries</Link>
+                  <Link href="/syllabus" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">Syllabus</Link>
+                  <Link href="/faq" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">FAQ</Link>
+                </div>
               </div>
             </div>
 
             <Link href="/about" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">About</Link>
           </nav>
 
-          <div className="hidden md:flex items-center gap-[24px]">
-            <Link href="/updates" className="relative text-text-secondary hover:text-brand-blue transition-colors group/bell p-1">
-              <Bell className="w-[18px] h-[18px] transition-transform group-hover/bell:rotate-[15deg]" />
-              <span className="absolute top-0 right-0 w-2 h-2 bg-brand-teal rounded-full border-2 border-white shadow-sm" />
+          {/* Right Section */}
+          <div className="flex items-center gap-3 sm:gap-6">
+            <Link href="/updates" className="relative text-text-secondary hover:text-brand-blue transition-colors p-2">
+              <Bell className="w-5 h-5" />
+              <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-brand-teal rounded-full border-2 border-white shadow-sm" />
             </Link>
 
             {!isApplicationPage && (
               <Link 
                 href="/apply" 
-                className="h-10 flex items-center bg-brand-blue text-white font-ui font-semibold text-sm px-6 rounded-xl hover:bg-[#1648c0] active:scale-[0.98] transition-all duration-150 shadow-md shadow-brand-blue/10"
+                className="hidden sm:flex h-11 items-center bg-brand-blue text-white font-ui font-semibold text-sm px-6 rounded-xl hover:bg-[#1648c0] active:scale-[0.98] transition-all shadow-md shadow-brand-blue/10"
               >
                 Apply Now
               </Link>
             )}
-          </div>
 
-          {/* Mobile Menu Toggle */}
-          <button 
-            className="md:hidden p-2.5 -mr-1 text-text-primary rounded-lg hover:bg-surface-light active:scale-95 transition-all"
-            onClick={() => setMobileMenuOpen(true)}
-            aria-label="Open menu"
-          >
-            <Menu className="w-6 h-6" />
-          </button>
+            {/* Mobile Menu Toggle - Enhanced hit area */}
+            <button 
+              className="xl:hidden p-2.5 -mr-2 text-text-primary rounded-xl hover:bg-surface-light active:scale-95 transition-all"
+              onClick={() => setMobileMenuOpen(true)}
+              aria-label="Open menu"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+          </div>
         </div>
 
         {/* Scroll Progress Bar */}

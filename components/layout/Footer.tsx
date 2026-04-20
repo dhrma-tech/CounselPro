@@ -10,11 +10,11 @@ export default function Footer() {
           {/* Col 1 */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-3 group mb-6">
-              <div className="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center shadow-lg shadow-brand-blue/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 overflow-hidden">
+              <div className="w-8 h-8 bg-[#DBEAFE] rounded-lg flex items-center justify-center shadow-sm transition-all duration-300 group-hover:scale-110 overflow-hidden">
                 <img 
                   src="/logo.png" 
                   alt="CounselPro" 
-                  className="w-5 h-5 object-contain" 
+                  className="w-5 h-5 object-contain scale-110" 
                 />
               </div>
               <span className="font-display text-[20px] text-white flex items-baseline leading-none pt-1">
