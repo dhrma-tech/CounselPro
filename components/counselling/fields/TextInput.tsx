@@ -14,7 +14,7 @@ interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: string;
 }
 
-export const TextInput = ({ label, sublabel, error, className, ...props }: TextInputProps) => {
+export const TextInput = ({ label, sublabel, error, className, value, ...props }: TextInputProps) => {
   return (
     <div className="flex flex-col gap-1 w-full">
       <label className="font-ui font-medium text-[13px] text-text-secondary">
@@ -29,6 +29,7 @@ export const TextInput = ({ label, sublabel, error, className, ...props }: TextI
           error && "border-red-400 focus:border-red-400 focus:ring-red-400/5",
           className
         )}
+        value={value ?? ''}
         {...props}
       />
       {error && <p className="text-[12px] text-red-500 mt-0.5">{error}</p>}
