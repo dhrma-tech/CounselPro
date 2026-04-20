@@ -9,11 +9,14 @@ interface SubmissionPayload {
 }
 
 export async function submitToGoogleSheets(payload: SubmissionPayload) {
-  // Add metadata
+  const submissionId = 'CP-' + Date.now();
+  
+  // Add metadata and the ID to the fields
   const fullPayload = {
     ...payload,
     fields: {
       ...payload.fields,
+      id: submissionId,
       submittedAt: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
       referralCode: payload.fields.referralCode || 'NONE'
     }
@@ -22,18 +25,15 @@ export async function submitToGoogleSheets(payload: SubmissionPayload) {
   try {
     const response = await fetch(SHEETS_CONFIG.appsScriptUrl, {
       method: "POST",
-      mode: "no-cors", // Apps Script Web App requirement for CORS avoidance in simple setup
+      mode: "no-cors", 
       cache: "no-cache",
       headers: {
-        "Content-Type": "text/plain", // Important: Apps Script prefers text/plain for doPost
+        "Content-Type": "text/plain",
       },
       body: JSON.stringify(fullPayload),
     });
 
-    // Note: With opaque responses (no-cors), we can't reliably read the body
-    // In a production env with a custom domain/proxy, we'd use regular cors.
-    // For this prompt, we'll assume success if no error is thrown by fetch.
-    return { success: true, id: 'CP-' + Date.now() };
+    return { success: true, id: submissionId };
     
   } catch (error) {
     console.error("Submission error:", error);
