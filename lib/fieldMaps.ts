@@ -64,3 +64,18 @@ export const MAHARASHTRA_DISTRICTS = [
   'Pune', 'Raigad', 'Ratnagiri', 'Sangli', 'Satara', 'Sindhudurg', 'Solapur',
   'Thane', 'Wardha', 'Washim', 'Yavatmal', 'Others*'
 ];
+
+export const MEDICAL_COURSES = [
+  'MBBS (Bachelor of Medicine & Bachelor of Surgery)',
+  'BDS (Bachelor of Dental Surgery)',
+  'BAMS (Bachelor of Ayurvedic Medicine & Surgery)',
+  'BHMS (Bachelor of Homeopathic Medicine & Surgery)',
+  'BUMS (Bachelor of Unani Medicine & Surgery)',
+  'BVSc & AH (Bachelor of Veterinary Science)',
+  'BPTh (Bachelor of Physiotherapy)',
+  'BOTh (Bachelor of Occupational Therapy)',
+  'BASLP (Bachelor of Audiology & Speech-Language Pathology)',
+  'B.P.O (Bachelor in Prosthetics and Orthotics)',
+  'BSc Nursing',
+  'Others*'
+];

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Bell, GraduationCap } from 'lucide-react';
+import { Menu, X, Bell } from 'lucide-react';
 import MobileNav from './MobileNav';
 
 export default function Header() {
@@ -68,14 +68,18 @@ export default function Header() {
             : 'bg-white/40 backdrop-blur-md h-20'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
           {/* LEFT: Logo - Positioned on the left side of the ribbon */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center shadow-lg shadow-brand-blue/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                <GraduationCap className="w-6 h-6 text-white" />
+              <div className="w-9 h-9 sm:w-10 sm:h-10 bg-brand-blue rounded-xl flex items-center justify-center shadow-lg shadow-brand-blue/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 overflow-hidden">
+                <img 
+                  src="/logo.png" 
+                  alt="CounselPro" 
+                  className="w-6 h-6 sm:w-7 sm:h-7 object-contain" 
+                />
               </div>
-              <span className="font-display text-[24px] text-brand-navy flex items-baseline leading-none pt-1">
+              <span className="font-display text-[20px] sm:text-[24px] text-brand-navy flex items-baseline leading-none pt-1">
                 CounselPro<span className="text-brand-blue font-bold text-3xl leading-[0] transition-transform group-hover:scale-125 duration-300 ml-0.5">.</span>
               </span>
             </Link>
@@ -117,6 +121,7 @@ export default function Header() {
                 Resources
               </span>
               <div className="absolute top-[calc(100%-8px)] left-1/2 -translate-x-1/2 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-border rounded-xl shadow-lg p-2 flex flex-col">
+                <Link href="/libraries" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">Libraries</Link>
                 <Link href="/syllabus" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">Syllabus</Link>
                 <Link href="/faq" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">FAQ</Link>
               </div>
@@ -143,7 +148,7 @@ export default function Header() {
 
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden p-2 text-text-primary"
+            className="md:hidden p-2.5 -mr-1 text-text-primary rounded-lg hover:bg-surface-light active:scale-95 transition-all"
             onClick={() => setMobileMenuOpen(true)}
             aria-label="Open menu"
           >

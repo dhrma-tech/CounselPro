@@ -11,7 +11,23 @@ export const RankScoreStep = () => {
   const { formData, updateField, nextStep, counsellingType } = useApplicationStore();
 
   const handleNext = () => {
-    // Basic validation logic
+    const isJEE = counsellingType?.startsWith('JEE');
+    const isNEET = counsellingType?.startsWith('NEET');
+
+    if (isJEE) {
+      if (!formData.airRank || !formData.percentile) {
+        alert("Please fill AIR Rank and Percentile Score");
+        return;
+      }
+    }
+
+    if (isNEET) {
+      if (!formData.airRank || !formData.marks) {
+        alert("Please fill AIR Rank and NEET Marks");
+        return;
+      }
+    }
+    
     nextStep();
   };
 
@@ -62,13 +78,14 @@ export const RankScoreStep = () => {
             <NumberInput
               label="NEET Marks (out of 720)"
               placeholder="e.g. 612"
+              required
               suffix="/ 720"
               value={formData.marks || ''}
               onChange={(e: any) => updateField('marks', e.target.value)}
             />
             <DecimalInput
               label="NEET Percentile"
-              required
+              placeholder="(Optional)"
               value={formData.percentile || ''}
               onChange={(e: any) => updateField('percentile', e.target.value)}
             />

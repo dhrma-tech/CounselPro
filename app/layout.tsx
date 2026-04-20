@@ -20,10 +20,10 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: 'CounselPro | Expert College Admission Counselling',
-  description: 'Expert college admission counselling for JoSAA and MHT CET students across India. Choose the right college for your rank, category, and future.',
+  description: 'Expert Engineering, Medical and more admission counselling for students across India. Choose the right college for your rank, category, and future.',
   openGraph: {
     title: 'CounselPro | Expert College Admission Counselling',
-    description: 'Expert guidance for JoSAA and MHT CET.',
+    description: 'Expert guidance for Engineering, Medical and more.',
     url: 'https://counselpro.in',
     siteName: 'CounselPro',
     images: [{ url: '/images/og-image.png', width: 1200, height: 630 }],

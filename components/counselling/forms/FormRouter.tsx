@@ -11,6 +11,8 @@ import { QuotaStep } from './steps/QuotaStep';
 import { AcademicPreferencesStep } from './steps/AcademicPreferencesStep';
 import { MHTCET_ScoreStep } from './steps/MHTCET_ScoreStep';
 import { JEE_OptionalStep } from './steps/JEE_OptionalStep';
+import { CoursePreferencesStep } from './steps/CoursePreferencesStep';
+import { NEET_OptionalStep } from './steps/NEET_OptionalStep';
 
 // Placeholder common steps
 const PlaceholderStep = ({ title }: { title: string }) => {
@@ -54,6 +56,10 @@ export const FormRouter = () => {
       return <QuotaStep />;
     case 'AcademicPreferencesStep':
       return <AcademicPreferencesStep />;
+    case 'CoursePreferencesStep':
+      return <CoursePreferencesStep />;
+    case 'NEET_OptionalStep':
+      return <NEET_OptionalStep />;
     case 'ReviewStep':
       return <ReviewStep />;
     default:

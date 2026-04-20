@@ -15,6 +15,14 @@ export const AcademicPreferencesStep = () => {
       alert("Please select at least one branch");
       return;
     }
+    if (!formData.courseType || formData.courseType.length === 0) {
+      alert("Please select at least one Course Type");
+      return;
+    }
+    if (!formData.instituteTypes || formData.instituteTypes.length === 0) {
+      alert("Please select at least one Institute Type");
+      return;
+    }
     nextStep();
   };
 
@@ -34,6 +42,7 @@ export const AcademicPreferencesStep = () => {
 
         <MultiSelectChips
           label="Course Type"
+          required
           options={['B.Tech', 'B.E.', 'B.Arch', 'B.Planning', 'B.Tech + M.Tech (Dual)', 'B.S.', 'Others*']}
           value={formData.courseType || []}
           onChange={(v: string[]) => updateField('courseType', v)}

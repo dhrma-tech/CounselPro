@@ -73,6 +73,17 @@ export const ReviewStep = () => {
             ['Referral Code', formData.referralCode || 'None'],
           ]} 
         />
+
+        <SummarySection 
+          title="Reservation & Minority" 
+          stepIndex={3} // Approximate step index for personal/quota
+          fields={[
+            ['Category', formData.category],
+            ['Minority Status', formData.isMinority || 'No'],
+            ['Minority Details', formData.isMinority === 'Yes' ? formData.minorityDetails : 'N/A'],
+            ['Seat Types', formData.seatType || formData.mahSeatType],
+          ]} 
+        />
         
         {/* Exam Specific Summaries would go here dynamically */}
         <div className="p-6 bg-brand-blue/5 border border-dashed border-brand-blue/30 rounded-2xl text-center">

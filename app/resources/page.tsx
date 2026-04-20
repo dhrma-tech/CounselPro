@@ -11,7 +11,10 @@ import {
   ClipboardCheck, 
   Calendar,
   HelpCircle,
-  Clock
+  Clock,
+  Users,
+  ShieldCheck,
+  Archive
 } from 'lucide-react';
 
 export default function ResourceHubPage() {
@@ -63,6 +66,14 @@ export default function ResourceHubPage() {
       link: "/resources/calendar",
       stats: "Live Updates",
       type: "Alerts"
+    },
+    {
+      title: "Admission Libraries",
+      desc: "Complete archive of official documents: seat matrices, multi-year cutoff PDFs, and historical admission datasets.",
+      icon: <Archive className="w-10 h-10 text-brand-blue" />,
+      link: "/libraries",
+      stats: "Archive Hub",
+      type: "Data"
     }
   ];
 

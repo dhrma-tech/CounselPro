@@ -12,11 +12,11 @@ export const ApplicationShell = () => {
   const { currentStage } = useApplicationStore();
 
   return (
-    <div className="min-h-screen bg-surface-page pt-24 pb-10 px-4 sm:px-6">
-      <div className="max-w-[680px] mx-auto">
+    <div className="min-h-screen bg-surface-page pt-20 sm:pt-24 pb-12 px-3 sm:px-5">
+      <div className="max-w-[680px] mx-auto w-full">
         <StageIndicator />
 
-        <div className="bg-white border border-border rounded-[24px] p-4 sm:p-7 shadow-sm min-h-[380px]">
+        <div className="bg-white border border-border rounded-2xl sm:rounded-[24px] p-4 sm:p-6 md:p-8 shadow-sm min-h-[400px]">
           {currentStage === 1 && <Stage1_ExamSelect />}
           {currentStage === 2 && <Stage2_CounsellingSelect />}
           {currentStage === 3 && <FormRouter />}

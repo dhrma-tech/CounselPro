@@ -55,11 +55,11 @@ export default function AboutPage() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-brand-blue/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
               <div className="grid grid-cols-2 gap-y-12 gap-x-8 relative z-10">
                 <div>
-                  <div className="font-display text-5xl mb-2 text-brand-blue">2018</div>
-                  <div className="text-[13px] uppercase tracking-widest font-bold text-white/50">Founded</div>
+                  <div className="font-display text-5xl mb-2 text-brand-blue">4+</div>
+                  <div className="text-[13px] uppercase tracking-widest font-bold text-white/50">Yrs Experience</div>
                 </div>
                 <div>
-                  <div className="font-display text-5xl mb-2 text-brand-blue">2k+</div>
+                  <div className="font-display text-5xl mb-2 text-brand-blue">10k+</div>
                   <div className="text-[13px] uppercase tracking-widest font-bold text-white/50">Students</div>
                 </div>
                 <div>

@@ -9,6 +9,14 @@ import { StepFooter } from '../../StepFooter';
 
 export const MHTCET_ScoreStep = () => {
   const { formData, updateField, nextStep } = useApplicationStore();
+  
+  const handleNext = () => {
+    if (!formData.mhtcetPercentile || !formData.mhtcetAllStateMeritRank) {
+      alert("Please fill MHT-CET Percentile and Merit Rank");
+      return;
+    }
+    nextStep();
+  };
 
   return (
     <div className="animate-in fade-in slide-in-from-right-4 duration-300">
@@ -25,6 +33,7 @@ export const MHTCET_ScoreStep = () => {
         <NumberInput
           label="All State / Merit Rank"
           placeholder="e.g. 15230"
+          required
           value={formData.mhtcetAllStateMeritRank || ''}
           onChange={(e: any) => updateField('mhtcetAllStateMeritRank', e.target.value)}
         />
@@ -35,7 +44,7 @@ export const MHTCET_ScoreStep = () => {
         />
       </div>
 
-      <StepFooter onNext={nextStep} />
+      <StepFooter onNext={handleNext} />
     </div>
   );
 };

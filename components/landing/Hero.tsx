@@ -15,7 +15,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center relative z-10">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,22 +41,22 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="body-lg max-w-xl mx-auto mb-10"
+          className="text-[17px] sm:text-[18px] md:text-[20px] font-ui leading-[1.65] text-text-secondary max-w-lg mx-auto mb-10"
         >
-          Expert JoSAA and MHT CET counselling — from choice-filling to seat confirmation. We guide 2,000+ students every year.
+          Expert Engineering, Medical and more counselling — from choice-filling to seat confirmation. We guide 10,000+ students every year.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-3 justify-center"
         >
           <Link
             href="/apply"
             className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white font-ui font-bold text-[16px] px-8 py-4 rounded-xl hover:bg-[#1648c0] hover:shadow-xl hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-200 shadow-[0_2px_12px_rgba(26,86,219,0.3)]"
           >
-            Start Free Counselling <ArrowRight className="w-5 h-5" />
+            Start Counselling <ArrowRight className="w-5 h-5" />
           </Link>
 
           <Link
@@ -72,22 +72,22 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 text-[14px] text-text-muted"
+          className="mt-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-[13px] sm:text-[14px] text-text-muted"
         >
           <div className="flex items-center gap-2">
             <div className="flex -space-x-2">
-              {[...Array(4)].map((_, i) => (
-                <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-brand-blue/10 text-brand-blue flex items-center justify-center text-[9px] font-bold shadow-sm">
-                  ST
+              {['A', 'B', 'M', 'R'].map((letter, i) => (
+                <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-brand-blue/10 text-brand-blue flex items-center justify-center text-[10px] font-bold shadow-sm">
+                  {letter}
                 </div>
               ))}
             </div>
-            <span><strong className="text-text-primary">2,000+</strong> students guided</span>
+            <span><strong className="text-text-primary">10,000+</strong> students guided</span>
           </div>
           <span className="hidden sm:block w-px h-4 bg-border" />
           <span><strong className="text-text-primary">98%</strong> satisfaction rate</span>
           <span className="hidden sm:block w-px h-4 bg-border" />
-          <span><strong className="text-text-primary">500+</strong> colleges covered</span>
+          <span><strong className="text-text-primary">4+ Yrs</strong> of experience</span>
         </motion.div>
       </div>
 

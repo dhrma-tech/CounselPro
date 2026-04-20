@@ -27,12 +27,12 @@ export const MultiSelectChips = ({ label, sublabel, options, value = [], onChang
 
   return (
     <div className="flex flex-col gap-3 w-full">
-      <div className="flex flex-col">
-        <label className="font-ui font-medium text-[13px] text-text-secondary">
+      <div className="flex flex-col gap-0.5">
+        <label className="font-ui font-semibold text-[14px] text-text-primary">
           {label}
           {required && <span className="text-red-500 ml-0.5">*</span>}
         </label>
-        {sublabel && <p className="text-[12px] text-text-muted">{sublabel}</p>}
+        {sublabel && <p className="text-[12px] text-text-muted leading-relaxed">{sublabel}</p>}
       </div>
 
       <div className="flex flex-wrap gap-2">
@@ -42,14 +42,18 @@ export const MultiSelectChips = ({ label, sublabel, options, value = [], onChang
             <div
               key={option}
               onClick={() => toggleOption(option)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === 'Enter' && toggleOption(option)}
               className={`
-                px-4 py-2 rounded-full border text-[13px] font-medium cursor-pointer transition-all duration-150
+                min-h-[40px] sm:min-h-[36px] px-4 py-2 rounded-full border text-[14px] font-medium cursor-pointer select-none
+                transition-all duration-150 flex items-center gap-1.5 active:scale-95
                 ${isSelected 
-                  ? 'bg-brand-blue/5 border-brand-blue text-brand-blue font-semibold' 
-                  : 'bg-surface-light border-border text-text-secondary hover:border-text-muted'}
+                  ? 'bg-brand-blue border-brand-blue text-white shadow-sm shadow-brand-blue/20 font-semibold' 
+                  : 'bg-white border-border text-text-secondary hover:border-brand-blue/40 hover:bg-surface-light'}
               `}
             >
-              {isSelected && <span className="mr-1.5">✓</span>}
+              {isSelected && <span className="text-[12px]">✓</span>}
               {option}
             </div>
           );

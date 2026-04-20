@@ -4,20 +4,29 @@ import { LinkedInIcon } from '@/components/shared/SocialIcons';
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-navy text-white/70 py-16 mt-auto">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16">
+    <footer className="bg-brand-navy text-white/70 pt-14 pb-10 mt-auto">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16">
           {/* Col 1 */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="font-display text-[22px] text-white flex items-baseline mb-4">
-              CounselPro<span className="text-brand-blue font-bold text-3xl leading-[0]">.</span>
+            <Link href="/" className="flex items-center gap-3 group mb-6">
+              <div className="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center shadow-lg shadow-brand-blue/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 overflow-hidden">
+                <img 
+                  src="/logo.png" 
+                  alt="CounselPro" 
+                  className="w-5 h-5 object-contain" 
+                />
+              </div>
+              <span className="font-display text-[20px] text-white flex items-baseline leading-none pt-1">
+                CounselPro<span className="text-brand-blue font-bold text-3xl leading-[0] transition-transform group-hover:scale-125 duration-300 ml-0.5">.</span>
+              </span>
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-xs">
-              Expert college admission counselling for JoSAA and MHT CET students across India.
+              Expert Engineering, Medical and more counselling for students across India.
             </p>
             <div className="flex flex-col gap-3">
               <a 
-                href="https://wa.me/919876543210" 
+                href="https://wa.me/917798635457" 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 text-white/80 hover:text-green-400 transition-colors text-sm font-medium"
@@ -28,13 +37,13 @@ export default function Footer() {
                 WhatsApp Us
               </a>
               <a 
-                href="tel:+919876543210" 
+                href="tel:+919373859534" 
                 className="inline-flex items-center gap-2 text-white/80 hover:text-brand-blue transition-colors text-sm font-medium"
               >
                 <div className="w-8 h-8 bg-brand-blue/10 rounded-lg flex items-center justify-center text-brand-blue">
                   <Phone className="w-4 h-4" />
                 </div>
-                +91 98765 43210
+                +91 93738 59534
               </a>
               <a 
                 href="mailto:contact@counselpro.in" 

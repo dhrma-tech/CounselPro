@@ -145,7 +145,7 @@ export default function ContactPage() {
                 <h3 className="font-display text-2xl mb-8 relative z-10">Direct Support</h3>
                 
                 <div className="space-y-8 relative z-10">
-                  <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="flex items-center gap-5 group">
+                  <a href="https://wa.me/917798635457" target="_blank" rel="noreferrer" className="flex items-center gap-5 group">
                     <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform">
                       <MessageCircle className="w-8 h-8 text-white" />
                     </div>
@@ -161,7 +161,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="font-bold text-lg leading-tight">Voice Support</div>
-                      <div className="text-white/60 text-sm">+91 98765 43210</div>
+                      <div className="text-white/60 text-sm">+91 93738 59534</div>
                     </div>
                   </div>
 

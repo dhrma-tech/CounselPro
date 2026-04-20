@@ -28,7 +28,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: 'What is CounselPro?',
-    answer: 'CounselPro is an expert admission counselling service that guides engineering aspirants through the confusing maze of JoSAA and MHT CET admissions to ensure they get the best college for their rank.',
+    answer: 'CounselPro is an expert admission counselling service that guides aspirants through the confusing maze of Engineering, Medical and more admissions to ensure they get the best college for their rank.',
     group: 'General'
   },
   {

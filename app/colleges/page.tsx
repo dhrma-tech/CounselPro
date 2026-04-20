@@ -110,7 +110,7 @@ export default function CollegesPage() {
           transition={{ delay: 0.2 }}
           className="body-lg max-w-2xl mx-auto"
         >
-          {colleges.length} colleges with branch-wise cutoffs, fees, and placement data for JoSAA and MHT CET.
+          {colleges.length} colleges with branch-wise cutoffs, fees, and placement data for Engineering, Medical and more.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
