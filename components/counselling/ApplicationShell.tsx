@@ -9,23 +9,36 @@ import { Stage4_Contact } from './stages/Stage4_Contact';
 import { FormRouter } from './forms/FormRouter';
 
 export const ApplicationShell = () => {
-  const { currentStage } = useApplicationStore();
+  const { currentStage, currentStep } = useApplicationStore();
+
+  const containerRef = React.useRef<HTMLDivElement>(null);
+
+  // Scroll to application part on stage or step change
+  React.useEffect(() => {
+    if (containerRef.current) {
+      const yOffset = -100; // Account for fixed header
+      const y = containerRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }, [currentStage, currentStep]);
 
   return (
-    <div className="min-h-screen bg-surface-page pt-20 sm:pt-24 pb-12 px-3 sm:px-5">
-      <div className="max-w-[680px] mx-auto w-full">
+    <div className="min-h-[100dvh] bg-surface-page pt-20 sm:pt-28 pb-16 px-4">
+      <div ref={containerRef} className="max-w-[720px] mx-auto w-full flex flex-col gap-6 sm:gap-8">
         <StageIndicator />
 
-        <div className="bg-white border border-border rounded-2xl sm:rounded-[24px] p-4 sm:p-6 md:p-8 shadow-sm min-h-[400px]">
+        <main className="bg-white border border-border rounded-2xl sm:rounded-[32px] p-5 sm:p-8 md:p-10 shadow-sm transition-all duration-300">
           {currentStage === 1 && <Stage1_ExamSelect />}
           {currentStage === 2 && <Stage2_CounsellingSelect />}
           {currentStage === 3 && <FormRouter />}
           {currentStage === 4 && <Stage4_Contact />}
-        </div>
+        </main>
         
-        <p className="mt-8 text-center text-[12px] text-text-muted font-ui">
-          &copy; 2026 CounselPro. Secure Academic Guidance System.
-        </p>
+        <footer className="mt-4 text-center">
+          <p className="text-[12px] text-text-muted font-ui tracking-wide">
+            &copy; 2026 CounselPro &bull; Secure Academic Guidance System
+          </p>
+        </footer>
       </div>
     </div>
   );

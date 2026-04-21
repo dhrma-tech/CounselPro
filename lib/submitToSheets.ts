@@ -1,20 +1,16 @@
 import { ApplicationData } from './types';
+import { submitApplicationForm } from '@/app/actions/submission';
 
 export async function submitToSheets(data: ApplicationData): Promise<void> {
-  const url = process.env.NEXT_PUBLIC_SHEET_URL;
-  if (!url) throw new Error('Sheet URL not configured');
-
   const payload = {
     ...data,
-    branches: data.branches.join(', '),
-    collegeTypes: data.collegeTypes.join(', '),
-    submittedAt: new Date().toISOString(),
+    branches: data.branches,
+    collegeTypes: data.collegeTypes,
   };
 
-  const res = await fetch(url, {
-    method: 'POST',
-    body: JSON.stringify(payload),
-  });
+  const result = await submitApplicationForm(payload);
 
-  if (!res.ok) throw new Error('Submission failed');
+  if (!result.success) {
+    throw new Error(result.message || 'Submission failed');
+  }
 }

@@ -66,11 +66,13 @@ export const MAHARASHTRA_DISTRICTS = [
 ];
 
 export const MEDICAL_COURSES = [
-  'MBBS (Bachelor of Medicine & Bachelor of Surgery)',
+  'B.Pharm (Bachelor of Pharmacy)',
+  'Pharm.D (Doctor of Pharmacy)',
   'BDS (Bachelor of Dental Surgery)',
   'BAMS (Bachelor of Ayurvedic Medicine & Surgery)',
   'BHMS (Bachelor of Homeopathic Medicine & Surgery)',
   'BUMS (Bachelor of Unani Medicine & Surgery)',
+  'MBBS (Bachelor of Medicine & Bachelor of Surgery)',
   'BVSc & AH (Bachelor of Veterinary Science)',
   'BPTh (Bachelor of Physiotherapy)',
   'BOTh (Bachelor of Occupational Therapy)',

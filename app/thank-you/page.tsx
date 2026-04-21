@@ -51,7 +51,7 @@ export default function ThankYouPage() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a fill="none" href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-ui font-semibold text-[15px] px-6 py-3 rounded-lg hover:bg-[#20b858] active:scale-[0.98] transition-all">
+          <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-ui font-semibold text-[15px] px-6 py-3 rounded-lg hover:bg-[#20b858] active:scale-[0.98] transition-all">
             <MessageCircle className="w-5 h-5" />
             Or WhatsApp us directly &rarr;
           </a>

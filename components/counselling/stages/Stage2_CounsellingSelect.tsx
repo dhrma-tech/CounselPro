@@ -16,6 +16,7 @@ const COUNSELLING_MAP: Record<string, { id: CounsellingType; label: string; sub:
   ],
   MHTCET: [
     { id: 'MHTCET_Engineering', label: 'MHT-CET Engineering', sub: 'B.Tech / B.E.', short: 'ENGG' },
+    { id: 'MHTCET_Medical', label: 'MHT-CET Pharmacy / Medical', sub: 'Pharmacy / BDS / AYUSH', short: 'PHARM' },
     { id: 'MHTCET_BSc_Nursing', label: 'MHT-CET B.Sc Nursing', sub: 'Paramedical Courses', short: 'NURSE' },
     { id: 'MHTCET_BSc_Agriculture', label: 'MHT-CET B.Sc Agriculture', sub: 'Agricultural Programs', short: 'AGRI' },
   ],

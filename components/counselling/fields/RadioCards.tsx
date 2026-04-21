@@ -13,7 +13,7 @@ export const RadioCards = ({ label, sublabel, options, value, onChange, required
         {sublabel && <p className="text-[12px] text-text-muted leading-relaxed">{sublabel}</p>}
       </div>
       
-      <div className={`grid gap-3 grid-cols-1 sm:grid-cols-${gridCols}`}>
+      <div className={`grid gap-3 grid-cols-1 ${gridCols >= 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2'}`}>
         {options.map((option: any) => {
           const optionValue = option.value || option;
           const optionLabel = option.label || option;
@@ -27,20 +27,20 @@ export const RadioCards = ({ label, sublabel, options, value, onChange, required
               tabIndex={0}
               onKeyDown={(e) => e.key === 'Enter' && onChange(optionValue)}
               className={`
-                min-h-[52px] border rounded-xl flex items-center px-4 py-3 gap-3 cursor-pointer select-none
-                transition-all duration-200 active:scale-[0.99]
+                min-h-[56px] border rounded-xl flex items-center px-4 py-3 gap-3 cursor-pointer select-none
+                transition-all duration-200 active:scale-[0.98] outline-none group
                 ${isSelected 
-                  ? 'border-brand-blue bg-brand-blue/5 ring-2 ring-brand-blue/20' 
-                  : 'border-border bg-white hover:border-brand-blue/30 hover:bg-surface-light'}
+                  ? 'border-brand-blue bg-brand-blue/5 ring-1 ring-brand-blue shadow-sm' 
+                  : 'border-border bg-white hover:border-brand-blue/40 hover:bg-surface-light'}
               `}
             >
               <div className={`
                 flex-shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200
-                ${isSelected ? 'border-brand-blue bg-brand-blue' : 'border-text-muted/40'}
+                ${isSelected ? 'border-brand-blue bg-brand-blue' : 'border-border group-hover:border-brand-blue/40'}
               `}>
-                {isSelected && <div className="w-2 h-2 rounded-full bg-white" />}
+                {isSelected && <div className="w-1.5 h-1.5 rounded-full bg-white animate-in zoom-in-50 duration-200" />}
               </div>
-              <span className={`font-ui text-[15px] font-medium leading-tight ${isSelected ? 'text-brand-blue' : 'text-text-primary'}`}>
+              <span className={`font-ui text-[14px] sm:text-[15px] font-semibold leading-tight ${isSelected ? 'text-brand-blue' : 'text-text-secondary group-hover:text-text-primary'}`}>
                 {optionLabel}
               </span>
             </div>

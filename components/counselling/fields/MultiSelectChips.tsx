@@ -63,6 +63,7 @@ export const MultiSelectChips = ({ label, sublabel, options, value = [], onChang
       {showOtherInput && (
         <div className="animate-in slide-in-from-top-2 duration-200">
           <TextInput
+            label="Specify Other"
             placeholder="Please specify..."
             onChange={handleOtherChange}
             value={value.find((v: string) => !options.includes(v)) || ''}

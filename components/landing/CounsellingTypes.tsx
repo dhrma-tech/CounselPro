@@ -81,8 +81,8 @@ const COUNSELLING_DATA = [
     icon: GraduationCap,
     color: 'border-brand-blue',
     iconColor: 'text-brand-blue',
-    badgeBg: 'bg-[#DBEAFE]',
-    badgeText: 'text-blue-800'
+    badgeBg: 'bg-blue-50',
+    badgeText: 'text-blue-700'
   },
   {
     id: 'csab',
@@ -94,8 +94,8 @@ const COUNSELLING_DATA = [
     icon: GraduationCap,
     color: 'border-brand-blue',
     iconColor: 'text-brand-blue',
-    badgeBg: 'bg-[#DBEAFE]',
-    badgeText: 'text-blue-800'
+    badgeBg: 'bg-blue-50',
+    badgeText: 'text-blue-700'
   },
   {
     id: 'mht-cet-eng',
@@ -107,8 +107,8 @@ const COUNSELLING_DATA = [
     icon: BookOpen,
     color: 'border-brand-teal',
     iconColor: 'text-brand-teal',
-    badgeBg: 'bg-[#DBEAFE]',
-    badgeText: 'text-brand-navy'
+    badgeBg: 'bg-teal-50',
+    badgeText: 'text-teal-700'
   },
   {
     id: 'mcc-all-india',
@@ -120,8 +120,8 @@ const COUNSELLING_DATA = [
     icon: GraduationCap,
     color: 'border-brand-violet',
     iconColor: 'text-brand-violet',
-    badgeBg: 'bg-[#DBEAFE]',
-    badgeText: 'text-brand-navy'
+    badgeBg: 'bg-violet-50',
+    badgeText: 'text-violet-700'
   },
   {
     id: 'mht-state-neet',
@@ -133,8 +133,8 @@ const COUNSELLING_DATA = [
     icon: BookOpen,
     color: 'border-brand-teal',
     iconColor: 'text-brand-teal',
-    badgeBg: 'bg-[#DBEAFE]',
-    badgeText: 'text-brand-navy'
+    badgeBg: 'bg-teal-50',
+    badgeText: 'text-teal-700'
   },
   {
     id: 'mht-cet-nursing',
@@ -146,8 +146,8 @@ const COUNSELLING_DATA = [
     icon: BookOpen,
     color: 'border-brand-teal',
     iconColor: 'text-brand-teal',
-    badgeBg: 'bg-[#DBEAFE]',
-    badgeText: 'text-brand-navy'
+    badgeBg: 'bg-teal-50',
+    badgeText: 'text-teal-700'
   },
   {
     id: 'mht-cet-agri',

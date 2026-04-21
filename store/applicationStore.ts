@@ -7,7 +7,7 @@ export type ExamType = 'JEE' | 'NEET' | 'MHTCET';
 export type CounsellingType = 
   | 'JEE_JoSAA_Mains' | 'JEE_JoSAA_Advanced' | 'JEE_CSAB'
   | 'NEET_MCC_AllIndia' | 'NEET_MHT_State'
-  | 'MHTCET_Engineering' | 'MHTCET_BSc_Nursing' | 'MHTCET_BSc_Agriculture';
+  | 'MHTCET_Engineering' | 'MHTCET_Medical' | 'MHTCET_BSc_Nursing' | 'MHTCET_BSc_Agriculture';
 
 interface ApplicationStore {
   // Pipeline stage

@@ -27,9 +27,9 @@ export const ReviewStep = () => {
       setSubmissionId(result.id);
       setSubmissionStatus('success');
       nextStage();
-    } catch (error) {
+    } catch (error: any) {
       setSubmissionStatus('error');
-      setErrorMessage('Submission failed. Please try again.');
+      setErrorMessage(error.message || 'Submission failed. Please try again.');
       setIsSubmitting(false);
     }
   };

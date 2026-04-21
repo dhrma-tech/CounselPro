@@ -19,7 +19,6 @@ export default function CollegesPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeFilter, setActiveFilter] = useState('All');
   const [sortBy, setSortBy] = useState('nirf');
-  const [counsellingFilter, setCounsellingFilter] = useState<'All' | 'JoSAA' | 'MHT-CET'>('All');
   const [compareList, setCompareList] = useState<string[]>([]); // slugs
   const [showCompareBar, setShowCompareBar] = useState(false);
 
@@ -52,10 +51,7 @@ export default function CollegesPage() {
         c.shortName.toLowerCase().includes(searchTerm.toLowerCase()) ||
         c.location.toLowerCase().includes(searchTerm.toLowerCase());
       const matchType = activeFilter === 'All' || c.type.toLowerCase() === activeFilter.toLowerCase();
-      const matchCounselling =
-        counsellingFilter === 'All' ||
-        c.branches.some(b => b.counselling === counsellingFilter);
-      return matchSearch && matchType && matchCounselling;
+      return matchSearch && matchType;
     });
 
     result = [...result].sort((a, b) => {
@@ -81,7 +77,7 @@ export default function CollegesPage() {
     });
 
     return result;
-  }, [searchTerm, activeFilter, sortBy, counsellingFilter]);
+  }, [searchTerm, activeFilter, sortBy]);
 
   const compareColleges = colleges.filter(c => compareList.includes(c.slug));
 
@@ -147,7 +143,7 @@ export default function CollegesPage() {
           </div>
 
           {/* Type filter */}
-          <div className="flex gap-1.5 overflow-x-auto hide-scrollbar flex-1 w-full">
+          <div className="flex gap-1.5 overflow-x-auto hide-scrollbar flex-1">
             {TYPE_FILTERS.map(f => (
               <button
                 key={f}
@@ -159,23 +155,6 @@ export default function CollegesPage() {
                 }`}
               >
                 {f}
-              </button>
-            ))}
-          </div>
-
-          {/* Counselling toggle */}
-          <div className="flex gap-1 bg-surface-light rounded-xl p-1 shrink-0">
-            {(['All', 'JoSAA', 'MHT-CET'] as const).map(opt => (
-              <button
-                key={opt}
-                onClick={() => setCounsellingFilter(opt)}
-                className={`px-3 py-1.5 text-[12px] font-semibold rounded-lg transition-all ${
-                  counsellingFilter === opt
-                    ? 'bg-white shadow-sm text-brand-navy'
-                    : 'text-text-muted hover:text-text-primary'
-                }`}
-              >
-                {opt}
               </button>
             ))}
           </div>
@@ -194,16 +173,15 @@ export default function CollegesPage() {
       </div>
 
       {/* RESULTS + GRID */}
-      <div className="max-w-6xl mx-auto px-6 py-10 pb-32">
+      <div className="max-w-6xl mx-auto px-6 py-6 pb-32">
         <div className="flex items-center justify-between mb-6">
           <p className="text-[14px] text-text-muted font-ui">
             Showing <span className="font-semibold text-text-primary">{filteredAndSorted.length}</span> colleges
             {activeFilter !== 'All' && <> · <span className="text-brand-blue">{activeFilter}</span></>}
-            {counsellingFilter !== 'All' && <> · <span className="text-brand-teal">{counsellingFilter}</span></>}
           </p>
-          {(activeFilter !== 'All' || searchTerm || counsellingFilter !== 'All') && (
+          {(activeFilter !== 'All' || searchTerm) && (
             <button
-              onClick={() => { setSearchTerm(''); setActiveFilter('All'); setCounsellingFilter('All'); }}
+              onClick={() => { setSearchTerm(''); setActiveFilter('All'); }}
               className="text-[13px] text-brand-blue hover:underline font-medium flex items-center gap-1"
             >
               <X className="w-3 h-3" /> Clear all
@@ -241,7 +219,7 @@ export default function CollegesPage() {
               <p className="font-ui font-semibold text-text-primary">No colleges found</p>
               <p className="text-sm text-text-muted mt-1">Try adjusting your search or filter.</p>
               <button
-                onClick={() => { setSearchTerm(''); setActiveFilter('All'); setCounsellingFilter('All'); }}
+                onClick={() => { setSearchTerm(''); setActiveFilter('All'); }}
                 className="mt-4 text-brand-blue text-sm font-semibold hover:underline"
               >
                 Clear all filters

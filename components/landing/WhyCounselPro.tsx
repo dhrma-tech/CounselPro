@@ -1,9 +1,9 @@
 "use client";
 
 import { Target, Map, Users, Shield, BookOpen, Clock } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -11,13 +11,13 @@ const containerVariants = {
   }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, scale: 0.95, y: 10 },
   visible: { 
     opacity: 1, 
     scale: 1, 
     y: 0,
-    transition: { duration: 0.4, ease: "easeOut" }
+    transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] }
   }
 };
 

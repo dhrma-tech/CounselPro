@@ -14,10 +14,11 @@ import { ConditionalSection } from '../../fields/ConditionalSection';
 export const PersonalDetailsStep = () => {
   const { formData, updateField, nextStep, counsellingType } = useApplicationStore();
 
+  const hasDedicatedQuotaStep = counsellingType === 'MHTCET_Engineering' || counsellingType === 'MHTCET_Medical';
+  const showDomicile = counsellingType !== 'JEE_JoSAA_Advanced';
+
   const handleNext = () => {
-    const showDomicile = counsellingType !== 'JEE_JoSAA_Advanced';
-    
-    if (!formData.gender || !formData.category || !formData.isMinority) {
+    if (!formData.gender || !formData.category) {
       alert("Please fill all required fields");
       return;
     }
@@ -32,15 +33,19 @@ export const PersonalDetailsStep = () => {
       return;
     }
 
-    if (formData.isMinority === 'Yes' && !formData.minorityDetails) {
-      alert("Please specify your minority details");
-      return;
+    if (!hasDedicatedQuotaStep) {
+      if (!formData.isMinority) {
+        alert("Please answer the Minority question");
+        return;
+      }
+      if (formData.isMinority === 'Yes' && !formData.minorityDetails) {
+        alert("Please specify your minority details");
+        return;
+      }
     }
 
     nextStep();
   };
-
-  const showDomicile = counsellingType !== 'JEE_JoSAA_Advanced';
 
   return (
     <div className="animate-in fade-in slide-in-from-right-4 duration-300">
@@ -89,25 +94,30 @@ export const PersonalDetailsStep = () => {
           onChange={(v: string[]) => updateField('seatType', v)}
         />
 
-        <RadioCards
-          label="Are you a Minority?"
-          required
-          options={['Yes', 'No']}
-          gridCols={2}
-          value={formData.isMinority}
-          onChange={(v: string) => updateField('isMinority', v)}
-        />
+        {/* Minority section only if not in dedicated quota step */}
+        {!hasDedicatedQuotaStep && (
+          <>
+            <RadioCards
+              label="Are you a Minority?"
+              required
+              options={['Yes', 'No']}
+              gridCols={2}
+              value={formData.isMinority}
+              onChange={(v: string) => updateField('isMinority', v)}
+            />
 
-        <ConditionalSection isVisible={formData.isMinority === 'Yes'}>
-          <TextInput
-            label="Minority Type / Name"
-            required
-            sublabel="Example: Linguistic (Hindi/Gujarati/etc), Religious (Muslim/Christian/etc), etc*"
-            placeholder="Specify your minority category"
-            value={formData.minorityDetails}
-            onChange={(e) => updateField('minorityDetails', e.target.value)}
-          />
-        </ConditionalSection>
+            <ConditionalSection isVisible={formData.isMinority === 'Yes'}>
+              <TextInput
+                label="Minority Type / Name"
+                required
+                sublabel="Example: Linguistic (Hindi/Gujarati/etc), Religious (Muslim/Christian/etc), etc*"
+                placeholder="Specify your minority category"
+                value={formData.minorityDetails}
+                onChange={(e) => updateField('minorityDetails', e.target.value)}
+              />
+            </ConditionalSection>
+          </>
+        )}
       </div>
 
       <StepFooter onNext={handleNext} />

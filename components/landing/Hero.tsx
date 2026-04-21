@@ -11,7 +11,7 @@ export default function Hero() {
       <div
         className="absolute inset-x-0 top-0 h-screen pointer-events-none -z-10"
         style={{
-          background: 'radial-gradient(ellipse 90% 70% at 50% 10%, #DBEAFE 0%, transparent 65%)'
+          background: 'radial-gradient(ellipse 90% 70% at 50% 10%, rgba(26,86,219,0.07) 0%, transparent 65%)'
         }}
       />
 

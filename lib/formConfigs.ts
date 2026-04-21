@@ -65,6 +65,17 @@ export const FORM_CONFIGS: Record<CounsellingType, FormConfig> = {
       { id: 'review', title: 'Review & Submit', component: 'ReviewStep' },
     ]
   },
+  MHTCET_Medical: {
+    steps: [
+      { id: 'global', title: 'Contact Information', component: 'GlobalStep' },
+      { id: 'scores', title: 'MHT-CET Score', component: 'MHTCET_ScoreStep' },
+      { id: 'neet_optional', title: 'NEET Score (Optional)', component: 'NEET_OptionalStep' },
+      { id: 'personal', title: 'Personal Details', component: 'PersonalDetailsStep' },
+      { id: 'quota', title: 'Reservation & Quota', component: 'QuotaStep' },
+      { id: 'preferences', title: 'Course Preferences', component: 'CoursePreferencesStep' },
+      { id: 'review', title: 'Review & Submit', component: 'ReviewStep' },
+    ]
+  },
   MHTCET_BSc_Nursing: {
     steps: [
       { id: 'global', title: 'Contact Information', component: 'GlobalStep' },

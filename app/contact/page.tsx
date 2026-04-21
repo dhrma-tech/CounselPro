@@ -5,6 +5,7 @@ import { MessageCircle, Mail, MapPin, Loader2, Phone, Clock } from 'lucide-react
 import { LinkedInIcon } from '@/components/shared/SocialIcons';
 import Breadcrumb from '@/components/shared/Breadcrumb';
 import { motion } from 'framer-motion';
+import { submitContactForm } from '@/app/actions/submission';
 
 export default function ContactPage() {
   const [data, setData] = useState({ name: '', phone: '', email: '', subject: 'General Inquiry', message: '' });
@@ -18,19 +19,15 @@ export default function ContactPage() {
     setError('');
     
     try {
-      // Note: In local development without environment variables, this might fail unless mock.
-      // But we maintain the structure for production readiness.
-      const url = process.env.NEXT_PUBLIC_SHEET_URL || 'https://mock-interaction.com';
+      const formData = new FormData(e.currentTarget as HTMLFormElement);
+      const result = await submitContactForm(null, formData);
       
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, formType: 'contact', submittedAt: new Date().toISOString() }),
-      });
-      
-      // Even if mock fails, we show success in local testing if needed, or handle error properly
-      setSuccess(true);
-      setData({ name: '', phone: '', email: '', subject: 'General Inquiry', message: '' });
+      if (result.success) {
+        setSuccess(true);
+        setData({ name: '', phone: '', email: '', subject: 'General Inquiry', message: '' });
+      } else {
+        setError(result.message || 'Validation failed. Please check your inputs.');
+      }
     } catch (err) {
       setError('Something went wrong. Please try again or WhatsApp us directly.');
     } finally {

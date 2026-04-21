@@ -19,6 +19,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://counselpro.in'),
   title: 'CounselPro | Expert College Admission Counselling',
   description: 'Expert Engineering, Medical and more admission counselling for students across India. Choose the right college for your rank, category, and future.',
   openGraph: {
