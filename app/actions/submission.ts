@@ -1,6 +1,7 @@
 "use server";
 
 import { ContactSchema, ApplicationSchema } from '@/lib/schemas';
+import { postToGoogleSheets } from '@/lib/google-sheets';
 
 export async function submitContactForm(prevState: any, formData: FormData) {
   const rawData = {
@@ -21,26 +22,20 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   }
 
   try {
-    const sheetUrl = process.env.SHEET_URL; // Using non-public env
+    const sheetUrl = process.env.SHEET_URL;
     if (!sheetUrl) {
       console.error('SHEET_URL not configured');
       return { success: false, message: 'Server configuration error' };
     }
 
-    const response = await fetch(sheetUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        ...validated.data,
-        formType: 'contact',
-        submittedAt: new Date().toISOString(),
-      }),
+    const result = await postToGoogleSheets(sheetUrl, {
+      ...validated.data,
+      formType: 'contact',
+      submittedAt: new Date().toISOString(),
     });
 
-    const result = await response.json();
-
-    if (!response.ok || !result.success) {
-      throw new Error(result.error || 'Submission failed');
+    if (!result.success) {
+      throw new Error(result.message || 'Submission failed');
     }
 
     return { success: true, message: 'Message sent successfully!' };
@@ -67,22 +62,16 @@ export async function submitApplicationForm(data: any) {
       return { success: false, message: 'Server configuration error' };
     }
 
-    const response = await fetch(sheetUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        ...validated.data,
-        branches: Array.isArray(validated.data.branches) ? validated.data.branches.join(', ') : validated.data.branches,
-        collegeTypes: Array.isArray(validated.data.collegeTypes) ? validated.data.collegeTypes.join(', ') : validated.data.collegeTypes,
-        formType: 'application',
-        submittedAt: new Date().toISOString(),
-      }),
+    const result = await postToGoogleSheets(sheetUrl, {
+      ...validated.data,
+      branches: Array.isArray(validated.data.branches) ? validated.data.branches.join(', ') : validated.data.branches,
+      collegeTypes: Array.isArray(validated.data.collegeTypes) ? validated.data.collegeTypes.join(', ') : validated.data.collegeTypes,
+      formType: 'application',
+      submittedAt: new Date().toISOString(),
     });
 
-    const result = await response.json();
-
-    if (!response.ok || !result.success) {
-      throw new Error(result.error || 'Submission failed');
+    if (!result.success) {
+      throw new Error(result.message || 'Submission failed');
     }
 
     return { success: true, message: 'Application submitted successfully!' };
