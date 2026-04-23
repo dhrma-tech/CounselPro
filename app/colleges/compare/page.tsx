@@ -49,61 +49,69 @@ function CompareContent() {
     Autonomous: 'bg-orange-50 text-orange-700', Private: 'bg-surface-light text-text-secondary',
   };
 
+  const gridClass = selectedColleges.length === 3 
+    ? 'grid-cols-[150px_repeat(3,minmax(200px,1fr))] md:grid-cols-[200px_repeat(3,1fr)]' 
+    : 'grid-cols-[150px_repeat(2,minmax(200px,1fr))] md:grid-cols-[200px_repeat(2,1fr)]';
+
   return (
     <div className="min-h-screen bg-surface-white">
       {/* HEADER */}
-      <div className="bg-surface-light border-b border-border py-10 px-6">
+      <div className="bg-surface-light border-b border-border py-8 sm:py-12 px-6">
         <div className="max-w-6xl mx-auto">
-          <Link href="/colleges" className="inline-flex items-center gap-2 text-sm text-text-muted hover:text-brand-blue mb-6 transition-colors">
+          <Link href="/colleges" className="inline-flex items-center gap-2 text-sm text-text-muted hover:text-brand-blue mb-4 transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Colleges
           </Link>
-          <h1 className="heading-lg mb-2">College Comparison</h1>
+          <h1 className="text-3xl sm:text-4xl font-display font-bold mb-2">College Comparison</h1>
           <p className="body-md">Side-by-side comparison of {selectedColleges.length} colleges.</p>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-10 overflow-x-auto overflow-y-visible">
+      <div className="max-w-6xl mx-auto py-6">
+        <div className="overflow-x-auto hide-scrollbar overscroll-x-contain">
+          <div className="min-w-max px-6">
         {/* COLLEGE HEADER ROW */}
         <div 
-          className={`grid gap-4 mb-4 sticky z-30 transition-all duration-300 ease-in-out py-4 ${
-            selectedColleges.length === 3 ? 'grid-cols-4' : 'grid-cols-3'
-          }`}
+          className={`grid ${gridClass} gap-0 mb-4 sticky z-30 transition-all duration-300 ease-in-out py-4 bg-white/95 backdrop-blur-md border-b border-border shadow-sm -mx-6 px-6`}
           style={{ top: 'var(--header-offset)' }}
         >
-          <div className="hidden md:block bg-surface-white/50 backdrop-blur-sm rounded-xl" />
+          <div className="sticky left-0 z-20 bg-white/95 -ml-6 pl-6 border-r border-border/50" />
           {selectedColleges.map(c => (
-            <div key={c.slug} className="bg-surface-white border border-border rounded-xl p-5">
-              <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold mb-3 ${typeColors[c.type] || ''}`}>
-                {c.type}
-              </span>
-              <h2 className="font-ui font-bold text-[16px] leading-snug text-text-primary mb-1">{c.name}</h2>
-              <p className="text-[12px] text-text-muted mb-4">{c.location}, {c.state}</p>
-              <Link
-                href={`/colleges/${c.slug}`}
-                className="text-[12px] text-brand-blue hover:underline flex items-center gap-1"
-              >
-                Full Profile <ExternalLink className="w-3 h-3" />
-              </Link>
+            <div key={c.slug} className="px-4">
+              <div className="bg-white border border-border rounded-xl p-4 sm:p-5 shadow-sm h-full flex flex-col justify-between">
+                <div>
+                  <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold mb-2 ${typeColors[c.type] || ''}`}>
+                    {c.type}
+                  </span>
+                  <h2 className="font-ui font-bold text-[13px] sm:text-[16px] leading-tight text-text-primary mb-1 line-clamp-3 min-h-[3.8em]">{c.name}</h2>
+                  <p className="text-[10px] sm:text-[11px] text-text-muted mb-3 line-clamp-1">{c.location}, {c.state}</p>
+                </div>
+                <Link
+                  href={`/colleges/${c.slug}`}
+                  className="text-[11px] font-semibold text-brand-blue hover:underline flex items-center gap-1 mt-auto"
+                >
+                  Full Profile <ExternalLink className="w-3 h-3" />
+                </Link>
+              </div>
             </div>
           ))}
         </div>
 
         {/* COMPARISON TABLE */}
-        <div className="bg-surface-white border border-border rounded-2xl overflow-hidden">
+        <div className="bg-surface-white border border-border rounded-2xl">
           {/* Section: General Info */}
-          <div className="bg-brand-navy/5 border-b border-border px-6 py-3">
+          <div className="bg-brand-navy/5 border-b border-border py-3 sticky left-0 z-20 w-full min-w-max -ml-6 pl-6">
             <span className="label text-brand-navy">General Information</span>
           </div>
           {rows.map((row, i) => (
             <div
               key={row.label}
-              className={`grid gap-4 px-6 py-4 border-b border-border ${
-                selectedColleges.length === 3 ? 'grid-cols-4' : 'grid-cols-3'
-              } ${i % 2 === 0 ? 'bg-white' : 'bg-surface-white'}`}
+              className={`grid ${gridClass} gap-0 border-b border-border ${i % 2 === 0 ? 'bg-white' : 'bg-surface-white'}`}
             >
-              <div className="text-[13px] font-semibold text-text-secondary flex items-center">{row.label}</div>
+              <div className={`text-[12px] sm:text-[13px] font-bold text-text-secondary flex items-center sticky left-0 z-20 py-4 shadow-[2px_0_5px_rgba(0,0,0,0.05)] border-r border-border/50 -ml-6 pl-6 ${i % 2 === 0 ? 'bg-white' : 'bg-surface-white'}`}>
+                {row.label}
+              </div>
               {selectedColleges.map(c => (
-                <div key={c.slug} className="text-[14px] text-text-primary font-ui flex items-center">
+                <div key={c.slug} className="text-[13px] sm:text-[14px] text-text-primary font-ui flex items-center py-4 px-4">
                   {row.render(c)}
                 </div>
               ))}
@@ -111,21 +119,21 @@ function CompareContent() {
           ))}
 
           {/* Section: Branch Cutoffs */}
-          <div className="bg-brand-navy/5 border-b border-border px-6 py-3 mt-2">
+          <div className="bg-brand-navy/5 border-b border-border py-3 mt-2 sticky left-0 z-20 w-full min-w-max -ml-6 pl-6">
             <span className="label text-brand-navy">Branch Cutoffs (General Category)</span>
           </div>
           {allBranches.map((branch, i) => (
             <div
               key={branch}
-              className={`grid gap-4 px-6 py-4 border-b border-border ${
-                selectedColleges.length === 3 ? 'grid-cols-4' : 'grid-cols-3'
-              } ${i % 2 === 0 ? 'bg-white' : 'bg-surface-white'}`}
+              className={`grid ${gridClass} gap-0 border-b border-border ${i % 2 === 0 ? 'bg-white' : 'bg-surface-white'}`}
             >
-              <div className="text-[13px] font-medium text-text-secondary flex items-center">{branch}</div>
+              <div className={`text-[12px] sm:text-[13px] font-medium text-text-secondary flex items-center sticky left-0 z-20 py-4 shadow-[2px_0_5px_rgba(0,0,0,0.05)] border-r border-border/50 -ml-6 pl-6 ${i % 2 === 0 ? 'bg-white' : 'bg-surface-white'}`}>
+                {branch}
+              </div>
               {selectedColleges.map(c => {
                 const branchData = c.branches.find(b => b.branch === branch && b.category === 'General');
                 return (
-                  <div key={c.slug} className="text-[13px] font-ui">
+                  <div key={c.slug} className="text-[13px] font-ui py-4 px-4">
                     {branchData ? (
                       <span className="text-text-primary">
                         {branchData.openRank ? `${branchData.openRank} – ${branchData.closeRank}` : '—'}
@@ -140,33 +148,37 @@ function CompareContent() {
           ))}
 
           {/* Section: Top Recruiters */}
-          <div className="bg-brand-navy/5 border-b border-border px-6 py-3">
+          <div className="bg-brand-navy/5 border-b border-y border-border py-3 sticky left-0 z-20 w-full min-w-max -ml-6 pl-6">
             <span className="label text-brand-navy">Top Recruiters</span>
           </div>
-          <div className={`grid gap-4 px-6 py-5 ${selectedColleges.length === 3 ? 'grid-cols-4' : 'grid-cols-3'}`}>
-            <div className="text-[13px] font-semibold text-text-secondary flex items-start pt-1">Companies</div>
+          <div className={`grid ${gridClass} gap-0`}>
+            <div className="text-[12px] sm:text-[13px] font-bold text-text-secondary flex items-start pt-5 sticky left-0 z-20 bg-white shadow-[2px_0_5px_rgba(0,0,0,0.05)] border-r border-border/50 -ml-6 pl-6 min-h-[80px]">Companies</div>
             {selectedColleges.map(c => (
-              <div key={c.slug} className="flex flex-wrap gap-1.5">
+              <div key={c.slug} className="flex flex-wrap gap-1.5 py-5 px-4">
                 {c.placements?.topRecruiters.map(r => (
-                  <span key={r} className="text-[11px] bg-surface-light border border-border px-2 py-0.5 rounded-full text-text-secondary">
+                  <span key={r} className="text-[10px] bg-surface-light border border-border px-2 py-0.5 rounded-full text-text-secondary whitespace-nowrap">
                     {r}
                   </span>
                 )) ?? <span className="text-text-muted text-[13px]">—</span>}
               </div>
             ))}
           </div>
+          </div>
         </div>
+      </div>
 
-        {/* CTA */}
-        <div className="mt-10 bg-brand-navy text-white rounded-2xl p-8 text-center">
-          <h3 className="font-display text-[24px] mb-2">Not sure which one to pick?</h3>
-          <p className="text-white/70 mb-6">Our counsellors will help you shortlist based on your rank, category, and goals.</p>
-          <Link
-            href="/apply"
-            className="inline-flex items-center gap-2 bg-white text-brand-navy font-semibold px-8 py-3 rounded-xl hover:bg-surface-light transition-colors"
-          >
-            Apply for Counselling →
-          </Link>
+      {/* CTA */}
+        <div className="px-6">
+          <div className="mt-10 bg-brand-navy text-white rounded-2xl p-8 text-center">
+            <h3 className="font-display text-[24px] mb-2">Not sure which one to pick?</h3>
+            <p className="text-white/70 mb-6">Our counsellors will help you shortlist based on your rank, category, and goals.</p>
+            <Link
+              href="/apply"
+              className="inline-flex items-center gap-2 bg-white text-brand-navy font-semibold px-8 py-3 rounded-xl hover:bg-surface-light transition-colors"
+            >
+              Apply for Counselling →
+            </Link>
+          </div>
         </div>
       </div>
     </div>

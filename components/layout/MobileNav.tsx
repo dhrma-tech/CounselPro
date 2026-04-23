@@ -24,7 +24,6 @@ const NAV_GROUPS = [
       { href: '/colleges', label: 'Colleges' },
       { href: '/branches', label: 'Branches' },
       { href: '/scholarships', label: 'Scholarships' },
-      { href: '/libraries', label: 'Libraries' },
       { href: '/syllabus', label: 'Syllabus' },
     ],
   },
@@ -65,8 +64,8 @@ export default function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClos
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-border flex-shrink-0">
           <Link href="/" onClick={onClose} className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center overflow-hidden">
-              <img src="/logo.png" alt="CounselPro" className="w-5 h-5 object-contain" />
+            <div className="w-8 h-8 bg-[#DBEAFE] rounded-lg flex items-center justify-center shadow-sm transition-all duration-300 group-hover:scale-105 overflow-hidden">
+              <img src="/logo.png" alt="CounselPro" className="w-5 h-5 object-contain scale-110" />
             </div>
             <span className="font-display text-[20px] text-brand-navy leading-none">
               CounselPro<span className="text-brand-blue font-bold">.</span>

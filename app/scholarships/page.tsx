@@ -54,12 +54,12 @@ export default function ScholarshipsPage() {
   return (
     <div className="min-h-screen bg-surface-white">
       {/* HEADER */}
-      <div className="py-20 bg-surface-light border-b border-border px-6">
+      <div className="py-12 sm:py-20 bg-surface-light border-b border-border px-6">
         <div className="max-w-6xl mx-auto text-center">
           <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="label text-brand-violet mb-3 inline-block">
             Financial Aid Directory
           </motion.span>
-          <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="heading-xl mb-4">
+          <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display leading-[1.1] tracking-tight mb-4">
             Scholarships for Engineering Students
           </motion.h1>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="body-lg max-w-2xl mx-auto mb-8">
@@ -80,13 +80,13 @@ export default function ScholarshipsPage() {
 
       {/* FILTERS */}
       <div 
-        className="sticky z-40 bg-white/80 backdrop-blur-md border-b border-border shadow-sm transition-all duration-300 ease-in-out"
+        className="sticky z-40 bg-white/80 backdrop-blur-md border-b border-border shadow-sm transition-[background-color,border-color,box-shadow,backdrop-filter] duration-300 ease-in-out"
         style={{ top: 'var(--header-offset)' }}
       >
-        <div className="max-w-6xl mx-auto px-6 py-3 space-y-3">
-          <div className="flex gap-3 flex-col sm:flex-row items-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 space-y-3">
+          <div className="flex flex-col md:flex-row gap-3 md:items-center">
             {/* Search */}
-            <div className="relative w-full sm:w-80 shrink-0">
+            <div className="relative w-full md:w-80 shrink-0">
               <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-text-muted" />
               <input
                 type="text"
@@ -102,12 +102,12 @@ export default function ScholarshipsPage() {
               )}
             </div>
             {/* Provider filter */}
-            <div className="flex gap-1.5 flex-wrap">
+            <div className="flex gap-1.5 overflow-x-auto hide-scrollbar -mx-4 px-4 md:mx-0 md:px-0">
               {PROVIDER_FILTERS.map(f => (
                 <button
                   key={f}
                   onClick={() => setProviderFilter(f)}
-                  className={`px-3 py-1.5 rounded-lg text-[12px] font-semibold border transition-all ${
+                  className={`px-3 py-1.5 rounded-lg text-[12px] font-semibold border transition-all shrink-0 ${
                     providerFilter === f
                       ? 'bg-brand-navy text-white border-brand-navy'
                       : 'bg-white border-border text-text-secondary hover:border-brand-blue/40'
@@ -119,12 +119,12 @@ export default function ScholarshipsPage() {
             </div>
           </div>
           {/* Category filter */}
-          <div className="flex gap-1.5 flex-wrap">
+          <div className="flex gap-1.5 overflow-x-auto hide-scrollbar -mx-4 px-4 md:mx-0 md:px-0">
             {CATEGORY_FILTERS.map(f => (
               <button
                 key={f}
                 onClick={() => setCategoryFilter(f)}
-                className={`px-3 py-1.5 rounded-full text-[12px] font-medium border transition-all ${
+                className={`px-3 py-1.5 rounded-full text-[12px] font-medium border transition-all shrink-0 ${
                   categoryFilter === f
                     ? 'bg-brand-blue text-white border-brand-blue'
                     : 'bg-surface-light border-border text-text-secondary hover:border-brand-blue/40'

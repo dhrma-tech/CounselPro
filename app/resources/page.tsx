@@ -67,14 +67,6 @@ export default function ResourceHubPage() {
       stats: "Live Updates",
       type: "Alerts"
     },
-    {
-      title: "Admission Libraries",
-      desc: "Complete archive of official documents: seat matrices, multi-year cutoff PDFs, and historical admission datasets.",
-      icon: <Archive className="w-10 h-10 text-brand-blue" />,
-      link: "/libraries",
-      stats: "Archive Hub",
-      type: "Data"
-    }
   ];
 
   return (

@@ -20,17 +20,20 @@ export default function Header() {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
       
-      // Update scrolled state for background
-      const isScrolled = currentScroll > 50;
-      setScrolled(isScrolled);
+      // Update scrolled state for background with threshold
+      if (currentScroll > 60) {
+        setScrolled(true);
+      } else if (currentScroll < 40) {
+        setScrolled(false);
+      }
 
-      // Smart hide/show logic with 10px threshold
+      // Smart hide/show logic with 20px threshold
       let isVisible = true;
-      if (currentScroll <= 100) {
+      if (currentScroll <= 120) {
         isVisible = true;
-      } else if (currentScroll > lastScroll + 10) {
+      } else if (currentScroll > lastScroll + 20) {
         isVisible = false; // Scrolling down
-      } else if (currentScroll < lastScroll - 10) {
+      } else if (currentScroll < lastScroll - 20) {
         isVisible = true; // Scrolling up
       }
       
@@ -43,7 +46,8 @@ export default function Header() {
       setScrollProgress(progress);
 
       // Sync CSS Variables for sub-headers
-      const height = isScrolled ? 64 : 80;
+      const currentScrolled = currentScroll > 50;
+      const height = currentScrolled ? 64 : 80;
       const offset = isVisible ? height : 0;
       document.documentElement.style.setProperty('--header-height', `${height}px`);
       document.documentElement.style.setProperty('--header-offset', `${offset}px`);
@@ -126,7 +130,6 @@ export default function Header() {
               </span>
               <div className="absolute top-full left-1/2 -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pt-2">
                 <div className="bg-white border border-border rounded-xl shadow-lg p-2 flex flex-col w-40">
-                  <Link href="/libraries" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">Libraries</Link>
                   <Link href="/syllabus" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">Syllabus</Link>
                   <Link href="/faq" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">FAQ</Link>
                 </div>
