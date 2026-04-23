@@ -35,13 +35,14 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     });
 
     if (!result.success) {
-      throw new Error(result.message || 'Submission failed');
+      console.error('Contact submission failed:', result.message);
+      return { success: false, message: result.message };
     }
 
     return { success: true, message: 'Message sent successfully!' };
   } catch (error: any) {
-    console.error('Contact submission error:', error);
-    return { success: false, message: error.message || 'Failed to send message. Please try again.' };
+    console.error('Contact submission crash:', error);
+    return { success: false, message: 'Failed to submit. Please try again or contact support directly.' };
   }
 }
 
@@ -71,12 +72,13 @@ export async function submitApplicationForm(data: any) {
     });
 
     if (!result.success) {
-      throw new Error(result.message || 'Submission failed');
+      console.error('Application submission failed:', result.message);
+      return { success: false, message: result.message };
     }
 
     return { success: true, message: 'Application submitted successfully!' };
   } catch (error: any) {
-    console.error('Application submission error:', error);
-    return { success: false, message: error.message || 'Failed to submit application.' };
+    console.error('Application submission crash:', error);
+    return { success: false, message: 'Failed to submit application. Please try again or contact support.' };
   }
 }

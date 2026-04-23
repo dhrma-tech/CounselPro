@@ -13,6 +13,16 @@ export async function postToGoogleSheets(url: string, data: any) {
     // We handle text response first because sometimes it's not pure JSON
     const text = await response.text();
     
+    // Check if it's HTML (Google Login page or Error page)
+    if (text.trim().startsWith('<!DOCTYPE html>') || text.trim().startsWith('<html')) {
+      console.error('Received HTML instead of JSON from Google Sheets API.');
+      console.error('Response snippet:', text.substring(0, 500));
+      return { 
+        success: false, 
+        message: 'API configuration error: Received HTML response. Please ensure your Google Script is deployed as a Web App with "Anyone" access.' 
+      };
+    }
+    
     try {
       const json = JSON.parse(text);
       return { 
