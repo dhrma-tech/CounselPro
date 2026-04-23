@@ -5,53 +5,26 @@ import { Bell, Calendar, ArrowRight, Tag, Info, ExternalLink } from 'lucide-reac
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 
-const UPDATE_CATEGORIES = ['All', 'Admissions', 'Exams', 'Scholarships', 'Counselling'];
+const UPDATE_CATEGORIES = ['All', 'Platform', 'Exams', 'Admissions', 'Scholarships', 'Counselling'];
 
 const UPDATES = [
   {
-    id: 1,
-    title: "MHT CET 2026 CAP Round 1 Allotment List Released",
-    category: "Admissions",
-    date: "April 18, 2026",
-    description: "The State Common Entrance Test Cell has published the provisional allotment for CAP Round 1. Students can now check their status using their application ID.",
+    id: 'beta-launch',
+    title: "Launch of Beta — Early User Access",
+    category: "Platform",
+    date: "April 24, 2046",
+    description: "CounselPro is officially launching its Beta version for early users. Experience the future of academic guidance with our advanced counselling tools and real-time updates.",
     isNew: true,
-    link: "/counselling/mht-cet"
+    link: "/updates/beta-launch"
   },
   {
-    id: 2,
-    title: "JoSAA 2026 Registration Begins for IIT/NIT Admissions",
-    category: "Counselling",
-    date: "April 15, 2026",
-    description: "The registration process for JoSAA counselling for academic year 2026-27 has officially started. Eligible candidates can fill their choices by April 25.",
-    isNew: false,
-    link: "/counselling/josaa"
-  },
-  {
-    id: 3,
-    title: "Last Date for MahaDBT Scholarships Extended",
-    category: "Scholarships",
-    date: "April 10, 2026",
-    description: "The Department of Higher Education has extended the deadline for the Rajarshi Chhatrapati Shahu Maharaj Fee Reimbursement Scheme.",
-    isNew: false,
-    link: "/scholarships"
-  },
-  {
-    id: 4,
-    title: "JEE Main Session 2 Results Announced",
+    id: 'mht-cet-2026-schedule',
+    title: "MHT-CET 2026 Official Exam Schedule Released",
     category: "Exams",
-    date: "April 08, 2026",
-    description: "NTA has declared the final results and cut-offs for JEE Main Session 2. Candidates can download their scorecard from the official portal.",
-    isNew: false,
-    link: "#"
-  },
-  {
-    id: 5,
-    title: "VJTI Mumbai to Introduce 3 New Specializations",
-    category: "Admissions",
-    date: "April 05, 2026",
-    description: "VJTI has announced the introduction of AI & Data Science, Robotics, and IoT branches from the 2026-27 academic session.",
-    isNew: false,
-    link: "/colleges"
+    date: "April 23, 2026",
+    description: "The State CET Cell Maharashtra has announced the comprehensive schedule for MHT-CET 2026 PCM and PCB sessions. Check the important dates here.",
+    isNew: true,
+    link: "/updates/mht-cet-2026-schedule"
   }
 ];
 
@@ -206,36 +179,7 @@ export default function UpdatesPage() {
           )}
         </div>
 
-        {/* SUBSCRIPTION BOX */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-16 bg-brand-navy rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-blue/20 blur-[100px] -mr-32 -mt-32" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-teal/10 blur-[100px] -ml-32 -mb-32" />
-          
-          <div className="relative z-10 max-w-lg mx-auto">
-            <h3 className="heading-md text-white mb-4">Never Miss an Important Update</h3>
-            <p className="text-white/70 text-sm mb-8">
-              Join 5,000+ students receiving real-time admission alerts directly on their devices.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="flex-1 bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-brand-blue/50"
-              />
-              <button className="bg-brand-blue text-white font-ui font-bold px-8 py-3 rounded-xl hover:bg-brand-blue/90 transition-all">
-                Subscribe
-              </button>
-            </div>
-            <p className="text-[11px] text-white/40 mt-4">
-              We respect your privacy. Unsubscribe at any time.
-            </p>
-          </div>
-        </motion.div>
+
       </div>
     </div>
   );

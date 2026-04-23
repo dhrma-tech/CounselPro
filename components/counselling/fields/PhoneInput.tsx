@@ -5,10 +5,12 @@ import React from 'react';
 export const PhoneInput = ({ label, required, error, ...props }: any) => {
   return (
     <div className="flex flex-col gap-1 w-full">
-      <label className="font-ui font-medium text-[13px] text-text-secondary">
-        {label}
-        {required && <span className="text-red-500 ml-0.5">*</span>}
-      </label>
+      {label && (
+        <label className="font-ui font-medium text-[13px] text-text-secondary">
+          {label}
+          {required && <span className="text-red-500 ml-0.5">*</span>}
+        </label>
+      )}
       <div className={`
         flex items-center bg-surface-light border rounded-lg overflow-hidden transition-all duration-200
         ${error ? 'border-red-500 ring-4 ring-red-500/5' : 'border-border focus-within:border-brand-blue focus-within:ring-4 focus-within:ring-brand-blue/5'}

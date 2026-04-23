@@ -73,8 +73,47 @@ export function Step2PersonalDetails({ data, setData }: StepProps) {
         <div>
           <label className="block label mb-1.5">Mobile Number <span className="text-red-500">*</span></label>
           <input 
-            type="tel" name="phone" value={data.phone} onChange={handleChange} required
+            type="tel" name="phone" value={data.phone} 
+            onChange={(e) => {
+              const val = e.target.value;
+              setData({ 
+                ...data, 
+                phone: val, 
+                whatsappNumber: data.isWhatsappSameAsMobile ? val : data.whatsappNumber 
+              });
+            }} 
+            required
             className="w-full h-12 px-4 border border-border rounded-lg font-ui text-[15px] bg-white focus:outline-none focus:ring-2 focus:ring-brand-blue"
+            placeholder="9876543210" pattern="[0-9]{10}"
+          />
+        </div>
+
+        <div>
+          <div className="flex justify-between items-center mb-1.5">
+            <label className="block label mb-0">WhatsApp Number <span className="text-red-500">*</span></label>
+            <label className="flex items-center gap-2 cursor-pointer group">
+              <input 
+                type="checkbox" 
+                checked={data.isWhatsappSameAsMobile}
+                onChange={(e) => {
+                  const checked = e.target.checked;
+                  setData({ 
+                    ...data, 
+                    isWhatsappSameAsMobile: checked,
+                    whatsappNumber: checked ? data.phone : data.whatsappNumber
+                  });
+                }}
+                className="w-4 h-4 rounded border-border text-brand-blue focus:ring-brand-blue/20"
+              />
+              <span className="text-[12px] font-medium text-text-muted group-hover:text-brand-blue transition-colors">Same as Mobile</span>
+            </label>
+          </div>
+          <input 
+            type="tel" name="whatsappNumber" value={data.whatsappNumber} 
+            onChange={handleChange} 
+            required
+            disabled={data.isWhatsappSameAsMobile}
+            className={`w-full h-12 px-4 border border-border rounded-lg font-ui text-[15px] bg-white focus:outline-none focus:ring-2 focus:ring-brand-blue ${data.isWhatsappSameAsMobile ? 'bg-surface-light opacity-70' : ''}`}
             placeholder="9876543210" pattern="[0-9]{10}"
           />
           <p className="text-text-muted text-[12px] mt-1.5 tracking-wide">🔒 We'll only use this to contact you. No spam.</p>
@@ -285,6 +324,7 @@ export function Step5Review({ data, setData, onEdit }: StepProps) {
           <div className="grid grid-cols-2 gap-y-3 gap-x-4 text-[14px]">
             <div><span className="text-text-muted block text-[12px]">Name</span><span className="font-medium text-text-primary">{data.name || '-'}</span></div>
             <div><span className="text-text-muted block text-[12px]">Phone</span><span className="font-medium text-text-primary">{data.phone || '-'}</span></div>
+            <div><span className="text-text-muted block text-[12px]">WhatsApp</span><span className="font-medium text-text-primary">{data.whatsappNumber || '-'}</span></div>
             <div><span className="text-text-muted block text-[12px]">Email</span><span className="font-medium text-text-primary break-all">{data.email || '-'}</span></div>
             <div><span className="text-text-muted block text-[12px]">City/State</span><span className="font-medium text-text-primary">{data.city}, {data.state}</span></div>
           </div>

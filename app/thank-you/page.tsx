@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CheckCircle, MessageCircle } from 'lucide-react';
+import { CONTACT_CONFIG } from '@/config/contact';
 
 export const metadata = {
   title: 'Thank You | CounselPro',
@@ -51,9 +52,9 @@ export default function ThankYouPage() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-ui font-semibold text-[15px] px-6 py-3 rounded-lg hover:bg-[#20b858] active:scale-[0.98] transition-all">
+          <a href={CONTACT_CONFIG.whatsappGroupLink} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-ui font-semibold text-[15px] px-6 py-3 rounded-lg hover:bg-[#20b858] active:scale-[0.98] transition-all">
             <MessageCircle className="w-5 h-5" />
-            Or WhatsApp us directly &rarr;
+            Join WhatsApp Community &rarr;
           </a>
           <Link href="/" className="text-text-secondary font-ui font-medium text-[15px] hover:text-brand-blue py-3 px-6 hover:bg-surface-light rounded-lg transition-all">
             &larr; Back to home

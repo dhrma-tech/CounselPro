@@ -14,7 +14,7 @@ import { ConditionalSection } from '../../fields/ConditionalSection';
 export const PersonalDetailsStep = () => {
   const { formData, updateField, nextStep, counsellingType } = useApplicationStore();
 
-  const hasDedicatedQuotaStep = counsellingType === 'MHTCET_Engineering' || counsellingType === 'MHTCET_Medical';
+  const hasDedicatedQuotaStep = counsellingType === 'MHT_CET_Engineering' || counsellingType === 'MHT_CET_Medical';
   const showDomicile = counsellingType !== 'JEE_JoSAA_Advanced';
 
   const handleNext = () => {

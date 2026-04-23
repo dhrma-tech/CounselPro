@@ -26,7 +26,7 @@ export const CoursePreferencesStep = () => {
     nextStep();
   };
 
-  const medicalOptions = (counsellingType === 'NEET_MCC_AllIndia' || counsellingType === 'NEET_MHT_State' || counsellingType === 'MHTCET_Medical')
+  const medicalOptions = (counsellingType === 'NEET_MCC_AllIndia' || counsellingType === 'NEET_MHT_State' || counsellingType === 'MHT_CET_Medical')
     ? (counsellingType === 'NEET_MCC_AllIndia' ? ['MBBS', 'BDS', 'B.Sc. Nursing'] : MEDICAL_COURSES)
     : MEDICAL_COURSES;
 
@@ -36,7 +36,7 @@ export const CoursePreferencesStep = () => {
       'Trust/Minority Quota', 'HA (Hilly Area)', 'D1 DEF1', 'D2 DEF2', 
       'D3 DEF3', 'Orphan C', 'Others*'
     ];
-    if (counsellingType === 'NEET_MHT_State' || counsellingType === 'MHTCET_Medical') {
+    if (counsellingType === 'NEET_MHT_State' || counsellingType === 'MHT_CET_Medical') {
       return base.filter(q => q !== '15% All India Quota');
     }
     if (counsellingType === 'NEET_MCC_AllIndia') {

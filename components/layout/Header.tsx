@@ -79,8 +79,9 @@ export default function Header() {
                   className="w-5 h-5 sm:w-7 sm:h-7 object-contain scale-110" 
                 />
               </div>
-              <span className="font-display text-[18px] sm:text-[24px] text-brand-navy flex items-baseline leading-none pt-0.5">
+              <span className="font-display text-[18px] sm:text-[24px] text-brand-navy flex items-center leading-none pt-0.5 relative">
                 CounselPro<span className="text-brand-blue font-bold text-2xl sm:text-3xl leading-[0] ml-0.5">.</span>
+                <span className="text-[18px] sm:text-[22px] font-serif text-brand-blue/30 ml-1.5 pt-1.5 font-light" title="Beta Version">β</span>
               </span>
             </Link>
           </div>

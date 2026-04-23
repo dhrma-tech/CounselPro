@@ -1,7 +1,7 @@
 export const CONTACT_CONFIG = {
-  phone: '+91 99238 68481',
-  whatsappNumber: '919923868481', // no + for wa.me link
-  whatsappGroupLink: 'https://chat.whatsapp.com/G5v3O8yZpUa7N9e2F1X4vX',
-  email: 'counselling@counselpro.in',
+  phone: '+91 77986 35487',
+  whatsappNumber: '917798635487', // no + for wa.me link
+  whatsappGroupLink: 'https://chat.whatsapp.com/Lcg3ADBmfhGHBlfyOSnAUV?mode=gi_t',
+  email: 'counselpro26@gmail.com',
   qrCodeImagePath: '/images/whatsapp-qr.png', // static image upload
 };

@@ -161,6 +161,8 @@ export interface ApplicationData {
   counsellingType: string;
   name: string;
   phone: string;
+  whatsappNumber: string;
+  isWhatsappSameAsMobile: boolean;
   email: string;
   city: string;
   state: string;

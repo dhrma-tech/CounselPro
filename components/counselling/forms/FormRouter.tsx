@@ -9,7 +9,7 @@ import { PersonalDetailsStep } from './steps/PersonalDetailsStep';
 import { RankScoreStep } from './steps/RankScoreStep';
 import { QuotaStep } from './steps/QuotaStep';
 import { AcademicPreferencesStep } from './steps/AcademicPreferencesStep';
-import { MHTCET_ScoreStep } from './steps/MHTCET_ScoreStep';
+import { MHT_CET_ScoreStep } from './steps/MHT_CET_ScoreStep';
 import { JEE_OptionalStep } from './steps/JEE_OptionalStep';
 import { CoursePreferencesStep } from './steps/CoursePreferencesStep';
 import { NEET_OptionalStep } from './steps/NEET_OptionalStep';
@@ -27,9 +27,17 @@ const PlaceholderStep = ({ title }: { title: string }) => {
 };
 
 export const FormRouter = () => {
-  const { counsellingType, currentStep, setTotalSteps } = useApplicationStore();
+  const { counsellingType, setCounsellingType, currentStep, setTotalSteps } = useApplicationStore();
 
-  const config = counsellingType ? FORM_CONFIGS[counsellingType] : null;
+  // Self-healing: Migrate old counselling types to new format
+  useEffect(() => {
+    if (counsellingType && (counsellingType as string).startsWith('MHTCET_')) {
+      const newType = (counsellingType as string).replace('MHTCET_', 'MHT_CET_') as any;
+      setCounsellingType(newType);
+    }
+  }, [counsellingType, setCounsellingType]);
+
+  const config = counsellingType ? FORM_CONFIGS[counsellingType as keyof typeof FORM_CONFIGS] : null;
 
   useEffect(() => {
     if (config) {
@@ -46,8 +54,8 @@ export const FormRouter = () => {
       return <GlobalStep />;
     case 'RankScoreStep':
       return <RankScoreStep />;
-    case 'MHTCET_ScoreStep':
-      return <MHTCET_ScoreStep />;
+    case 'MHT_CET_ScoreStep':
+      return <MHT_CET_ScoreStep />;
     case 'JEE_OptionalStep':
       return <JEE_OptionalStep />;
     case 'PersonalDetailsStep':

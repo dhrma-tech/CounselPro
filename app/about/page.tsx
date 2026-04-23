@@ -51,24 +51,24 @@ export default function AboutPage() {
           </div>
           
           <div className="w-full lg:w-1/2">
-            <div className="bg-brand-navy rounded-[40px] p-12 text-white relative overflow-hidden shadow-2xl">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-brand-blue/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+            <div className="bg-surface-light border border-border rounded-[40px] p-12 text-text-primary relative overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-brand-blue/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
               <div className="grid grid-cols-2 gap-y-12 gap-x-8 relative z-10">
                 <div>
                   <div className="font-display text-5xl mb-2 text-brand-blue">4+</div>
-                  <div className="text-[13px] uppercase tracking-widest font-bold text-white/50">Yrs Experience</div>
+                  <div className="text-[13px] uppercase tracking-widest font-bold text-text-muted">Yrs Experience</div>
                 </div>
                 <div>
                   <div className="font-display text-5xl mb-2 text-brand-blue">10k+</div>
-                  <div className="text-[13px] uppercase tracking-widest font-bold text-white/50">Students</div>
+                  <div className="text-[13px] uppercase tracking-widest font-bold text-text-muted">Students</div>
                 </div>
                 <div>
                   <div className="font-display text-5xl mb-2 text-brand-blue">98%</div>
-                  <div className="text-[13px] uppercase tracking-widest font-bold text-white/50">Success</div>
+                  <div className="text-[13px] uppercase tracking-widest font-bold text-text-muted">Success</div>
                 </div>
                 <div>
                   <div className="font-display text-5xl mb-2 text-brand-blue">15+</div>
-                  <div className="text-[13px] uppercase tracking-widest font-bold text-white/50">Experts</div>
+                  <div className="text-[13px] uppercase tracking-widest font-bold text-text-muted">Experts</div>
                 </div>
               </div>
             </div>
@@ -76,11 +76,11 @@ export default function AboutPage() {
         </div>
 
         {/* MISSION STRIP */}
-        <div className="bg-gradient-to-br from-brand-navy to-[#0a1a3d] text-white rounded-[40px] p-12 md:p-20 text-center mb-32 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
-          <Rocket className="w-12 h-12 text-brand-teal mx-auto mb-8 animate-bounce" />
-          <h2 className="font-ui font-bold text-brand-blue mb-6 uppercase tracking-widest text-[13px]">Our Mission Statement</h2>
-          <p className="font-display text-[28px] md:text-[40px] leading-[1.2] max-w-4xl mx-auto italic">
+        <div className="bg-surface-light border border-border text-text-primary rounded-[40px] p-12 md:p-20 text-center mb-32 relative overflow-hidden shadow-sm">
+          <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #000 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+          <Rocket className="w-12 h-12 text-brand-blue mx-auto mb-8 animate-bounce" />
+          <h2 className="font-ui font-bold text-brand-teal mb-6 uppercase tracking-widest text-[13px]">Our Mission Statement</h2>
+          <p className="font-display text-[28px] md:text-[40px] leading-[1.2] max-w-4xl mx-auto italic text-brand-navy">
             "To make every student's admission journey strategic, stress-free, and successful, ensuring they unlock the highest potential of their merit."
           </p>
         </div>

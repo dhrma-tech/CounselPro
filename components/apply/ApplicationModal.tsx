@@ -13,6 +13,8 @@ const initialData: ApplicationData = {
   counsellingType: '',
   name: '',
   phone: '',
+  whatsappNumber: '',
+  isWhatsappSameAsMobile: true,
   email: '',
   city: '',
   state: 'Maharashtra',
@@ -39,7 +41,7 @@ export default function ApplicationModal({ isPage = false, onClose }: { isPage?:
   };
 
   const nextStep = () => {
-    if (step === 2 && (!data.name || !data.phone || !data.email || !data.city)) {
+    if (step === 2 && (!data.name || !data.phone || !data.whatsappNumber || !data.email || !data.city)) {
        triggerError();
        return;
     }

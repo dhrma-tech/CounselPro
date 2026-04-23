@@ -6,6 +6,7 @@ import { LinkedInIcon } from '@/components/shared/SocialIcons';
 import Breadcrumb from '@/components/shared/Breadcrumb';
 import { motion } from 'framer-motion';
 import { submitContactForm } from '@/app/actions/submission';
+import { CONTACT_CONFIG } from '@/config/contact';
 
 export default function ContactPage() {
   const [data, setData] = useState({ name: '', phone: '', email: '', subject: 'General Inquiry', message: '' });
@@ -142,13 +143,13 @@ export default function ContactPage() {
                 <h3 className="font-display text-2xl mb-8 relative z-10">Direct Support</h3>
                 
                 <div className="space-y-8 relative z-10">
-                  <a href="https://wa.me/917798635457" target="_blank" rel="noreferrer" className="flex items-center gap-5 group">
+                  <a href={CONTACT_CONFIG.whatsappGroupLink} target="_blank" rel="noreferrer" className="flex items-center gap-5 group">
                     <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform">
                       <MessageCircle className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <div className="font-bold text-lg leading-tight">WhatsApp Priority</div>
-                      <div className="text-white/60 text-sm">Response within 30 mins</div>
+                      <div className="font-bold text-lg leading-tight">WhatsApp Community</div>
+                      <div className="text-white/60 text-sm">Join for fast updates</div>
                     </div>
                   </a>
 
@@ -158,7 +159,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="font-bold text-lg leading-tight">Voice Support</div>
-                      <div className="text-white/60 text-sm">+91 93738 59534</div>
+                      <div className="text-white/60 text-sm">{CONTACT_CONFIG.phone}</div>
                     </div>
                   </div>
 
@@ -168,7 +169,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="font-bold text-lg leading-tight">Email Support</div>
-                      <div className="text-white/60 text-sm">contact@counselpro.in</div>
+                      <div className="text-white/60 text-sm">{CONTACT_CONFIG.email}</div>
                     </div>
                   </div>
 

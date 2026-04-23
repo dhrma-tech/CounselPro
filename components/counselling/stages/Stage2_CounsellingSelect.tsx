@@ -15,10 +15,10 @@ const COUNSELLING_MAP: Record<string, { id: CounsellingType; label: string; sub:
     { id: 'NEET_MHT_State', label: 'MHT State Counselling', sub: '85% State Quota (Maharashtra)', short: 'MHT' },
   ],
   MHTCET: [
-    { id: 'MHTCET_Engineering', label: 'MHT-CET Engineering', sub: 'B.Tech / B.E.', short: 'ENGG' },
-    { id: 'MHTCET_Medical', label: 'MHT-CET Pharmacy / Medical', sub: 'Pharmacy / BDS / AYUSH', short: 'PHARM' },
-    { id: 'MHTCET_BSc_Nursing', label: 'MHT-CET B.Sc Nursing', sub: 'Paramedical Courses', short: 'NURSE' },
-    { id: 'MHTCET_BSc_Agriculture', label: 'MHT-CET B.Sc Agriculture', sub: 'Agricultural Programs', short: 'AGRI' },
+    { id: 'MHT_CET_Engineering', label: 'MHT-CET Engineering', sub: 'B.Tech / B.E.', short: 'ENGG' },
+    { id: 'MHT_CET_Medical', label: 'MHT-CET Pharmacy / Medical', sub: 'Pharmacy / BDS / AYUSH', short: 'PHARM' },
+    { id: 'MHT_CET_BSc_Nursing', label: 'MHT-CET B.Sc Nursing', sub: 'Paramedical Courses', short: 'NURSE' },
+    { id: 'MHT_CET_BSc_Agriculture', label: 'MHT-CET B.Sc Agriculture', sub: 'Agricultural Programs', short: 'AGRI' },
   ],
 };
 

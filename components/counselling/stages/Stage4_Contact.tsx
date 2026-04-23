@@ -52,8 +52,8 @@ export const Stage4_Contact = () => {
           color="bg-green-500/10 text-green-600" 
           label="WhatsApp"
           value={CONTACT_CONFIG.phone}
-          action="Message Us"
-          link={`https://wa.me/${CONTACT_CONFIG.whatsappNumber}?text=Hi, my reference ID is ${submissionId}`}
+          action="Join Community"
+          link={CONTACT_CONFIG.whatsappGroupLink}
         />
         <ContactCard 
           icon={Users} 

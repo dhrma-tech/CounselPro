@@ -69,6 +69,7 @@ export const ReviewStep = () => {
           fields={[
             ['Full Name', formData.candidateName],
             ['Phone', formData.phone],
+            ['WhatsApp', formData.whatsappNumber],
             ['Email', formData.email],
             ['Referral Code', formData.referralCode || 'None'],
           ]} 

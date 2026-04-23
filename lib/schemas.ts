@@ -12,6 +12,7 @@ export const ApplicationSchema = z.object({
   counsellingType: z.string().min(1, 'Counselling type is required'),
   name: z.string().min(2, 'Name must be at least 2 characters').max(100),
   phone: z.string().regex(/^[0-9+\s-]{10,15}$/, 'Invalid phone number'),
+  whatsappNumber: z.string().regex(/^[0-9+\s-]{10,15}$/, 'Invalid WhatsApp number'),
   email: z.string().email('Invalid email address'),
   city: z.string().min(2, 'City is required'),
   state: z.string().min(2, 'State is required'),

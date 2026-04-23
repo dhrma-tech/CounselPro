@@ -1,6 +1,7 @@
 "use client";
 
 import { CounsellingType } from "@/store/applicationStore";
+import { CONTACT_CONFIG } from "@/config/contact";
 import { submitApplicationForm } from "@/app/actions/submission";
 
 interface SubmissionPayload {
@@ -15,8 +16,9 @@ export async function submitToGoogleSheets(payload: SubmissionPayload) {
   const serverData = {
     counsellingType: payload.counsellingType,
     name: payload.fields.candidateName || payload.fields.name || 'Unknown',
-    email: payload.fields.email || 'no-email@counselpro.in',
-    phone: payload.fields.phone || '0000000000',
+    email: payload.fields.email || CONTACT_CONFIG.email,
+    phone: payload.fields.phone || CONTACT_CONFIG.phone,
+    whatsappNumber: payload.fields.whatsappNumber || payload.fields.phone || CONTACT_CONFIG.whatsappNumber,
     city: payload.fields.city || 'N/A',
     state: payload.fields.state || 'N/A',
     examDetails: payload.fields, // Pass all for now

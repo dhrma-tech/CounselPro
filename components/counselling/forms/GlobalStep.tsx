@@ -12,7 +12,7 @@ export const GlobalStep = () => {
 
   const handleNext = () => {
     // Simple validation
-    if (!formData.candidateName || !formData.phone || !formData.email) {
+    if (!formData.candidateName || !formData.phone || !formData.whatsappNumber || !formData.email) {
       alert("Please fill all required fields");
       return;
     }
@@ -37,8 +37,45 @@ export const GlobalStep = () => {
           placeholder="10-digit mobile number"
           required
           value={formData.phone || ''}
-          onChange={(e: any) => updateField('phone', e.target.value)}
+          onChange={(e: any) => {
+            const val = e.target.value;
+            updateField('phone', val);
+            if (formData.isWhatsappSameAsMobile) {
+              updateField('whatsappNumber', val);
+            }
+          }}
         />
+
+        <div className="space-y-1">
+          <div className="flex items-center justify-between">
+            <label className="font-ui font-medium text-[13px] text-text-secondary">
+              WhatsApp Number <span className="text-red-500 ml-0.5">*</span>
+            </label>
+            <label className="flex items-center gap-1.5 cursor-pointer group">
+              <input 
+                type="checkbox" 
+                checked={formData.isWhatsappSameAsMobile || false}
+                onChange={(e) => {
+                  const checked = e.target.checked;
+                  updateField('isWhatsappSameAsMobile', checked);
+                  if (checked) {
+                    updateField('whatsappNumber', formData.phone || '');
+                  }
+                }}
+                className="w-3.5 h-3.5 rounded border-border text-brand-blue focus:ring-brand-blue/20"
+              />
+              <span className="text-[11px] font-medium text-text-muted group-hover:text-brand-blue transition-colors">Same as Mobile</span>
+            </label>
+          </div>
+          <PhoneInput
+            placeholder="10-digit WhatsApp number"
+            required
+            value={formData.whatsappNumber || ''}
+            disabled={formData.isWhatsappSameAsMobile}
+            onChange={(e: any) => updateField('whatsappNumber', e.target.value)}
+            className={formData.isWhatsappSameAsMobile ? 'opacity-60 grayscale-[0.5]' : ''}
+          />
+        </div>
 
         <TextInput
           label="Email Address"

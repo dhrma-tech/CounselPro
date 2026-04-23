@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { MessageCircle, Mail, Phone } from 'lucide-react';
 import { LinkedInIcon } from '@/components/shared/SocialIcons';
+import { CONTACT_CONFIG } from '@/config/contact';
 
 export default function Footer() {
   return (
@@ -17,8 +18,9 @@ export default function Footer() {
                   className="w-5 h-5 object-contain scale-110" 
                 />
               </div>
-              <span className="font-display text-[20px] text-white flex items-baseline leading-none pt-1">
+              <span className="font-display text-[20px] text-white flex items-center leading-none pt-1">
                 CounselPro<span className="text-brand-blue font-bold text-3xl leading-[0] transition-transform group-hover:scale-125 duration-300 ml-0.5">.</span>
+                <span className="text-[20px] font-serif text-white/20 ml-1.5 pt-1.5 font-light" title="Beta Version">β</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-xs">
@@ -26,7 +28,7 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-3">
               <a 
-                href="https://wa.me/917798635457" 
+                href={CONTACT_CONFIG.whatsappGroupLink} 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 text-white/80 hover:text-green-400 transition-colors text-sm font-medium"
@@ -37,22 +39,22 @@ export default function Footer() {
                 WhatsApp Us
               </a>
               <a 
-                href="tel:+919373859534" 
+                href={`tel:${CONTACT_CONFIG.phone.replace(/\s+/g, '')}`} 
                 className="inline-flex items-center gap-2 text-white/80 hover:text-brand-blue transition-colors text-sm font-medium"
               >
                 <div className="w-8 h-8 bg-brand-blue/10 rounded-lg flex items-center justify-center text-brand-blue">
                   <Phone className="w-4 h-4" />
                 </div>
-                +91 93738 59534
+                {CONTACT_CONFIG.phone}
               </a>
               <a 
-                href="mailto:contact@counselpro.in" 
+                href={`mailto:${CONTACT_CONFIG.email}`} 
                 className="inline-flex items-center gap-2 text-white/80 hover:text-brand-blue transition-colors text-sm font-medium"
               >
                 <div className="w-8 h-8 bg-brand-blue/10 rounded-lg flex items-center justify-center text-brand-blue">
                   <Mail className="w-4 h-4" />
                 </div>
-                contact@counselpro.in
+                {CONTACT_CONFIG.email}
               </a>
               <a 
                 href="https://linkedin.com/company/counselpro" 

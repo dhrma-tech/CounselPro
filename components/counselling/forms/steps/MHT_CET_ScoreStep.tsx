@@ -7,7 +7,7 @@ import { DecimalInput } from '../../fields/DecimalInput';
 import { StepProgress } from '../../StepProgress';
 import { StepFooter } from '../../StepFooter';
 
-export const MHTCET_ScoreStep = () => {
+export const MHT_CET_ScoreStep = () => {
   const { formData, updateField, nextStep } = useApplicationStore();
   
   const handleNext = () => {

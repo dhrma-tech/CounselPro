@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { X, Bell, Phone, MessageCircle, ChevronRight } from 'lucide-react';
 import { useEffect } from 'react';
+import { CONTACT_CONFIG } from '@/config/contact';
 
 const NAV_GROUPS = [
   {
@@ -137,7 +138,7 @@ export default function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClos
               Call Us
             </a>
             <a
-              href="https://wa.me/917798635457"
+              href={CONTACT_CONFIG.whatsappGroupLink}
               target="_blank"
               rel="noreferrer"
               className="flex-1 flex items-center justify-center gap-2 h-11 border border-green-200 bg-green-50 rounded-xl text-[13px] font-semibold text-green-700 hover:bg-green-100 transition-all"
