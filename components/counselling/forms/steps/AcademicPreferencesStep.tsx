@@ -4,26 +4,53 @@ import React from 'react';
 import { useApplicationStore } from '@/store/applicationStore';
 import { MultiSearchableSelect } from '../../fields/MultiSearchableSelect';
 import { MultiSelectChips } from '../../fields/MultiSelectChips';
-import { ENGINEERING_BRANCHES } from '@/lib/fieldMaps';
+import { ENGINEERING_BRANCHES, MEDICAL_COURSES, AGRICULTURE_PROGRAMS, NURSING_PROGRAMS } from '@/lib/fieldMaps';
 import { StepProgress } from '../../StepProgress';
 import { StepFooter } from '../../StepFooter';
 
-const RECOMMENDED_BRANCHES = [
-  "Computer Science and Engineering (CSE)",
-  "CSE – Artificial Intelligence (AI)",
-  "Information Technology (IT)",
-  "Electronics and Communication Engineering (ECE)"
-];
-
 export const AcademicPreferencesStep = () => {
-  const { formData, updateField, nextStep } = useApplicationStore();
+  const { formData, updateField, nextStep, counsellingType } = useApplicationStore();
   const [errors, setErrors] = React.useState<Record<string, string>>({});
+
+  const getPreferenceConfig = () => {
+    // Default/Engineering Config
+    let programs = ENGINEERING_BRANCHES;
+    let recommendations = [
+      "Computer Science and Engineering (CSE)",
+      "CSE – Artificial Intelligence (AI)",
+      "Information Technology (IT)",
+      "Electronics and Communication Engineering (ECE)"
+    ];
+    let courseTypes = ['B.Tech', 'B.E.', 'B.Arch', 'B.Planning', 'B.Tech + M.Tech (Dual)', 'B.S.', 'Others*'];
+    let instituteTypes = ['IIT', 'NIT', 'IIIT', 'GFTI', 'Others*'];
+
+    if (counsellingType?.includes('Medical')) {
+      programs = MEDICAL_COURSES;
+      recommendations = ["MBBS (Bachelor of Medicine & Bachelor of Surgery)", "BDS (Bachelor of Dental Surgery)"];
+      courseTypes = ['Degree (UG)', 'Diploma', 'Others*'];
+      instituteTypes = ['Government Medical College (GMC)', 'Private Medical College', 'Deemed University', 'Others*'];
+    } else if (counsellingType?.includes('Nursing')) {
+      programs = NURSING_PROGRAMS;
+      recommendations = ["Basic B.Sc. Nursing", "GNM (General Nursing and Midwifery)"];
+      courseTypes = ['B.Sc. Nursing', 'Post Basic B.Sc.', 'Diploma', 'Others*'];
+      instituteTypes = ['Government Nursing College', 'Private/Aided Nursing Institute', 'Others*'];
+    } else if (counsellingType?.includes('Agriculture')) {
+      programs = AGRICULTURE_PROGRAMS;
+      recommendations = ["B.Sc. (Hons.) Agriculture", "B.Tech. (Food Technology)"];
+      courseTypes = ['B.Sc. (Hons.)', 'B.Tech.', 'Others*'];
+      instituteTypes = ['State Agricultural University (SAU)', 'Government Aided College', 'Private/Unaided College', 'Others*'];
+    }
+
+    return { programs, recommendations, courseTypes, instituteTypes };
+  };
+
+  const config = getPreferenceConfig();
 
   const handleNext = () => {
     const newErrors: Record<string, string> = {};
 
     if (!formData.preferredBranches || formData.preferredBranches.length === 0) {
-      newErrors.preferredBranches = "Please select at least one branch of interest";
+      newErrors.preferredBranches = "Please select at least one program of interest";
     }
     if (!formData.courseType || formData.courseType.length === 0) {
       newErrors.courseType = "Please select at least one desired course type";
@@ -49,8 +76,8 @@ export const AcademicPreferencesStep = () => {
         <MultiSearchableSelect
           label="Preferred Academic Programs"
           sublabel="Search and select all programs you're interested in"
-          options={ENGINEERING_BRANCHES}
-          recommendations={RECOMMENDED_BRANCHES}
+          options={config.programs}
+          recommendations={config.recommendations}
           value={formData.preferredBranches || []}
           error={errors.preferredBranches}
           onChange={(v: string[]) => {
@@ -63,7 +90,7 @@ export const AcademicPreferencesStep = () => {
         <MultiSelectChips
           label="Course Type"
           required
-          options={['B.Tech', 'B.E.', 'B.Arch', 'B.Planning', 'B.Tech + M.Tech (Dual)', 'B.S.', 'Others*']}
+          options={config.courseTypes}
           value={formData.courseType || []}
           error={errors.courseType}
           onChange={(v: string[]) => {
@@ -74,7 +101,7 @@ export const AcademicPreferencesStep = () => {
 
         <MultiSelectChips
           label="Preferred Institute Types"
-          options={['IIT', 'NIT', 'IIIT', 'GFTI', 'Others*']}
+          options={config.instituteTypes}
           value={formData.instituteTypes || []}
           error={errors.instituteTypes}
           onChange={(v: string[]) => {

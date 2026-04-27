@@ -81,3 +81,26 @@ export const MEDICAL_COURSES = [
   'BSc Nursing',
   'Others*'
 ];
+
+export const AGRICULTURE_PROGRAMS = [
+  'B.Sc. (Hons.) Agriculture',
+  'B.Sc. (Hons.) Horticulture',
+  'B.Sc. (Hons.) Forestry',
+  'B.Sc. (Hons.) Community Science',
+  'B.Tech. (Agricultural Engineering)',
+  'B.Tech. (Food Technology)',
+  'B.Tech. (Biotechnology)',
+  'B.F.Sc. (Fisheries Science)',
+  'B.Sc. (Hons.) Agri-Business Management',
+  'Others*'
+];
+
+export const NURSING_PROGRAMS = [
+  'Basic B.Sc. Nursing',
+  'Post Basic B.Sc. Nursing',
+  'ANM (Auxiliary Nursing Midwifery)',
+  'GNM (General Nursing and Midwifery)',
+  'M.Sc. Nursing',
+  'Others*'
+];
+
