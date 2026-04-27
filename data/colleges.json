@@ -420,7 +420,7 @@
     },
     "reviews": {
       "overall": 4.1,
-      "faculty": 4.0,
+      "faculty": 4,
       "placements": 3.8,
       "infrastructure": 4.1
     }
@@ -572,7 +572,7 @@
     ],
     "reviews": {
       "overall": 7.8,
-      "faculty": 8.0,
+      "faculty": 8,
       "placements": 8.5,
       "infrastructure": 7.5
     }
@@ -5072,7 +5072,7 @@
     "name": "Svkm Nmims Global University",
     "shortName": "SVKM NMIMS GLOBAL UNIVERSITY",
     "type": "State Private University",
-    "location": "SURVEY NO. 499/1, PLOT NO. 2, BEHIND GURUDWARA, MUMBAI \u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0080\u009cAGRA HIGHWAY, DHULE 424001",
+    "location": "SURVEY NO. 499/1, PLOT NO. 2, BEHIND GURUDWARA, MUMBAI Ã¢â¬âAGRA HIGHWAY, DHULE 424001",
     "city": "Dhule",
     "state": "Maharashtra",
     "nirf": null,
@@ -5728,8 +5728,8 @@
   },
   {
     "slug": "pune-vidyarthi-griha-s-college-of-engineering-shrikrushna-s-dhamankar-institute-of-management",
-    "name": "PUNE VIDYARTHI GRIHA\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S COLLEGE OF ENGINEERING & SHRIKRUSHNA S. DHAMANKAR INSTITUTE OF MANAGEMENT",
-    "shortName": "PUNE VIDYARTHI GRIHA\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S",
+    "name": "PUNE VIDYARTHI GRIHAÃ¢â¬â¢S COLLEGE OF ENGINEERING & SHRIKRUSHNA S. DHAMANKAR INSTITUTE OF MANAGEMENT",
+    "shortName": "PUNE VIDYARTHI GRIHAÃ¢â¬â¢S",
     "type": "Private",
     "location": "206, Dindoriroad, Behind Reliance Petrol Pump, Mhasrul, Nashik 422004",
     "city": "Nashik",
@@ -5749,7 +5749,7 @@
       "MHT-CET",
       "JEE Main"
     ],
-    "description": "PUNE VIDYARTHI GRIHA\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S COLLEGE OF ENGINEERING & SHRIKRUSHNA S. DHAMANKAR INSTITUTE OF MANAGEMENT is an engineering institution located in NASHIK, Maharashtra, offering various undergraduate programs in technology and engineering.",
+    "description": "PUNE VIDYARTHI GRIHAÃ¢â¬â¢S COLLEGE OF ENGINEERING & SHRIKRUSHNA S. DHAMANKAR INSTITUTE OF MANAGEMENT is an engineering institution located in NASHIK, Maharashtra, offering various undergraduate programs in technology and engineering.",
     "branches": [
       {
         "branch": "Mechanical Engineering",
@@ -8502,7 +8502,7 @@
     "name": "Bharati Vidyapeeth'S College Of Engineering, Lavale, Pune",
     "shortName": "BHARATI VIDYAPEETH'S COLLEGE O",
     "type": "Private",
-    "location": "\u00c3\u00a2\u00e2\u0082\u00ac\u00c5\u0093BHARATI VIDYAPEETH\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S GROUP OF INSTITUTE, LAVALE\u00c3\u00a2\u00e2\u0082\u00ac\u00c2\u009d, TECHNICAL CAMPUS AT-LAVALE, TAL-MULSHI, DIST-PUNE",
+    "location": "Ã¢â¬ÅBHARATI VIDYAPEETHÃ¢â¬â¢S GROUP OF INSTITUTE, LAVALEÃ¢â¬Â, TECHNICAL CAMPUS AT-LAVALE, TAL-MULSHI, DIST-PUNE",
     "city": "Pune",
     "state": "Maharashtra",
     "nirf": null,
@@ -11238,7 +11238,7 @@
     "name": "Bhagwant Institute Of Technology",
     "shortName": "BHAGWANT INSTITUTE OF TECHNOLO",
     "type": "Private",
-    "location": "GAT NUMBER \u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0080\u009c 1239/4/2,1240/4/2,1242/2, BARSHI,",
+    "location": "GAT NUMBER Ã¢â¬â 1239/4/2,1240/4/2,1242/2, BARSHI,",
     "city": "Solapur",
     "state": "Maharashtra",
     "nirf": null,
@@ -11455,7 +11455,7 @@
   },
   {
     "slug": "international-institute-of-information-technology-i-it",
-    "name": "International Institute Of Information Technology (I\u00e3\u0082\u00c2\u00b2It)",
+    "name": "International Institute Of Information Technology (IãÂ²It)",
     "shortName": "INTERNATIONAL INSTITUTE OF INF",
     "type": "Private",
     "location": "P-14, Rajiv Gandhi Infotech Park, Hinjawadi,Pune",
@@ -11476,7 +11476,7 @@
       "MHT-CET",
       "JEE Main"
     ],
-    "description": "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY (I\u00c3\u0082\u00c2\u00b2IT) is an engineering institution located in PUNE, Maharashtra, offering various undergraduate programs in technology and engineering.",
+    "description": "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY (IÃÂ²IT) is an engineering institution located in PUNE, Maharashtra, offering various undergraduate programs in technology and engineering.",
     "branches": [
       {
         "branch": "Electronics And Telecommunication Engineering",
@@ -18919,7 +18919,7 @@
     "name": "Jspm'S Bhivarabai Sawant Institute Of Technology & Research",
     "shortName": "JSPM'S BHIVARABAI SAWANT INSTI",
     "type": "Private",
-    "location": "GAT NO. 720/1&2, PUNE \u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0080\u009c NAGAR ROAD, WAGHOLI,TALUKA-HAVELI,DISTRICT-PUNE. 412207",
+    "location": "GAT NO. 720/1&2, PUNE Ã¢â¬â NAGAR ROAD, WAGHOLI,TALUKA-HAVELI,DISTRICT-PUNE. 412207",
     "city": "Pune",
     "state": "Maharashtra",
     "nirf": null,
@@ -23157,8 +23157,8 @@
   },
   {
     "slug": "vidya-pratishthan-s-kamalnayan-bajaj-institute-of-engineering-technology-baramati",
-    "name": "VIDYA PRATISHTHAN\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S KAMALNAYAN BAJAJ INSTITUTE OF ENGINEERING & TECHNOLOGY, BARAMATI",
-    "shortName": "VIDYA PRATISHTHAN\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S KAM",
+    "name": "VIDYA PRATISHTHANÃ¢â¬â¢S KAMALNAYAN BAJAJ INSTITUTE OF ENGINEERING & TECHNOLOGY, BARAMATI",
+    "shortName": "VIDYA PRATISHTHANÃ¢â¬â¢S KAM",
     "type": "Private",
     "location": "Vidyanagari, Midc (Resi. Zone), Baramati, Dist. Pune - 413133, Maharashtra State, India",
     "city": "Pune",
@@ -23178,7 +23178,7 @@
       "MHT-CET",
       "JEE Main"
     ],
-    "description": "VIDYA PRATISHTHAN\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S KAMALNAYAN BAJAJ INSTITUTE OF ENGINEERING & TECHNOLOGY, BARAMATI is an engineering institution located in PUNE, Maharashtra, offering various undergraduate programs in technology and engineering.",
+    "description": "VIDYA PRATISHTHANÃ¢â¬â¢S KAMALNAYAN BAJAJ INSTITUTE OF ENGINEERING & TECHNOLOGY, BARAMATI is an engineering institution located in PUNE, Maharashtra, offering various undergraduate programs in technology and engineering.",
     "branches": [
       {
         "branch": "Civil Engineering",
@@ -27344,7 +27344,7 @@
     "name": "Bharati Vidyapeeth 'S College Of Engineering For Women",
     "shortName": "BHARATI VIDYAPEETH 'S COLLEGE",
     "type": "Private",
-    "location": "PUNE \u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0080\u009c SATARA ROAD, DHANKAWADI, TAL :- HAWELI   DIST :- PUNE. PIN :- 411 043.",
+    "location": "PUNE Ã¢â¬â SATARA ROAD, DHANKAWADI, TAL :- HAWELI   DIST :- PUNE. PIN :- 411 043.",
     "city": "Pune",
     "state": "Maharashtra",
     "nirf": null,
@@ -28637,8 +28637,8 @@
   },
   {
     "slug": "modern-education-society-s-wadia-college-of-engineering-pune",
-    "name": "MODERN EDUCATION SOCIETY\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S WADIA COLLEGE OF ENGINEERING, PUNE",
-    "shortName": "MODERN EDUCATION SOCIETY\u00c3\u00a2\u00e2\u0082\u00ac\u00e2",
+    "name": "MODERN EDUCATION SOCIETYÃ¢â¬â¢S WADIA COLLEGE OF ENGINEERING, PUNE",
+    "shortName": "MODERN EDUCATION SOCIETYÃ¢â¬â",
     "type": "Private",
     "location": "Wadia College Campus, 19 Late Prin V K Joag Path, Pune 411 001",
     "city": "Pune",
@@ -28658,7 +28658,7 @@
       "MHT-CET",
       "JEE Main"
     ],
-    "description": "MODERN EDUCATION SOCIETY\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S WADIA COLLEGE OF ENGINEERING, PUNE is an engineering institution located in PUNE, Maharashtra, offering various undergraduate programs in technology and engineering.",
+    "description": "MODERN EDUCATION SOCIETYÃ¢â¬â¢S WADIA COLLEGE OF ENGINEERING, PUNE is an engineering institution located in PUNE, Maharashtra, offering various undergraduate programs in technology and engineering.",
     "branches": [
       {
         "branch": "Electronics And Telecommunications Engineering",
@@ -30514,7 +30514,7 @@
   },
   {
     "slug": "kolhapur-institute-of-technology-s-college-of-engineering-autonomous-kolhapur",
-    "name": "KOLHAPUR INSTITUTE OF TECHNOLOGY\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S COLLEGE OF ENGINEERING AUTONOMOUS KOLHAPUR",
+    "name": "KOLHAPUR INSTITUTE OF TECHNOLOGYÃ¢â¬â¢S COLLEGE OF ENGINEERING AUTONOMOUS KOLHAPUR",
     "shortName": "KOLHAPUR INSTITUTE OF TECHNOLO",
     "type": "Private",
     "location": "At Post- Gokul Shirgaon, Tal- Karveer, Dist. Kolhpaur.",
@@ -30535,7 +30535,7 @@
       "MHT-CET",
       "JEE Main"
     ],
-    "description": "KOLHAPUR INSTITUTE OF TECHNOLOGY\u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0084\u00a2S COLLEGE OF ENGINEERING AUTONOMOUS KOLHAPUR is an engineering institution located in KOLHAPUR, Maharashtra, offering various undergraduate programs in technology and engineering.",
+    "description": "KOLHAPUR INSTITUTE OF TECHNOLOGYÃ¢â¬â¢S COLLEGE OF ENGINEERING AUTONOMOUS KOLHAPUR is an engineering institution located in KOLHAPUR, Maharashtra, offering various undergraduate programs in technology and engineering.",
     "branches": [
       {
         "branch": "Biotechnology",
@@ -32600,7 +32600,7 @@
     "name": "Nkspt Institute Of Engineering And Technology Pathrikar Campus",
     "shortName": "NKSPT INSTITUTE OF ENGINEERING",
     "type": "Private",
-    "location": "PATHRIKAR CAMPUS, HIGHWAY NO 6, CHHATRAPATI SAMBHAJINAGAR \u00c3\u00a2\u00e2\u0082\u00ac\u00e2\u0080\u009c JALNA HIGHWAY ROAD BADNAPUUUUR",
+    "location": "PATHRIKAR CAMPUS, HIGHWAY NO 6, CHHATRAPATI SAMBHAJINAGAR Ã¢â¬â JALNA HIGHWAY ROAD BADNAPUUUUR",
     "city": "Jalna",
     "state": "Maharashtra",
     "nirf": null,
@@ -35548,8 +35548,8 @@
   },
   {
     "slug": "anjuman-i-islam-s-school-of-architecture-at-anjuman-i-islam-s-kalsekar-technical-mumbai",
-    "name": "Anjuman-I-Islam\u2019S School Of Architecture At Anjuman-I-Islam\u2019S Kalsekar Technical, Mumbai",
-    "shortName": "Anjuman-I-Islam\u2019S School Of Ar",
+    "name": "Anjuman-I-Islam’S School Of Architecture At Anjuman-I-Islam’S Kalsekar Technical, Mumbai",
+    "shortName": "Anjuman-I-Islam’S School Of Ar",
     "type": "Affiliated College",
     "location": "Mumbai",
     "city": "Mumbai",
@@ -35568,7 +35568,7 @@
       "MHT-CET",
       "JEE Main"
     ],
-    "description": "ANJUMAN-I-ISLAM\u2019S SCHOOL OF ARCHITECTURE AT ANJUMAN-I-ISLAM\u2019S KALSEKAR TECHNICAL, MUMBAI is a technical institution located in Mumbai, Maharashtra.",
+    "description": "ANJUMAN-I-ISLAM’S SCHOOL OF ARCHITECTURE AT ANJUMAN-I-ISLAM’S KALSEKAR TECHNICAL, MUMBAI is a technical institution located in Mumbai, Maharashtra.",
     "branches": [],
     "fees": [],
     "placements": {
@@ -35857,7 +35857,7 @@
     }
   },
   {
-    "slug": "gurukul-education-research-foundation-gurukul-college-of-computer-sci-information-technology-prathmik-shikshak-bhavan-bahadurshekh-naka-chiplun-dist-ratnagiri",
+    "slug": "gurukul-education-research-foundation-gurukul-college-of-computer-sci-information-technology-prathmik-shikshak-bhavan-bahadurshekh-naka-chip-owbfb",
     "name": "Gurukul Education & Research Foundation Gurukul College Of Computer Sci. & Information Technology Prathmik Shikshak Bhavan Bahadurshekh Naka Chiplun Dist Ratnagiri",
     "shortName": "Gurukul Education & Research F",
     "type": "Affiliated College",
@@ -35919,7 +35919,7 @@
     }
   },
   {
-    "slug": "hon-maria-milagris-fernandes-charitable-trust-holy-maria-college-of-science-technology-b-sc-hospitality-studies-b-sc-information-technology-at-padga-post-falegaon-360-463-s-no-73-h-no-2-b-1-pt-2-b-pt-tal-kalyan-dist-thane",
+    "slug": "hon-maria-milagris-fernandes-charitable-trust-holy-maria-college-of-science-technology-b-sc-hospitality-studies-b-sc-information-technology--l1wuj",
     "name": "Hon Maria Milagris Fernandes Charitable Trust Holy Maria College Of Science & Technology (B.Sc. Hospitality Studies & B.Sc. Information Technology) At Padga Post- Falegaon 360 & 463 S.No. 73 H.No.2-B-1 (Pt) & 2-B (Pt.) Tal. Kalyan Dist. Thane",
     "shortName": "Hon Maria Milagris Fernandes C",
     "type": "Affiliated College",
@@ -35950,7 +35950,7 @@
     }
   },
   {
-    "slug": "innovative-engineers-and-teachers-education-society-leelavati-awhad-institute-of-technology-management-studies-research-opp-gajanan-maharaj-temple-kanhor-karav-road-badlapur-w-dist-thane-421-503",
+    "slug": "innovative-engineers-and-teachers-education-society-leelavati-awhad-institute-of-technology-management-studies-research-opp-gajanan-maharaj--hy57y",
     "name": "Innovative Engineers And Teachers Education Society Leelavati Awhad Institute Of Technology Management Studies & Research Opp. Gajanan Maharaj Temple Kanhor Karav Road Badlapur (W) Dist. Thane- 421 503",
     "shortName": "Innovative Engineers And Teach",
     "type": "Affiliated College",
@@ -36013,7 +36013,7 @@
   },
   {
     "slug": "jay-shri-siddhivinayak-foundation-s-br-harne-college-of-engineering-and-technology-thane",
-    "name": "Jay Shri Siddhivinayak Foundation\u2019S Br Harne College Of Engineering And Technology, Thane",
+    "name": "Jay Shri Siddhivinayak Foundation’S Br Harne College Of Engineering And Technology, Thane",
     "shortName": "Jay Shri Siddhivinayak Foundat",
     "type": "Affiliated College",
     "location": "Thane",
@@ -36033,7 +36033,7 @@
       "MHT-CET",
       "JEE Main"
     ],
-    "description": "JAY SHRI SIDDHIVINAYAK FOUNDATION\u2019S BR HARNE COLLEGE OF ENGINEERING AND TECHNOLOGY, THANE is a technical institution located in Thane, Maharashtra.",
+    "description": "JAY SHRI SIDDHIVINAYAK FOUNDATION’S BR HARNE COLLEGE OF ENGINEERING AND TECHNOLOGY, THANE is a technical institution located in Thane, Maharashtra.",
     "branches": [],
     "fees": [],
     "placements": {
@@ -36322,7 +36322,7 @@
     }
   },
   {
-    "slug": "mahatma-education-societys-pillais-institute-of-information-technology-engineering-media-studies-research-composite-college-complex-plot-no10-sector16-new-panvel-dist-raigad",
+    "slug": "mahatma-education-societys-pillais-institute-of-information-technology-engineering-media-studies-research-composite-college-complex-plot-no1-g0b5j",
     "name": "Mahatma Education Societys Pillais Institute Of Information Technology Engineering Media Studies & Research Composite College Complex Plot No10 Sector16 New Panvel Dist Raigad",
     "shortName": "Mahatma Education Societys Pil",
     "type": "Affiliated College",
@@ -36353,7 +36353,7 @@
     }
   },
   {
-    "slug": "mahatma-gandhi-missions-college-of-engineering-and-technology-junction-of-nh-4-sion-panvel-express-highway-plot-no-11-sector-10-kamothe-navi-mumbai-401-706",
+    "slug": "mahatma-gandhi-missions-college-of-engineering-and-technology-junction-of-nh-4-sion-panvel-express-highway-plot-no-11-sector-10-kamothe-navi-cl24p",
     "name": "Mahatma Gandhi Missions College Of Engineering And Technology Junction Of Nh-4 Sion-Panvel Express Highway Plot No.11 Sector 10 Kamothe Navi Mumbai 401 706",
     "shortName": "Mahatma Gandhi Missions Colleg",
     "type": "Affiliated College",
@@ -36384,7 +36384,7 @@
     }
   },
   {
-    "slug": "mahavir-education-trusts-shah-and-anchor-kutchi-engineering-college-shivaji-chowk-junction-v-n-purav-marg-opp-r-k-studio-near-m-s-dukes-co-chembur-mumbai-400-088",
+    "slug": "mahavir-education-trusts-shah-and-anchor-kutchi-engineering-college-shivaji-chowk-junction-v-n-purav-marg-opp-r-k-studio-near-m-s-dukes-co-c-n2plz",
     "name": "Mahavir Education Trusts Shah And Anchor Kutchi Engineering College Shivaji Chowk Junction V N Purav Marg Opp R K Studio Near M/S Dukes Co Chembur Mumbai 400 088",
     "shortName": "Mahavir Education Trusts Shah",
     "type": "Affiliated College",
@@ -36446,7 +36446,7 @@
     }
   },
   {
-    "slug": "manjara-charitable-trusts-rajiv-gandhi-institute-of-technology-serve-no-161-cts-no-1976-1-48-juhu-versova-link-road-behind-hdfc-bank-versova-andheri-west-mumbai-400061",
+    "slug": "manjara-charitable-trusts-rajiv-gandhi-institute-of-technology-serve-no-161-cts-no-1976-1-48-juhu-versova-link-road-behind-hdfc-bank-versova-11l64",
     "name": "Manjara Charitable Trusts Rajiv Gandhi Institute Of Technology Serve No.161 Cts No 1976/1/48 Juhu Versova Link Road Behind Hdfc Bank Versova Andheri (West) Mumbai 400061",
     "shortName": "Manjara Charitable Trusts Raji",
     "type": "Affiliated College",
@@ -36477,7 +36477,7 @@
     }
   },
   {
-    "slug": "national-centre-for-rural-development-college-sterling-institute-of-technology-management-of-master-of-computer-application-course-plot-no-93-93a-sector-19-nerul-navi-mumbai-400-706",
+    "slug": "national-centre-for-rural-development-college-sterling-institute-of-technology-management-of-master-of-computer-application-course-plot-no-9-tx3ep",
     "name": "National Centre For Rural Development College Sterling Institute Of Technology & Management Of Master Of Computer Application Course Plot No.93/93A Sector 19 Nerul Navi Mumbai 400 706",
     "shortName": "National Centre For Rural Deve",
     "type": "Affiliated College",
@@ -36849,7 +36849,7 @@
     }
   },
   {
-    "slug": "saraswati-education-societys-group-of-institutions-sau-vandana-n-tasgaonkar-technical-education-complex-at-disksal-post-koshane-kalyan-karjat-roadtal-karjat-dist-raigad-401-201",
+    "slug": "saraswati-education-societys-group-of-institutions-sau-vandana-n-tasgaonkar-technical-education-complex-at-disksal-post-koshane-kalyan-karja-kq8a8",
     "name": "Saraswati Education Societys Group Of Institutions Sau. Vandana N. Tasgaonkar Technical Education Complex At Disksal Post Koshane Kalyan Karjat Roadtal. Karjat Dist. Raigad 401 201",
     "shortName": "Saraswati Education Societys G",
     "type": "Affiliated College",
@@ -37872,7 +37872,7 @@
     }
   },
   {
-    "slug": "a-b-m-s-akhil-bharatiya-maratha-shikshan-parishad-s-college-of-engineering-research-address-s-no-103-shahu-college-campus-parvati-taluka-pune-corporation-area-district-pune-411009",
+    "slug": "a-b-m-s-akhil-bharatiya-maratha-shikshan-parishad-s-college-of-engineering-research-address-s-no-103-shahu-college-campus-parvati-taluka-pun-ubrgz",
     "name": "(A.B.M.S.) Akhil Bharatiya Maratha Shikshan Parishad'S College Of Engineering & Research Address: S. No. 103, Shahu College Campus, Parvati, Taluka: Pune (Corporation Area) District: Pune - 411009",
     "shortName": "(A.B.M.S.) Akhil Bharatiya Mar",
     "type": "Affiliated College",
@@ -38678,7 +38678,7 @@
     }
   },
   {
-    "slug": "dr-d-y-patil-pratishthan-kolhapur-s-padmashree-dr-d-y-patil-institute-of-engineering-management-and-research-address-sector-no-29-pcntda-ravet-nigdi-pardhikaran-akurdi-pune-44-taluka-pimpari-chinchwad-corporation-area-district-pune",
+    "slug": "dr-d-y-patil-pratishthan-kolhapur-s-padmashree-dr-d-y-patil-institute-of-engineering-management-and-research-address-sector-no-29-pcntda-rav-3ari2",
     "name": "Dr. D.Y.Patil Pratishthan Kolhapur'S Padmashree Dr. D.Y.Patil Institute Of Engineering, Management And Research, Address: Sector No 29, Pcntda, Ravet, Nigdi Pardhikaran, Akurdi, Pune 44 Taluka: Pimpari Chinchwad (Corporation Area) District: Pune",
     "shortName": "Dr. D.Y.Patil Pratishthan Kolh",
     "type": "Affiliated College",
@@ -38926,7 +38926,7 @@
     }
   },
   {
-    "slug": "gajanan-maharaj-shikshan-prasarak-mandal-otur-sharadchandra-pawar-research-institute-of-technology-computer-and-management-classic-garden-chaitanyanagar-dhankawadi-pune-411043",
+    "slug": "gajanan-maharaj-shikshan-prasarak-mandal-otur-sharadchandra-pawar-research-institute-of-technology-computer-and-management-classic-garden-ch-0atdd",
     "name": "Gajanan Maharaj Shikshan Prasarak Mandal Otur, Sharadchandra Pawar Research Institute Of Technology, Computer And Management, Classic Garden, Chaitanyanagar, Dhankawadi, Pune 411043",
     "shortName": "Gajanan Maharaj Shikshan Prasa",
     "type": "Recognized Center",
@@ -39515,7 +39515,7 @@
     }
   },
   {
-    "slug": "jawahar-education-society-s-institute-of-technology-management-and-research-address-servey-no-48-gowardhan-gangapur-road-nashik-taluka-nashik-district-nashik",
+    "slug": "jawahar-education-society-s-institute-of-technology-management-and-research-address-servey-no-48-gowardhan-gangapur-road-nashik-taluka-nashi-ig00b",
     "name": "Jawahar Education Society'S Institute Of Technology Management And Research, Address: Servey No-48,Gowardhan, Gangapur Road, Nashik, Taluka: Nashik District: Nashik",
     "shortName": "Jawahar Education Society'S In",
     "type": "Affiliated College",
@@ -39577,7 +39577,7 @@
     }
   },
   {
-    "slug": "jaywant-shikshan-prasarak-mandals-bhivarabai-sawant-institute-of-technology-research-for-women-gat-no-720-1-2-pune-nagar-road-wagholi-tal-haveli-pune-412-207",
+    "slug": "jaywant-shikshan-prasarak-mandals-bhivarabai-sawant-institute-of-technology-research-for-women-gat-no-720-1-2-pune-nagar-road-wagholi-tal-ha-xzw1o",
     "name": "Jaywant Shikshan Prasarak Mandals Bhivarabai Sawant Institute Of Technology & Research (For Women) Gat No. 720/1&2, Pune-Nagar Road, Wagholi, Tal. Haveli Pune 412 207.",
     "shortName": "Jaywant Shikshan Prasarak Mand",
     "type": "Affiliated College",
@@ -39825,7 +39825,7 @@
     }
   },
   {
-    "slug": "krantiveer-vasantrao-narayanrao-naik-shikshan-prasarak-sanstha-nashik-s-krantiveer-vasantrao-narayanrao-naik-institute-of-engineering-education-research-nashik-address-canada-corner-nashik-422002-taluka-nashik-district-nashik",
+    "slug": "krantiveer-vasantrao-narayanrao-naik-shikshan-prasarak-sanstha-nashik-s-krantiveer-vasantrao-narayanrao-naik-institute-of-engineering-educat-bs3yy",
     "name": "Krantiveer Vasantrao Narayanrao Naik Shikshan Prasarak Sanstha, Nashik'S Krantiveer Vasantrao Narayanrao Naik Institute Of Engineering Education & Research, Nashik. Address: Canada Corner, Nashik-422002 Taluka: Nashik District: Nashik",
     "shortName": "Krantiveer Vasantrao Narayanra",
     "type": "Affiliated College",
@@ -40383,7 +40383,7 @@
     }
   },
   {
-    "slug": "nashik-gramin-shikshan-prasarak-mandals-brahma-valley-college-of-engineering-research-institute-brahmavalley-education-campus-anjneri-gaon-tal-trymbakeshwar-dist-nashik",
+    "slug": "nashik-gramin-shikshan-prasarak-mandals-brahma-valley-college-of-engineering-research-institute-brahmavalley-education-campus-anjneri-gaon-t-33ohl",
     "name": "Nashik Gramin Shikshan Prasarak Mandals Brahma Valley College Of Engineering & Research Institute,Brahmavalley Education Campus, Anjneri Gaon, Tal.Trymbakeshwar, Dist.Nashik",
     "shortName": "Nashik Gramin Shikshan Prasara",
     "type": "Affiliated College",
@@ -40414,7 +40414,7 @@
     }
   },
   {
-    "slug": "nashik-jilha-maratha-vidya-prasaral-samajs-institute-of-management-and-research-technology-c-o-g-m-d-arts-commerce-and-science-college-sinnar-dist-nashik",
+    "slug": "nashik-jilha-maratha-vidya-prasaral-samajs-institute-of-management-and-research-technology-c-o-g-m-d-arts-commerce-and-science-college-sinna-7afop",
     "name": "Nashik Jilha Maratha Vidya Prasaral Samajs Institute Of Management And Research Technology, C/O. G.M.D.Arts, Commerce And Science College, Sinnar, Dist.Nashik",
     "shortName": "Nashik Jilha Maratha Vidya Pra",
     "type": "Recognized Center",
@@ -41251,7 +41251,7 @@
     }
   },
   {
-    "slug": "shree-ramchandra-education-society-lonikand-pune-shree-ramchandra-college-of-engineering-address-gat-no-351-and-333-1-a-p-lonikand-pune-nagar-road-taluka-haweli-excluding-corporation-area-district-pune",
+    "slug": "shree-ramchandra-education-society-lonikand-pune-shree-ramchandra-college-of-engineering-address-gat-no-351-and-333-1-a-p-lonikand-pune-naga-rr6w4",
     "name": "Shree Ramchandra Education Society Lonikand, Pune Shree Ramchandra College Of Engineering, Address: Gat No 351 And 333/1, A/P Lonikand, Pune-Nagar Road Taluka: Haweli (Excluding Corporation Area) District: Pune",
     "shortName": "Shree Ramchandra Education Soc",
     "type": "Affiliated College",
@@ -41809,7 +41809,7 @@
     }
   },
   {
-    "slug": "sinhgad-technical-education-societys-sinhgad-institute-of-management-business-administration-and-computer-application-kusgaon-bk-lonavala-tal-maval-dist-pune-410401",
+    "slug": "sinhgad-technical-education-societys-sinhgad-institute-of-management-business-administration-and-computer-application-kusgaon-bk-lonavala-ta-711m1",
     "name": "Sinhgad Technical Education Societys Sinhgad Institute Of Management,Business Administration And Computer Application, Kusgaon Bk., Lonavala, Tal. Maval, Dist.Pune 410401",
     "shortName": "Sinhgad Technical Education So",
     "type": "Recognized Center",
@@ -42243,7 +42243,7 @@
     }
   },
   {
-    "slug": "subhashanna-kul-shikshan-prasarak-mandal-s-subhash-kul-college-of-engineering-address-near-dwarka-milk-opp-pune-solapur-highway-a-p-kedgaon-taluka-daund-district-pune",
+    "slug": "subhashanna-kul-shikshan-prasarak-mandal-s-subhash-kul-college-of-engineering-address-near-dwarka-milk-opp-pune-solapur-highway-a-p-kedgaon--ejjre",
     "name": "Subhashanna Kul Shikshan Prasarak Mandal'S Subhash Kul College Of Engineering, Address: Near Dwarka Milk, Opp. Pune-Solapur Highway, A/P - Kedgaon, Taluka - Daund, District Pune",
     "shortName": "Subhashanna Kul Shikshan Prasa",
     "type": "Affiliated College",
@@ -46367,7 +46367,7 @@
   },
   {
     "slug": "shri-ambabai-talim-sanstha-sanjay-bhokare-group-of-institutes-faculty-of-engineering-tilak-nagar-miraj-sangli-road-miraj-416-414-dist-sangli",
-    "name": "Shri Ambabai Talim Sanstha, Sanjay Bhokare Group Of Institutes, Faculty Of Engineering, Tilak Nagar, Miraj-Sangli Road, Miraj \ufffd 416 414, Dist-Sangli.",
+    "name": "Shri Ambabai Talim Sanstha, Sanjay Bhokare Group Of Institutes, Faculty Of Engineering, Tilak Nagar, Miraj-Sangli Road, Miraj � 416 414, Dist-Sangli.",
     "shortName": "Shri Ambabai Talim Sanstha",
     "type": "Affiliated College",
     "location": "Sangli",
@@ -46387,7 +46387,7 @@
       "MHT-CET",
       "JEE Main"
     ],
-    "description": "Shri Ambabai Talim Sanstha, Sanjay Bhokare Group of Institutes, Faculty of Engineering, Tilak Nagar, Miraj-Sangli Road, Miraj \ufffd 416 414, Dist-Sangli. is a technical institution located in Sangli, Maharashtra.",
+    "description": "Shri Ambabai Talim Sanstha, Sanjay Bhokare Group of Institutes, Faculty of Engineering, Tilak Nagar, Miraj-Sangli Road, Miraj � 416 414, Dist-Sangli. is a technical institution located in Sangli, Maharashtra.",
     "branches": [],
     "fees": [],
     "placements": {
