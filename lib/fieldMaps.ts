@@ -66,19 +66,19 @@ export const MAHARASHTRA_DISTRICTS = [
 ];
 
 export const MEDICAL_COURSES = [
-  'B.Pharm (Bachelor of Pharmacy)',
-  'Pharm.D (Doctor of Pharmacy)',
+  'MBBS (Bachelor of Medicine & Bachelor of Surgery)',
   'BDS (Bachelor of Dental Surgery)',
   'BAMS (Bachelor of Ayurvedic Medicine & Surgery)',
   'BHMS (Bachelor of Homeopathic Medicine & Surgery)',
   'BUMS (Bachelor of Unani Medicine & Surgery)',
-  'MBBS (Bachelor of Medicine & Bachelor of Surgery)',
-  'BVSc & AH (Bachelor of Veterinary Science)',
   'BPTh (Bachelor of Physiotherapy)',
   'BOTh (Bachelor of Occupational Therapy)',
   'BASLP (Bachelor of Audiology & Speech-Language Pathology)',
   'B.P.O (Bachelor in Prosthetics and Orthotics)',
-  'BSc Nursing',
+  'B.Sc. Nursing',
+  'BVSc & AH (Bachelor of Veterinary Science)',
+  'B.Pharm (Bachelor of Pharmacy)',
+  'Pharm.D (Doctor of Pharmacy)',
   'Others*'
 ];
 
@@ -87,11 +87,11 @@ export const AGRICULTURE_PROGRAMS = [
   'B.Sc. (Hons.) Horticulture',
   'B.Sc. (Hons.) Forestry',
   'B.Sc. (Hons.) Community Science',
+  'B.Sc. (Hons.) Agri-Business Management',
   'B.Tech. (Agricultural Engineering)',
   'B.Tech. (Food Technology)',
   'B.Tech. (Biotechnology)',
   'B.F.Sc. (Fisheries Science)',
-  'B.Sc. (Hons.) Agri-Business Management',
   'Others*'
 ];
 
@@ -103,4 +103,3 @@ export const NURSING_PROGRAMS = [
   'M.Sc. Nursing',
   'Others*'
 ];
-
