@@ -9,20 +9,27 @@ import { StepFooter } from '../../StepFooter';
 
 export const CoursePreferencesStep = () => {
   const { formData, updateField, nextStep, counsellingType } = useApplicationStore();
+  const [errors, setErrors] = React.useState<Record<string, string>>({});
 
   const handleNext = () => {
+    const newErrors: Record<string, string> = {};
+
     if (!formData.preferredBranches || formData.preferredBranches.length === 0) {
-      alert("Please select at least one course");
-      return;
+      newErrors.preferredBranches = "Please select at least one course of interest";
     }
     if (!formData.instituteTypes || formData.instituteTypes.length === 0) {
-      alert("Please select at least one Institute Type");
-      return;
+      newErrors.instituteTypes = "Please select at least one preferred institute type";
     }
     if (!formData.quotas || formData.quotas.length === 0) {
-      alert("Please select at least one Quota Interest");
+      newErrors.quotas = "Please select at least one quota you are interested in";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
       return;
     }
+
+    setErrors({});
     nextStep();
   };
 
@@ -59,7 +66,11 @@ export const CoursePreferencesStep = () => {
           sublabel="Select all programs you're interested in"
           options={medicalOptions}
           value={formData.preferredBranches || []}
-          onChange={(v: string[]) => updateField('preferredBranches', v)}
+          error={errors.preferredBranches}
+          onChange={(v: string[]) => {
+            updateField('preferredBranches', v);
+            if (errors.preferredBranches) setErrors(prev => ({ ...prev, preferredBranches: '' }));
+          }}
           required
         />
 
@@ -67,7 +78,11 @@ export const CoursePreferencesStep = () => {
           label="Preferred Institute Types"
           options={['Central Universities (AIIMS/JIPMER)', 'Government Medical Colleges', 'Deemed Universities', 'Private Colleges', 'Others*']}
           value={formData.instituteTypes || []}
-          onChange={(v: string[]) => updateField('instituteTypes', v)}
+          error={errors.instituteTypes}
+          onChange={(v: string[]) => {
+            updateField('instituteTypes', v);
+            if (errors.instituteTypes) setErrors(prev => ({ ...prev, instituteTypes: '' }));
+          }}
           required
         />
         
@@ -76,7 +91,11 @@ export const CoursePreferencesStep = () => {
           required
           options={quotaOptions}
           value={formData.quotas || []}
-          onChange={(v: string[]) => updateField('quotas', v)}
+          error={errors.quotas}
+          onChange={(v: string[]) => {
+            updateField('quotas', v);
+            if (errors.quotas) setErrors(prev => ({ ...prev, quotas: '' }));
+          }}
         />
       </div>
 

@@ -9,12 +9,20 @@ import { StepFooter } from '../../StepFooter';
 
 export const MHT_CET_ScoreStep = () => {
   const { formData, updateField, nextStep } = useApplicationStore();
+  const [errors, setErrors] = React.useState<Record<string, string>>({});
   
   const handleNext = () => {
-    if (!formData.mhtcetPercentile || !formData.mhtcetAllStateMeritRank) {
-      alert("Please fill MHT-CET Percentile and Merit Rank");
+    const newErrors: Record<string, string> = {};
+
+    if (!formData.mhtcetPercentile) newErrors.mhtcetPercentile = "Please enter your MHT-CET percentile score";
+    if (!formData.mhtcetAllStateMeritRank) newErrors.mhtcetAllStateMeritRank = "All State Merit Rank is required for analysis";
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
       return;
     }
+
+    setErrors({});
     nextStep();
   };
 
@@ -28,14 +36,22 @@ export const MHT_CET_ScoreStep = () => {
           placeholder="e.g. 87.45"
           required
           value={formData.mhtcetPercentile || ''}
-          onChange={(e: any) => updateField('mhtcetPercentile', e.target.value)}
+          error={errors.mhtcetPercentile}
+          onChange={(e: any) => {
+            updateField('mhtcetPercentile', e.target.value);
+            if (errors.mhtcetPercentile) setErrors(prev => ({ ...prev, mhtcetPercentile: '' }));
+          }}
         />
         <NumberInput
           label="All State / Merit Rank"
           placeholder="e.g. 15230"
           required
           value={formData.mhtcetAllStateMeritRank || ''}
-          onChange={(e: any) => updateField('mhtcetAllStateMeritRank', e.target.value)}
+          error={errors.mhtcetAllStateMeritRank}
+          onChange={(e: any) => {
+            updateField('mhtcetAllStateMeritRank', e.target.value);
+            if (errors.mhtcetAllStateMeritRank) setErrors(prev => ({ ...prev, mhtcetAllStateMeritRank: '' }));
+          }}
         />
         <NumberInput
           label="Category Rank"
@@ -44,7 +60,9 @@ export const MHT_CET_ScoreStep = () => {
         />
       </div>
 
-      <StepFooter onNext={handleNext} />
+      <div className="mt-10">
+        <StepFooter onNext={handleNext} />
+      </div>
     </div>
   );
 };

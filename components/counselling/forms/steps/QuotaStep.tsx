@@ -11,26 +11,32 @@ import { ConditionalSection } from '../../fields/ConditionalSection';
 
 export const QuotaStep = () => {
   const { formData, updateField, nextStep } = useApplicationStore();
+  const [errors, setErrors] = React.useState<Record<string, string>>({});
 
   const handleNext = () => {
+    const newErrors: Record<string, string> = {};
     const requiredFields = ['isPwd', 'isDefence', 'isOMS', 'isTFWS', 'isMinority'];
-    const missingFields = requiredFields.filter(field => !formData[field]);
-
-    if (missingFields.length > 0) {
-      alert("Please answer all compulsory questions");
-      return;
-    }
+    
+    requiredFields.forEach(field => {
+      if (!formData[field]) {
+        newErrors[field] = "This selection is mandatory";
+      }
+    });
 
     if (!formData.mahSeatType || formData.mahSeatType.length === 0) {
-      alert("Please select at least one Seat Type");
-      return;
+      newErrors.mahSeatType = "Please select at least one applicable seat type";
     }
 
     if (formData.isMinority === 'Yes' && !formData.minorityDetails) {
-      alert("Please specify your minority details");
+      newErrors.minorityDetails = "Please specify your minority type/name";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
       return;
     }
 
+    setErrors({});
     nextStep();
   };
 
@@ -50,7 +56,11 @@ export const QuotaStep = () => {
             required
             options={YES_NO}
             value={formData.isPwd}
-            onChange={(v: string) => updateField('isPwd', v)}
+            error={errors.isPwd}
+            onChange={(v: string) => {
+              updateField('isPwd', v);
+              if (errors.isPwd) setErrors(prev => ({ ...prev, isPwd: '' }));
+            }}
             gridCols={2}
           />
           <RadioCards
@@ -58,7 +68,11 @@ export const QuotaStep = () => {
             required
             options={YES_NO}
             value={formData.isDefence}
-            onChange={(v: string) => updateField('isDefence', v)}
+            error={errors.isDefence}
+            onChange={(v: string) => {
+              updateField('isDefence', v);
+              if (errors.isDefence) setErrors(prev => ({ ...prev, isDefence: '' }));
+            }}
             gridCols={2}
           />
         </div>
@@ -69,7 +83,11 @@ export const QuotaStep = () => {
             required
             options={YES_NO}
             value={formData.isOMS}
-            onChange={(v: string) => updateField('isOMS', v)}
+            error={errors.isOMS}
+            onChange={(v: string) => {
+              updateField('isOMS', v);
+              if (errors.isOMS) setErrors(prev => ({ ...prev, isOMS: '' }));
+            }}
             gridCols={2}
           />
           <RadioCards
@@ -77,7 +95,11 @@ export const QuotaStep = () => {
             required
             options={YES_NO}
             value={formData.isTFWS}
-            onChange={(v: string) => updateField('isTFWS', v)}
+            error={errors.isTFWS}
+            onChange={(v: string) => {
+              updateField('isTFWS', v);
+              if (errors.isTFWS) setErrors(prev => ({ ...prev, isTFWS: '' }));
+            }}
             gridCols={2}
           />
         </div>
@@ -93,7 +115,11 @@ export const QuotaStep = () => {
             'D2 DEF2', 'D3 DEF3', 'Orphan C', 'Others*'
           ]}
           value={formData.mahSeatType || []}
-          onChange={(v: string[]) => updateField('mahSeatType', v)}
+          error={errors.mahSeatType}
+          onChange={(v: string[]) => {
+            updateField('mahSeatType', v);
+            if (errors.mahSeatType) setErrors(prev => ({ ...prev, mahSeatType: '' }));
+          }}
         />
 
         <RadioCards
@@ -101,7 +127,11 @@ export const QuotaStep = () => {
           required
           options={YES_NO}
           value={formData.isMinority}
-          onChange={(v: string) => updateField('isMinority', v)}
+          error={errors.isMinority}
+          onChange={(v: string) => {
+            updateField('isMinority', v);
+            if (errors.isMinority) setErrors(prev => ({ ...prev, isMinority: '' }));
+          }}
           gridCols={2}
         />
 
@@ -112,7 +142,11 @@ export const QuotaStep = () => {
             sublabel="Example: Linguistic (Hindi/Gujarati/etc), Religious (Muslim/Christian/etc), etc*"
             placeholder="Specify your minority category"
             value={formData.minorityDetails}
-            onChange={(e) => updateField('minorityDetails', e.target.value)}
+            error={errors.minorityDetails}
+            onChange={(e) => {
+              updateField('minorityDetails', e.target.value);
+              if (errors.minorityDetails) setErrors(prev => ({ ...prev, minorityDetails: '' }));
+            }}
           />
         </ConditionalSection>
       </div>

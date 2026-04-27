@@ -21,6 +21,8 @@ export const PhoneInput = ({ label, required, error, ...props }: any) => {
         <input
           type="tel"
           pattern="[0-9]{10}"
+          maxLength={10}
+          inputMode="numeric"
           className="flex-1 h-11 bg-transparent px-4 font-ui text-[14px] text-text-primary outline-none"
           {...props}
         />

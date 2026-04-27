@@ -8,7 +8,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     name: formData.get('name'),
     phone: formData.get('phone'),
     email: formData.get('email'),
-    subject: formData.get('subject'),
+    subject: formData.get('subject') || 'General Inquiry',
     message: formData.get('message'),
   };
 

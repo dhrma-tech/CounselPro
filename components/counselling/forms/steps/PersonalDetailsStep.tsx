@@ -13,37 +13,30 @@ import { ConditionalSection } from '../../fields/ConditionalSection';
 
 export const PersonalDetailsStep = () => {
   const { formData, updateField, nextStep, counsellingType } = useApplicationStore();
+  const [errors, setErrors] = React.useState<Record<string, string>>({});
 
   const hasDedicatedQuotaStep = counsellingType === 'MHT_CET_Engineering' || counsellingType === 'MHT_CET_Medical';
   const showDomicile = counsellingType !== 'JEE_JoSAA_Advanced';
 
   const handleNext = () => {
-    if (!formData.gender || !formData.category) {
-      alert("Please fill all required fields");
-      return;
-    }
+    const newErrors: Record<string, string> = {};
 
-    if (showDomicile && !formData.domicileState) {
-      alert("Please select your domicile state");
-      return;
-    }
-
-    if (!formData.seatType || formData.seatType.length === 0) {
-      alert("Please select at least one Seat Type");
-      return;
-    }
+    if (!formData.gender) newErrors.gender = "Please select your gender";
+    if (!formData.category) newErrors.category = "Category selection is required for reservation benefits";
+    if (showDomicile && !formData.domicileState) newErrors.domicileState = "Please select your domicile state";
+    if (!formData.seatType || formData.seatType.length === 0) newErrors.seatType = "Please select at least one seat type you are applying for";
 
     if (!hasDedicatedQuotaStep) {
-      if (!formData.isMinority) {
-        alert("Please answer the Minority question");
-        return;
-      }
-      if (formData.isMinority === 'Yes' && !formData.minorityDetails) {
-        alert("Please specify your minority details");
-        return;
-      }
+      if (!formData.isMinority) newErrors.isMinority = "Please answer the minority status question";
+      if (formData.isMinority === 'Yes' && !formData.minorityDetails) newErrors.minorityDetails = "Please specify your minority type";
     }
 
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    setErrors({});
     nextStep();
   };
 
@@ -58,7 +51,11 @@ export const PersonalDetailsStep = () => {
           options={['Male', 'Female', 'Other']}
           gridCols={3}
           value={formData.gender}
-          onChange={(v: string) => updateField('gender', v)}
+          error={errors.gender}
+          onChange={(v: string) => {
+            updateField('gender', v);
+            if (errors.gender) setErrors(prev => ({ ...prev, gender: '' }));
+          }}
         />
 
         <RadioCards
@@ -72,7 +69,11 @@ export const PersonalDetailsStep = () => {
             'EWS', 'EWS (PwD)'
           ]}
           value={formData.category}
-          onChange={(v: string) => updateField('category', v)}
+          error={errors.category}
+          onChange={(v: string) => {
+            updateField('category', v);
+            if (errors.category) setErrors(prev => ({ ...prev, category: '' }));
+          }}
         />
 
         {showDomicile && (
@@ -81,7 +82,11 @@ export const PersonalDetailsStep = () => {
             required
             options={INDIAN_STATES}
             value={formData.domicileState}
-            onChange={(v: string) => updateField('domicileState', v)}
+            error={errors.domicileState}
+            onChange={(v: string) => {
+              updateField('domicileState', v);
+              if (errors.domicileState) setErrors(prev => ({ ...prev, domicileState: '' }));
+            }}
           />
         )}
 
@@ -91,7 +96,11 @@ export const PersonalDetailsStep = () => {
           required
           options={['General', 'EWS', 'OBC-NCL', 'SC', 'ST', 'PwD', 'Defence', 'Kashmiri Migrant', 'Others*']}
           value={formData.seatType || []}
-          onChange={(v: string[]) => updateField('seatType', v)}
+          error={errors.seatType}
+          onChange={(v: string[]) => {
+            updateField('seatType', v);
+            if (errors.seatType) setErrors(prev => ({ ...prev, seatType: '' }));
+          }}
         />
 
         {/* Minority section only if not in dedicated quota step */}
@@ -103,7 +112,11 @@ export const PersonalDetailsStep = () => {
               options={['Yes', 'No']}
               gridCols={2}
               value={formData.isMinority}
-              onChange={(v: string) => updateField('isMinority', v)}
+              error={errors.isMinority}
+              onChange={(v: string) => {
+                updateField('isMinority', v);
+                if (errors.isMinority) setErrors(prev => ({ ...prev, isMinority: '' }));
+              }}
             />
 
             <ConditionalSection isVisible={formData.isMinority === 'Yes'}>
@@ -113,14 +126,20 @@ export const PersonalDetailsStep = () => {
                 sublabel="Example: Linguistic (Hindi/Gujarati/etc), Religious (Muslim/Christian/etc), etc*"
                 placeholder="Specify your minority category"
                 value={formData.minorityDetails}
-                onChange={(e) => updateField('minorityDetails', e.target.value)}
+                error={errors.minorityDetails}
+                onChange={(e) => {
+                  updateField('minorityDetails', e.target.value);
+                  if (errors.minorityDetails) setErrors(prev => ({ ...prev, minorityDetails: '' }));
+                }}
               />
             </ConditionalSection>
           </>
         )}
       </div>
 
-      <StepFooter onNext={handleNext} />
+      <div className="mt-12">
+        <StepFooter onNext={handleNext} />
+      </div>
     </div>
   );
 };

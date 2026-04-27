@@ -9,25 +9,29 @@ import { StepFooter } from '../../StepFooter';
 
 export const RankScoreStep = () => {
   const { formData, updateField, nextStep, counsellingType } = useApplicationStore();
+  const [errors, setErrors] = React.useState<Record<string, string>>({});
 
   const handleNext = () => {
     const isJEE = counsellingType?.startsWith('JEE');
     const isNEET = counsellingType?.startsWith('NEET');
+    const newErrors: Record<string, string> = {};
 
     if (isJEE) {
-      if (!formData.airRank || !formData.percentile) {
-        alert("Please fill AIR Rank and Percentile Score");
-        return;
-      }
+      if (!formData.airRank) newErrors.airRank = "Please enter your All India Rank (AIR)";
+      if (!formData.percentile) newErrors.percentile = "Percentile score is required for cut-off analysis";
     }
 
     if (isNEET) {
-      if (!formData.airRank || !formData.marks) {
-        alert("Please fill AIR Rank and NEET Marks");
-        return;
-      }
+      if (!formData.airRank) newErrors.airRank = "Please enter your NEET All India Rank";
+      if (!formData.marks) newErrors.marks = "Please provide your NEET marks (out of 720)";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
     }
     
+    setErrors({});
     nextStep();
   };
 
@@ -47,7 +51,11 @@ export const RankScoreStep = () => {
               required
               suffix="AIR"
               value={formData.airRank || ''}
-              onChange={(e: any) => updateField('airRank', e.target.value)}
+              error={errors.airRank}
+              onChange={(e: any) => {
+                updateField('airRank', e.target.value);
+                if (errors.airRank) setErrors(prev => ({ ...prev, airRank: '' }));
+              }}
             />
             <NumberInput
               label="Category Rank"
@@ -61,7 +69,11 @@ export const RankScoreStep = () => {
               placeholder="e.g. 94.65"
               required
               value={formData.percentile || ''}
-              onChange={(e: any) => updateField('percentile', e.target.value)}
+              error={errors.percentile}
+              onChange={(e: any) => {
+                updateField('percentile', e.target.value);
+                if (errors.percentile) setErrors(prev => ({ ...prev, percentile: '' }));
+              }}
             />
           </>
         )}
@@ -73,7 +85,11 @@ export const RankScoreStep = () => {
               required
               suffix="AIR"
               value={formData.airRank || ''}
-              onChange={(e: any) => updateField('airRank', e.target.value)}
+              error={errors.airRank}
+              onChange={(e: any) => {
+                updateField('airRank', e.target.value);
+                if (errors.airRank) setErrors(prev => ({ ...prev, airRank: '' }));
+              }}
             />
             <NumberInput
               label="NEET Marks (out of 720)"
@@ -81,7 +97,11 @@ export const RankScoreStep = () => {
               required
               suffix="/ 720"
               value={formData.marks || ''}
-              onChange={(e: any) => updateField('marks', e.target.value)}
+              error={errors.marks}
+              onChange={(e: any) => {
+                updateField('marks', e.target.value);
+                if (errors.marks) setErrors(prev => ({ ...prev, marks: '' }));
+              }}
             />
             <DecimalInput
               label="NEET Percentile"
@@ -93,7 +113,9 @@ export const RankScoreStep = () => {
         )}
       </div>
 
-      <StepFooter onNext={handleNext} />
+      <div className="mt-10">
+        <StepFooter onNext={handleNext} />
+      </div>
     </div>
   );
 };

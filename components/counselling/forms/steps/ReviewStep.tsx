@@ -8,7 +8,17 @@ import { submitToGoogleSheets } from '@/lib/submission';
 import { CheckCircle2, Edit3 } from 'lucide-react';
 
 export const ReviewStep = () => {
-  const { formData, counsellingType, nextStage, setSubmissionStatus, setSubmissionId, setErrorMessage, setStep } = useApplicationStore();
+  const { 
+    formData, 
+    counsellingType, 
+    nextStage, 
+    submissionStatus,
+    errorMessage,
+    setSubmissionStatus, 
+    setSubmissionId, 
+    setErrorMessage, 
+    setStep 
+  } = useApplicationStore();
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -111,6 +121,14 @@ export const ReviewStep = () => {
           </span>
         </label>
       </div>
+
+      {submissionStatus === 'error' && errorMessage && (
+        <div className="mb-8 p-4 bg-red-50 border border-red-100 rounded-xl animate-in fade-in slide-in-from-top-2 duration-300">
+          <p className="text-[14px] text-red-600 font-medium text-center">
+            {errorMessage}
+          </p>
+        </div>
+      )}
 
       <StepFooter 
         onNext={handleSubmit} 

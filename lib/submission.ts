@@ -33,10 +33,13 @@ export async function submitToGoogleSheets(payload: SubmissionPayload) {
     const result = await submitApplicationForm(serverData);
     
     if (!result.success) {
-      const errorMsg = result.errors 
-        ? `Validation Error: ${JSON.stringify(result.errors)}` 
-        : result.message || 'Server action failed';
-      throw new Error(errorMsg);
+      if (result.errors) {
+        const fieldNames = Object.keys(result.errors);
+        const firstError = result.errors[fieldNames[0]];
+        const message = Array.isArray(firstError) ? firstError[0] : 'Validation failed';
+        throw new Error(message);
+      }
+      throw new Error(result.message || 'The server encountered an issue while processing your application. Please try again.');
     }
 
     return { success: true, id: submissionId };

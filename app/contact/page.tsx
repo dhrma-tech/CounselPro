@@ -9,15 +9,45 @@ import { submitContactForm } from '@/app/actions/submission';
 import { CONTACT_CONFIG } from '@/config/contact';
 
 export default function ContactPage() {
-  const [data, setData] = useState({ name: '', phone: '', email: '', subject: 'General Inquiry', message: '' });
+  const [data, setData] = useState({ name: '', phone: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError('');
+    setFieldErrors({});
+
+    // Client-side validation
+    const nameWords = data.name.trim().split(/\s+/).filter(Boolean).length;
+    const phoneRegex = /^\d{10}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const newFieldErrors: Record<string, string> = {};
+
+    if (nameWords < 3) {
+      newFieldErrors.name = "Please provide your full legal name (minimum 3 words)";
+    }
+
+    if (!phoneRegex.test(data.phone)) {
+      newFieldErrors.phone = "A valid 10-digit mobile number is required";
+    }
+
+    if (!emailRegex.test(data.email)) {
+      newFieldErrors.email = "Please enter a valid email address for correspondence";
+    }
+
+    if (data.message.trim().length < 10) {
+      newFieldErrors.message = "Please provide more details (minimum 10 characters)";
+    }
+
+    if (Object.keys(newFieldErrors).length > 0) {
+      setFieldErrors(newFieldErrors);
+      setIsSubmitting(false);
+      return;
+    }
     
     try {
       const formData = new FormData(e.currentTarget as HTMLFormElement);
@@ -25,12 +55,34 @@ export default function ContactPage() {
       
       if (result.success) {
         setSuccess(true);
-        setData({ name: '', phone: '', email: '', subject: 'General Inquiry', message: '' });
+        
+        // Construct mailto link
+        const subject = encodeURIComponent(`Service Inquiry from ${data.name}`);
+        const body = encodeURIComponent(
+          `Name: ${data.name}\n` +
+          `Mobile: ${data.phone}\n` +
+          `Email: ${data.email}\n\n` +
+          `Message:\n${data.message}`
+        );
+        const mailtoUrl = `mailto:${CONTACT_CONFIG.email}?subject=${subject}&body=${body}`;
+        
+        // Open email client
+        window.location.href = mailtoUrl;
+
+        setData({ name: '', phone: '', email: '', message: '' });
       } else {
-        setError(result.message || 'Validation failed. Please check your inputs.');
+        if (result.errors) {
+          // Flatten Zod errors if available
+          const flattened: Record<string, string> = {};
+          Object.entries(result.errors).forEach(([key, val]) => {
+            if (Array.isArray(val)) flattened[key] = val[0];
+          });
+          setFieldErrors(flattened);
+        }
+        setError(result.message || 'Verification failed. Please check the highlighted fields.');
       }
     } catch (err) {
-      setError('Something went wrong. Please try again or WhatsApp us directly.');
+      setError('An unexpected error occurred. Please try again or reach out via WhatsApp.');
     } finally {
       setIsSubmitting(false);
     }
@@ -73,7 +125,7 @@ export default function ContactPage() {
           {/* Main Form */}
           <div className="w-full lg:w-[60%] order-2 lg:order-1">
             <div className="bg-white border text-left border-border rounded-[32px] p-8 md:p-12 shadow-sm relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-2 h-full bg-brand-blue"></div>
+
               
               <h2 className="heading-md mb-8">Service Inquiry Form</h2>
               
@@ -82,41 +134,71 @@ export default function ContactPage() {
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </div>
-                  <h3 className="font-display text-2xl mb-2">Message Received!</h3>
-                  <p className="text-text-secondary mb-6">Our experts will profile your query and reach out within a few business hours.</p>
+                  <h3 className="font-display text-2xl mb-2">Message Prepared!</h3>
+                  <p className="text-text-secondary mb-6">Your message has been securely logged. Your email client is now opening to send the finalized transmission to our experts.</p>
                   <button onClick={() => setSuccess(false)} className="bg-brand-blue text-white font-ui font-bold px-8 py-3 rounded-xl transition-all hover:shadow-lg">Send Another Message</button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-2">
-                      <label className="text-[13px] font-bold text-text-muted uppercase tracking-wider">Full Name</label>
-                      <input required type="text" name="name" value={data.name} onChange={handleChange} className="w-full h-14 px-5 bg-surface-light border border-border rounded-xl font-ui text-[16px] focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all" placeholder="Enter your name" />
+                      <label className={`text-[13px] font-bold uppercase tracking-wider transition-colors ${fieldErrors.name ? 'text-red-500' : 'text-text-muted'}`}>Full Name</label>
+                      <input 
+                        required 
+                        type="text" 
+                        name="name" 
+                        value={data.name} 
+                        onChange={handleChange} 
+                        className={`w-full h-14 px-5 bg-surface-light border rounded-xl font-ui text-[16px] focus:outline-none focus:ring-2 transition-all ${fieldErrors.name ? 'border-red-400 focus:ring-red-400/10 focus:border-red-400' : 'border-border focus:ring-brand-blue/20 focus:border-brand-blue'}`} 
+                        placeholder="Enter your name" 
+                      />
+                      {fieldErrors.name && <p className="text-[12px] text-red-500 font-medium ml-1">{fieldErrors.name}</p>}
                     </div>
                     <div className="space-y-2">
-                      <label className="text-[13px] font-bold text-text-muted uppercase tracking-wider">Mobile Number</label>
-                      <input required type="tel" name="phone" value={data.phone} onChange={handleChange} className="w-full h-14 px-5 bg-surface-light border border-border rounded-xl font-ui text-[16px] focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all" placeholder="+91 00000 00000" />
+                      <label className={`text-[13px] font-bold uppercase tracking-wider transition-colors ${fieldErrors.phone ? 'text-red-500' : 'text-text-muted'}`}>Mobile Number</label>
+                      <input 
+                        required 
+                        type="tel" 
+                        name="phone" 
+                        maxLength={10}
+                        inputMode="numeric"
+                        value={data.phone} 
+                        onChange={handleChange} 
+                        className={`w-full h-14 px-5 bg-surface-light border rounded-xl font-ui text-[16px] focus:outline-none focus:ring-2 transition-all ${fieldErrors.phone ? 'border-red-400 focus:ring-red-400/10 focus:border-red-400' : 'border-border focus:ring-brand-blue/20 focus:border-brand-blue'}`} 
+                        placeholder="10-digit mobile number" 
+                      />
+                      {fieldErrors.phone && <p className="text-[12px] text-red-500 font-medium ml-1">{fieldErrors.phone}</p>}
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-[13px] font-bold text-text-muted uppercase tracking-wider">Email Address</label>
-                    <input required type="email" name="email" value={data.email} onChange={handleChange} className="w-full h-14 px-5 bg-surface-light border border-border rounded-xl font-ui text-[16px] focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all" placeholder="yourname@domain.com" />
+                    <label className={`text-[13px] font-bold uppercase tracking-wider transition-colors ${fieldErrors.email ? 'text-red-500' : 'text-text-muted'}`}>Email Address</label>
+                    <input 
+                      required 
+                      type="email" 
+                      name="email" 
+                      value={data.email} 
+                      onChange={handleChange} 
+                      className={`w-full h-14 px-5 bg-surface-light border rounded-xl font-ui text-[16px] focus:outline-none focus:ring-2 transition-all ${fieldErrors.email ? 'border-red-400 focus:ring-red-400/10 focus:border-red-400' : 'border-border focus:ring-brand-blue/20 focus:border-brand-blue'}`} 
+                      placeholder="yourname@domain.com" 
+                    />
+                    {fieldErrors.email && <p className="text-[12px] text-red-500 font-medium ml-1">{fieldErrors.email}</p>}
                   </div>
 
-                  <div className="space-y-2">
-                    <label className="text-[13px] font-bold text-text-muted uppercase tracking-wider">Inquiry Subject</label>
-                    <select name="subject" value={data.subject} onChange={handleChange} className="w-full h-14 px-5 bg-surface-light border border-border rounded-xl font-ui text-[16px] focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all appearance-none cursor-pointer">
-                      <option>General Inquiry</option>
-                      <option>JoSAA Counselling Package</option>
-                      <option>MHT CET Strategy Hub</option>
-                      <option>Document Verification Help</option>
-                    </select>
-                  </div>
+
 
                   <div className="space-y-2">
-                    <label className="text-[13px] font-bold text-text-muted uppercase tracking-wider">Your Message</label>
-                    <textarea required name="message" value={data.message} onChange={handleChange} rows={5} className="w-full p-5 bg-surface-light border border-border rounded-xl font-ui text-[16px] focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all resize-none" placeholder="Describe your situation..."></textarea>
+                    <label className={`text-[13px] font-bold uppercase tracking-wider transition-colors ${fieldErrors.message ? 'text-red-500' : 'text-text-muted'}`}>Your Message</label>
+                    <textarea 
+                      required 
+                      name="message" 
+                      value={data.message} 
+                      onChange={handleChange} 
+                      rows={5} 
+                      className={`w-full p-5 bg-surface-light border rounded-xl font-ui text-[16px] focus:outline-none focus:ring-2 transition-all resize-none ${fieldErrors.message ? 'border-red-400 focus:ring-red-400/10 focus:border-red-400' : 'border-border focus:ring-brand-blue/20 focus:border-brand-blue'}`} 
+                      placeholder="Describe your situation..."
+                    ></textarea>
+                    {fieldErrors.message && <p className="text-[12px] text-red-500 font-medium ml-1">{fieldErrors.message}</p>}
                   </div>
 
                   {error && <div className="p-4 bg-red-50 text-red-600 rounded-lg text-sm font-medium">{error}</div>}
@@ -136,79 +218,65 @@ export default function ContactPage() {
 
           {/* Contact Info Sidebar */}
           <div className="w-full lg:w-[40%] order-1 lg:order-2 space-y-8">
-            <div className="bg-brand-blue p-1 rounded-[32px] overflow-hidden shadow-xl">
-              <div className="bg-brand-navy rounded-[30px] p-8 text-white relative h-full">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-blue/10 rounded-bl-full -z-0"></div>
-                
-                <h3 className="font-display text-2xl mb-8 relative z-10">Direct Support</h3>
-                
-                <div className="space-y-8 relative z-10">
-                  <a href={CONTACT_CONFIG.whatsappGroupLink} target="_blank" rel="noreferrer" className="flex items-center gap-5 group">
-                    <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform">
-                      <MessageCircle className="w-8 h-8 text-white" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-lg leading-tight">WhatsApp Community</div>
-                      <div className="text-white/60 text-sm">Join for fast updates</div>
-                    </div>
-                  </a>
-
-                  <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center">
-                      <Phone className="w-7 h-7 text-brand-blue" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-lg leading-tight">Voice Support</div>
-                      <div className="text-white/60 text-sm">{CONTACT_CONFIG.phone}</div>
-                    </div>
+            <div className="bg-white border border-border rounded-[32px] p-8 md:p-10 shadow-sm relative overflow-hidden group hover:border-brand-blue/40 transition-all">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-blue/5 rounded-bl-full -z-0"></div>
+              
+              <h3 className="font-display text-2xl text-brand-navy mb-10 relative z-10">Direct Support</h3>
+              
+              <div className="grid grid-cols-1 gap-8 relative z-10">
+                <a href={CONTACT_CONFIG.whatsappGroupLink} target="_blank" rel="noreferrer" className="flex items-center gap-5 group/item">
+                  <div className="w-14 h-14 bg-[#25D366]/10 rounded-2xl flex items-center justify-center group-hover/item:bg-[#25D366] transition-all">
+                    <MessageCircle className="w-8 h-8 text-[#25D366] group-hover/item:text-white transition-colors" />
                   </div>
-
-                  <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center">
-                      <Mail className="w-7 h-7 text-brand-violet" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-lg leading-tight">Email Support</div>
-                      <div className="text-white/60 text-sm">{CONTACT_CONFIG.email}</div>
-                    </div>
+                  <div>
+                    <div className="font-bold text-[17px] text-text-primary leading-tight">WhatsApp Community</div>
+                    <div className="text-text-muted text-sm">Join for fast admission updates</div>
                   </div>
+                </a>
 
-                  <a href="https://linkedin.com/company/counselpro" target="_blank" rel="noreferrer" className="flex items-center gap-5 group">
-                    <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-[#0077B5] transition-colors">
-                      <LinkedInIcon className="w-7 h-7 text-white" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-lg leading-tight">LinkedIn</div>
-                      <div className="text-white/60 text-sm">Professional Updates</div>
-                    </div>
-                  </a>
+                <div className="flex items-center gap-5 group/item">
+                  <div className="w-14 h-14 bg-brand-blue/10 rounded-2xl flex items-center justify-center group-hover/item:bg-brand-blue transition-all">
+                    <Phone className="w-7 h-7 text-brand-blue group-hover/item:text-white transition-colors" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-[17px] text-text-primary leading-tight">Voice Support</div>
+                    <div className="text-text-muted text-sm">{CONTACT_CONFIG.phone}</div>
+                  </div>
+                </div>
 
-                  <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center">
-                      <Clock className="w-7 h-7 text-brand-blue" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-lg leading-tight">Operating Hours</div>
-                      <div className="text-white/60 text-sm">Mon-Sat | 10 AM - 7 PM</div>
-                    </div>
+                <div className="flex items-center gap-5 group/item">
+                  <div className="w-14 h-14 bg-brand-violet/10 rounded-2xl flex items-center justify-center group-hover/item:bg-brand-violet transition-all">
+                    <Mail className="w-7 h-7 text-brand-violet group-hover/item:text-white transition-colors" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-[17px] text-text-primary leading-tight">Email Support</div>
+                    <div className="text-text-muted text-sm">{CONTACT_CONFIG.email}</div>
+                  </div>
+                </div>
+
+                <a href="https://linkedin.com/company/counselpro" target="_blank" rel="noreferrer" className="flex items-center gap-5 group/item">
+                  <div className="w-14 h-14 bg-blue-600/10 rounded-2xl flex items-center justify-center group-hover/item:bg-[#0077B5] transition-all">
+                    <LinkedInIcon className="w-7 h-7 text-[#0077B5] group-hover/item:text-white transition-colors" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-[17px] text-text-primary leading-tight">LinkedIn</div>
+                    <div className="text-text-muted text-sm">Professional Updates</div>
+                  </div>
+                </a>
+
+                <div className="flex items-center gap-5">
+                  <div className="w-14 h-14 bg-surface-light rounded-2xl flex items-center justify-center border border-border/50">
+                    <Clock className="w-7 h-7 text-text-muted" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-[17px] text-text-primary leading-tight">Operating Hours</div>
+                    <div className="text-text-muted text-sm">Mon-Sat | 10 AM - 7 PM</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-surface-light p-8 rounded-[32px] border border-border group hover:border-brand-blue/40 transition-all">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 bg-white rounded-xl shadow-sm">
-                  <MapPin className="w-6 h-6 text-brand-blue" />
-                </div>
-                <h3 className="font-display text-xl text-brand-navy">Headquarters</h3>
-              </div>
-              <p className="body-md text-text-secondary leading-relaxed pl-1">
-                CounselPro Education Advisors <br/>
-                Pentagon P3, Magarpatta City, <br/>
-                Pune, Maharashtra - 411028
-              </p>
-            </div>
+
           </div>
 
         </div>
