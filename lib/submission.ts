@@ -34,8 +34,9 @@ export async function submitToGoogleSheets(payload: SubmissionPayload) {
     
     if (!result.success) {
       if (result.errors) {
-        const fieldNames = Object.keys(result.errors);
-        const firstError = result.errors[fieldNames[0]];
+        const errors = result.errors as any;
+        const fieldNames = Object.keys(errors);
+        const firstError = errors[fieldNames[0]];
         const message = Array.isArray(firstError) ? firstError[0] : 'Validation failed';
         throw new Error(message);
       }
