@@ -14,6 +14,7 @@ export async function submitToGoogleSheets(payload: SubmissionPayload) {
   
   // Prepare data for server action
   const serverData = {
+    submissionId: submissionId,
     counsellingType: payload.counsellingType,
     name: payload.fields.candidateName || payload.fields.name || 'Unknown',
     email: payload.fields.email || CONTACT_CONFIG.email,

@@ -10,6 +10,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     email: formData.get('email'),
     subject: formData.get('subject') || 'General Inquiry',
     message: formData.get('message'),
+    submissionId: formData.get('submissionId'),
   };
 
   const validated = ContactSchema.safeParse(rawData);
@@ -65,6 +66,7 @@ export async function submitApplicationForm(data: any) {
 
     const result = await postToGoogleSheets(sheetUrl, {
       ...validated.data,
+      submissionId: validated.data.submissionId,
       branches: Array.isArray(validated.data.branches) ? validated.data.branches.join(', ') : validated.data.branches,
       collegeTypes: Array.isArray(validated.data.collegeTypes) ? validated.data.collegeTypes.join(', ') : validated.data.collegeTypes,
       formType: 'application',

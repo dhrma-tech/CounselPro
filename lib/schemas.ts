@@ -12,9 +12,11 @@ export const ContactSchema = z.object({
   email: z.string().email('Please provide a valid email address for communication'),
   subject: z.enum(['General Inquiry', 'JoSAA Counselling Package', 'MHT CET Strategy Hub', 'Document Verification Help']),
   message: z.string().min(10, 'Message must be at least 10 characters').max(2000),
+  submissionId: z.string().optional(),
 });
 
 export const ApplicationSchema = z.object({
+  submissionId: z.string().optional(),
   counsellingType: z.string().min(1, 'Counselling type is required'),
   name: z.string()
     .min(2, 'Name must be at least 2 characters')

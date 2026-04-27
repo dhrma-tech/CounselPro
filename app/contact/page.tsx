@@ -50,7 +50,9 @@ export default function ContactPage() {
     }
     
     try {
+      const submissionId = 'CP-CT-' + Date.now();
       const formData = new FormData(e.currentTarget as HTMLFormElement);
+      formData.append('submissionId', submissionId);
       const result = await submitContactForm(null, formData);
       
       if (result.success) {
