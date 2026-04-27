@@ -1251,5 +1251,86 @@ export const branches: Branch[] = [
       soft: ['Statistical intuition', 'Complex problem-solving', 'Data storytelling', 'Cross-functional leadership']
     },
     topColleges: ['IIT Hyderabad', 'COEP Pune', 'PSG Tech Coimbatore', 'VJTI Mumbai', 'VIT Vellore']
+  },
+
+  // --- MEDICAL & HEALTH SCIENCES ---
+  {
+    slug: 'mbbs',
+    name: 'MBBS (Medicine & Surgery)',
+    domain: 'Medical',
+    description: 'The premier medical degree for clinical practice, surgery, and healthcare leadership.',
+    longDescription: 'Bachelor of Medicine and Bachelor of Surgery (MBBS) is the cornerstone of clinical medicine. It prepares students for a career dedicated to saving lives through diagnosis, treatment, and prevention of diseases. The program in India includes rigorous clinical rotations and a mandatory internship, aligning with global medical standards to produce globally competent physicians.',
+    coreSubjects: ['Anatomy', 'Physiology', 'Biochemistry', 'Pharmacology', 'Pathology', 'Microbiology', 'Forensic Medicine', 'Medicine', 'Surgery', 'Obstetrics & Gynaecology'],
+    specializationTracks: ['Cardiology', 'Neurology', 'Orthopaedics', 'Pediatrics', 'General Surgery', 'Oncology'],
+    careerPaths: ['Medical Officer', 'Specialist Doctor', 'Hospital Administrator', 'Clinical Researcher', 'Public Health Expert'],
+    skillRequirements: {
+      technical: ['Clinical diagnosis', 'Surgical assistance', 'Emergency care', 'Diagnostic interpretation'],
+      soft: ['Empathy', 'Critical decision-making', 'Resilience', 'Ethical integrity']
+    },
+    topColleges: ['AIIMS New Delhi', 'MAMC Delhi', 'KEM Mumbai', 'AFMC Pune', 'CMC Vellore']
+  },
+  {
+    slug: 'bds',
+    name: 'BDS (Dental Surgery)',
+    domain: 'Medical',
+    description: 'Specialized focus on oral health, cosmetic dentistry, and maxillo-facial surgeries.',
+    longDescription: 'Bachelor of Dental Surgery (BDS) is the primary degree for dental practitioners. It covers everything from preventive dentistry and orthodontics to complex oral surgeries. With the rising awareness of oral hygiene and aesthetics, the field of dentistry has evolved into a high-demand surgical specialty.',
+    coreSubjects: ['General Anatomy', 'Dental Anatomy', 'Oral Pathology', 'Orthodontics', 'Periodontics', 'Oral & Maxillofacial Surgery', 'Prosthodontics'],
+    specializationTracks: ['Endodontics', 'Orthodontics', 'Oral Surgery', 'Pediatric Dentistry', 'Periodontics'],
+    careerPaths: ['Dental Surgeon', 'Oral Radiologist', 'Cosmetic Dentist', 'Public Health Dentist'],
+    skillRequirements: {
+      technical: ['Precision instrumentation', 'Oral surgery', 'Dental imaging', 'Material science'],
+      soft: ['Manual dexterity', 'Patience', 'Communication', 'Attention to detail']
+    },
+    topColleges: ['Maulana Azad Dental College', 'Government Dental College Mumbai', 'Nair Hospital Dental College', 'KGMU Lucknow']
+  },
+  {
+    slug: 'b-pharm',
+    name: 'B.Pharm (Pharmacy)',
+    domain: 'Medical',
+    description: 'The science of drug formulation, clinical research, and pharmaceutical manufacturing.',
+    longDescription: 'Bachelor of Pharmacy (B.Pharm) is the bridge between medical science and industrial manufacturing. Students learn the chemistry of drugs, their physiological effects, and the industrial processes required to produce them at scale. India being the "Pharmacy of the World" offers massive opportunities in R&D and drug regulatory affairs.',
+    coreSubjects: ['Pharmaceutical Chemistry', 'Pharmacognosy', 'Pharmacology', 'Pharmaceutics', 'Biopharmaceutics', 'Drug Regulatory Affairs', 'Microbiology'],
+    specializationTracks: ['Pharmaceutics', 'Quality Assurance', 'Regulatory Affairs', 'Medicinal Chemistry', 'Pharmacology'],
+    careerPaths: ['Drug Inspector', 'R&D Scientist', 'Production Manager', 'Clinical Research Associate', 'Quality Control Analyst'],
+    skillRequirements: {
+      technical: ['Chemical analysis', 'Drug formulation', 'Laboratory safety', 'Analytical instrumentation'],
+      soft: ['Scientific rigor', 'Accuracy', 'Critical thinking', 'Compliance mindset']
+    },
+    topColleges: ['ICT Mumbai', 'NIPER Mohali', 'BITS Pilani', 'JAMIA Hamdard', 'Poona College of Pharmacy']
+  },
+
+  // --- NURSING & PARAMEDICAL ---
+  {
+    slug: 'bsc-nursing',
+    name: 'B.Sc. Nursing',
+    domain: 'Nursing',
+    description: 'Highly skilled clinical care and patient management within specialized healthcare environments.',
+    longDescription: 'B.Sc. Nursing is a professional degree that combines advanced clinical skills with patient-centric care. Modern nursing is highly technical, involving the management of critical care equipment, surgical assistance, and complex patient recovery protocols. It is a vital pillar of the global healthcare infrastructure.',
+    coreSubjects: ['Nursing Foundations', 'Nutrition & Dietetics', 'Medical Surgical Nursing', 'Child Health Nursing', 'Mental Health Nursing', 'Midwifery', 'Community Health'],
+    specializationTracks: ['Critical Care Nursing', 'Cardiovascular Nursing', 'Pediatric Nursing', 'Operation Theatre Nursing'],
+    careerPaths: ['Staff Nurse', 'Nursing Supervisor', 'Clinical Nurse Specialist', 'Nursing Educator', 'Public Health Nurse'],
+    skillRequirements: {
+      technical: ['Clinical procedures', 'Emergency management', 'Medical documentation', 'Patient monitoring'],
+      soft: ['Compassion', 'Situational awareness', 'Emotional intelligence', 'Collaborative teamwork']
+    },
+    topColleges: ['AIIMS Nursing', 'CMC Vellore', 'SNDT Mumbai', 'AFMC Nursing Pune']
+  },
+
+  // --- AGRICULTURE & ALLIED ---
+  {
+    slug: 'bsc-agriculture',
+    name: 'B.Sc. (Hons) Agriculture',
+    domain: 'Agriculture',
+    description: 'Scientific optimization of crop yield, soil health, and sustainable farming ecosystems.',
+    longDescription: 'B.Sc. Agriculture is an interdisciplinary field that applies biology, chemistry, and engineering to food production. Students learn modern techniques in plant breeding, pest management, and soil science to combat food insecurity and adapt to climate change. It is the engine of the rural economy.',
+    coreSubjects: ['Agronomy', 'Soil Science', 'Entomology', 'Plant Pathology', 'Genetics & Plant Breeding', 'Agri-Economics', 'Agricultural Extension'],
+    specializationTracks: ['Seed Technology', 'Organic Farming', 'Agri-Business Management', 'Plant Biotechnology'],
+    careerPaths: ['Agriculture Officer', 'Agri-Business Manager', 'Seed Technologist', 'Plant Breeder', 'Farm Consultant'],
+    skillRequirements: {
+      technical: ['GIS & Remote Sensing', 'Soil testing', 'Plant pathology diagnosis', 'Agri-tech tools'],
+      soft: ['Environmental stewardship', 'Analytical reasoning', 'Management', 'Policy awareness']
+    },
+    topColleges: ['PAU Ludhiana', 'IARI New Delhi', 'TNAU Coimbatore', 'MPKV Rahuri', 'PDKV Akola']
   }
 ];
