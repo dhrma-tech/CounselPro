@@ -13,6 +13,8 @@ export const AcademicPreferencesStep = () => {
   const [errors, setErrors] = React.useState<Record<string, string>>({});
 
   const getPreferenceConfig = () => {
+    const hasNEET = formData.hasNEETScore === 'Yes';
+    
     // Default/Engineering Config
     let programs = ENGINEERING_BRANCHES;
     let recommendations = [
@@ -29,11 +31,23 @@ export const AcademicPreferencesStep = () => {
       recommendations = ["MBBS (Bachelor of Medicine & Bachelor of Surgery)", "BDS (Bachelor of Dental Surgery)"];
       courseTypes = ['Degree (UG)', 'Diploma', 'Others*'];
       instituteTypes = ['Government Medical College (GMC)', 'Private Medical College', 'Deemed University', 'Others*'];
+
+      // If no NEET, remove NEET-mandatory courses
+      if (!hasNEET) {
+        const neetMandatory = ['MBBS', 'BDS', 'BAMS', 'BHMS', 'BUMS', 'BVSc'];
+        programs = MEDICAL_COURSES.filter(p => !neetMandatory.some(m => p.includes(m)));
+        recommendations = recommendations.filter(p => !neetMandatory.some(m => p.includes(m)));
+      }
     } else if (counsellingType?.includes('Nursing')) {
       programs = NURSING_PROGRAMS;
       recommendations = ["Basic B.Sc. Nursing", "GNM (General Nursing and Midwifery)"];
       courseTypes = ['B.Sc. Nursing', 'Post Basic B.Sc.', 'Diploma', 'Others*'];
       instituteTypes = ['Government Nursing College', 'Private/Aided Nursing Institute', 'Others*'];
+      
+      // Some Nursing courses might require NEET in certain states/years
+      if (!hasNEET) {
+        programs = programs.filter(p => !p.includes('NEET Mandatory Path')); // Placeholder for logic
+      }
     } else if (counsellingType?.includes('Agriculture')) {
       programs = AGRICULTURE_PROGRAMS;
       recommendations = ["B.Sc. (Hons.) Agriculture", "B.Tech. (Food Technology)"];

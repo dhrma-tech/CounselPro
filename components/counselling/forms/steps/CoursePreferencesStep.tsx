@@ -33,9 +33,19 @@ export const CoursePreferencesStep = () => {
     nextStep();
   };
 
-  const medicalOptions = (counsellingType === 'NEET_MCC_AllIndia' || counsellingType === 'NEET_MHT_State' || counsellingType === 'MHT_CET_Medical')
-    ? (counsellingType === 'NEET_MCC_AllIndia' ? ['MBBS', 'BDS', 'B.Sc. Nursing'] : MEDICAL_COURSES)
-    : MEDICAL_COURSES;
+  const hasNEET = formData.hasNEETScore === 'Yes';
+
+  const medicalOptions = React.useMemo(() => {
+    let options = (counsellingType === 'NEET_MCC_AllIndia' || counsellingType === 'NEET_MHT_State' || counsellingType === 'MHT_CET_Medical')
+      ? (counsellingType === 'NEET_MCC_AllIndia' ? ['MBBS', 'BDS', 'B.Sc. Nursing'] : MEDICAL_COURSES)
+      : MEDICAL_COURSES;
+
+    if (!hasNEET) {
+      const neetMandatory = ['MBBS', 'BDS', 'BAMS', 'BHMS', 'BUMS', 'BVSc'];
+      options = options.filter(p => !neetMandatory.some(m => p.includes(m)));
+    }
+    return options;
+  }, [counsellingType, hasNEET]);
 
   const quotaOptions = React.useMemo(() => {
     const base = [
@@ -43,18 +53,27 @@ export const CoursePreferencesStep = () => {
       'Trust/Minority Quota', 'HA (Hilly Area)', 'D1 DEF1', 'D2 DEF2', 
       'D3 DEF3', 'Orphan C', 'Others*'
     ];
-    if (counsellingType === 'NEET_MHT_State' || counsellingType === 'MHT_CET_Medical') {
-      return base.filter(q => q !== '15% All India Quota');
+    
+    let filtered = base;
+
+    if (!hasNEET) {
+      // 15% AIQ and AIQ-based NRI quotas are definitely out
+      filtered = filtered.filter(q => !q.includes('All India Quota'));
     }
+
+    if (counsellingType === 'NEET_MHT_State' || counsellingType === 'MHT_CET_Medical') {
+      filtered = filtered.filter(q => q !== '15% All India Quota');
+    }
+
     if (counsellingType === 'NEET_MCC_AllIndia') {
-      // Remove 85% State and also state-specific quotas like HA, D1-D3, Orphan
-      return base.filter(q => ![
+      filtered = filtered.filter(q => ![
         '85% State Quota', 'HA (Hilly Area)', 'D1 DEF1', 
         'D2 DEF2', 'D3 DEF3', 'Orphan C'
       ].includes(q));
     }
-    return base;
-  }, [counsellingType]);
+    
+    return filtered;
+  }, [counsellingType, hasNEET]);
 
   return (
     <div className="animate-in fade-in slide-in-from-right-4 duration-300">
