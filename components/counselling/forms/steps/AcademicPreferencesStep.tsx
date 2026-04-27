@@ -44,15 +44,16 @@ export const AcademicPreferencesStep = () => {
       courseTypes = ['B.Sc. Nursing', 'Post Basic B.Sc.', 'Diploma', 'Others*'];
       instituteTypes = ['Government Nursing College', 'Private/Aided Nursing Institute', 'Others*'];
       
-      // Some Nursing courses might require NEET in certain states/years
-      if (!hasNEET) {
-        programs = programs.filter(p => !p.includes('NEET Mandatory Path')); // Placeholder for logic
-      }
     } else if (counsellingType?.includes('Agriculture')) {
       programs = AGRICULTURE_PROGRAMS;
       recommendations = ["B.Sc. (Hons.) Agriculture", "B.Tech. (Food Technology)"];
       courseTypes = ['B.Sc. (Hons.)', 'B.Tech.', 'Others*'];
       instituteTypes = ['State Agricultural University (SAU)', 'Government Aided College', 'Private/Unaided College', 'Others*'];
+    } else if (counsellingType === 'MHT_CET_Engineering') {
+      programs = ENGINEERING_BRANCHES;
+      recommendations = ["Computer Science and Engineering (CSE)", "Information Technology (IT)", "Electronics and Telecommunication (E&TC)"];
+      courseTypes = ['B.E. / B.Tech', 'B.Arch', 'B.Planning', 'Others*'];
+      instituteTypes = ['Government Autonomous (COEP/VJTI/ICT)', 'Government Aided', 'University Department', 'Private (Unaided)', 'Others*'];
     }
 
     return { programs, recommendations, courseTypes, instituteTypes };

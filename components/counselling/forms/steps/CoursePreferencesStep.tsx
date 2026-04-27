@@ -36,44 +36,45 @@ export const CoursePreferencesStep = () => {
   const hasNEET = formData.hasNEETScore === 'Yes';
 
   const medicalOptions = React.useMemo(() => {
-    let options = (counsellingType === 'NEET_MCC_AllIndia' || counsellingType === 'NEET_MHT_State' || counsellingType === 'MHT_CET_Medical')
-      ? (counsellingType === 'NEET_MCC_AllIndia' ? ['MBBS', 'BDS', 'B.Sc. Nursing'] : MEDICAL_COURSES)
-      : MEDICAL_COURSES;
-
-    if (!hasNEET) {
-      const neetMandatory = ['MBBS', 'BDS', 'BAMS', 'BHMS', 'BUMS', 'BVSc'];
-      options = options.filter(p => !neetMandatory.some(m => p.includes(m)));
+    if (counsellingType === 'NEET_MCC_AllIndia') {
+      return ['MBBS', 'BDS', 'B.Sc. Nursing (Central Institutes)'];
     }
-    return options;
-  }, [counsellingType, hasNEET]);
+    if (counsellingType === 'NEET_MHT_State') {
+      return MEDICAL_COURSES; // Full list: MBBS, BDS, BAMS, BHMS, BPTh, etc.
+    }
+    if (counsellingType === 'MHT_CET_Medical') {
+      return ['B.Pharm (Bachelor of Pharmacy)', 'Pharm.D (Doctor of Pharmacy)', 'B.Tech (Pharmaceuticals)'];
+    }
+    return MEDICAL_COURSES;
+  }, [counsellingType]);
+
+  const instituteOptions = React.useMemo(() => {
+    if (counsellingType === 'NEET_MCC_AllIndia') {
+      return ['AIIMS (All India Institutes)', 'JIPMER', 'Central Universities (AMU/BHU)', 'Deemed Universities', 'ESIC Medical Colleges', 'AFMC (Armed Forces)'];
+    }
+    if (counsellingType === 'NEET_MHT_State' || counsellingType === 'MHT_CET_Medical') {
+      return ['Government Medical/Pharmacy College', 'Government Aided College', 'Private (Unaided) College', 'Deemed University (State Level)', 'Others*'];
+    }
+    return ['Government Colleges', 'Private Colleges', 'Others*'];
+  }, [counsellingType]);
 
   const quotaOptions = React.useMemo(() => {
-    const base = [
-      '15% All India Quota', '85% State Quota', 'NRI Quota', 'Management Quota', 
-      'Trust/Minority Quota', 'HA (Hilly Area)', 'D1 DEF1', 'D2 DEF2', 
-      'D3 DEF3', 'Orphan C', 'Others*'
-    ];
-    
-    let filtered = base;
-
-    if (!hasNEET) {
-      // 15% AIQ and AIQ-based NRI quotas are definitely out
-      filtered = filtered.filter(q => !q.includes('All India Quota'));
+    if (counsellingType === 'NEET_MCC_AllIndia') {
+      return ['15% All India Quota', 'Deemed University Seats', 'Central University Quota', 'ESIC Management Quota', 'AFMC Seats', 'NRI Quota', 'Others*'];
     }
+    
+    const baseStateQuotas = [
+      '85% State Quota', '15% Institutional Quota', 'NRI Quota', 'Management Quota', 
+      'Trust/Minority Quota', 'Hilly Area (HA)', 'Defense (D1/D2/D3)', 'Orphan C', 
+      'MKB (Maharashtra Karnataka Border)', 'Others*'
+    ];
 
     if (counsellingType === 'NEET_MHT_State' || counsellingType === 'MHT_CET_Medical') {
-      filtered = filtered.filter(q => q !== '15% All India Quota');
-    }
-
-    if (counsellingType === 'NEET_MCC_AllIndia') {
-      filtered = filtered.filter(q => ![
-        '85% State Quota', 'HA (Hilly Area)', 'D1 DEF1', 
-        'D2 DEF2', 'D3 DEF3', 'Orphan C'
-      ].includes(q));
+      return baseStateQuotas;
     }
     
-    return filtered;
-  }, [counsellingType, hasNEET]);
+    return baseStateQuotas;
+  }, [counsellingType]);
 
   return (
     <div className="animate-in fade-in slide-in-from-right-4 duration-300">
@@ -95,7 +96,7 @@ export const CoursePreferencesStep = () => {
 
         <MultiSelectChips
           label="Preferred Institute Types"
-          options={['Central Universities (AIIMS/JIPMER)', 'Government Medical Colleges', 'Deemed Universities', 'Private Colleges', 'Others*']}
+          options={instituteOptions}
           value={formData.instituteTypes || []}
           error={errors.instituteTypes}
           onChange={(v: string[]) => {
