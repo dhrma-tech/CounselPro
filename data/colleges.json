@@ -48193,5 +48193,5569 @@
       "highestPackage": "N/A",
       "topRecruiters": []
     }
+  },
+  {
+    "slug": "assam-medical-college-dibrugarh",
+    "name": "ASSAM MEDICAL COLLEGE, DIBRUGARH",
+    "shortName": "Assam Medical College",
+    "type": "Medical",
+    "location": "Assam Medical College",
+    "state": "ASSAM",
+    "established": 2016,
+    "website": "https://www.assammedicalcollege.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "ASSAM MEDICAL COLLEGE, DIBRUGARH is a renowned medical institution in ASSAM.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 4000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 4000,
+        "totalFees": 20000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "Assam Medical College, Dibrugarh-786002 (Assam)"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "ASSAM"
+    ]
+  },
+  {
+    "slug": "guwahati-medical-college-guwahati",
+    "name": "GUWAHATI MEDICAL COLLEGE, GUWAHATI",
+    "shortName": "Gauhati Medical College,",
+    "type": "Medical",
+    "location": "Narakachal Hill Top",
+    "state": "ASSAM",
+    "established": 2016,
+    "website": "https://www.gmchassam.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GUWAHATI MEDICAL COLLEGE, GUWAHATI is a renowned medical institution in ASSAM.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 22000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 22000,
+        "totalFees": 110000,
+        "hostelFees": 1310
+      }
+    ],
+    "contact": {
+      "address": "Narakachal Hill Top, Bhangaghar, Guwahati"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "ASSAM"
+    ]
+  },
+  {
+    "slug": "silchar-medical-college-silcher",
+    "name": "SILCHAR MEDICAL COLLEGE, SILCHER",
+    "shortName": "SILCHAR MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "P.O.SILCHAR MEDICAL COLLEGE",
+    "state": "ASSAM",
+    "established": 2016,
+    "website": "https://www.smcassam.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "SILCHAR MEDICAL COLLEGE, SILCHER is a renowned medical institution in ASSAM.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 22000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 22000,
+        "totalFees": 110000,
+        "hostelFees": 18000
+      }
+    ],
+    "contact": {
+      "address": "P.O.SILCHAR MEDICAL COLLEGE, GHUNGOOR, SILCHAR PIN - 788014, ASSAM"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "ASSAM"
+    ]
+  },
+  {
+    "slug": "tezpur-medical-college-tezpur",
+    "name": "Tezpur Medical College, Tezpur",
+    "shortName": "Tezpur Medical College",
+    "type": "Medical",
+    "location": "Bihaguri",
+    "state": "ASSAM",
+    "established": 2016,
+    "website": "https://www.tmcassam.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Tezpur Medical College, Tezpur is a renowned medical institution in ASSAM.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 1200
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 1200,
+        "totalFees": 6000,
+        "hostelFees": 30000
+      }
+    ],
+    "contact": {
+      "address": "Bihaguri, Tezpur:-784010, Assam"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "ASSAM"
+    ]
+  },
+  {
+    "slug": "anugrah-narayan-magadh-medical-college-gaya",
+    "name": "ANUGRAH NARAYAN MAGADH MEDICAL COLLEGE, GAYA",
+    "shortName": "ANUGRAH NARAYAN MAGADH MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "SHERGHATI ROAD",
+    "state": "BIHAR",
+    "established": 2016,
+    "website": "https://www.anmmc.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "any information required plz contact princ_anmc@rediffmail.com"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "ANUGRAH NARAYAN MAGADH MEDICAL COLLEGE, GAYA is a renowned medical institution in BIHAR.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9700
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9700,
+        "totalFees": 48500,
+        "hostelFees": 3600
+      }
+    ],
+    "contact": {
+      "address": "SHERGHATI ROAD, GAYA, BIHAR"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "BIHAR"
+    ]
+  },
+  {
+    "slug": "jawaharlal-nehru-medical-college-bhagalpur",
+    "name": "Jawaharlal Nehru Medical College, Bhagalpur",
+    "shortName": "Jawaharlal Nehru Medical College, Bhagalpur",
+    "type": "Medical",
+    "location": "Sukhraj Roy Raj Path",
+    "state": "BIHAR",
+    "established": 2016,
+    "website": "https://www.jlnmcbgp.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Jawaharlal Nehru Medical College, Bhagalpur is a renowned medical institution in BIHAR.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 14700
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 14700,
+        "totalFees": 73500,
+        "hostelFees": 5200
+      }
+    ],
+    "contact": {
+      "address": "Sukhraj Roy Raj Path, Bhagalpur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "BIHAR"
+    ]
+  },
+  {
+    "slug": "nalanda-medical-college-patna",
+    "name": "NALANDA MEDICAL COLLEGE, PATNA",
+    "shortName": "Nalanda Medical College",
+    "type": "Medical",
+    "location": "Old ByePass Road",
+    "state": "BIHAR",
+    "established": 2016,
+    "website": "https://www.nmchpatna.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Classes will  Start from 03.09.2016"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "NALANDA MEDICAL COLLEGE, PATNA is a renowned medical institution in BIHAR.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 7000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 7000,
+        "totalFees": 35000,
+        "hostelFees": 8200
+      }
+    ],
+    "contact": {
+      "address": "Old ByePass Road, Kankerbagh, Patna"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "BIHAR"
+    ]
+  },
+  {
+    "slug": "patna-medical-college-patna",
+    "name": "PATNA MEDICAL COLLEGE, PATNA",
+    "shortName": "PATNA MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "ASHOK RAJPATH PATNA",
+    "state": "BIHAR",
+    "established": 2016,
+    "website": "https://www.patnamedicalcollege.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "PATNA MEDICAL COLLEGE, PATNA is a renowned medical institution in BIHAR.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 6100
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 6100,
+        "totalFees": 30500,
+        "hostelFees": 7200
+      }
+    ],
+    "contact": {
+      "address": "ASHOK RAJPATH PATNA"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "BIHAR"
+    ]
+  },
+  {
+    "slug": "sri-krishna-medical-college-muzaffarpur",
+    "name": "SRI KRISHNA MEDICAL COLLEGE, MUZAFFARPUR",
+    "shortName": "SRI KRISHNA MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "UMANAGAR MUZAFFARPUR BIHAR",
+    "state": "BIHAR",
+    "established": 2016,
+    "website": "https://www.skmedicalcollege.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "SRI KRISHNA MEDICAL COLLEGE, MUZAFFARPUR is a renowned medical institution in BIHAR.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9800
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9800,
+        "totalFees": 49000,
+        "hostelFees": 3400
+      }
+    ],
+    "contact": {
+      "address": "UMANAGAR MUZAFFARPUR BIHAR"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "BIHAR"
+    ]
+  },
+  {
+    "slug": "vardhman-institute-of-medical-sciences-nalanda",
+    "name": "VARDHMAN INSTITUTE OF MEDICAL SCIENCES, NALANDA",
+    "shortName": "VARDHMAN INSTITUTE OF MEDICAL SCIENCES",
+    "type": "Medical",
+    "location": "Pawapuri Nalanda",
+    "state": "BIHAR",
+    "established": 2016,
+    "website": "https://www.vimspawapuri.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "VARDHMAN INSTITUTE OF MEDICAL SCIENCES, NALANDA is a renowned medical institution in BIHAR.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 6000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 6000,
+        "totalFees": 30000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "Pawapuri Nalanda"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "BIHAR"
+    ]
+  },
+  {
+    "slug": "pt-j-n-m-medical-college-raipur",
+    "name": "Pt. J N M MEDICAL COLLEGE, RAIPUR",
+    "shortName": "Pt.J.N.M.Medical College,Raipur",
+    "type": "Medical",
+    "location": "Opposite Central Jail",
+    "state": "CHHATTISGARH",
+    "established": 2016,
+    "website": "https://www.ptjnmcraipur.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Library Fee Rs 1000 per Year"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Pt. J N M MEDICAL COLLEGE, RAIPUR is a renowned medical institution in CHHATTISGARH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 29000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 29000,
+        "totalFees": 145000,
+        "hostelFees": 3500
+      }
+    ],
+    "contact": {
+      "address": "Opposite Central Jail, Raipur Chhattisgarh"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "CHHATTISGARH"
+    ]
+  },
+  {
+    "slug": "lt-b-r-k-government-medical-college-jagdalpur",
+    "name": "Lt. B R K Government Medical College, Jagdalpur",
+    "shortName": "LATE B.R.K.M. GOVT. MEDICAL COLLEGE JAGDALPUR",
+    "type": "Medical",
+    "location": "Late Baliram Kashyap Memorial Govt. Medical College",
+    "state": "CHHATTISGARH",
+    "established": 2016,
+    "website": "https://www.govtmedicalcollegejagdalpur.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "CG govt PMT Admission Rule Letter No- F16-01/2016/9/55-4, Date- 21/03/2016"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Lt. B R K Government Medical College, Jagdalpur is a renowned medical institution in CHHATTISGARH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 50000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 50000,
+        "totalFees": 250000,
+        "hostelFees": 2100
+      }
+    ],
+    "contact": {
+      "address": "Late Baliram Kashyap Memorial Govt. Medical College, Dimrapal Geedam Road, Jagdalpur Dist- Bastar"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "CHHATTISGARH"
+    ]
+  },
+  {
+    "slug": "chhattisgarh-institute-of-medical-sciences-bilasp",
+    "name": "CHHATTISGARH INSTITUTE OF MEDICAL SCIENCES, BILASP",
+    "shortName": "CHHATTISGARH INSTITUTE OF MEDICAL SCIENCES (CIMS)",
+    "type": "Medical",
+    "location": "DABARI PARA",
+    "state": "CHHATTISGARH",
+    "established": 2016,
+    "website": "https://www.cimsbilaspur.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "The above Information is liable for change as per the DME(MBBS 2016-17 Admission rules) and rules of..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "CHHATTISGARH INSTITUTE OF MEDICAL SCIENCES, BILASP is a renowned medical institution in CHHATTISGARH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 50000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 50000,
+        "totalFees": 250000,
+        "hostelFees": 4800
+      }
+    ],
+    "contact": {
+      "address": "DABARI PARA, SADAR BAZAR ROAD, BILASPUR, CHHATTISGARH"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "CHHATTISGARH"
+    ]
+  },
+  {
+    "slug": "lt-l-a-m-govt-medical-college-raigarh",
+    "name": "Lt. L A M Govt. Medical College, Raigarh",
+    "shortName": "Late LAM Medical College",
+    "type": "Medical",
+    "location": "T.V. Tower Road",
+    "state": "CHHATTISGARH",
+    "established": 2016,
+    "website": "https://www.gmcraigarh.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "-"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Lt. L A M Govt. Medical College, Raigarh is a renowned medical institution in CHHATTISGARH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 50000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 50000,
+        "totalFees": 250000,
+        "hostelFees": 5000
+      }
+    ],
+    "contact": {
+      "address": "T.V. Tower Road, Bendrachuwa, Raigarh"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "CHHATTISGARH"
+    ]
+  },
+  {
+    "slug": "government-medical-college-rajnandgaon",
+    "name": "Government Medical College, Rajnandgaon",
+    "shortName": "Govt Medical College, Rajnandgaon",
+    "type": "Medical",
+    "location": "Ekalavya Parisar",
+    "state": "CHHATTISGARH",
+    "established": 2016,
+    "website": "https://www.gmcrjn.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Reporting address for Admissions:"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Government Medical College, Rajnandgaon is a renowned medical institution in CHHATTISGARH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 40000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 40000,
+        "totalFees": 200000,
+        "hostelFees": 3500
+      }
+    ],
+    "contact": {
+      "address": "Ekalavya Parisar, Village- Pendri,Rajnandgaon"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "CHHATTISGARH"
+    ]
+  },
+  {
+    "slug": "government-medical-college-and-hospital-chandigar",
+    "name": "GOVERNMENT MEDICAL COLLEGE AND HOSPITAL, CHANDIGAR",
+    "shortName": "GOVERNMENT MEDICAL COLLEGE HOSPITAL",
+    "type": "Medical",
+    "location": "SECTOR 32",
+    "state": "CHANDIGARH",
+    "established": 2016,
+    "website": "https://www.gmch.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVERNMENT MEDICAL COLLEGE AND HOSPITAL, CHANDIGAR is a renowned medical institution in CHANDIGARH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 14624
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 14624,
+        "totalFees": 73120,
+        "hostelFees": 13700
+      }
+    ],
+    "contact": {
+      "address": "SECTOR 32, CHANDIGARH"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "CHANDIGARH"
+    ]
+  },
+  {
+    "slug": "lady-hardinge-medical-college-new-delhi",
+    "name": "LADY HARDINGE MEDICAL COLLEGE, NEW DELHI",
+    "shortName": "Lady Hardinge Medical College",
+    "type": "Medical",
+    "location": "Lady Hardinge Medical College",
+    "state": "DELHI",
+    "established": 2016,
+    "website": "https://www.lhmc.nic.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Girls",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "LADY HARDINGE MEDICAL COLLEGE, NEW DELHI is a renowned medical institution in DELHI.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 1355
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 1355,
+        "totalFees": 6775,
+        "hostelFees": 490
+      }
+    ],
+    "contact": {
+      "address": "Lady Hardinge Medical College, Shaheed Bhagat Singh Marg, Connaught Place, New Delhi"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "DELHI"
+    ]
+  },
+  {
+    "slug": "maulana-azad-medical-college-new-delhi",
+    "name": "MAULANA AZAD MEDICAL COLLEGE, NEW DELHI",
+    "shortName": "Maulana Azad Medical College",
+    "type": "Medical",
+    "location": "2- Bahadur Shah Zafar Marg",
+    "state": "DELHI",
+    "established": 2016,
+    "website": "https://www.mamc.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MAULANA AZAD MEDICAL COLLEGE, NEW DELHI is a renowned medical institution in DELHI.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 240
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 240,
+        "totalFees": 1200,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "2- Bahadur Shah Zafar Marg, New Delhi"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "DELHI"
+    ]
+  },
+  {
+    "slug": "university-college-of-medical-sciences-delhi",
+    "name": "University College of Medical Sciences, Delhi",
+    "shortName": "University College of Medical Sciences",
+    "type": "Medical",
+    "location": "University College of Medical Sciences",
+    "state": "DELHI",
+    "established": 2016,
+    "website": "https://www.ucms.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Bond information regarding Bond Money will be notified later as it is to be declared by FMS, Univers..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "University College of Medical Sciences, Delhi is a renowned medical institution in DELHI.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 5295
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 5295,
+        "totalFees": 26475,
+        "hostelFees": 3540
+      }
+    ],
+    "contact": {
+      "address": "University College of Medical Sciences, Dilshad Garden,"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "DELHI"
+    ]
+  },
+  {
+    "slug": "vmmc-and-safdarjung-hospital-new-delhi",
+    "name": "VMMC AND SAFDARJUNG HOSPITAL, NEW DELHI",
+    "shortName": "Vardhman Mahavir Medical College",
+    "type": "Medical",
+    "location": "Vardhman Mahavir Medical College and Safdarjung Hospital",
+    "state": "DELHI",
+    "established": 2016,
+    "website": "https://www.vmmc-sjh.nic.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Fees structure is- Tuition fees- 15000, University dues- 12500,student activity fee-1000 security mo..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "VMMC AND SAFDARJUNG HOSPITAL, NEW DELHI is a renowned medical institution in DELHI.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 33500
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 33500,
+        "totalFees": 167500,
+        "hostelFees": 7000
+      }
+    ],
+    "contact": {
+      "address": "Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "DELHI"
+    ]
+  },
+  {
+    "slug": "ndmc-medical-college-delhi",
+    "name": "NDMC Medical College, Delhi",
+    "shortName": "NORTH DELHI MUNICIPAL CORPORATION MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "MALKA GANJ",
+    "state": "DELHI",
+    "established": 2016,
+    "website": "https://www.northmcd.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "POINT NO: 4,9 & 12 AS PER GGSIP UNIVERCITY&Nirman Bhawan direction"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "NDMC Medical College, Delhi is a renowned medical institution in DELHI.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 50000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 50000,
+        "totalFees": 250000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "MALKA GANJ, HINDU RAO HOSPITAL"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "DELHI"
+    ]
+  },
+  {
+    "slug": "goa-medical-college-panaji",
+    "name": "GOA MEDICAL COLLEGE, PANAJI",
+    "shortName": "GOA MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "BAMBOLIM-GOA",
+    "state": "GOA",
+    "established": 2016,
+    "website": "https://www.gmc.goa.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Annual Fees subject to change as per the decision of Government of Goa"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOA MEDICAL COLLEGE, PANAJI is a renowned medical institution in GOA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 73000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 73000,
+        "totalFees": 365000,
+        "hostelFees": 3700
+      }
+    ],
+    "contact": {
+      "address": "BAMBOLIM-GOA"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "GOA"
+    ]
+  },
+  {
+    "slug": "medical-college-baroda",
+    "name": "MEDICAL COLLEGE, BARODA",
+    "shortName": "Medical College, Baroda",
+    "type": "Medical",
+    "location": "Medical College Baroda",
+    "state": "GUJARAT",
+    "established": 2016,
+    "website": "https://www.medicalcollegebaroda.edu.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "-"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MEDICAL COLLEGE, BARODA is a renowned medical institution in GUJARAT.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 6000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 6000,
+        "totalFees": 30000,
+        "hostelFees": 1200
+      }
+    ],
+    "contact": {
+      "address": "Medical College Baroda, Anandpura,Vadodara"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "GUJARAT"
+    ]
+  },
+  {
+    "slug": "mp-shah-medical-college-jamnagar",
+    "name": "M.P. SHAH MEDICAL COLLEGE, JAMNAGAR",
+    "shortName": "Shri M. P. Shah Government Medical College",
+    "type": "Medical",
+    "location": "M. P. Shah Government Medical College",
+    "state": "GUJARAT",
+    "established": 2016,
+    "website": "https://www.mpsmc.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "The candidates who have passed their 10+2 exam from the board other than Gujarat State have to get p..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "M.P. SHAH MEDICAL COLLEGE, JAMNAGAR is a renowned medical institution in GUJARAT.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 6000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 6000,
+        "totalFees": 30000,
+        "hostelFees": 1220
+      }
+    ],
+    "contact": {
+      "address": "M. P. Shah Government Medical College, Pandit Nehru Marg, Jamnagar"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "GUJARAT"
+    ]
+  },
+  {
+    "slug": "govt-medical-collegerajkot",
+    "name": "GOVT. MEDICAL COLLEGE,RAJKOT",
+    "shortName": "PDU Govt. Medical College Rajkot.",
+    "type": "Medical",
+    "location": "Civil Hospital Campus",
+    "state": "GUJARAT",
+    "established": 2016,
+    "website": "https://www.pdumcrajkot.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT. MEDICAL COLLEGE,RAJKOT is a renowned medical institution in GUJARAT.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 6000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 6000,
+        "totalFees": 30000,
+        "hostelFees": 1200
+      }
+    ],
+    "contact": {
+      "address": "Civil Hospital Campus, Jamnagar Road Rajkot 360001"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "GUJARAT"
+    ]
+  },
+  {
+    "slug": "indira-gandhi-medical-coll-shimla",
+    "name": "INDIRA GANDHI MEDICAL COLL., SHIMLA",
+    "shortName": "Indira Gandhi Medcial College, Shimla",
+    "type": "Medical",
+    "location": "Lakkar bazar",
+    "state": "HIMACHAL PRADESH",
+    "established": 2016,
+    "website": "https://www.igmcshimla.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "INDIRA GANDHI MEDICAL COLL., SHIMLA is a renowned medical institution in HIMACHAL PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 45000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 45000,
+        "totalFees": 225000,
+        "hostelFees": 27000
+      }
+    ],
+    "contact": {
+      "address": "Lakkar bazar, Snowdon Complex, Shimla"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "HIMACHAL PRADESH"
+    ]
+  },
+  {
+    "slug": "drrajendra-prasad-mc-tanda",
+    "name": "DR.RAJENDRA PRASAD MC, TANDA",
+    "shortName": "Dr. RPGMC, Kangra at Tanda(HP)",
+    "type": "Medical",
+    "location": "Dr.Rajendra Prasad Govt. Medical College",
+    "state": "HIMACHAL PRADESH",
+    "established": 2016,
+    "website": "https://www.drpgmc.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Fax No. 01892-267115"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "DR.RAJENDRA PRASAD MC, TANDA is a renowned medical institution in HIMACHAL PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 45000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 45000,
+        "totalFees": 225000,
+        "hostelFees": 27200
+      }
+    ],
+    "contact": {
+      "address": "Dr.Rajendra Prasad Govt. Medical College, Kangra at Tanda, Himachal Pradesh"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "HIMACHAL PRADESH"
+    ]
+  },
+  {
+    "slug": "pt-bd-sharma-pgims-rohtak",
+    "name": "PT. B.D. SHARMA PGIMS, ROHTAK",
+    "shortName": "Pt B D Sharma PGIMS Rohtak",
+    "type": "Medical",
+    "location": "Pt B D Sharma PGIMS Rohtak",
+    "state": "HARYANA",
+    "established": 2016,
+    "website": "https://www.pgimsrohtak.nic.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "PT. B.D. SHARMA PGIMS, ROHTAK is a renowned medical institution in HARYANA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 42420
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 42420,
+        "totalFees": 212100,
+        "hostelFees": 17200
+      }
+    ],
+    "contact": {
+      "address": "Pt B D Sharma PGIMS Rohtak"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "HARYANA"
+    ]
+  },
+  {
+    "slug": "bps-govt-med-college-sonepat",
+    "name": "BPS Govt. Med. College, Sonepat",
+    "shortName": "BPS Govt. Medical College for Women ,khanpur kalan",
+    "type": "Medical",
+    "location": "Director",
+    "state": "HARYANA",
+    "established": 2016,
+    "website": "https://www.bpsgmckhanpur.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Girls",
+    "highlights": [
+      "Institute is exclusively for female candidates"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "BPS Govt. Med. College, Sonepat is a renowned medical institution in HARYANA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 42420
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 42420,
+        "totalFees": 212100,
+        "hostelFees": 17200
+      }
+    ],
+    "contact": {
+      "address": "Director,BPS Govt. Medical College for Women, khanpur kalan,Sonepat"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "HARYANA"
+    ]
+  },
+  {
+    "slug": "shkm-gmc-nalhar-mewat-haryana",
+    "name": "SHKM GMC, Nalhar, Mewat, Haryana",
+    "shortName": "Shaheed Hasan Khan Mewati Govt. Medical College",
+    "type": "Medical",
+    "location": "Nalhar",
+    "state": "HARYANA",
+    "established": 2016,
+    "website": "https://www.gmcmewat.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "SHKM GMC, Nalhar, Mewat, Haryana is a renowned medical institution in HARYANA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 42420
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 42420,
+        "totalFees": 212100,
+        "hostelFees": 17200
+      }
+    ],
+    "contact": {
+      "address": "Nalhar, Nuh (Mewat)"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "HARYANA"
+    ]
+  },
+  {
+    "slug": "employees-state-insurance-corporation-medical-coll",
+    "name": "Employees State Insurance Corporation Medical Coll",
+    "shortName": "ESIC Medical College & Hospital",
+    "type": "Medical",
+    "location": "NH-3",
+    "state": "HARYANA",
+    "established": 2016,
+    "website": "https://www.esicmcfbd.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Employees State Insurance Corporation Medical Coll is a renowned medical institution in HARYANA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 24000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 24000,
+        "totalFees": 120000,
+        "hostelFees": 10000
+      }
+    ],
+    "contact": {
+      "address": "NH-3,NIT,Faridabad"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "HARYANA"
+    ]
+  },
+  {
+    "slug": "mgm-medical-collegejamshedpur",
+    "name": "M.G.M. MEDICAL COLLEGE,JAMSHEDPUR",
+    "shortName": "M.G.M. Medical College",
+    "type": "Medical",
+    "location": "Dimna Road",
+    "state": "JHARKHAND",
+    "established": 2016,
+    "website": "https://www.mgmmedicalcollege.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Rs. 1000 is refund as a caution money."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "M.G.M. MEDICAL COLLEGE,JAMSHEDPUR is a renowned medical institution in JHARKHAND.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9130
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9130,
+        "totalFees": 45650,
+        "hostelFees": 25000
+      }
+    ],
+    "contact": {
+      "address": "Dimna Road, Mango, Jamshedpur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "JHARKHAND"
+    ]
+  },
+  {
+    "slug": "rajendra-inst-of-med-sci-ranchi",
+    "name": "RAJENDRA INST. OF MED. SCI., RANCHI",
+    "shortName": "RAJENDRA INSTITUTE OF MEDICAL SCIENCES,RANCHI",
+    "type": "Medical",
+    "location": "RAJENDRA INSTITUTE OF MEDICAL SCIENCES",
+    "state": "JHARKHAND",
+    "established": 2016,
+    "website": "https://www.rimsranchi.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Any change in terms and conditions regarding bond will be applicable as per Govt.order"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "RAJENDRA INST. OF MED. SCI., RANCHI is a renowned medical institution in JHARKHAND.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 6000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 6000,
+        "totalFees": 30000,
+        "hostelFees": 3000
+      }
+    ],
+    "contact": {
+      "address": "RAJENDRA INSTITUTE OF MEDICAL SCIENCES,BARIATU,RANCHI"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "JHARKHAND"
+    ]
+  },
+  {
+    "slug": "pataliputra-medical-college-dhanbad",
+    "name": "PATALIPUTRA MEDICAL COLLEGE, DHANBAD",
+    "shortName": "Patliputra Medical College, Dhanbad",
+    "type": "Medical",
+    "location": "PO- BCCL town Ship",
+    "state": "JHARKHAND",
+    "established": 2016,
+    "website": "https://www.pmcdhanbad.edu.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "PATALIPUTRA MEDICAL COLLEGE, DHANBAD is a renowned medical institution in JHARKHAND.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 7500
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 7500,
+        "totalFees": 37500,
+        "hostelFees": 4800
+      }
+    ],
+    "contact": {
+      "address": "PO- BCCL town Ship, Koyla Nagar Dhanbad"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "JHARKHAND"
+    ]
+  },
+  {
+    "slug": "bangalore-med-collegebangalore",
+    "name": "BANGALORE MED. COLLEGE,BANGALORE",
+    "shortName": "BANGALORE MEDICAL COLLEGE AND RESEARCH INSTITUTE.",
+    "type": "Medical",
+    "location": "FORT",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.bmcri.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "BANGALORE MED. COLLEGE,BANGALORE is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 23420
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 23420,
+        "totalFees": 117100,
+        "hostelFees": 7273
+      }
+    ],
+    "contact": {
+      "address": "FORT, K.R ROAD, BENGALURU"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "vijaynagar-inst-of-med-scbellary",
+    "name": "VIJAYNAGAR INST OF MED. SC,BELLARY",
+    "shortName": "Vijayanagara Institute of Medical Sciences, (VIMS)",
+    "type": "Medical",
+    "location": "VIJAYANAGARA INSTITUTE OF MEDICAL SCIENCES",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.vimsbellary.org.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "-"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "VIJAYNAGAR INST OF MED. SC,BELLARY is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 29200
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 29200,
+        "totalFees": 146000,
+        "hostelFees": 16400
+      }
+    ],
+    "contact": {
+      "address": "VIJAYANAGARA INSTITUTE OF MEDICAL SCIENCES, (VIMS), CANTONMENT, BELLARY."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "karnatak-inst-of-medical-schubli",
+    "name": "KARNATAK INST. OF MEDICAL SC.,HUBLI",
+    "shortName": "KARNATAKA INSTITUTE OF MEDICAL SCIENCES, HUBLI",
+    "type": "Medical",
+    "location": "VIDYANAGAR",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.kimshubli.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "FEES, BOND CONDITIONS AS PER NORMS OF  GOVERNMENT OF KARNATAKA"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "KARNATAK INST. OF MEDICAL SC.,HUBLI is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 23240
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 23240,
+        "totalFees": 116200,
+        "hostelFees": 13560
+      }
+    ],
+    "contact": {
+      "address": "VIDYANAGAR, HUBLI."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "mysore-med-research-inst-mysore",
+    "name": "MYSORE MED.& RESEARCH INST. MYSORE",
+    "shortName": "Mysore Medical College and Research Institute, Mys",
+    "type": "Medical",
+    "location": "Mysore Medical College and Research Institute",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.mmcrimysore.org.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "-"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MYSORE MED.& RESEARCH INST. MYSORE is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 25075
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 25075,
+        "totalFees": 125375,
+        "hostelFees": 30000
+      }
+    ],
+    "contact": {
+      "address": "Mysore Medical College and Research Institute, Irwin Road, Mysore"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "hassan-inst-medical-sciences-hassan",
+    "name": "HASSAN INST. MEDICAL SCIENCES, HASSAN",
+    "shortName": "Hassan Institute of Medical Sciences, Hassan",
+    "type": "Medical",
+    "location": "Shri Chamarajendra Hospital Premises",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.hims-hassan.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "-"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "HASSAN INST. MEDICAL SCIENCES, HASSAN is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 25800
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 25800,
+        "totalFees": 129000,
+        "hostelFees": 15000
+      }
+    ],
+    "contact": {
+      "address": "Shri Chamarajendra Hospital Premises, Hassan"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "belgaum-inst-of-medical-sci-belgaum",
+    "name": "BELGAUM INST. OF MEDICAL SCI., BELGAUM",
+    "shortName": "BELAGAVI NSTITUTE OF MEDICAL SCIENCES, BELAGAVI",
+    "type": "Medical",
+    "location": "DR B. R. AMBEDKAR ROAD",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.bimsbelgaum.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "BELGAUM INST. OF MEDICAL SCI., BELGAUM is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 11530
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 11530,
+        "totalFees": 57650,
+        "hostelFees": 9000
+      }
+    ],
+    "contact": {
+      "address": "DR B. R. AMBEDKAR ROAD, BELAGAVI"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "mandya-inst-of-medical-sci-mandya",
+    "name": "MANDYA INST. OF MEDICAL SCI., MANDYA",
+    "shortName": "MANDYA INSTITUTE OF MEDICAL SCIENCES, MANDYA",
+    "type": "Medical",
+    "location": "BANGALORE-MYSORE MAIN ROAD",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.mimsmandya.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "FEE DETAILS:"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MANDYA INST. OF MEDICAL SCI., MANDYA is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 25975
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 25975,
+        "totalFees": 129875,
+        "hostelFees": 36000
+      }
+    ],
+    "contact": {
+      "address": "BANGALORE-MYSORE MAIN ROAD, MANDYA"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "raichur-inst-of-medical-sci-raichur",
+    "name": "RAICHUR INST. OF MEDICAL SCI., RAICHUR",
+    "shortName": "RAICHUR INSTITUTE OF MEDICAL SCIENCES",
+    "type": "Medical",
+    "location": "SY. NO. 307 & 308",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.rims-raichur.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Fees including University and College"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "RAICHUR INST. OF MEDICAL SCI., RAICHUR is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 27710
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 27710,
+        "totalFees": 138550,
+        "hostelFees": 9000
+      }
+    ],
+    "contact": {
+      "address": "SY. NO. 307 & 308, HYDERABAD ROAD, RAICHUR"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "shimoga-inst-of-medical-sci-shimoga",
+    "name": "SHIMOGA INST. OF MEDICAL SCI., SHIMOGA",
+    "shortName": "shimoga institute of medical sciences",
+    "type": "Medical",
+    "location": "sagar road",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.sims-shimoga.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "SHIMOGA INST. OF MEDICAL SCI., SHIMOGA is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 15000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 15000,
+        "totalFees": 75000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "sagar road, shimoga-577201, karnataka"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "bidar-institute-of-medical-sci-bidar",
+    "name": "BIDAR INSTITUTE OF MEDICAL SCI.,  BIDAR",
+    "shortName": "Bidar Institute of Medical Sciences, Bidar",
+    "type": "Medical",
+    "location": "Udgir Road",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.brims-bidar.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "----"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "BIDAR INSTITUTE OF MEDICAL SCI.,  BIDAR is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 24865
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 24865,
+        "totalFees": 124325,
+        "hostelFees": 19000
+      }
+    ],
+    "contact": {
+      "address": "Udgir Road, Bidar"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "esic-mc-gulbarga-karnataka",
+    "name": "ESIC MC, Gulbarga, Karnataka",
+    "shortName": "ESIC MEDICAL COLLEGE,",
+    "type": "Medical",
+    "location": "GULBARGA UNIVERSITY CAMPUS",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.esicmcglb.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "MESS FACILITY AVAILABLE"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "ESIC MC, Gulbarga, Karnataka is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 24000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 24000,
+        "totalFees": 120000,
+        "hostelFees": 1800
+      }
+    ],
+    "contact": {
+      "address": "GULBARGA UNIVERSITY CAMPUS, SEDAM ROAD, GULBARGA"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "gulbarga-institute-of-medical-sciences-gulbarga",
+    "name": "Gulbarga Institute of Medical Sciences, Gulbarga",
+    "shortName": "GULBARGA ISTITUE OF MEDICAL SCIENCES, GULBARGA",
+    "type": "Medical",
+    "location": "VEERESH NAGAR",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.gims-gulbarga.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "RGUHS affiliation details and BOND related information will be provided later at the earliest."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Gulbarga Institute of Medical Sciences, Gulbarga is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 25075
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 25075,
+        "totalFees": 125375,
+        "hostelFees": 33000
+      }
+    ],
+    "contact": {
+      "address": "VEERESH NAGAR, SEDAM ROAD, GULBARGA"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "koppal-institute-of-medical-sciences",
+    "name": "Koppal Institute of Medical Sciences",
+    "shortName": "KOPPAL INSTITUTE OF MEDICAL SCIENCES, KOPPAL.",
+    "type": "Medical",
+    "location": "DIRECTOR",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.kimskoppal.kar.nic.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "fees,bond and conditions as per norms of government of karnataka"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Koppal Institute of Medical Sciences is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 29200
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 29200,
+        "totalFees": 146000,
+        "hostelFees": 16400
+      }
+    ],
+    "contact": {
+      "address": "DIRECTOR, KOPPAL INSTITUTE OF MEDICAL SCIENCES, GANGAVATHI ROAD, KOPPAL."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "gadag-institute-of-medical-sciences",
+    "name": "Gadag Institute of Medical Sciences",
+    "shortName": "GADAG INSTITUTE OF MEDICAL SCIENCES GADAG",
+    "type": "Medical",
+    "location": "MULAGUND ROAD MALLASAMUDRA",
+    "state": "KARNATAKA",
+    "established": 2016,
+    "website": "https://www.gimsgadag.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "FEES, BOND CONDITIONS AS PER NORMS OF GOVERNMENT OF KARNATAKA"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Gadag Institute of Medical Sciences is a renowned medical institution in KARNATAKA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 26200
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 26200,
+        "totalFees": 131000,
+        "hostelFees": 16200
+      }
+    ],
+    "contact": {
+      "address": "MULAGUND ROAD MALLASAMUDRA, GADAG"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KARNATAKA"
+    ]
+  },
+  {
+    "slug": "govt-medical-college-kozhikode",
+    "name": "GOVT. MEDICAL COLLEGE, KOZHIKODE",
+    "shortName": "Govt Medical College, Kozhikode",
+    "type": "Medical",
+    "location": "Medical College P O",
+    "state": "KERALA",
+    "established": 2016,
+    "website": "https://www.calicutmedicalcollege.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT. MEDICAL COLLEGE, KOZHIKODE is a renowned medical institution in KERALA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 25000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 25000,
+        "totalFees": 125000,
+        "hostelFees": 11350
+      }
+    ],
+    "contact": {
+      "address": "Medical College P O, Kozhikode-8"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KERALA"
+    ]
+  },
+  {
+    "slug": "govtmedical-collegethiruvananthapuram",
+    "name": "GOVT.MEDICAL COLLEGE,THIRUVANANTHAPURAM",
+    "shortName": "GOVT.MEDICAL COLLEGE THIRUVANANTHAPURAM",
+    "type": "Medical",
+    "location": "MEDICAL COLLEGE.P.O",
+    "state": "KERALA",
+    "established": 2016,
+    "website": "https://www.tmc.kerala.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "principalmct@gmail.com"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT.MEDICAL COLLEGE,THIRUVANANTHAPURAM is a renowned medical institution in KERALA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 25000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 25000,
+        "totalFees": 125000,
+        "hostelFees": 3068
+      }
+    ],
+    "contact": {
+      "address": "MEDICAL COLLEGE.P.O,THIRUVANANTHAPURAM"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KERALA"
+    ]
+  },
+  {
+    "slug": "td-medical-college-allappuzha",
+    "name": "T.D. MEDICAL COLLEGE, ALLAPPUZHA",
+    "shortName": "Govt.T.D.Medical College Alappuzha",
+    "type": "Medical",
+    "location": "Govt.T.D Medical College",
+    "state": "KERALA",
+    "established": 2016,
+    "website": "https://www.tdmc.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "T.D. MEDICAL COLLEGE, ALLAPPUZHA is a renowned medical institution in KERALA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 20000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 20000,
+        "totalFees": 100000,
+        "hostelFees": 36000
+      }
+    ],
+    "contact": {
+      "address": "Govt.T.D Medical College,Vandanam P.O,Alappuzha"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KERALA"
+    ]
+  },
+  {
+    "slug": "gmc-mallapuram-kerala",
+    "name": "GMC, Mallapuram, kerala",
+    "shortName": "GOVERNMENT MEDICAL COLLEGE MANJERI,MALAPPURAM",
+    "type": "Medical",
+    "location": "Govt.Medical College Manjeri",
+    "state": "KERALA",
+    "established": 2016,
+    "website": "https://www.gmc-manjeri.Weebly.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "E. mail.govtmcmanjeri@gmail.com"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GMC, Mallapuram, kerala is a renowned medical institution in KERALA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 23000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 23000,
+        "totalFees": 115000,
+        "hostelFees": 10500
+      }
+    ],
+    "contact": {
+      "address": "Govt.Medical College Manjeri,MALAPPURAM"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KERALA"
+    ]
+  },
+  {
+    "slug": "govt-medical-college-idduki",
+    "name": "Govt. Medical College, Idduki",
+    "shortName": "GOVT MEDICAL COLLEGE IDUKKI",
+    "type": "Medical",
+    "location": "IDUKKI COLONY P O",
+    "state": "KERALA",
+    "established": 2016,
+    "website": "https://www.gmci.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "GOVT MEDICAL COLLEGE IDUKKI"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Govt. Medical College, Idduki is a renowned medical institution in KERALA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 25000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 25000,
+        "totalFees": 125000,
+        "hostelFees": 0
+      }
+    ],
+    "contact": {
+      "address": "IDUKKI COLONY P O , IDUKKI, KERALA"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KERALA"
+    ]
+  },
+  {
+    "slug": "govt-medical-college-ernakulam",
+    "name": "Govt Medical College, Ernakulam",
+    "shortName": "Govt Medical College, Ernakulam",
+    "type": "Medical",
+    "location": "HMT Colony P O",
+    "state": "KERALA",
+    "established": 2016,
+    "website": "https://www.cmccochin.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Year of establishment- 2000"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Govt Medical College, Ernakulam is a renowned medical institution in KERALA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 20000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 20000,
+        "totalFees": 100000,
+        "hostelFees": 1480
+      }
+    ],
+    "contact": {
+      "address": "HMT Colony P O, Kalamassery, Ernakulam District, Kerala State- 683503"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KERALA"
+    ]
+  },
+  {
+    "slug": "govt-medical-college-palakkad",
+    "name": "Govt Medical College, Palakkad",
+    "shortName": "Institute of Integrated Medical Sciences, Palakkad",
+    "type": "Medical",
+    "location": "Yakkara East",
+    "state": "KERALA",
+    "established": 2016,
+    "website": "https://www. iimskerala.nic.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Govt Medical College, Palakkad is a renowned medical institution in KERALA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 25000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 25000,
+        "totalFees": 125000,
+        "hostelFees": 42000
+      }
+    ],
+    "contact": {
+      "address": "Yakkara East, Kunnathurmedu Post, Palakkad, Kerala-678 013"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "KERALA"
+    ]
+  },
+  {
+    "slug": "neigrihms-shillong",
+    "name": "NEIGRIHMS, SHILLONG",
+    "shortName": "NEIGRIHMS",
+    "type": "Medical",
+    "location": "North Eastern Indira Gandhi Regional Institute of Health and Medical Science Shillong",
+    "state": "MEGHALAYA",
+    "established": 2016,
+    "website": "https://www.neigrihms.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "info.neigrihms@nic.in"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "NEIGRIHMS, SHILLONG is a renowned medical institution in MEGHALAYA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 6020
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 6020,
+        "totalFees": 30100,
+        "hostelFees": 36000
+      }
+    ],
+    "contact": {
+      "address": "North Eastern Indira Gandhi Regional Institute of Health and Medical Science Shillong"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MEGHALAYA"
+    ]
+  },
+  {
+    "slug": "bahiramjee-jijibhai-medical-collge-pune",
+    "name": "BAHIRAMJEE JIJIBHAI MEDICAL COLLGE, PUNE",
+    "shortName": "BAYRAMJEE JEJEEBHOY GOVT. MEDICAL COLLEGE, PUNE",
+    "type": "Medical",
+    "location": "J. P. NARAYAN ROAD",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.bjmcpune.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "THIS IS TOP TEN RANKED COLLEGE IN INDIA.BOND CONDITIONS IS APPLY FOR ALL STUDENTS INCLUDING THE STUD..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "BAHIRAMJEE JIJIBHAI MEDICAL COLLGE, PUNE is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 74300
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 74300,
+        "totalFees": 371500,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "J. P. NARAYAN ROAD, NEAR PUNE RAILWAY STATION, SASSOON HOSPITAL COMPOUND, PUNE."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "dr-vaishampayam-memorial-mcsholapur",
+    "name": "DR. VAISHAMPAYAM MEMORIAL M.C.,SHOLAPUR",
+    "shortName": "Dr. V.M. Govt. Medical College, Solapur",
+    "type": "Medical",
+    "location": "In Front of District Civil Court",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.vmgmc-hsolapur.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "DR. VAISHAMPAYAM MEMORIAL M.C.,SHOLAPUR is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 64400
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 64400,
+        "totalFees": 322000,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "In Front of District Civil Court, Solapur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "govt-medical-collegeaurangabad",
+    "name": "GOVT. MEDICAL COLLEGE,AURANGABAD",
+    "shortName": "Government Medical College, Aurangabd (M.S.)",
+    "type": "Medical",
+    "location": "Government Medical College",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.gmcaurangabad.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Once the seat is allotted at this institute the student should visit the website www.gmcaurangabad.c..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT. MEDICAL COLLEGE,AURANGABAD is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 77822
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 77822,
+        "totalFees": 389110,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Government Medical College, Aurangabad, Jubli Park, Panchakki Road, Aurangabad"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "govt-medical-college-nagpur",
+    "name": "GOVT. MEDICAL COLLEGE, NAGPUR",
+    "shortName": "GOVERNMENT MEDICAL COLLEGE, NAGPUR",
+    "type": "Medical",
+    "location": "Hanuman Nagar",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.gmcnagpur.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "deangmc2@gmail.com"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT. MEDICAL COLLEGE, NAGPUR is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 81900
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 81900,
+        "totalFees": 409500,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Hanuman Nagar, nagpur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "grant-medical-coll-sir-jjhospmumbai",
+    "name": "GRANT MEDICAL COLL & SIR J.J.HOSP,MUMBAI",
+    "shortName": "Grant Government Medical College",
+    "type": "Medical",
+    "location": "Sir JJ Group of Hospitals",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.grantmedicalcollege-jjhospital.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Candidate has to sign undertaking that he/she will not leave India within a period of 5 years from t..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GRANT MEDICAL COLL & SIR J.J.HOSP,MUMBAI is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 87981
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 87981,
+        "totalFees": 439905,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Sir JJ Group of Hospitals, Sir JJ Road, Byculla, MUmbai"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "indira-gandhi-govtmedical-coll-nagpur",
+    "name": "INDIRA GANDHI GOVT.MEDICAL COLL., NAGPUR",
+    "shortName": "Indira Gandhi Government Medical College, Nagpur.",
+    "type": "Medical",
+    "location": "Indira Gandhi Government Medical College",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.iggmc.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "this college is recognized by Medical council of India, New Delhi"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "INDIRA GANDHI GOVT.MEDICAL COLL., NAGPUR is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 74900
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 74900,
+        "totalFees": 374500,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Indira Gandhi Government Medical College, Central Avenue Road, Nagpur."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "lokmanya-tilak-municipal-m-cmumbai",
+    "name": "LOKMANYA TILAK  MUNICIPAL M C,MUMBAI",
+    "shortName": "L.T.M. MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "DR.B.R. AMBEDKAR ROAD",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.ltmgh.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Boys",
+    "highlights": [
+      "Fee filled in is approximate amount it may vary.  Service Bond is Rs. 10,00,000/- (Rs. Ten lakhs onl..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "LOKMANYA TILAK  MUNICIPAL M C,MUMBAI is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 77391
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 77391,
+        "totalFees": 386955,
+        "hostelFees": 0
+      }
+    ],
+    "contact": {
+      "address": "DR.B.R. AMBEDKAR ROAD, SION, MUMBAI"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "government-medical-college-miraj",
+    "name": "GOVERNMENT MEDICAL COLLEGE, MIRAJ",
+    "shortName": "Government Medical College,Miraj",
+    "type": "Medical",
+    "location": "Pandharpur Road",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.gmcmiraj.co.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVERNMENT MEDICAL COLLEGE, MIRAJ is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 76900
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 76900,
+        "totalFees": 384500,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Pandharpur Road,Miraj Tal-Miraj,Dist-Sangli"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "seth-gs-medical-college-mumbai",
+    "name": "SETH G.S. MEDICAL COLLEGE, MUMBAI",
+    "shortName": "Seth G.S.Medical College",
+    "type": "Medical",
+    "location": "Acharya Donde Marg",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.kem.edu",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "SETH G.S. MEDICAL COLLEGE, MUMBAI is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 83936
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 83936,
+        "totalFees": 419680,
+        "hostelFees": 4240
+      }
+    ],
+    "contact": {
+      "address": "Acharya Donde Marg, Parel, Mumbai"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "swami-ramanand-tirth-rural-mcambajogai",
+    "name": "SWAMI RAMANAND TiRTH RURAL M.C,AMBAJOGAI",
+    "shortName": "SWAMI RAMNAND TEERTH RURAL GOVT MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "SWAMI RAMANAND TEERTH RURAL GOVERNMENT MEDICAL COLLEGE AMBAJOGAI",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.srtrmca.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "A government medical college with RECOGNIZED 50  capacity  & 50 proposed additional intake (total 10..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "SWAMI RAMANAND TiRTH RURAL M.C,AMBAJOGAI is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 64400
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 64400,
+        "totalFees": 322000,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "SWAMI RAMANAND TEERTH RURAL GOVERNMENT MEDICAL COLLEGE AMBAJOGAI, DIST BEED, MAHARASHTRA 431517"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "topiwala-national-medical-collegemumbai",
+    "name": "TOPIWALA NATIONAL MEDICAL COLLEGE,MUMBAI",
+    "shortName": "TOPIWALA NATIONAL MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "Dr. A.L.Nair Road",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.tnmcnair.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "TOPIWALA NATIONAL MEDICAL COLLEGE,MUMBAI is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 73800
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 73800,
+        "totalFees": 369000,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Dr. A.L.Nair Road, Mumbai Central, Mumbai."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "drscgovt-medical-collegenanded",
+    "name": "DR.S.C.GOVT MEDICAL COLLEGE,,NANDED",
+    "shortName": "Dr. Shankarrao Chavan Government Medical College,",
+    "type": "Medical",
+    "location": "Vishnupuri",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.eglibnet.nic.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "DR.S.C.GOVT MEDICAL COLLEGE,,NANDED is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 78400
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 78400,
+        "totalFees": 392000,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Vishnupuri, Nanded"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "sh-vasant-rao-naik-govtmcyavatmal",
+    "name": "SH VASANT RAO NAIK GOVT.M.C.,YAVATMAL",
+    "shortName": "SHRI VASANTRAO NAIK GOVERNMENT MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "CIVIL LINES",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.vngmcytl.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Nil."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "SH VASANT RAO NAIK GOVT.M.C.,YAVATMAL is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 74900
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 74900,
+        "totalFees": 374500,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "CIVIL LINES, YAVATMAL."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "shri-bhausaheb-hire-govt-mc-dhule",
+    "name": "SHRI BHAUSAHEB HIRE GOVT. M.C., DHULE",
+    "shortName": "Shri Bhausaheb Hire Government Medical College",
+    "type": "Medical",
+    "location": "Shri Bhausaheb Hire Government Medical College Malegaon Road Chakkarbardi Area Dhule",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "http://sbhgmc.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "As per Maharashtra Government Resolution (G.R. No. MED 1007/CR-490/07/Edu-2, dated 8th February 2008..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "SHRI BHAUSAHEB HIRE GOVT. M.C., DHULE is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 64350
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 64350,
+        "totalFees": 321750,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Shri Bhausaheb Hire Government Medical College Malegaon Road Chakkarbardi Area Dhule"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "government-medical-college-akola",
+    "name": "GOVERNMENT MEDICAL COLLEGE, AKOLA",
+    "shortName": "Government Medical College, Akola",
+    "type": "Medical",
+    "location": "Collector office road",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.gmcakola.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVERNMENT MEDICAL COLLEGE, AKOLA is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 64400
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 64400,
+        "totalFees": 322000,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Collector office road,Near Ashok watika, Akola.M.S. 444001."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "government-medical-college-latur",
+    "name": "GOVERNMENT MEDICAL COLLEGE, LATUR",
+    "shortName": "Government Medical College Latur",
+    "type": "Medical",
+    "location": "Government Medical College Behind Old Railway Station Near Rajasthan Vidhyalaya Latur",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.gmclatur.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "--"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVERNMENT MEDICAL COLLEGE, LATUR is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 81430
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 81430,
+        "totalFees": 407150,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Government Medical College Behind Old Railway Station Near Rajasthan Vidhyalaya Latur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "dr-r-n-cooper-general-hospital-juhu-mumbai",
+    "name": "Dr. R. N. Cooper General Hospital, Juhu, Mumbai",
+    "shortName": "Hinduhridaysamrat Balasaheb Thackeray Med. College",
+    "type": "Medical",
+    "location": "H.B.T.Medical College & Dr.R.N.Cooper Municipal Hospital",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.coopermcgh.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "-"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Dr. R. N. Cooper General Hospital, Juhu, Mumbai is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 77300
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 77300,
+        "totalFees": 386500,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "H.B.T.Medical College & Dr.R.N.Cooper Municipal Hospital,Bhaktivedant Marg,Juhu,Vileparle(w)Mumbai"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "govt-medical-college-and-hospital-chandrapur",
+    "name": "Govt. Medical College and  Hospital, Chandrapur",
+    "shortName": "Govt. Medical College & Hospital, Chandrapur",
+    "type": "Medical",
+    "location": "T.B. Hospital Campus",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.gmcchandrapur.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "0"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Govt. Medical College and  Hospital, Chandrapur is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 76350
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 76350,
+        "totalFees": 381750,
+        "hostelFees": 0
+      }
+    ],
+    "contact": {
+      "address": "T.B. Hospital Campus, Near Warora Naka, Ramnagar, Chandrapur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "government-medcial-college-gondia",
+    "name": "Government Medcial College, Gondia",
+    "shortName": "GOVT. MEDICAL COLLEGE, GONDIA",
+    "type": "Medical",
+    "location": "KTS GENERAL HOSPITAL CAMPUS",
+    "state": "MAHARASHTRA",
+    "established": 2016,
+    "website": "https://www.gmcgondia.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "If any student cancels his / her MBBS seat after cut-off date then, he / she should pay 10 lacs for ..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Government Medcial College, Gondia is a renowned medical institution in MAHARASHTRA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 83000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 83000,
+        "totalFees": 415000,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "KTS GENERAL HOSPITAL CAMPUS, NEHRU SQUARE, GONDIA."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MAHARASHTRA"
+    ]
+  },
+  {
+    "slug": "jln-ims-imphal",
+    "name": "JLN IMS, IMPHAL",
+    "shortName": "Jawaharlal Institute of Medical Sciences",
+    "type": "Medical",
+    "location": "Porompat",
+    "state": "MANIPUR",
+    "established": 2016,
+    "website": "https://www.jnims.edu.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "The Institute has been recognized on 2015 for 100 admission"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "JLN IMS, IMPHAL is a renowned medical institution in MANIPUR.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9200
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9200,
+        "totalFees": 46000,
+        "hostelFees": 500
+      }
+    ],
+    "contact": {
+      "address": "Porompat, PO & PS:Porompat, Imphal East District:795005, Manipur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MANIPUR"
+    ]
+  },
+  {
+    "slug": "gandhi-medical-college-bhopal",
+    "name": "GANDHI MEDICAL COLLEGE, BHOPAL",
+    "shortName": "Gandhi Medical College, Bhopal",
+    "type": "Medical",
+    "location": "Royal Market",
+    "state": "MADHYA PRADESH",
+    "established": 2016,
+    "website": "https://www.gmcbhopal.net",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GANDHI MEDICAL COLLEGE, BHOPAL is a renowned medical institution in MADHYA PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 35000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 35000,
+        "totalFees": 175000,
+        "hostelFees": 10000
+      }
+    ],
+    "contact": {
+      "address": "Royal Market, Sultania Road, Bhopal"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MADHYA PRADESH"
+    ]
+  },
+  {
+    "slug": "gr-medical-college-gwalior",
+    "name": "G.R. MEDICAL COLLEGE, GWALIOR",
+    "shortName": "Gajra Raja Medical College",
+    "type": "Medical",
+    "location": "Veer Savarkar Road",
+    "state": "MADHYA PRADESH",
+    "established": 2016,
+    "website": "https://www.grmcgwalior.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Any student who joined in this college and left or change the college he / she has to deposit tution..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "G.R. MEDICAL COLLEGE, GWALIOR is a renowned medical institution in MADHYA PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 35000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 35000,
+        "totalFees": 175000,
+        "hostelFees": 10000
+      }
+    ],
+    "contact": {
+      "address": "Veer Savarkar Road, Gwalior"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MADHYA PRADESH"
+    ]
+  },
+  {
+    "slug": "mgm-medical-college-indore",
+    "name": "M.G.M. MEDICAL COLLEGE, INDORE",
+    "shortName": "M.G.M. Medical College",
+    "type": "Medical",
+    "location": "A.B.Road",
+    "state": "MADHYA PRADESH",
+    "established": 2016,
+    "website": "https://www.mgmmcindore.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "nill"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "M.G.M. MEDICAL COLLEGE, INDORE is a renowned medical institution in MADHYA PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 35000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 35000,
+        "totalFees": 175000,
+        "hostelFees": 10000
+      }
+    ],
+    "contact": {
+      "address": "A.B.Road, Indore"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MADHYA PRADESH"
+    ]
+  },
+  {
+    "slug": "bundelkhand-medical-college-sagar",
+    "name": "BUNDELKHAND MEDICAL COLLEGE, SAGAR",
+    "shortName": "Govt. Bundelkhand Medical College, Sagar",
+    "type": "Medical",
+    "location": "Shivaji ward",
+    "state": "MADHYA PRADESH",
+    "established": 2016,
+    "website": "https://www.bmcsagar.edu.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "BUNDELKHAND MEDICAL COLLEGE, SAGAR is a renowned medical institution in MADHYA PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 42300
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 42300,
+        "totalFees": 211500,
+        "hostelFees": 10000
+      }
+    ],
+    "contact": {
+      "address": "Shivaji ward, Tili Road, Sagar"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "MADHYA PRADESH"
+    ]
+  },
+  {
+    "slug": "maharaja-kc-gajapati-mcbrahmapur",
+    "name": "MAHARAJA K.C. GAJAPATI M.C.,BRAHMAPUR",
+    "shortName": "MAHARAJA KRUSHNA CHANDRA GAJAPATI MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "M.K.C.G. MEDICAL COLLEGE",
+    "state": "ORISSA",
+    "established": 2016,
+    "website": "https://www.mkcgmch.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Valid CLC / TC in original to be submitted at the time of admission."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MAHARAJA K.C. GAJAPATI M.C.,BRAHMAPUR is a renowned medical institution in ORISSA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 20000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 20000,
+        "totalFees": 100000,
+        "hostelFees": 8000
+      }
+    ],
+    "contact": {
+      "address": "M.K.C.G. MEDICAL COLLEGE, BRAHMAPUR, GANJAM"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "ORISSA"
+    ]
+  },
+  {
+    "slug": "guru-govind-singh-med-collfaridkot",
+    "name": "GURU GOVIND SINGH MED COLL,FARIDKOT",
+    "shortName": "Guru Gobind Singh Medical College",
+    "type": "Medical",
+    "location": "Sadiq Road",
+    "state": "PUNJAB",
+    "established": 2016,
+    "website": "https://www.ggsmch.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Fee for 1st Year is Rs. 80,000.00"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GURU GOVIND SINGH MED COLL,FARIDKOT is a renowned medical institution in PUNJAB.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 80000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 80000,
+        "totalFees": 400000,
+        "hostelFees": 31000
+      }
+    ],
+    "contact": {
+      "address": "Sadiq Road, Faridkot"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "PUNJAB"
+    ]
+  },
+  {
+    "slug": "govtmedical-college-amritsar",
+    "name": "GOVT.MEDICAL COLLEGE, AMRITSAR",
+    "shortName": "GOVERNMENT MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "MAJITHA ROAD",
+    "state": "PUNJAB",
+    "established": 2016,
+    "website": "https://www.gmc.edu.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "No Stipulated Time for refund of fees"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT.MEDICAL COLLEGE, AMRITSAR is a renowned medical institution in PUNJAB.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 80000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 80000,
+        "totalFees": 400000,
+        "hostelFees": 31000
+      }
+    ],
+    "contact": {
+      "address": "MAJITHA ROAD, AMRITSAR"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "PUNJAB"
+    ]
+  },
+  {
+    "slug": "indira-gandhi-medical-college-ri-puducherry",
+    "name": "Indira Gandhi Medical College & RI, Puducherry",
+    "shortName": "INDIRA GANDHI MEDICAL COLLEGE & RESEARCH INSTITUTE",
+    "type": "Medical",
+    "location": "VAZHUDAVUR ROAD",
+    "state": "PONDICHERRY",
+    "established": 2016,
+    "website": "https://www.igmcri.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Indira Gandhi Medical College & RI, Puducherry is a renowned medical institution in PONDICHERRY.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 32000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 32000,
+        "totalFees": 160000,
+        "hostelFees": 75000
+      }
+    ],
+    "contact": {
+      "address": "VAZHUDAVUR ROAD, KADIRKAMAM,"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "PONDICHERRY"
+    ]
+  },
+  {
+    "slug": "drsn-medical-college-jodhpur",
+    "name": "DR.S.N. MEDICAL COLLEGE, JODHPUR",
+    "shortName": "DR. S.N. MEDICAL COLLEGE JODHPUR",
+    "type": "Medical",
+    "location": "RESIDENCY ROAD",
+    "state": "RAJASTHAN",
+    "established": 2016,
+    "website": "https://www.medicaleducation.rajasthan.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Girls",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "DR.S.N. MEDICAL COLLEGE, JODHPUR is a renowned medical institution in RAJASTHAN.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 2476
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 2476,
+        "totalFees": 12380,
+        "hostelFees": 2900
+      }
+    ],
+    "contact": {
+      "address": "RESIDENCY ROAD, SHASTRI NAGAR, JODHPUR RAJ- 342003"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "RAJASTHAN"
+    ]
+  },
+  {
+    "slug": "jawahar-lal-nehru-medical-ajmer",
+    "name": "JAWAHAR LAL NEHRU MEDICAL, AJMER",
+    "shortName": "J.L.N. MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "NEAR PATEL STADIUM",
+    "state": "RAJASTHAN",
+    "established": 2016,
+    "website": "https://www.rajasthan.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Hostel facilities subject to availability of vacant rooms"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "JAWAHAR LAL NEHRU MEDICAL, AJMER is a renowned medical institution in RAJASTHAN.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 3655
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 3655,
+        "totalFees": 18275,
+        "hostelFees": 2400
+      }
+    ],
+    "contact": {
+      "address": "NEAR PATEL STADIUM, AJMER"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "RAJASTHAN"
+    ]
+  },
+  {
+    "slug": "sms-medical-college-jaipur",
+    "name": "S.M.S. MEDICAL COLLEGE, JAIPUR",
+    "shortName": "SMS Medical College",
+    "type": "Medical",
+    "location": "J.L.N. MARG",
+    "state": "RAJASTHAN",
+    "established": 2016,
+    "website": "https://www.medicaleducation.rajasthan.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "S.M.S. MEDICAL COLLEGE, JAIPUR is a renowned medical institution in RAJASTHAN.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 2260
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 2260,
+        "totalFees": 11300,
+        "hostelFees": 2500
+      }
+    ],
+    "contact": {
+      "address": "J.L.N. MARG, JAIPUR"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "RAJASTHAN"
+    ]
+  },
+  {
+    "slug": "rnt-medical-college-udaipur",
+    "name": "R.N.T. MEDICAL COLLEGE, UDAIPUR",
+    "shortName": "R.N.T. Medical College, Udaipur",
+    "type": "Medical",
+    "location": "Opposite Colletrate",
+    "state": "RAJASTHAN",
+    "established": 2016,
+    "website": "https://www.medicaleducationrajasthan.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "R.N.T. MEDICAL COLLEGE, UDAIPUR is a renowned medical institution in RAJASTHAN.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 3625
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 3625,
+        "totalFees": 18125,
+        "hostelFees": 2400
+      }
+    ],
+    "contact": {
+      "address": "Opposite Colletrate, Uddaipur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "RAJASTHAN"
+    ]
+  },
+  {
+    "slug": "govtmedical-college-kota",
+    "name": "GOVT.MEDICAL COLLEGE, KOTA",
+    "shortName": "GOVT. MEDICAL COLLEGE, KOTA",
+    "type": "Medical",
+    "location": "RANGBARI ROAD",
+    "state": "RAJASTHAN",
+    "established": 2016,
+    "website": "https://www.medicaleducation.rajasthan.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT.MEDICAL COLLEGE, KOTA is a renowned medical institution in RAJASTHAN.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 2550
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 2550,
+        "totalFees": 12750,
+        "hostelFees": 2400
+      }
+    ],
+    "contact": {
+      "address": "RANGBARI ROAD, KOTA"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "RAJASTHAN"
+    ]
+  },
+  {
+    "slug": "ruhs-college-of-medical-sciences",
+    "name": "RUHS College of Medical Sciences",
+    "shortName": "RUHS College of Medical Sciences, Jaipur",
+    "type": "Medical",
+    "location": "Sector-11",
+    "state": "RAJASTHAN",
+    "established": 2016,
+    "website": "https://www.ruhscms.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "RUHS College of Medical Sciences is a renowned medical institution in RAJASTHAN.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 2240
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 2240,
+        "totalFees": 11200,
+        "hostelFees": 2500
+      }
+    ],
+    "contact": {
+      "address": "Sector-11, Kumbha Marg, Pratap Nagar, Tonk Road, Sanganer, Jaipur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "RAJASTHAN"
+    ]
+  },
+  {
+    "slug": "coimbatore-medical-collegecoimbatore",
+    "name": "COIMBATORE MEDICAL COLLEGE,COIMBATORE",
+    "shortName": "COIMBATORE MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "COIMBATORE MEDICAL COLLEGE",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.cmccbe.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "COIMBATORE MEDICAL COLLEGE,COIMBATORE is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 13600
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 13600,
+        "totalFees": 68000,
+        "hostelFees": 36000
+      }
+    ],
+    "contact": {
+      "address": "COIMBATORE MEDICAL COLLEGE, AVINASHI ROAD, PEELAMEDU, AERODROME (POST) , COIMBATORE -641014"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "govt-kilpauk-medical-collegechennai",
+    "name": "GOVT. KILPAUK MEDICAL COLLEGE,CHENNAI",
+    "shortName": "Govt. Kilpauk Medical College",
+    "type": "Medical",
+    "location": "EVR Periyar Salai",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.kmc.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Nill"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT. KILPAUK MEDICAL COLLEGE,CHENNAI is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 13600
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 13600,
+        "totalFees": 68000,
+        "hostelFees": 24000
+      }
+    ],
+    "contact": {
+      "address": "EVR Periyar Salai, Kilpauk, Chennai"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "madras-medical-college-chennai",
+    "name": "MADRAS MEDICAL COLLEGE, CHENNAI",
+    "shortName": "MADRAS MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "EVR PERIYAR SALAI",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.mmc.tn.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MADRAS MEDICAL COLLEGE, CHENNAI is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 12290
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 12290,
+        "totalFees": 61450,
+        "hostelFees": 36000
+      }
+    ],
+    "contact": {
+      "address": "EVR PERIYAR SALAI, PARK TOWN, CHENNAI"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "madurai-medical-college-madurai",
+    "name": "MADURAI MEDICAL COLLEGE, MADURAI",
+    "shortName": "MADURAI MEDICAL COLLEGE, MADURAI",
+    "type": "Medical",
+    "location": "PANAGAL ROAD MADURAI",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.mdmc.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MADURAI MEDICAL COLLEGE, MADURAI is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 15290
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 15290,
+        "totalFees": 76450,
+        "hostelFees": 17000
+      }
+    ],
+    "contact": {
+      "address": "PANAGAL ROAD MADURAI"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "stanley-medical-college-chennai",
+    "name": "STANLEY MEDICAL COLLEGE, CHENNAI",
+    "shortName": "Stanley Medical College",
+    "type": "Medical",
+    "location": "Maniyakara Choultry Road",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.stanleymedicalcollege.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "STANLEY MEDICAL COLLEGE, CHENNAI is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 14695
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 14695,
+        "totalFees": 73475,
+        "hostelFees": 4000
+      }
+    ],
+    "contact": {
+      "address": "Maniyakara Choultry Road,Chennai-1"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "govt-medical-collegetirunelveli",
+    "name": "GOVT. MEDICAL COLLEGE,TIRUNELVELI",
+    "shortName": "TIRUNELVELI MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "TIRUNELVELI MEDICAL COLLEGE",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.tvmc.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Other State students are instructed to get Eligibility Certificate from TamilNadu Dr. MGR Medical Un..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT. MEDICAL COLLEGE,TIRUNELVELI is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 13600
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 13600,
+        "totalFees": 68000,
+        "hostelFees": 20000
+      }
+    ],
+    "contact": {
+      "address": "TIRUNELVELI MEDICAL COLLEGE, TIRUNELVELI"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "govt-mohan-kumaramangalam-mcsalem",
+    "name": "GOVT. MOHAN KUMARAMANGALAM M.C.,SALEM",
+    "shortName": "GOVERNMENT MOHAN KUMARAMANGALAM MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "Salem",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.gmkmc.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "enclosed"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT. MOHAN KUMARAMANGALAM M.C.,SALEM is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 13600
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 13600,
+        "totalFees": 68000,
+        "hostelFees": 40000
+      }
+    ],
+    "contact": {
+      "address": "Salem"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "kanyakumari-govt-med-collasaripallam",
+    "name": "KANYAKUMARI GOVT. MED. COLL.,ASARIPALLAM",
+    "shortName": "KANYAKUMARI GOVERNMENT MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "Kanyakumari Govt. Medical College",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.kkmc.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "KANYAKUMARI GOVT. MED. COLL.,ASARIPALLAM is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 13600
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 13600,
+        "totalFees": 68000,
+        "hostelFees": 9250
+      }
+    ],
+    "contact": {
+      "address": "Kanyakumari Govt. Medical College, Asaripallam, Kanyakumari District"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "govt-dharamapuri-med-colldharmapuri",
+    "name": "GOVT. DHARAMAPURI MED COLL,DHARMAPURI",
+    "shortName": "GOVERNMENT DHARMAPURI MEDICAL COLLEGE, DHARMAPURI",
+    "type": "Medical",
+    "location": "NETHAJI BY PASS ROAD",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.dmcdpi.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GOVT. DHARAMAPURI MED COLL,DHARMAPURI is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 13290
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 13290,
+        "totalFees": 66450,
+        "hostelFees": 36000
+      }
+    ],
+    "contact": {
+      "address": "NETHAJI BY PASS ROAD, DHARMAPURI 636 701"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "gvmc-villupuram",
+    "name": "GVMC, VILLUPURAM",
+    "shortName": "Govt. VILLUPURAM MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "THE DEAN",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.vmcvpm.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GVMC, VILLUPURAM is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 13600
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 13600,
+        "totalFees": 68000,
+        "hostelFees": 22000
+      }
+    ],
+    "contact": {
+      "address": "THE DEAN, GOVT. VILLUPURAM MEDICAL COLLEGE & HOSPITAL, MUNDIYAMPAKKAM, VILLUPURAM DIST."
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "gtmc-thiruvarur",
+    "name": "GTMC, THIRUVARUR",
+    "shortName": "GOVT. THIRUVARUR MEDICAL COLLEGE, THIRUVARUR",
+    "type": "Medical",
+    "location": "MASTER PLAN COMPLEX",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.tmctvr.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "-"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GTMC, THIRUVARUR is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 12290
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 12290,
+        "totalFees": 61450,
+        "hostelFees": 30000
+      }
+    ],
+    "contact": {
+      "address": "MASTER PLAN COMPLEX, VILAMAL VILLAGE, THIRUVARUR"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "govt-sivgangai-m-c-sivagangai",
+    "name": "Govt. Sivgangai M. C. Sivagangai",
+    "shortName": "GOVT.SIVAGANGAI MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "MELAVANNIYANGUDI",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.sgmcs.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "deangsmch@gmail.com"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Govt. Sivgangai M. C. Sivagangai is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 14911
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 14911,
+        "totalFees": 74555,
+        "hostelFees": 36000
+      }
+    ],
+    "contact": {
+      "address": "MELAVANNIYANGUDI , SIVAGANGAI"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "esi-pgimsr-chennai-tn",
+    "name": "ESI-PGIMSR, Chennai, TN",
+    "shortName": "ESIC MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "Ashok Pillar Road K K Nagar Chennai",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.esicmcpgimsrchennai.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "ESI-PGIMSR, Chennai, TN is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 24000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 24000,
+        "totalFees": 120000,
+        "hostelFees": 1800
+      }
+    ],
+    "contact": {
+      "address": "Ashok Pillar Road K K Nagar Chennai"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "government-medical-college-omandurar",
+    "name": "Government Medical College, Omandurar",
+    "shortName": "GOVERNMENT MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "OMANDURAR GOVERNMENT ESTATE",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.gmcoge.tn.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Fees subjected to changes according to norms of The Tamilnadu Dr. MGR Medical University."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Government Medical College, Omandurar is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 13600
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 13600,
+        "totalFees": 68000,
+        "hostelFees": 50000
+      }
+    ],
+    "contact": {
+      "address": "OMANDURAR GOVERNMENT ESTATE, WALAJA ROAD, CHENNAI - 600002"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "govt-medical-college-esi-and-hospital-coimbatore",
+    "name": "Govt. Medical College ESI and Hospital, Coimbatore",
+    "shortName": "GOVERNMENT MEDICAL COLLEGE AND ESIC HOSPITAL",
+    "type": "Medical",
+    "location": "KAMARAJAR ROAD",
+    "state": "TAMIL NADU",
+    "established": 2016,
+    "website": "https://www.gmcesic.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Govt. Medical College ESI and Hospital, Coimbatore is a renowned medical institution in TAMIL NADU.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 13600
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 13600,
+        "totalFees": 68000,
+        "hostelFees": 36000
+      }
+    ],
+    "contact": {
+      "address": "KAMARAJAR ROAD, VARADHARAJAPURAM, SINGANALLUR, COIMBATORE"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TAMIL NADU"
+    ]
+  },
+  {
+    "slug": "agartala-govt-medical-collegeagartala",
+    "name": "AGARTALA GOVT. MEDICAL COLLEGE,AGARTALA",
+    "shortName": "AGARTALA GOVT. MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "P.O.: Kunjaban",
+    "state": "TRIPURA",
+    "established": 2016,
+    "website": "https://www.agmc.nic.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "AGARTALA GOVT. MEDICAL COLLEGE,AGARTALA is a renowned medical institution in TRIPURA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 75100
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 75100,
+        "totalFees": 375500,
+        "hostelFees": 15600
+      }
+    ],
+    "contact": {
+      "address": "P.O.: Kunjaban, Agartala, West Tripura"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "TRIPURA"
+    ]
+  },
+  {
+    "slug": "brd-medical-college-gorakhpur",
+    "name": "B.R.D. MEDICAL COLLEGE, GORAKHPUR",
+    "shortName": "Baba Raghav Das Medical College",
+    "type": "Medical",
+    "location": "Maharajganj road",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.brdmc.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Permitted for 100 Seats MBBS."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "B.R.D. MEDICAL COLLEGE, GORAKHPUR is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 42000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 42000,
+        "totalFees": 210000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "Maharajganj road, Gorakhpur,"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "kgmc-lucknow",
+    "name": "KGMC, LUCKNOW",
+    "shortName": "King George's Medical University UP, Lucknow",
+    "type": "Medical",
+    "location": "Shahmina Road",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.kgmcindia.edu",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "KGMC, LUCKNOW is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 49650
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 49650,
+        "totalFees": 248250,
+        "hostelFees": 4900
+      }
+    ],
+    "contact": {
+      "address": "Shahmina Road, CHowk, Lucknow-226003"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "llrm-medical-college-meerut",
+    "name": "L.L.R.M. MEDICAL COLLEGE, MEERUT",
+    "shortName": "L.L.R.M.Medical College, Meerut",
+    "type": "Medical",
+    "location": "Garh Road",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.llrmmedicalcollege.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "0"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "L.L.R.M. MEDICAL COLLEGE, MEERUT is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 37000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 37000,
+        "totalFees": 185000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "Garh Road, Meerut"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "moti-lal-nehru-medical-coll-allahabad",
+    "name": "MOTI LAL NEHRU MEDICAL COLL, ALLAHABAD",
+    "shortName": "Moti Lal Nehru Medical College",
+    "type": "Medical",
+    "location": "Principal Office Moti Lal Nehru Medical College Lowther Road Georg Twon Allahabad",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.mlnmc.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "fess deposited through demand draft/bank draft in fevor of Principal/D.D.O. MLN Medical College Alla..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MOTI LAL NEHRU MEDICAL COLL, ALLAHABAD is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 36000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 36000,
+        "totalFees": 180000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "Principal Office Moti Lal Nehru Medical College Lowther Road Georg Twon Allahabad"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "sn-medical-college-agra",
+    "name": "S.N. MEDICAL COLLEGE, AGRA",
+    "shortName": "S N Medical College, Agra",
+    "type": "Medical",
+    "location": "Hospital Road Agra",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.snmcagra.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "S.N. MEDICAL COLLEGE, AGRA is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 36000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 36000,
+        "totalFees": 180000,
+        "hostelFees": 4800
+      }
+    ],
+    "contact": {
+      "address": "Hospital Road Agra"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "rural-inst-of-med-sci-researchsaifai",
+    "name": "RURAL INST OF MED SCI & RESEARCH,SAIFAI",
+    "shortName": "UP Rural Institute of Medical Sciences & Research",
+    "type": "Medical",
+    "location": "Saifai",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.rimsnr.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "RURAL INST OF MED SCI & RESEARCH,SAIFAI is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 42800
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 42800,
+        "totalFees": 214000,
+        "hostelFees": 4800
+      }
+    ],
+    "contact": {
+      "address": "Saifai, Etawah"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "mra-medical-college-ambedkar-nagar-up",
+    "name": "MRA MEDICAL COLLEGE AMBEDKAR NAGAR, UP",
+    "shortName": "M R A MEDICAL COLLEGE,AMBEDKAR  NAGAR",
+    "type": "Medical",
+    "location": "VILL-SADDARPUR",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.mramc.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "mramcabn9@gmail.com"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MRA MEDICAL COLLEGE AMBEDKAR NAGAR, UP is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 26000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 26000,
+        "totalFees": 130000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "VILL-SADDARPUR ,POST-SURAPUR ,DIST-AMBEDKARNAGAR"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "govt-medical-college-kannauj",
+    "name": "Govt. Medical College, Kannauj",
+    "shortName": "Government Medical College",
+    "type": "Medical",
+    "location": "Tirwa Road",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.gmckannauj.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Govt. Medical College, Kannauj is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 36000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 36000,
+        "totalFees": 180000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "Tirwa Road, Kannauj"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "ims-bhu-varanasi-up",
+    "name": "IMS BHU, Varanasi, UP",
+    "shortName": "INSTITUTE OF MEDICAL SCIENCES",
+    "type": "Medical",
+    "location": "INSTITUTE OF MEDICAL SCIENCES",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.bhu.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Only caution money will be refunded to the candidates."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "IMS BHU, Varanasi, UP is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 12629
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 12629,
+        "totalFees": 63145,
+        "hostelFees": 2260
+      }
+    ],
+    "contact": {
+      "address": "INSTITUTE OF MEDICAL SCIENCES, BANARAS HINDU UNIVERSITY, VARANASI"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "gmc-jalaun-up",
+    "name": "GMC, Jalaun, UP",
+    "shortName": "Rajkiya Medical College",
+    "type": "Medical",
+    "location": "Kalpi Road Orai Jalaun",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.gmcjalaun.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "50 percent tuition fees for SC ST and OBC"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GMC, Jalaun, UP is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 40800
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 40800,
+        "totalFees": 204000,
+        "hostelFees": 4800
+      }
+    ],
+    "contact": {
+      "address": "Kalpi Road Orai Jalaun"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "gmc-azamgarh-up",
+    "name": "GMC, Azamgarh, UP",
+    "shortName": "GOVERNMENT MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "GMC",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.gmcazamgarh.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "GMC, Azamgarh, UP is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 42000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 42000,
+        "totalFees": 210000,
+        "hostelFees": 3600
+      }
+    ],
+    "contact": {
+      "address": "GMC,CHAKRAPANPUR,AZAMGARH"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "sheikh-ul-hind-maulana-mahmood-hasan-medical-colle",
+    "name": "Sheikh-Ul-Hind Maulana Mahmood Hasan Medical Colle",
+    "shortName": "Shaikh-UL-Hind Maulana Mahmood Hasan Med. College",
+    "type": "Medical",
+    "location": "Ambala Road",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.smmhmedicalcollege.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "For point No. 8,9,10,12  GO is awaited"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Sheikh-Ul-Hind Maulana Mahmood Hasan Medical Colle is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 36000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 36000,
+        "totalFees": 180000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "Ambala Road, Pilakhni, Saharanpur"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "government-medical-college-banda",
+    "name": "Government Medical College, Banda",
+    "shortName": "GOVERNMENT MEDICAL COLLEGE, BANDA",
+    "type": "Medical",
+    "location": "naraini road",
+    "state": "UTTAR PRADESH",
+    "established": 2016,
+    "website": "https://www.gmcbanda.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Government Medical College, Banda is a renowned medical institution in UTTAR PRADESH.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 24000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 24000,
+        "totalFees": 120000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "naraini road, banda"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTAR PRADESH"
+    ]
+  },
+  {
+    "slug": "government-doon-medcial-college-dehradun",
+    "name": "Government Doon Medcial College, Dehradun",
+    "shortName": "GOVT.DOON MEDICAL COLLEGE,DEHRADUN,UTTARAKHAND",
+    "type": "Medical",
+    "location": "PATEL NAGAR",
+    "state": "UTTRAKHAND",
+    "established": 2016,
+    "website": "https://www.doonmedical.com",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Above mentioned fee is for those candidates who are willing to sign the bond prescribed by Uttarakha..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Government Doon Medcial College, Dehradun is a renowned medical institution in UTTRAKHAND.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 50000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 50000,
+        "totalFees": 250000,
+        "hostelFees": 6000
+      }
+    ],
+    "contact": {
+      "address": "PATEL NAGAR, DEHRADUN"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "UTTRAKHAND"
+    ]
+  },
+  {
+    "slug": "burdwan-medical-collegeburdwan",
+    "name": "BURDWAN MEDICAL COLLEGE,BURDWAN",
+    "shortName": "BURDWAN MEDICAL COLLEGE,BURDWAN",
+    "type": "Medical",
+    "location": "Burdwan Medical College",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.burdwanmedicalcollege.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "In case of re-allocation of seat in 2nd/3rd round in other Govt. colleges in West Bengal only, the a..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "BURDWAN MEDICAL COLLEGE,BURDWAN is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9000,
+        "totalFees": 45000,
+        "hostelFees": 144
+      }
+    ],
+    "contact": {
+      "address": "Burdwan Medical College,Baburbag,P.O.-Rajbati,P.S.-Burdwan ,Dist-Burdwan"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "calcutta-national-med-collkolkata",
+    "name": "CALCUTTA NATIONAL MED COLL,KOLKATA",
+    "shortName": "CALCUTTA NATIONAL MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "32 Gorachand Road",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.cnmckolkata.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "CALCUTTA NATIONAL MED COLL,KOLKATA is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9120
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9120,
+        "totalFees": 45600,
+        "hostelFees": 144
+      }
+    ],
+    "contact": {
+      "address": "32 Gorachand Road, Park Circus"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "medical-college-kolkata",
+    "name": "MEDICAL COLLEGE, KOLKATA",
+    "shortName": "Medical College, Kolkata",
+    "type": "Medical",
+    "location": "88",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.meicalcollegekolkata.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MEDICAL COLLEGE, KOLKATA is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9000,
+        "totalFees": 45000,
+        "hostelFees": 144
+      }
+    ],
+    "contact": {
+      "address": "88, College Street, Kolkata"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "nilratan-sirkar-medical-college-kolkata",
+    "name": "NILRATAN SIRKAR MEDICAL COLLEGE, KOLKATA",
+    "shortName": "NRS MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "138",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.nrsmch.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "see bond"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "NILRATAN SIRKAR MEDICAL COLLEGE, KOLKATA is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9000,
+        "totalFees": 45000,
+        "hostelFees": 144
+      }
+    ],
+    "contact": {
+      "address": "138,AJC BOSE ROAD, KOLKATA-700014"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "north-bengal-medcolldarjeeling",
+    "name": "NORTH BENGAL MED.COLL,DARJEELING",
+    "shortName": "NORTH BENGAL MEDICAL COLLEGE AND HOSPITAL",
+    "type": "Medical",
+    "location": "P.O. Sushrutanagar",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.nbmch.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "0"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "NORTH BENGAL MED.COLL,DARJEELING is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9000,
+        "totalFees": 45000,
+        "hostelFees": 96
+      }
+    ],
+    "contact": {
+      "address": "P.O. Sushrutanagar, Dist. Darjeeling"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "rg-kar-medical-collegekolkata",
+    "name": "R.G. KAR MEDICAL COLLEGE,KOLKATA",
+    "shortName": "R.G.KAR MEDICAL COLLEGE",
+    "type": "Medical",
+    "location": "1",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.rgkarmedicalcollege.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "www.rgkarmedicalcollege.org"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "R.G. KAR MEDICAL COLLEGE,KOLKATA is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 12000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 12000,
+        "totalFees": 60000,
+        "hostelFees": 169
+      }
+    ],
+    "contact": {
+      "address": "1, KHUDIRAM BOSE SARANI, KOLKATA"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "inst-of-pg-med-edu-researchkolkata",
+    "name": "INST OF PG MED EDU & RESEARCH,KOLKATA",
+    "shortName": "IPGME&R, Kolkata",
+    "type": "Medical",
+    "location": "244 AJC Bose Road",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.ipgmer.gov.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Students are to submit a declaration not to involve in ragging and maintain discipline at the time o..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "INST OF PG MED EDU & RESEARCH,KOLKATA is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9000,
+        "totalFees": 45000,
+        "hostelFees": 144
+      }
+    ],
+    "contact": {
+      "address": "244 AJC Bose Road, Kolkata"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "midnapore-medical-college-midnapur",
+    "name": "MIDNAPORE MEDICAL COLLEGE, MIDNAPUR",
+    "shortName": "Midnapore Medical College",
+    "type": "Medical",
+    "location": "5 Vidyasagar Road",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.midnaporemmc.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "MIDNAPORE MEDICAL COLLEGE, MIDNAPUR is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 11144
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 11144,
+        "totalFees": 55720,
+        "hostelFees": 144
+      }
+    ],
+    "contact": {
+      "address": "5 Vidyasagar Road, Midnapore, Paschim Midnapore"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "coll-of-medicine-jnm-hospital-kalyani",
+    "name": "COLL OF MEDICINE & JNM HOSPITAL, KALYANI",
+    "shortName": "COLLEGE OF MEDICINE AND JNM HOSPITAL",
+    "type": "Medical",
+    "location": "KALYANI",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.wbuhs.ac.in/comjnmkalyani",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Mess charges- Rs.2100 per month & Rs. 2000 security deposit"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "COLL OF MEDICINE & JNM HOSPITAL, KALYANI is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9000,
+        "totalFees": 45000,
+        "hostelFees": 1200
+      }
+    ],
+    "contact": {
+      "address": "KALYANI, DIST.- NADIA"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "mursidabad-m-c-hospital-mursidabad",
+    "name": "Mursidabad M C & Hospital, Mursidabad",
+    "shortName": "MURSHIDABAD MEDICAL COLLEGE & HOSPITAL",
+    "type": "Medical",
+    "location": "STATION ROAD",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.murshidabadmedicalcollege.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "a"
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "Mursidabad M C & Hospital, Mursidabad is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 9000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 9000,
+        "totalFees": 45000,
+        "hostelFees": 144
+      }
+    ],
+    "contact": {
+      "address": "STATION ROAD, POST & P.S. - BERHAMPORE"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "esic-pgimsr-joka-kolkata-wb",
+    "name": "ESIC PGIMSR, Joka, Kolkata, WB",
+    "shortName": "ESIC Medical College, Joka, Kolkata.",
+    "type": "Medical",
+    "location": "Diamond Harbour Road",
+    "state": "WEST BENGAL",
+    "established": 2016,
+    "website": "https://www.esi-pgimsrkolkata.org",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Rs.5000/- caution money for college (rufundable) Rs.10000/- caution money for hostel (refundable)."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "ESIC PGIMSR, Joka, Kolkata, WB is a renowned medical institution in WEST BENGAL.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 24000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 24000,
+        "totalFees": 120000,
+        "hostelFees": 4200
+      }
+    ],
+    "contact": {
+      "address": "Diamond Harbour Road, Joka,Kolkata 700104"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "WEST BENGAL"
+    ]
+  },
+  {
+    "slug": "vss-medical-college-burla",
+    "name": "V.S.S. MEDICAL COLLEGE, BURLA",
+    "shortName": "VSS INSTITUTE OF MEDICAL SCIENCES & RESEARCH",
+    "type": "Medical",
+    "location": "At/PO",
+    "state": "ORISSA",
+    "established": 2016,
+    "website": "https://www.vimsar.ac.in",
+    "hostelAvailable": true,
+    "genderAdmission": "Co-educational",
+    "highlights": [
+      "Admission process may take two days.Admission will be done on working days of Orissa Government.Brin..."
+    ],
+    "entranceExams": [
+      "NEET"
+    ],
+    "description": "V.S.S. MEDICAL COLLEGE, BURLA is a renowned medical institution in ORISSA.",
+    "branches": [
+      {
+        "branch": "MBBS",
+        "counselling": "MCC",
+        "category": "General",
+        "annualFees": 30000
+      }
+    ],
+    "fees": [
+      {
+        "branch": "MBBS",
+        "annualFees": 30000,
+        "totalFees": 150000,
+        "hostelFees": 10000
+      }
+    ],
+    "contact": {
+      "address": "At/PO,Burla,Dist. Sambalpur,Odisha"
+    },
+    "tags": [
+      "Medical",
+      "MBBS",
+      "ORISSA"
+    ]
   }
 ]

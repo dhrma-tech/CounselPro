@@ -2,7 +2,7 @@ export interface College {
   slug: string;
   name: string;
   shortName: string;
-  type: 'IIT' | 'NIT' | 'IIIT' | 'GFTI' | 'State' | 'Private' | 'Autonomous';
+  type: 'IIT' | 'NIT' | 'IIIT' | 'GFTI' | 'State' | 'Private' | 'Autonomous' | 'Medical';
   location: string;
   city?: string;
   state: string;

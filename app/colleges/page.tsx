@@ -7,7 +7,7 @@ import { Search, X, GitCompare, Trash2, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
-const TYPE_FILTERS = ['All', 'IIT', 'NIT', 'IIIT', 'Government', 'State', 'Autonomous', 'Private'];
+const TYPE_FILTERS = ['All', 'Medical', 'IIT', 'NIT', 'IIIT', 'Government', 'State', 'Autonomous', 'Private'];
 const SORT_OPTIONS = [
   { value: 'nirf', label: 'NIRF Rank' },
   { value: 'name', label: 'Name A–Z' },
