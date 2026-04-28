@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Branch } from '@/lib/types';
-import { Server, Cpu, Settings, Building, FlaskConical, Zap, Layout } from 'lucide-react';
+import { Server, Cpu, Settings, Building, FlaskConical, Zap, Layout, Stethoscope, Pill, HeartPulse, Sprout, Activity } from 'lucide-react';
 
 export default function BranchCard({ branch }: { branch: Branch }) {
   const getIcon = (domain: string) => {
@@ -11,7 +11,13 @@ export default function BranchCard({ branch }: { branch: Branch }) {
       case 'Civil': return <Building className="w-5 h-5 text-stone-600" />;
       case 'Chemical': return <FlaskConical className="w-5 h-5 text-green-600" />;
       case 'Electrical': return <Zap className="w-5 h-5 text-yellow-600" />;
-      default: return <Layout className="w-5 h-5 text-text-secondary" />;
+      case 'Medical': 
+      case 'Clinical':
+      case 'Super-Specialty': return <Stethoscope className="w-5 h-5 text-red-600" />;
+      case 'Pharmacy': return <Pill className="w-5 h-5 text-emerald-600" />;
+      case 'Nursing': return <HeartPulse className="w-5 h-5 text-rose-500" />;
+      case 'Agriculture': return <Sprout className="w-5 h-5 text-lime-600" />;
+      default: return <Activity className="w-5 h-5 text-text-secondary" />;
     }
   };
 
@@ -23,6 +29,12 @@ export default function BranchCard({ branch }: { branch: Branch }) {
       case 'Civil': return 'bg-stone-50 text-stone-700';
       case 'Chemical': return 'bg-green-50 text-green-700';
       case 'Electrical': return 'bg-yellow-50 text-yellow-700';
+      case 'Medical':
+      case 'Clinical':
+      case 'Super-Specialty': return 'bg-red-50 text-red-700';
+      case 'Pharmacy': return 'bg-emerald-50 text-emerald-700';
+      case 'Nursing': return 'bg-rose-50 text-rose-700';
+      case 'Agriculture': return 'bg-lime-50 text-lime-700';
       default: return 'bg-surface-light text-text-secondary';
     }
   };

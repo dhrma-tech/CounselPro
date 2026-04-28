@@ -1,25 +1,40 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { branches } from '@/data/branches';
 import BranchCard from '@/components/shared/BranchCard';
 import Breadcrumb from '@/components/shared/Breadcrumb';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function BranchesPage() {
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   
-  const domains = ['All', 'CS & IT', 'Electronics', 'Mechanical', 'Civil', 'Chemical', 'Electrical', 'Other'];
+  const categories = ['All', 'Engineering', 'Medical', 'Pharmacy', 'Nursing', 'Agriculture'];
 
-  const filteredBranches = branches.filter(b => {
-    const matchesFilter = activeFilter === 'All' || b.domain === activeFilter;
-    const matchesSearch = 
-      b.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-      b.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      b.slug.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesFilter && matchesSearch;
-  });
+  const filteredBranches = useMemo(() => {
+    return branches.filter(b => {
+      const matchesCategory = activeCategory === 'All' || b.category === activeCategory;
+      const matchesSearch = 
+        b.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+        b.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        b.slug.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesCategory && matchesSearch;
+    });
+  }, [activeCategory, searchQuery]);
+
+  const groupedBranches = useMemo(() => {
+    const groups: Record<string, typeof branches> = {};
+    filteredBranches.forEach(b => {
+      if (!groups[b.category]) groups[b.category] = [];
+      groups[b.category].push(b);
+    });
+    return groups;
+  }, [filteredBranches]);
+
+  const displayCategories = activeCategory === 'All' 
+    ? categories.filter(c => c !== 'All' && groupedBranches[c]?.length > 0)
+    : [activeCategory];
 
   return (
     <div className="min-h-screen bg-surface-white">
@@ -29,7 +44,7 @@ export default function BranchesPage() {
           <Breadcrumb 
             items={[
               { label: 'Home', href: '/' },
-              { label: 'Engineering Branches', href: '/branches' }
+              { label: 'Academic Branches', href: '/branches' }
             ]} 
           />
           
@@ -47,7 +62,7 @@ export default function BranchesPage() {
               transition={{ delay: 0.1 }}
               className="heading-xl mb-4"
             >
-              Engineering Branches Explained
+              Explore Academic Branches
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0 }}
@@ -55,7 +70,7 @@ export default function BranchesPage() {
               transition={{ delay: 0.2 }}
               className="body-lg max-w-2xl text-text-secondary"
             >
-              Choosing the right branch is as important as choosing the right college. 
+              Choosing the right path is as important as choosing the right college. 
               Explore the scope, core subjects, and career evolution for each discipline.
             </motion.p>
           </div>
@@ -71,18 +86,18 @@ export default function BranchesPage() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             {/* Filter Chips */}
             <div className="flex items-center gap-4 overflow-x-auto no-scrollbar pb-1 sm:pb-0 grow">
-              <span className="text-[12px] font-bold text-text-muted uppercase tracking-wider shrink-0 mr-2">Filter:</span>
+              <span className="text-[12px] font-bold text-text-muted uppercase tracking-wider shrink-0 mr-2">Category:</span>
               <div className="flex gap-2">
-                {domains.map((d, idx) => (
+                {categories.map((c, idx) => (
                   <button 
-                    key={d}
-                    onClick={() => setActiveFilter(d)}
+                    key={c}
+                    onClick={() => setActiveCategory(c)}
                     className={`px-4 py-2 rounded-xl text-[13px] font-bold transition-all duration-200 border whitespace-nowrap
-                      ${activeFilter === d 
+                      ${activeCategory === c 
                         ? 'bg-brand-blue text-white border-brand-blue shadow-md' 
                         : 'bg-white text-text-secondary border-border hover:border-brand-blue/30 hover:bg-surface-light'}`}
                   >
-                    {d}
+                    {c}
                   </button>
                 ))}
               </div>
@@ -119,7 +134,7 @@ export default function BranchesPage() {
 
       {/* RESULTS SECTION */}
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="mb-8 flex justify-between items-end">
+        <div className="mb-12 flex justify-between items-end">
           <p className="text-[14px] text-text-muted">
             Found <span className="font-bold text-text-primary">{filteredBranches.length}</span> specialties
             {searchQuery && <span> for "<span className="text-text-primary font-medium">{searchQuery}</span>"</span>}
@@ -128,23 +143,37 @@ export default function BranchesPage() {
 
         <AnimatePresence mode="popLayout">
           {filteredBranches.length > 0 ? (
-            <motion.div 
-              layout
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {filteredBranches.map((branch, idx) => (
-                <motion.div
-                  key={branch.slug}
-                  layout
+            <div className="space-y-20">
+              {displayCategories.map((cat) => (
+                <motion.section 
+                  key={cat}
                   initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.4, delay: Math.min(idx * 0.05, 0.2) }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
                 >
-                  <BranchCard branch={branch} />
-                </motion.div>
+                  <div className="flex items-center gap-4 mb-8">
+                    <h2 className="heading-md">{cat} Branches</h2>
+                    <div className="h-px bg-border grow"></div>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {groupedBranches[cat]?.map((branch, idx) => (
+                      <motion.div
+                        key={branch.slug}
+                        layout
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.95 }}
+                        transition={{ duration: 0.4, delay: Math.min(idx * 0.05, 0.2) }}
+                      >
+                        <BranchCard branch={branch} />
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.section>
               ))}
-            </motion.div>
+            </div>
           ) : (
             <motion.div 
               initial={{ opacity: 0 }}
@@ -162,7 +191,7 @@ export default function BranchesPage() {
               </p>
               <button 
                 onClick={() => {
-                  setActiveFilter('All');
+                  setActiveCategory('All');
                   setSearchQuery('');
                 }}
                 className="btn-primary"

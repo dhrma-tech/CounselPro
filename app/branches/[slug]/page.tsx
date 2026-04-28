@@ -28,7 +28,7 @@ export default async function BranchDetailPage({ params }: { params: Promise<{ s
     return (
       <div className="py-40 text-center flex flex-col items-center justify-center">
         <h1 className="heading-xl text-brand-navy mb-4">Branch Not Found</h1>
-        <p className="body-md text-text-muted mb-8">The engineering discipline you are looking for does not exist in our directory.</p>
+        <p className="body-md text-text-muted mb-8">The academic discipline you are looking for does not exist in our directory.</p>
         <Link href="/branches" className="px-8 py-3 bg-brand-blue text-white rounded-xl font-bold">Back to Directory</Link>
       </div>
     );
@@ -47,7 +47,7 @@ export default async function BranchDetailPage({ params }: { params: Promise<{ s
           <Breadcrumb 
             items={[
               { label: 'Home', href: '/' },
-              { label: 'Engineering Branches', href: '/branches' },
+              { label: 'Academic Branches', href: '/branches' },
               { label: branch.name, href: `/branches/${branch.slug}` }
             ]} 
           />
@@ -62,7 +62,7 @@ export default async function BranchDetailPage({ params }: { params: Promise<{ s
             </Link>
             <br />
             <span className="inline-block px-3 py-1 rounded-full text-[12px] font-bold bg-brand-blue/10 text-brand-blue uppercase tracking-wider mb-4 border border-brand-blue/10">
-              {branch.domain}
+              {branch.category} • {branch.domain}
             </span>
             <h1 className="heading-xl mb-4 font-display bg-gradient-to-r from-brand-navy to-brand-blue bg-clip-text text-transparent italic">
               {branch.name}
@@ -87,10 +87,10 @@ export default async function BranchDetailPage({ params }: { params: Promise<{ s
                 </div>
                 <div className="prose prose-slate max-w-none">
                   <p className="body-md text-text-secondary leading-relaxed text-[17px]">
-                    {branch.longDescription || `${branch.name} is a cornerstone of modern engineering, integrating theoretical principles with practical problem-solving. It plays a pivotal role in the technological advancement of industries worldwide. Students pursuing this discipline depth-dive into fundamental concepts that govern the physical and digital world, preparing them for a dynamic career in research, development, and industrial application.`}
+                    {branch.longDescription || `${branch.name} is a cornerstone of academic excellence, integrating theoretical principles with practical application. It plays a pivotal role in the professional advancement of industries worldwide. Students pursuing this discipline depth-dive into fundamental concepts that govern their field, preparing them for a dynamic career in research, development, and professional practice.`}
                   </p>
                   <p className="body-md text-text-secondary leading-relaxed text-[17px] mt-4">
-                    In the current academic landscape, this branch is evolving rapidly with the integration of smart technologies, automation, and sustainable practices, making it one of the most sought-after fields for aspiring engineers.
+                    In the current academic landscape, this discipline is evolving rapidly with the integration of modern methodologies and global standards, making it one of the most sought-after fields for aspiring students.
                   </p>
                 </div>
               </section>

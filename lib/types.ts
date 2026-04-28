@@ -83,7 +83,8 @@ export interface PlacementData {
 export interface Branch {
   slug: string;
   name: string;
-  domain: 'CS & IT' | 'Electronics' | 'Mechanical' | 'Civil' | 'Chemical' | 'Electrical' | 'Other';
+  category: 'Engineering' | 'Medical' | 'Agriculture' | 'Pharmacy' | 'Nursing';
+  domain: string;
   description: string;
   longDescription?: string;
   coreSubjects: string[];

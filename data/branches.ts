@@ -5,6 +5,7 @@ export const branches: Branch[] = [
   {
     slug: 'computer-science-engineering',
     name: 'Computer Science Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'The fundamental backbone of the digital economy, focusing on computational systems, software architecture, and algorithmic efficiency.',
     longDescription: 'The discipline of Computer Science Engineering (CSE) emerged globally in the mid-20th century, evolving from theoretical mathematics, logic, and electrical engineering into an independent, indispensable academic powerhouse. In the Indian context, the post-1990s economic liberalization acted as a massive catalyst, transforming the nation into a premier global IT services hub. CSE grads manage complex sectors ranging from decentralized fintech and healthcare technology to global cloud infrastructure.',
@@ -20,6 +21,7 @@ export const branches: Branch[] = [
   {
     slug: 'information-technology',
     name: 'Information Technology',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Applied discipline of deploying, managing, and securing digital systems within complex business environments.',
     longDescription: 'While frequently conflated with Computer Science, IT represents a distinct pragmatic divergence. If computer science is the study of theory, IT is the applied discipline of managing enterprise systems. Modern industry relies on IT engineers to architect solutions, maintain secure data repositories, and ensure seamless communication networks across multinational corporate footprints.',
@@ -35,6 +37,7 @@ export const branches: Branch[] = [
   {
     slug: 'software-engineering',
     name: 'Software Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Systematic approach to developing, operating, and maintaining complex enterprise-scale software systems.',
     longDescription: 'Applying rigorous engineering principles to the entire software development lifecycle (SDLC). In India, the IT sector relies on formally trained software engineers to build scalable, secure, and reliable enterprise applications. As software systems grow increasingly complex, the demand for engineers who understand agile methodologies, software testing, and CI/CD pipelines continues to surge dramatically, ensuring codebases remain maintainable and secure.',
@@ -50,6 +53,7 @@ export const branches: Branch[] = [
   {
     slug: 'cyber-security-engineering',
     name: 'Cyber Security Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Protecting digital landscapes from complex threats through advanced cryptography and network defense.',
     longDescription: 'Cyber Security Engineering focuses on safeguarding organizational data and infrastructure from malicious attacks. In an era of rampant data breaches, these engineers design impenetrable firewalls, manage cryptographic keys, and conduct ethical hacking to identify vulnerabilities before they are exploited. India’s push for digital sovereignty has made this field critically important for defense and finance.',
@@ -65,6 +69,7 @@ export const branches: Branch[] = [
   {
     slug: 'ioe-engineering',
     name: 'Internet of Things (IoT) Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Architecting interconnected ecosystems where sensors and devices communicate to create smart environments.',
     longDescription: 'IoT Engineering is the science of connecting physical devices to the digital world. It is the backbone of Smart Cities and Industrial 4.0. Engineers design low-power wireless networks that allow everything from heart monitors to thousands of factory sensors to transmit data seamlessly, enabling real-time monitoring and autonomous decision-making.',
@@ -80,6 +85,7 @@ export const branches: Branch[] = [
   {
     slug: 'robotics-automation',
     name: 'Robotics & Automation',
+    category: 'Engineering',
     domain: 'Mechanical',
     description: 'Integrating mechanical design with AI and control theory to build intelligent, autonomous machines.',
     longDescription: 'Robotics and Automation is at the frontier of manufacturing and service industries. It involves designing robotic arms for assembly lines, autonomous drones for delivery, and surgical robots for medicine. High relevance in India’s automotive and logistics sectors where efficiency depends on precise, repetitive motion and cognitive AI integration.',
@@ -95,6 +101,7 @@ export const branches: Branch[] = [
   {
     slug: 'information-science',
     name: 'Information Science Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Focusing on the secure storage, retrieval, and management of organizational information systems.',
     longDescription: 'ISE is intrinsically aligned with leveraging technology to solve complex enterprise data challenges. It distinguishes itself by its focus on information management systems rather than just pure hardware or algorithms. In India, ISE grads manage massive ERP systems and cloud databases while securing vital organizational information.',
@@ -110,6 +117,7 @@ export const branches: Branch[] = [
   {
     slug: 'computer-engineering',
     name: 'Computer Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Intersection of electrical engineering and CS, designing microscopic silicon chips and massive supercomputer clusters.',
     longDescription: 'Computer Engineering focuses on the seamless integration of hardware and software. Professionals design microarchitectures, memory hierarchies, and motherboard layouts that allow software to execute efficiently. Important for semiconductor manufacturing and the hardware infrastructure of IoT.',
@@ -127,6 +135,7 @@ export const branches: Branch[] = [
   {
     slug: 'ai-engineering',
     name: 'Artificial Intelligence Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Building systems capable of autonomous learning, pattern recognition, and predictive decision-making.',
     longDescription: 'AI engineering evolved from computer science into a dominant discipline driving the Fourth Industrial Revolution. AI engineers architect neural networks powering NLP, computer vision, and generative platforms. It creates adaptive systems that continuously improve, making it a future-proof path.',
@@ -142,6 +151,7 @@ export const branches: Branch[] = [
   {
     slug: 'ai-ml-engineering',
     name: 'Artificial Intelligence & Machine Learning',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Specialized development of algorithms that parse vast datasets to uncover hidden patterns and achieve predictive automation.',
     longDescription: 'A subset of CS dedicated entirely to algorithms that learn from data. Graduates design recommendation engines, trading bots, and predictive models. It focuses heavily on statistical modeling and optimization.',
@@ -157,6 +167,7 @@ export const branches: Branch[] = [
   {
     slug: 'data-science-engineering',
     name: 'Data Science Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Extracting actionable, strategic intelligence from massive, unstructured data lakes to dictate business strategy.',
     longDescription: 'Data Science Engineering addresses the explosion of Big Data. It combines rigorous statistical analysis with domain-specific business acumen. Data scientists utilize predictive modeling to optimize supply chains and personalize healthcare.',
@@ -174,6 +185,7 @@ export const branches: Branch[] = [
   {
     slug: 'electronics-telecommunication',
     name: 'Electronics & Telecommunication',
+    category: 'Engineering',
     domain: 'Electronics',
     description: 'Hardware design and advanced communication protocols powering 5G and satellite infrastructure.',
     longDescription: 'ENTC traces origins to radio and radar, evolving through the semiconductor revolution. Spurred by domestic semiconductor initiatives, it drives innovations in 5G/6G, satellite systems, and smart devices.',
@@ -189,6 +201,7 @@ export const branches: Branch[] = [
   {
     slug: 'telecommunication-engineering',
     name: 'Telecommunication Engineering',
+    category: 'Engineering',
     domain: 'Electronics',
     description: 'Establishing the digital backbone for seamless global connectivity and 5G network architecture.',
     longDescription: 'Forms the invisible backbone of the digital economy. Telecom engineers are at the forefront of deploying 5G and building infrastructure for IoT. Expertise ensures seamless global information transmission across optical fibers and wireless waves.',
@@ -204,6 +217,7 @@ export const branches: Branch[] = [
   {
     slug: 'electronics-instrumentation',
     name: 'Electronics & Instrumentation Engineering',
+    category: 'Engineering',
     domain: 'Electronics',
     description: 'The science of precise measurement and automated control of industrial processes.',
     longDescription: 'Bridge between electronics and control engineering. Focused on designing automated systems in oil & gas, pharma, and power generation sectors. EIE translates physical processes into digital analytics for optimization.',
@@ -219,6 +233,7 @@ export const branches: Branch[] = [
   {
     slug: 'embedded-systems-engineering',
     name: 'Embedded Systems Engineering',
+    category: 'Engineering',
     domain: 'Electronics',
     description: 'Designing task-specific computer systems integrated directly into mechanical and electrical devices.',
     longDescription: 'Embedded systems are the "brains" inside everything from ABS in cars to pacemakers. It requires mastery of hardware architecture and firmware development to optimize for extreme power efficiency and real-time processing.',
@@ -234,6 +249,7 @@ export const branches: Branch[] = [
   {
     slug: 'electrical-electronics',
     name: 'Electrical & Electronics Engineering (EEE)',
+    category: 'Engineering',
     domain: 'Electrical',
     description: 'Bridging high-voltage power generation with microscopic electronic circuits and microprocessors.',
     longDescription: 'EEE graduates possess the dual capability of designing heavy power transformers while understanding the microprocessors that control them. Crucial for EV battery management and handling renewable energy on smart grids.',
@@ -251,6 +267,7 @@ export const branches: Branch[] = [
   {
     slug: 'electrical-engineering',
     name: 'Electrical Engineering',
+    category: 'Engineering',
     domain: 'Electrical',
     description: 'Foundational discipline powering national grids and driving the transition to renewable power.',
     longDescription: 'Undergoing a paradigm shift towards renewable energy integration and smart grids. Electrical engineers are architects of bi-directional energy networks, ensuring stable power distribution for a billion people.',
@@ -266,6 +283,7 @@ export const branches: Branch[] = [
   {
     slug: 'energy-engineering',
     name: 'Energy Engineering',
+    category: 'Engineering',
     domain: 'Electrical',
     description: 'Tackling global sustainability challenges through green hydrogen and utility-scale solar innovation.',
     longDescription: 'Synthesizes principles from multiple fields to build a clean, resilient power grid. Front and center in the green revolution, energy engineers work on wind energy integration and carbon-neutral energy conversion.',
@@ -281,6 +299,7 @@ export const branches: Branch[] = [
   {
     slug: 'power-engineering',
     name: 'Power Engineering',
+    category: 'Engineering',
     domain: 'Electrical',
     description: 'Managing the monumental macroscopic systems that electrify nations and prevent large-scale blackouts.',
     longDescription: 'Deals with the macroscopic systems of energy generation and distribution. Tasks include designing steam turbines and integrating intermittent renewable energy into legacy national grids.',
@@ -298,6 +317,7 @@ export const branches: Branch[] = [
   {
     slug: 'mechanical-engineering',
     name: 'Mechanical Engineering',
+    category: 'Engineering',
     domain: 'Mechanical',
     description: 'The versatile "mother branch", spanning thermodynamics to robotics and additive manufacturing.',
     longDescription: 'Formalized during the Industrial Revolution, modern mechanical engineering spans classical thermodynamics to complex robotics. It has evolved to incorporate additive manufacturing and computational simulation.',
@@ -313,6 +333,7 @@ export const branches: Branch[] = [
   {
     slug: 'aerospace-engineering',
     name: 'Aerospace Engineering',
+    category: 'Engineering',
     domain: 'Mechanical',
     description: 'High-stakes design of spacecraft and advanced missiles with ISRO/DRDO relevance.',
     longDescription: 'Dedicated to spacecraft and advanced systems. Requires uncompromising adherence to precision. A single point of failure is catastrophic. Modern focus on re-usable rockets and satellite systems.',
@@ -328,6 +349,7 @@ export const branches: Branch[] = [
   {
     slug: 'aeronautical-engineering',
     name: 'Aeronautical Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Exclusive focus on flight machines within Earth atmosphere, rooted in fluid dynamics and jet propulsion.',
     longDescription: 'Focused exclusively on aircraft, helicopters, and UAVs. Aeronautical engineers optimize aerodynamic efficiency and reduce aircraft weight through advanced composites for commercial and military aviation.',
@@ -343,6 +365,7 @@ export const branches: Branch[] = [
   {
     slug: 'automobile-engineering',
     name: 'Automobile Engineering',
+    category: 'Engineering',
     domain: 'Mechanical',
     description: 'Architecting the EV revolution and autonomous driving ecosystems.',
     longDescription: 'Undergoing radical disruption through the shift to electric vehicles and autonomous systems. Engineers must operate at the intersection of mechanics, CS, and sustainable energy.',
@@ -360,6 +383,7 @@ export const branches: Branch[] = [
   {
     slug: 'civil-engineering',
     name: 'Civil Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'Planning and building the physical world, from massive public works to smart, sustainable infrastructure.',
     longDescription: 'Historically focused on dams and bridges, it is now undergoing a digital renaissance through Smart Cities and sustainable design, employing BIM and digital twins.',
@@ -375,6 +399,7 @@ export const branches: Branch[] = [
   {
     slug: 'structural-engineering',
     name: 'Structural Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'The critical backbone of civil works, calculating the strength and seismic stability of built environments.',
     longDescription: 'Structural engineers design skyscrapers, dams, and tunnels to withstand massive loads and seismic activity. They employ computational modeling to transform architectural visions into enduring physical realities.',
@@ -390,6 +415,7 @@ export const branches: Branch[] = [
   {
     slug: 'construction-engineering',
     name: 'Construction Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'Managing trillions of dollars in mega-projects, turning blueprints into physical reality.',
     longDescription: 'Bridges civil engineering with deep project management and logistics. Construction engineers orchestrate massive workforces and supply chains to deliver infrastructure on time and under budget.',
@@ -405,6 +431,7 @@ export const branches: Branch[] = [
   {
     slug: 'transportation-engineering',
     name: 'Transportation Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'Optimizing global mobility through mass transit design and intelligent transportation systems.',
     longDescription: 'Focuses on the movement of people and goods. Transportation engineers plan superhighways and metro systems to alleviate urban congestion and connect remote economies.',
@@ -420,6 +447,7 @@ export const branches: Branch[] = [
   {
     slug: 'geotechnical-engineering',
     name: 'Geotechnical Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'Science of understanding soil behavior to prevent catastrophic foundation failures and landslides.',
     longDescription: 'Analyzes earth materials to design stable foundations for tall buildings and tunnels. Critical for building in challenging terrains like the Himalayas or coastal subsea developments.',
@@ -435,6 +463,7 @@ export const branches: Branch[] = [
   {
     slug: 'environmental-engineering',
     name: 'Environmental Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'Protecting ecosystems through sustainable waste management, water remediation, and air quality control.',
     longDescription: 'Environmental engineers apply engineering principles to protect the public and the environment. They design water treatment plants, develop renewable energy strategies, and create systems for hazardous waste remediation to ensure a sustainable future.',
@@ -452,6 +481,7 @@ export const branches: Branch[] = [
   {
     slug: 'chemical-engineering',
     name: 'Chemical Engineering',
+    category: 'Engineering',
     domain: 'Chemical',
     description: 'Industrial transformation of raw materials into high-value pharmaceutical and fuel products.',
     longDescription: 'Formalized to sustain agriculture and medicine. Chemical engineers are now pivoting toward eco-sustainability, developing biomass conversion and hydrogen storage technologies.',
@@ -467,6 +497,7 @@ export const branches: Branch[] = [
   {
     slug: 'biotechnology-engineering',
     name: 'Biotechnology Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Integrating biology with process engineering to create personalized gene therapies and vaccines.',
     longDescription: 'Driving force behind modern medicine. Biotechnology engineers work on fermentation technology and bioinformatics to create sustainable biofuels and high-efficiency vaccines.',
@@ -482,6 +513,7 @@ export const branches: Branch[] = [
   {
     slug: 'biomedical-engineering',
     name: 'Biomedical Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Applying engineering principles to medical sciences for MRI systems and artificial organs.',
     longDescription: 'Convergence of engineering and biology. Biomedical engineers create minimally invasive surgical tools and wearable monitors, transforming global healthcare standards.',
@@ -497,6 +529,7 @@ export const branches: Branch[] = [
   {
     slug: 'genetic-engineering',
     name: 'Genetic Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'CRISPR-Cas9 application to rewrite the code of life for cancer therapies and drought-resistant crops.',
     longDescription: 'Molecular level DNA manipulation. Genetic engineers pioneer gene therapies and modify crop genomes to combat global food insecurity and hereditary diseases.',
@@ -514,6 +547,7 @@ export const branches: Branch[] = [
   {
     slug: 'mechatronics-engineering',
     name: 'Mechatronics Engineering',
+    category: 'Engineering',
     domain: 'Mechanical',
     description: 'Synergistic integration of mechanics, electronics, and AI for smart, autonomous manufacturing.',
     longDescription: 'Cornerstone of Industry 4.0. Mechatronics combines mechanical components with intelligent control and computer science for robotic assembly and smart systems.',
@@ -529,6 +563,7 @@ export const branches: Branch[] = [
   {
     slug: 'manufacturing-engineering',
     name: 'Manufacturing Engineering',
+    category: 'Engineering',
     domain: 'Mechanical',
     description: 'Optimizing production through Six Sigma and industrial robotics for scalable factory output.',
     longDescription: 'Manufacturing engineers bridge corporate strategy with assembly line reality, utilizing lean methodologies to maximize efficiency and minimize product defects.',
@@ -544,6 +579,7 @@ export const branches: Branch[] = [
   {
     slug: 'instrumentation-control',
     name: 'Instrumentation & Control',
+    category: 'Engineering',
     domain: 'Other',
     description: 'The industrial "nervous system", managing precise sensors and logic controllers for automated safety.',
     longDescription: 'Focuses on the precise sensors and distributed control systems (DCS) that automate refineries and power plants, ensuring safe and efficient batch production.',
@@ -559,6 +595,7 @@ export const branches: Branch[] = [
   {
     slug: 'metallurgical-engineering',
     name: 'Metallurgical Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Engineering high-performance alloys by manipulating crystal lattice structures at the atomic level.',
     longDescription: 'Critical for aerospace and electronics. Metallurgical engineers dictate macroscopic properties of metals through thermodynamic discovery and lattice manipulation.',
@@ -574,6 +611,7 @@ export const branches: Branch[] = [
   {
     slug: 'polymer-science',
     name: 'Polymer Science & Technology',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Synthesizing biodegradable plastics and advanced elastomers for medical and automotive industries.',
     longDescription: 'Deals with chemically synthesizing plastics and rubbers. Modern focus is on biodegradable polymers and high-performance composites to replace legacy materials.',
@@ -589,6 +627,7 @@ export const branches: Branch[] = [
   {
     slug: 'plastics-engineering',
     name: 'Plastics Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Industrial transformation of resins into durable products through injection molding and tool design.',
     longDescription: 'Focuses on the transformation of raw resins into net-shaped durable goods. Engineers design complex steel molds and optimize molding cycles for the global FMCG market.',
@@ -604,6 +643,7 @@ export const branches: Branch[] = [
   {
     slug: 'rubber-technology',
     name: 'Rubber Technology',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Chemical compounding for the tire industry and high-end medical latex applications.',
     longDescription: 'Specializes in the chemical processing of natural and synthetic rubber. Essential for the global tire market and advanced medical adhesives.',
@@ -619,6 +659,7 @@ export const branches: Branch[] = [
   {
     slug: 'textile-technology',
     name: 'Textile Technology',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Engineering technical fabrics for defense, aerospace, and sustainable medical applications.',
     longDescription: 'An economically vital branch for India. It has evolved from simple weaving to high-performance technical textiles used in defense and medical gear.',
@@ -634,6 +675,7 @@ export const branches: Branch[] = [
   {
     slug: 'fashion-technology',
     name: 'Fashion Technology',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Integrating industrial CAD and 3D body scanning for global garment supply chain optimization.',
     longDescription: 'Strips away pure aesthetics for garment manufacturing technology. Engineers optimize factory output through 3D scanning and apparel CAD integration.',
@@ -649,6 +691,7 @@ export const branches: Branch[] = [
   {
     slug: 'printing-packaging',
     name: 'Printing & Packaging Technology',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Structural engineering of eco-friendly containers and high-speed reproduction mechanics.',
     longDescription: 'Packaging represents a multi-billion dollar sector. High relevance in FMCG and pharma to minimize environmental impact with biodegradable structural designs.',
@@ -664,6 +707,7 @@ export const branches: Branch[] = [
   {
     slug: 'leather-technology',
     name: 'Leather Technology',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Bridging chemical refining with export-driven fashion through sustainable tanning innovations.',
     longDescription: 'Leather technology is an export powerhouse for India. Modern engineering pivots to zero-wastewater discharge and eco-friendly tanning to ensure long-term environmental viability.',
@@ -679,6 +723,7 @@ export const branches: Branch[] = [
   {
     slug: 'ceramic-engineering',
     name: 'Ceramic Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Science of non-metallic, inorganic materials for heat-resistant aerospace components and biocompatible implants.',
     longDescription: 'Ceramic engineers focus on designing and manufacturing items from inorganic, non-metallic materials. Beyond pottery, this field is critical for high-temperature turbine blades, semiconductor packaging, and orthopedic implants that integrate with human bone.',
@@ -694,6 +739,7 @@ export const branches: Branch[] = [
   {
     slug: 'surface-coating',
     name: 'Surface Coating Technology',
+    category: 'Engineering',
     domain: 'Chemical',
     description: 'Advanced polymer and pigment science to protect automotive and industrial assets from corrosion.',
     longDescription: 'Specifically focused on the synthesis and application of paints, coatings, and varnishes. Surface coating engineers protect trillion-dollar infrastructure from environmental decay through corrosion-resistant polymer layers.',
@@ -711,6 +757,7 @@ export const branches: Branch[] = [
   {
     slug: 'agricultural-engineering',
     name: 'Agricultural Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Precision farming using drone tech and automated irrigation to secure food safety.',
     longDescription: 'Integrates physics with farming to solve food production and water waste challenges. Modern "precision farming" uses automated drones and sophisticated hydrology models to improve yield.',
@@ -726,6 +773,7 @@ export const branches: Branch[] = [
   {
     slug: 'food-technology',
     name: 'Food Tech Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Process engineering for food preservation, combatting global wastage through biochemical and structural innovation.',
     longDescription: 'Food Technology Engineering is the scientific discipline that applies principles of chemical and process engineering to the selection, preservation, processing, and distribution of safe and healthy food. It is increasingly relevant in the modern era as the world shifts toward sustainable, plant-based alternatives and needs robust biochemical solutions to combat the $1 trillion global food wastage crisis. In India, it is a vital engine of the rural-industrial economy, bridging agricultural produce with global retail chains.',
@@ -741,6 +789,7 @@ export const branches: Branch[] = [
   {
     slug: 'dairy-technology',
     name: 'Dairy Technology Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Perishable commodity science focusing on automated pasteurization and nutritional fortification.',
     longDescription: 'India is the world\'s largest producer. Dairy engineers focus on high-efficiency processing and nutritional fortification of perishable commodities.',
@@ -756,6 +805,7 @@ export const branches: Branch[] = [
   {
     slug: 'petroleum-engineering',
     name: 'Petroleum Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Extraction science using 3D seismic mapping to recover deep-water energy resources.',
     longDescription: 'Critical for national baseload energy. Petroleum engineers use supercomputers and 3D mapping to maximize hydrocarbon recovery from extreme subsurface formations.',
@@ -771,6 +821,7 @@ export const branches: Branch[] = [
   {
     slug: 'mining-engineering',
     name: 'Mining Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Safe extraction of rare-earth elements and fossils using automated remote machinery.',
     longDescription: 'Mining engineers underpin global supply chains. Modern focus is on remote, automated machinery to keep humans away from high-risk underground conditions.',
@@ -788,6 +839,7 @@ export const branches: Branch[] = [
   {
     slug: 'nanotechnology-engineering',
     name: 'Nanotechnology Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Manipulating matter at the molecular scale for targeted medicine and aerospace materials.',
     longDescription: 'Operates at the absolute frontier of modern science at the atomic scale. Nanotechnologists pioneer cancer-attacking drug delivery and ultra-efficient energy storage.',
@@ -803,6 +855,7 @@ export const branches: Branch[] = [
   {
     slug: 'nuclear-engineering',
     name: 'Nuclear Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Harnessing the atomic nucleus for clean, concentrated baseload electricity and medical therapy.',
     longDescription: 'Provides concentrated, carbon-neutral electricity with negligible footprints. Nuclear engineers manage high-stakes reactor systems with uncompromising safety adherence.',
@@ -818,6 +871,7 @@ export const branches: Branch[] = [
   {
     slug: 'geoinformatics-engineering',
     name: 'Geoinformatics Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Merging geography with CS to map disaster zones and power GPS navigation infrastructure.',
     longDescription: 'Relies on satellite telemetry and cyberinfrastructure to visualize spatial data. Essential for smart-city planning, GPS navigation, and automated disaster management.',
@@ -833,6 +887,7 @@ export const branches: Branch[] = [
   {
     slug: 'fire-safety',
     name: 'Fire & Safety Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Designing proactive sprinkler systems and risk assessments to protect industrial assets and human life.',
     longDescription: 'The science of proactively designing installations to protect life. Safety engineers implement smoke ventilation and automated suppression systems across industrial zones.',
@@ -848,6 +903,7 @@ export const branches: Branch[] = [
   {
     slug: 'quantum-engineering',
     name: 'Quantum Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Paradigm shift in processing, utilizing superposition to solve billion-variable cryptographic problems.',
     longDescription: 'Transitions from binary logic to superposition. Essential for the Epoch of digital security and algorithmic processing in drug discovery and high-end finance.',
@@ -863,6 +919,7 @@ export const branches: Branch[] = [
   {
     slug: 'photonics-engineering',
     name: 'Photonics Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Managing light signals to drive zero-latency fiber internet backbones and night-vision gear.',
     longDescription: 'Focuses on photon manipulation. Drives internet high-speed backbones and autonomous LIDAR. Replaces legacy copper with zero-latency optical fibers.',
@@ -878,6 +935,7 @@ export const branches: Branch[] = [
   {
     slug: 'plasma-engineering',
     name: 'Plasma Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Ionized gas physics for the future of fusion power and silicon microchip etching.',
     longDescription: 'Fundamental mechanism for etching transistors into chips. Holds the key to humanity\'s energy crisis through fusion energy research.',
@@ -893,6 +951,7 @@ export const branches: Branch[] = [
   {
     slug: 'cryogenic-engineering',
     name: 'Cryogenic Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Production and management of temperatures below -150°C for LNG transport and ISRO rocket propulsion.',
     longDescription: 'A major ISRO milestone. Engineers build systems where precision is non-negotiable for cooling quantum computers and handling cryogenic LNG.',
@@ -908,6 +967,7 @@ export const branches: Branch[] = [
   {
     slug: 'computational-engineering',
     name: 'Computational Engineering',
+    category: 'Engineering',
     domain: 'Mechanical',
     description: 'Creating virtual replicas of assets to predict wear and optimize high-end physics-based R&D.',
     longDescription: 'Interdisciplinary branch merging applied math and CS to solve complex problems through simulation, reducing costs in automotive and aerospace R&D.',
@@ -923,6 +983,7 @@ export const branches: Branch[] = [
   {
     slug: 'earthquake-engineering',
     name: 'Earthquake Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'Design and modeling of structures capable of absorbing massive kinetic energy without failure.',
     longDescription: 'Civil sub-discipline dedicated to mitigate seismic hazard. Essential for skyscrapers and critical plants in high-risk zones globally.',
@@ -938,6 +999,7 @@ export const branches: Branch[] = [
   {
     slug: 'hydrology-engineering',
     name: 'Hydrology Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'Climatic and geomorphic mapping to predict extreme monsoon impacts and groundwater recharge rates.',
     longDescription: 'Study of movement and distribution of water across atmosphere and surface. Engineers monitor aquifer contamination and calculated flood frequencies.',
@@ -953,6 +1015,7 @@ export const branches: Branch[] = [
   {
     slug: 'remote-sensing-engineering',
     name: 'Remote Sensing Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Invisible backbone of spatial planning using satellite image processing and photogrammetry.',
     longDescription: 'Interpret information without physical contact. Drives precision agriculture, urban tracking, and mineral detection through massive telemetry processing.',
@@ -968,6 +1031,7 @@ export const branches: Branch[] = [
   {
     slug: 'disaster-management-engineering',
     name: 'Disaster Management Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Designing early warning networks and disaster-resistant codes to prepare for severe natural events.',
     longDescription: 'Replaces reactive relief with proactive structural resilience. Coordinates early warning networks and enforces building code adherence to minimize loss.',
@@ -983,6 +1047,7 @@ export const branches: Branch[] = [
   {
     slug: 'process-engineering',
     name: 'Process Engineering',
+    category: 'Engineering',
     domain: 'Chemical',
     description: 'Masterminding the efficiency of massive oil refineries and continuous-flow food plants.',
     longDescription: 'Transforms laboratory science into profitable industrial production. Optimizes yields while minimizing energy, waste, and operational hazard in real-time.',
@@ -998,6 +1063,7 @@ export const branches: Branch[] = [
   {
     slug: 'quality-engineering',
     name: 'Quality Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Designing excellence into the manufacturing process to eliminate product recalls at the source.',
     longDescription: 'Replaces end-of-line inspection with proactive process quality. Relies on statistical control and Six Sigma to ensure units from brakes to software code function perfectly.',
@@ -1013,6 +1079,7 @@ export const branches: Branch[] = [
   {
     slug: 'supply-chain-engineering',
     name: 'Supply Chain Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Data-driven science of just-in-time delivery and logistics corridor design.',
     longDescription: 'Design resilient shipping corridors through mathematical modeling. Supply chain engineers automate inventory and fleets for global e-commerce fulfillment.',
@@ -1028,6 +1095,7 @@ export const branches: Branch[] = [
   {
     slug: 'cloud-computing-engineering',
     name: 'Cloud Computing Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Architecting 99.99% uptime internet-based infrastructure for global digital enterprises.',
     longDescription: 'Transitioning the world from local servers to scalable cloud clusters. Managed deployments across AWS and Azure for massive data loads and secure storage.',
@@ -1043,6 +1111,7 @@ export const branches: Branch[] = [
   {
     slug: 'devops-engineering',
     name: 'DevOps Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'CI/CD pipeline architecture to enable high-frequency secure software releases.',
     longDescription: 'Bridges frictional gap between Dev and Ops. DevOps engineers create pipelines to release software daily without risk, managing massive container workflows.',
@@ -1058,6 +1127,7 @@ export const branches: Branch[] = [
   {
     slug: 'blockchain-engineering',
     name: 'Blockchain Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Immutable ledger architecture for trustless finance and secure global supply traceability.',
     longDescription: 'Design decentralized systems for transparency. Blockchain engineers create smart contracts and nodes that operate autonomously without central governing authority.',
@@ -1073,6 +1143,7 @@ export const branches: Branch[] = [
   {
     slug: 'ar-vr-engineering',
     name: 'AR/VR Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Spatial computing for industrial training systems and immersive digital medical platforms.',
     longDescription: 'Redefines human-computer interaction through immersive environments. VR engineers build flight simulators while AR engineers overlay industrial schematics on physical assets.',
@@ -1088,6 +1159,7 @@ export const branches: Branch[] = [
   {
     slug: 'battery-technology-engineering',
     name: 'Battery Technology Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Electrochemical innovation creating high-density solid-state batteries for the global EV fleet.',
     longDescription: 'Paramount discipline for carbon neutrality. Battery engineers optimize storage density and prevent thermal runaway, driving the next EPOCH of electric mobility.',
@@ -1103,6 +1175,7 @@ export const branches: Branch[] = [
   {
     slug: 'pharmaceutical-engineering',
     name: 'Pharmaceutical Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Process engineering for medical drug synthesis, ensuring high-purity massive scale production.',
     longDescription: 'Combines chemical engineering and life science. Pharmaceutical engineers design the systems that synthesize life-saving drugs at scale while maintaining uncompromising purity and regulatory compliance.',
@@ -1118,6 +1191,7 @@ export const branches: Branch[] = [
   {
     slug: 'marine-engineering',
     name: 'Marine Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Engineering systems for deep-sea vessels and offshore energy structures in corrosive oceanic environments.',
     longDescription: 'Deals with the design, construction, and operation of ships and offshore platforms. Marine engineers maintain colossal diesel engines and power systems that traverse global oceans in extreme conditions.',
@@ -1133,6 +1207,7 @@ export const branches: Branch[] = [
   {
     slug: 'urban-planning-engineering',
     name: 'Urban Planning Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'Architecting sustainable city layouts and smart utilities for rapidly exploding metropolises.',
     longDescription: 'Merges civil engineering with social science. Urban planners design sustainable cities, optimizing public transport layouts, sewage grids, and green spaces to ensure livability in massive metropolises.',
@@ -1148,6 +1223,7 @@ export const branches: Branch[] = [
   {
     slug: 'material-science-engineering',
     name: 'Material Science Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Discovery and manipulation of high-tech composites for aerospace, medical, and semiconductor breakthroughs.',
     longDescription: 'Scientific study of the properties and applications of materials. Engineers manipulate materials at the microscopic level to create stronger, lighter, or more conductive assets for deep-tech sectors.',
@@ -1163,6 +1239,7 @@ export const branches: Branch[] = [
   {
     slug: 'bio-informatics-engineering',
     name: 'Bio-informatics Engineering',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Applying massive data analytics and AI to decode the human genome and accelerate drug discovery.',
     longDescription: 'Intersection of biology and computer science. Bioinformaticians build the algorithms that parse biological data lakes, enabling breakthroughs in mRNA vaccines and targeted gene therapies.',
@@ -1178,6 +1255,7 @@ export const branches: Branch[] = [
   {
     slug: 'tool-engineering',
     name: 'Tool Engineering',
+    category: 'Engineering',
     domain: 'Mechanical',
     description: 'Designing high-precision jigs, fixtures, and molds for massive industrial scale production.',
     longDescription: 'The "unseen" pillar of manufacturing. Tool engineers design the precision high-speed cutting tools and complex injection molds that dictate the finish and cost of every industrial product.',
@@ -1193,6 +1271,7 @@ export const branches: Branch[] = [
   {
     slug: 'production-engineering',
     name: 'Production Engineering',
+    category: 'Engineering',
     domain: 'Mechanical',
     description: 'Architecting high-efficiency factory floors and optimizing technical production pipelines.',
     longDescription: 'Focuses on the management and design of production technicality. Production engineers ensure that factory lines operate at peak efficiency, integrating human resources with heavy machinery.',
@@ -1208,6 +1287,7 @@ export const branches: Branch[] = [
   {
     slug: 'environmental-remediation',
     name: 'Environmental Remediation Engineering',
+    category: 'Engineering',
     domain: 'Other',
     description: 'Decaying material science for the chemical cleanup of industrial brownfields and toxic land.',
     longDescription: 'The engineering applied to cleanup of contaminated ecosystems. Engineers design microbial and chemical interventions to restore ecological health to toxic industrial zones.',
@@ -1225,6 +1305,7 @@ export const branches: Branch[] = [
   {
     slug: 'marine-structures',
     name: 'Marine Structures Engineering',
+    category: 'Engineering',
     domain: 'Civil',
     description: 'Engineering the offshore energy platforms and massive harbor breakwaters for the blue economy.',
     longDescription: 'Specialized civil/oceanic hybrid. Focuses on the structural integrity of offshore assets like oil rigs and wind farms in aggressive open-ocean environments.',
@@ -1240,6 +1321,7 @@ export const branches: Branch[] = [
   {
     slug: 'artificial-intelligence-data-science',
     name: 'Artificial Intelligence and Data Science',
+    category: 'Engineering',
     domain: 'CS & IT',
     description: 'Specialized interdisciplinary branch merging cognitive computing with Big Data analytics for high-end industrial automation.',
     longDescription: 'Artificial Intelligence and Data Science (AI & DS) is one of the most rapidly expanding disciplines in modern engineering education. It is designed to create professionals who can not only build intelligent systems but also manage the massive data architectures that feed them. This dual mastery is the primary engine behind the autonomous economy, powering everything from real-time financial fraud detection to predictive maintenance in smart factories.',
@@ -1257,6 +1339,7 @@ export const branches: Branch[] = [
   {
     slug: 'mbbs',
     name: 'MBBS (Medicine & Surgery)',
+    category: 'Medical',
     domain: 'Medical',
     description: 'The premier medical degree for clinical practice, surgery, and healthcare leadership.',
     longDescription: 'Bachelor of Medicine and Bachelor of Surgery (MBBS) is the cornerstone of clinical medicine. It prepares students for a career dedicated to saving lives through diagnosis, treatment, and prevention of diseases. The program in India includes rigorous clinical rotations and a mandatory internship, aligning with global medical standards to produce globally competent physicians.',
@@ -1272,6 +1355,7 @@ export const branches: Branch[] = [
   {
     slug: 'bds',
     name: 'BDS (Dental Surgery)',
+    category: 'Medical',
     domain: 'Medical',
     description: 'Specialized focus on oral health, cosmetic dentistry, and maxillo-facial surgeries.',
     longDescription: 'Bachelor of Dental Surgery (BDS) is the primary degree for dental practitioners. It covers everything from preventive dentistry and orthodontics to complex oral surgeries. With the rising awareness of oral hygiene and aesthetics, the field of dentistry has evolved into a high-demand surgical specialty.',
@@ -1287,6 +1371,7 @@ export const branches: Branch[] = [
   {
     slug: 'b-pharm',
     name: 'B.Pharm (Pharmacy)',
+    category: 'Pharmacy',
     domain: 'Medical',
     description: 'The science of drug formulation, clinical research, and pharmaceutical manufacturing.',
     longDescription: 'Bachelor of Pharmacy (B.Pharm) is the bridge between medical science and industrial manufacturing. Students learn the chemistry of drugs, their physiological effects, and the industrial processes required to produce them at scale. India being the "Pharmacy of the World" offers massive opportunities in R&D and drug regulatory affairs.',
@@ -1304,6 +1389,7 @@ export const branches: Branch[] = [
   {
     slug: 'bsc-nursing',
     name: 'B.Sc. Nursing',
+    category: 'Nursing',
     domain: 'Nursing',
     description: 'Highly skilled clinical care and patient management within specialized healthcare environments.',
     longDescription: 'B.Sc. Nursing is a professional degree that combines advanced clinical skills with patient-centric care. Modern nursing is highly technical, involving the management of critical care equipment, surgical assistance, and complex patient recovery protocols. It is a vital pillar of the global healthcare infrastructure.',
@@ -1321,6 +1407,7 @@ export const branches: Branch[] = [
   {
     slug: 'bsc-agriculture',
     name: 'B.Sc. (Hons) Agriculture',
+    category: 'Agriculture',
     domain: 'Agriculture',
     description: 'Scientific optimization of crop yield, soil health, and sustainable farming ecosystems.',
     longDescription: 'B.Sc. Agriculture is an interdisciplinary field that applies biology, chemistry, and engineering to food production. Students learn modern techniques in plant breeding, pest management, and soil science to combat food insecurity and adapt to climate change. It is the engine of the rural economy.',
@@ -1332,5 +1419,175 @@ export const branches: Branch[] = [
       soft: ['Environmental stewardship', 'Analytical reasoning', 'Management', 'Policy awareness']
     },
     topColleges: ['PAU Ludhiana', 'IARI New Delhi', 'TNAU Coimbatore', 'MPKV Rahuri', 'PDKV Akola']
+  },
+  {
+    slug: 'bams',
+    name: 'BAMS (Ayurveda)',
+    category: 'Medical',
+    domain: 'Medical',
+    description: 'Ancient Indian system of medicine focusing on holistic healing and natural remedies.',
+    coreSubjects: ['Padartha Vigyan', 'Sanskrit', 'Kriya Sharir', 'Rachana Sharir', 'Kayachikitsa'],
+    careerPaths: ['Ayurvedic Doctor', 'Research Scientist', 'Wellness Consultant'],
+    topColleges: ['NIA Jaipur', 'BHU Varanasi', 'RAU Jodhpur']
+  },
+  {
+    slug: 'bhms',
+    name: 'BHMS (Homeopathy)',
+    category: 'Medical',
+    domain: 'Medical',
+    description: 'System of alternative medicine based on the doctrine of "like cures like".',
+    coreSubjects: ['Homeopathic Pharmacy', 'Organon of Medicine', 'Materia Medica', 'Repertory'],
+    careerPaths: ['Homeopathic Doctor', 'Consultant', 'Medical Officer'],
+    topColleges: ['NIH Kolkata', 'NIFH Delhi', 'HMC Pune']
+  },
+  {
+    slug: 'bums',
+    name: 'BUMS (Unani)',
+    category: 'Medical',
+    domain: 'Medical',
+    description: 'Traditional Perso-Arabic medicine practiced in Muslim culture in South Asia and modern-day Central Asia.',
+    coreSubjects: ['Kulliyat Umoore Tabiya', 'Tashreeh-ul-Badan', 'Munafe-ul-Aaza', 'Ilmul Advia'],
+    careerPaths: ['Unani Physician', 'Researcher', 'Professor'],
+    topColleges: ['Jamia Hamdard', 'NIUM Bangalore', 'ZVM Unani Medical College']
+  },
+  {
+    slug: 'horticulture',
+    name: 'Horticulture',
+    category: 'Agriculture',
+    domain: 'Agriculture',
+    description: 'The science and art of growing fruits, vegetables, flowers, and ornamental plants.',
+    coreSubjects: ['Fruit Science', 'Vegetable Science', 'Floriculture', 'Post-Harvest Management'],
+    careerPaths: ['Horticulturist', 'Landscape Architect', 'Plant Breeder'],
+    topColleges: ['YSP University', 'TNAU Coimbatore', 'UHS Bagalkot']
+  },
+  {
+    slug: 'forestry',
+    name: 'Forestry',
+    category: 'Agriculture',
+    domain: 'Agriculture',
+    description: 'Management of forest resources, wildlife conservation, and ecosystem restoration.',
+    coreSubjects: ['Silviculture', 'Forest Management', 'Wildlife Biology', 'Agroforestry'],
+    careerPaths: ['Forest Officer', 'Wildlife Biologist', 'Conservationist'],
+    topColleges: ['FR Dehradun', 'YSP University', 'TNAU Coimbatore']
+  },
+  {
+    slug: 'agronomy',
+    name: 'Agronomy',
+    category: 'Agriculture',
+    domain: 'Agriculture',
+    description: 'Science of soil management and crop production.',
+    coreSubjects: ['Crop Physiology', 'Weed Management', 'Soil Fertility', 'Dryland Agriculture'],
+    careerPaths: ['Agronomist', 'Soil Scientist', 'Farm Manager'],
+    topColleges: ['PAU Ludhiana', 'IARI New Delhi', 'GBPUAT Pantnagar']
+  },
+  {
+    slug: 'd-pharm',
+    name: 'D.Pharm (Diploma in Pharmacy)',
+    category: 'Pharmacy',
+    domain: 'Pharmacy',
+    description: 'Short-term program providing fundamental knowledge of pharmacy and drug dispensing.',
+    coreSubjects: ['Pharmaceutics', 'Pharmacology', 'Pharmacognosy', 'Hospital Pharmacy'],
+    careerPaths: ['Pharmacist', 'Medical Representative', 'Store Manager'],
+    topColleges: ['DIPSAR Delhi', 'Poona College of Pharmacy', 'JSS Mysore']
+  },
+  {
+    slug: 'pharm-d',
+    name: 'Pharm.D (Doctor of Pharmacy)',
+    category: 'Pharmacy',
+    domain: 'Pharmacy',
+    description: 'Professional doctorate degree focusing on clinical pharmacy and patient care.',
+    coreSubjects: ['Clinical Pharmacy', 'Therapeutics', 'Hospital Pharmacy', 'Clinical Toxicology'],
+    careerPaths: ['Clinical Pharmacist', 'Drug Safety Physician', 'Medical Advisor'],
+    topColleges: ['JSS Mysore', 'Manipal College of Pharmaceutical Sciences', 'SRM Chennai']
+  },
+  {
+    slug: 'gnm-nursing',
+    name: 'GNM (General Nursing & Midwifery)',
+    category: 'Nursing',
+    domain: 'Nursing',
+    description: 'Diploma program focused on providing general nursing care and midwifery services.',
+    coreSubjects: ['Anatomy', 'Nursing Foundations', 'Midwifery', 'Community Health'],
+    careerPaths: ['Staff Nurse', 'Home Care Nurse', 'Health Visitor'],
+    topColleges: ['St. Johns Bangalore', 'Apollo School of Nursing', 'KMC Mangalore']
+  },
+  {
+    slug: 'general-medicine',
+    name: 'General Medicine (MD)',
+    category: 'Medical',
+    domain: 'Clinical',
+    description: 'Post-graduate specialization focusing on non-surgical treatment of internal diseases.',
+    coreSubjects: ['Internal Medicine', 'Cardiology', 'Endocrinology', 'Gastroenterology'],
+    careerPaths: ['Physician', 'Consultant', 'Medical Researcher'],
+    topColleges: ['AIIMS New Delhi', 'MAMC Delhi', 'KEM Mumbai']
+  },
+  {
+    slug: 'general-surgery',
+    name: 'General Surgery (MS)',
+    category: 'Medical',
+    domain: 'Clinical',
+    description: 'Specialization focusing on surgical treatment of abdominal organs, thyroid, and soft tissues.',
+    coreSubjects: ['Surgical Anatomy', 'Operative Surgery', 'Trauma Care', 'Post-operative Care'],
+    careerPaths: ['Surgeon', 'Surgical Consultant', 'Trauma Specialist'],
+    topColleges: ['AIIMS New Delhi', 'PGIMER Chandigarh', 'CMC Vellore']
+  },
+  {
+    slug: 'pediatrics',
+    name: 'Pediatrics',
+    category: 'Medical',
+    domain: 'Clinical',
+    description: 'Specialized medical care for infants, children, and adolescents.',
+    coreSubjects: ['Neonatology', 'Child Psychology', 'Pediatric Nutrition', 'Infectious Diseases'],
+    careerPaths: ['Pediatrician', 'Child Specialist', 'Neonatologist'],
+    topColleges: ['MAMC Delhi', 'AIIMS New Delhi', 'KEM Mumbai']
+  },
+  {
+    slug: 'cardiology',
+    name: 'Cardiology',
+    category: 'Medical',
+    domain: 'Super-Specialty',
+    description: 'Advanced study of heart disorders and circulatory system management.',
+    coreSubjects: ['Echocardiography', 'Interventional Cardiology', 'Electrophysiology'],
+    careerPaths: ['Cardiologist', 'Cardiac Surgeon', 'Research Scientist'],
+    topColleges: ['AIIMS New Delhi', 'Fortis Escorts', 'Medanta']
+  },
+  {
+    slug: 'agricultural-economics',
+    name: 'Agricultural Economics',
+    category: 'Agriculture',
+    domain: 'Agriculture',
+    description: 'Applying economic principles to optimize agricultural production and distribution.',
+    coreSubjects: ['Micro-economics', 'Farm Management', 'Agri-Business', 'Market Analysis'],
+    careerPaths: ['Agri-Economist', 'Policy Analyst', 'Market Researcher'],
+    topColleges: ['IARI New Delhi', 'PAU Ludhiana', 'NDRI Karnal']
+  },
+  {
+    slug: 'soil-science',
+    name: 'Soil Science',
+    category: 'Agriculture',
+    domain: 'Agriculture',
+    description: 'Study of soil as a natural resource, including formation, classification, and mapping.',
+    coreSubjects: ['Soil Chemistry', 'Soil Physics', 'Soil Microbiology', 'Fertility Management'],
+    careerPaths: ['Soil Scientist', 'Agronomist', 'Land Consultant'],
+    topColleges: ['IARI New Delhi', 'PAU Ludhiana', 'TNAU Coimbatore']
+  },
+  {
+    slug: 'pharmacology',
+    name: 'Pharmacology',
+    category: 'Pharmacy',
+    domain: 'Pharmacy',
+    description: 'Study of drug action and the interaction between living organisms and chemicals.',
+    coreSubjects: ['Pharmacokinetics', 'Pharmacodynamics', 'Toxicology', 'Clinical Pharmacology'],
+    careerPaths: ['Pharmacologist', 'Drug Researcher', 'Clinical Investigator'],
+    topColleges: ['ICT Mumbai', 'NIPER Mohali', 'BITS Pilani']
+  },
+  {
+    slug: 'toxicology',
+    name: 'Toxicology',
+    category: 'Pharmacy',
+    domain: 'Pharmacy',
+    description: 'Scientific study of adverse effects of chemical substances on living organisms.',
+    coreSubjects: ['Forensic Toxicology', 'Environmental Toxicology', 'Analytical Toxicology'],
+    careerPaths: ['Toxicologist', 'Forensic Scientist', 'Safety Officer'],
+    topColleges: ['Jamia Hamdard', 'NIPER Mohali', 'Gujarat University']
   }
 ];
