@@ -1,6 +1,6 @@
 // Using built-in fetch from Node.js 20+
 
-const SHEET_URL = "https://script.google.com/macros/s/AKfycbw36m0Ip_fDQ_k-_9ZfK6nfvZYaE4V1qoXKrh-p-ky5alCsG0K2tXsS_FIgFulyoTNL/exec";
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbw47T2jo4rZVFDFYY_EAOcJ4uU7U2A0zjyPbyikyh4tuGV1iTLjezYPpMQSosgaDls5Ug/exec";
 
 async function testSubmission() {
   console.log('--- Testing Google Sheets Integration ---');
