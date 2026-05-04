@@ -9,7 +9,8 @@ import { Stage4_Contact } from './stages/Stage4_Contact';
 import { FormRouter } from './forms/FormRouter';
 
 export const ApplicationShell = () => {
-  const { currentStage, currentStep } = useApplicationStore();
+  const currentStage = useApplicationStore(state => state.currentStage);
+  const currentStep = useApplicationStore(state => state.currentStep);
 
   const containerRef = React.useRef<HTMLDivElement>(null);
 

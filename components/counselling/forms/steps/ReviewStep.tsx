@@ -7,6 +7,30 @@ import { StepFooter } from '../../StepFooter';
 import { submitToGoogleSheets } from '@/lib/submission';
 import { CheckCircle2, Edit3 } from 'lucide-react';
 
+const SummarySection = ({ title, fields, stepIndex, setStep }: any) => (
+  <div className="bg-white border border-border rounded-2xl overflow-hidden mb-6">
+    <div className="bg-surface-light px-6 py-3 border-b border-border flex items-center justify-between">
+      <h3 className="font-ui font-bold text-[14px] text-text-primary uppercase tracking-wider">{title}</h3>
+      <button 
+        onClick={() => setStep(stepIndex)}
+        className="text-brand-blue hover:underline flex items-center gap-1.5 text-[12px] font-semibold"
+      >
+        <Edit3 className="w-3 h-3" /> Edit
+      </button>
+    </div>
+    <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+      {fields.map(([label, value]: any) => (
+        <div key={label} className="flex flex-col gap-0.5">
+          <span className="text-[12px] text-text-muted font-medium uppercase tracking-tight">{label}</span>
+          <span className="text-[14px] text-text-primary font-medium truncate">
+            {Array.isArray(value) ? value.join(', ') : (value || '—')}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
 export const ReviewStep = () => {
   const { 
     formData, 
@@ -44,30 +68,6 @@ export const ReviewStep = () => {
     }
   };
 
-  const SummarySection = ({ title, fields, stepIndex }: any) => (
-    <div className="bg-white border border-border rounded-2xl overflow-hidden mb-6">
-      <div className="bg-surface-light px-6 py-3 border-b border-border flex items-center justify-between">
-        <h3 className="font-ui font-bold text-[14px] text-text-primary uppercase tracking-wider">{title}</h3>
-        <button 
-          onClick={() => setStep(stepIndex)}
-          className="text-brand-blue hover:underline flex items-center gap-1.5 text-[12px] font-semibold"
-        >
-          <Edit3 className="w-3 h-3" /> Edit
-        </button>
-      </div>
-      <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
-        {fields.map(([label, value]: any) => (
-          <div key={label} className="flex flex-col gap-0.5">
-            <span className="text-[12px] text-text-muted font-medium uppercase tracking-tight">{label}</span>
-            <span className="text-[14px] text-text-primary font-medium truncate">
-              {Array.isArray(value) ? value.join(', ') : (value || '—')}
-            </span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-
   return (
     <div className="animate-in fade-in slide-in-from-right-4 duration-300">
       <StepProgress currentTitle="Review & Submit" />
@@ -76,6 +76,7 @@ export const ReviewStep = () => {
         <SummarySection 
           title="Contact Details" 
           stepIndex={1}
+          setStep={setStep}
           fields={[
             ['Full Name', formData.candidateName],
             ['Phone', formData.phone],
@@ -88,6 +89,7 @@ export const ReviewStep = () => {
         <SummarySection 
           title="Reservation & Minority" 
           stepIndex={3} // Approximate step index for personal/quota
+          setStep={setStep}
           fields={[
             ['Category', formData.category],
             ['Minority Status', formData.isMinority || 'No'],
@@ -99,6 +101,7 @@ export const ReviewStep = () => {
         <SummarySection 
           title="Exam Scores" 
           stepIndex={2}
+          setStep={setStep}
           fields={[
             ...(formData.hasPCM === 'Yes' ? [
               ['MHT-CET PCM Percentile', formData.mhtcetPercentilePCM || formData.mhtcetPercentile],

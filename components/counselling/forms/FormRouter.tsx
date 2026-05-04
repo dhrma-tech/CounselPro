@@ -29,7 +29,10 @@ const PlaceholderStep = ({ title }: { title: string }) => {
 };
 
 export const FormRouter = () => {
-  const { counsellingType, setCounsellingType, currentStep, setTotalSteps } = useApplicationStore();
+  const counsellingType = useApplicationStore(state => state.counsellingType);
+  const setCounsellingType = useApplicationStore(state => state.setCounsellingType);
+  const currentStep = useApplicationStore(state => state.currentStep);
+  const setTotalSteps = useApplicationStore(state => state.setTotalSteps);
 
   // Self-healing: Migrate old counselling types to new format
   useEffect(() => {

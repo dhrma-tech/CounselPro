@@ -10,6 +10,50 @@ import { StepFooter } from '../../StepFooter';
 import { RadioCards } from '../../fields/RadioCards';
 import { ConditionalSection } from '../../fields/ConditionalSection';
 
+const ScoreSection = ({ type, title, formData, updateField }: any) => {
+  const hasGroup = formData[`has${type}`] === 'Yes';
+
+  return (
+    <div className="space-y-6">
+      <RadioCards
+        label={`Did you appear for MHT-CET ${type}?`}
+        options={['Yes', 'No']}
+        gridCols={2}
+        value={formData[`has${type}`] || 'No'}
+        onChange={(v: string) => updateField(`has${type}`, v)}
+      />
+
+      <ConditionalSection isVisible={hasGroup} label={`${type} Group Details`}>
+        <div className="space-y-4 p-5 bg-surface-light/50 rounded-2xl border border-border/50">
+          <h3 className="font-ui font-bold text-[14px] text-text-primary uppercase tracking-wider mb-2">{title}</h3>
+          <div className="grid grid-cols-1 gap-5">
+            <DecimalInput
+              label={`MHT-CET Percentile (${type})`}
+              placeholder="e.g. 87.45"
+              value={formData[`mhtcetPercentile${type}`] || (type === 'PCM' ? formData.mhtcetPercentile : '') || ''}
+              onChange={(e: any) => updateField(`mhtcetPercentile${type}`, e.target.value)}
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <NumberInput
+                label={`All State / Merit Rank (${type})`}
+                placeholder="e.g. 15230"
+                value={formData[`mhtcetMeritRank${type}`] || (type === 'PCM' ? formData.mhtcetAllStateMeritRank : '') || ''}
+                onChange={(e: any) => updateField(`mhtcetMeritRank${type}`, e.target.value)}
+              />
+              <NumberInput
+                label={`Category Rank (${type})`}
+                placeholder="e.g. 4500"
+                value={formData[`mhtcetCategoryRank${type}`] || (type === 'PCM' ? formData.mhtcetCategoryRank : '') || ''}
+                onChange={(e: any) => updateField(`mhtcetCategoryRank${type}`, e.target.value)}
+              />
+            </div>
+          </div>
+        </div>
+      </ConditionalSection>
+    </div>
+  );
+};
+
 export const MHT_CET_ScoreStep = () => {
   const { formData, updateField, nextStep, counsellingType } = useApplicationStore();
   
@@ -18,50 +62,6 @@ export const MHT_CET_ScoreStep = () => {
 
   const handleNext = () => {
     nextStep();
-  };
-
-  const ScoreSection = ({ type, title }: { type: 'PCM' | 'PCB', title: string }) => {
-    const hasGroup = formData[`has${type}`] === 'Yes';
-
-    return (
-      <div className="space-y-6">
-        <RadioCards
-          label={`Did you appear for MHT-CET ${type}?`}
-          options={['Yes', 'No']}
-          gridCols={2}
-          value={formData[`has${type}`] || 'No'}
-          onChange={(v: string) => updateField(`has${type}`, v)}
-        />
-
-        <ConditionalSection isVisible={hasGroup} label={`${type} Group Details`}>
-          <div className="space-y-4 p-5 bg-surface-light/50 rounded-2xl border border-border/50">
-            <h3 className="font-ui font-bold text-[14px] text-text-primary uppercase tracking-wider mb-2">{title}</h3>
-            <div className="grid grid-cols-1 gap-5">
-              <DecimalInput
-                label={`MHT-CET Percentile (${type})`}
-                placeholder="e.g. 87.45"
-                value={formData[`mhtcetPercentile${type}`] || (type === 'PCM' ? formData.mhtcetPercentile : '') || ''}
-                onChange={(e: any) => updateField(`mhtcetPercentile${type}`, e.target.value)}
-              />
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <NumberInput
-                  label={`All State / Merit Rank (${type})`}
-                  placeholder="e.g. 15230"
-                  value={formData[`mhtcetMeritRank${type}`] || (type === 'PCM' ? formData.mhtcetAllStateMeritRank : '') || ''}
-                  onChange={(e: any) => updateField(`mhtcetMeritRank${type}`, e.target.value)}
-                />
-                <NumberInput
-                  label={`Category Rank (${type})`}
-                  placeholder="e.g. 4500"
-                  value={formData[`mhtcetCategoryRank${type}`] || (type === 'PCM' ? formData.mhtcetCategoryRank : '') || ''}
-                  onChange={(e: any) => updateField(`mhtcetCategoryRank${type}`, e.target.value)}
-                />
-              </div>
-            </div>
-          </div>
-        </ConditionalSection>
-      </div>
-    );
   };
 
   return (
@@ -101,9 +101,19 @@ export const MHT_CET_ScoreStep = () => {
           </div>
         ) : (
           <>
-            <ScoreSection type="PCM" title="PCM Group" />
+            <ScoreSection 
+              type="PCM" 
+              title="PCM Group" 
+              formData={formData} 
+              updateField={updateField} 
+            />
             <div className="h-px bg-border/50" />
-            <ScoreSection type="PCB" title="PCB Group" />
+            <ScoreSection 
+              type="PCB" 
+              title="PCB Group" 
+              formData={formData} 
+              updateField={updateField} 
+            />
           </>
         )}
       </div>
