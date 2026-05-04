@@ -13,6 +13,8 @@ import { MHT_CET_ScoreStep } from './steps/MHT_CET_ScoreStep';
 import { JEE_OptionalStep } from './steps/JEE_OptionalStep';
 import { CoursePreferencesStep } from './steps/CoursePreferencesStep';
 import { NEET_OptionalStep } from './steps/NEET_OptionalStep';
+import { CombinedOptionalExamsStep } from './steps/CombinedOptionalExamsStep';
+import { ArmedForcesStep } from './steps/ArmedForcesStep';
 
 // Placeholder common steps
 const PlaceholderStep = ({ title }: { title: string }) => {
@@ -68,6 +70,10 @@ export const FormRouter = () => {
       return <CoursePreferencesStep />;
     case 'NEET_OptionalStep':
       return <NEET_OptionalStep />;
+    case 'CombinedOptionalExamsStep':
+      return <CombinedOptionalExamsStep />;
+    case 'ArmedForcesStep':
+      return <ArmedForcesStep />;
     case 'ReviewStep':
       return <ReviewStep />;
     default:

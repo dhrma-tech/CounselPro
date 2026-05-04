@@ -41,6 +41,7 @@ export const FORM_CONFIGS: Record<CounsellingType, FormConfig> = {
       { id: 'global', title: 'Contact Information', component: 'GlobalStep' },
       { id: 'rank', title: 'Rank & Score', component: 'RankScoreStep' },
       { id: 'personal', title: 'Personal Details', component: 'PersonalDetailsStep' },
+      { id: 'armed_forces', title: 'Armed Forces Details', component: 'ArmedForcesStep' },
       { id: 'preferences', title: 'Course Preferences', component: 'CoursePreferencesStep' },
       { id: 'review', title: 'Review & Submit', component: 'ReviewStep' },
     ]
@@ -58,7 +59,7 @@ export const FORM_CONFIGS: Record<CounsellingType, FormConfig> = {
     steps: [
       { id: 'global', title: 'Contact Information', component: 'GlobalStep' },
       { id: 'scores', title: 'MHT-CET Score', component: 'MHT_CET_ScoreStep' },
-      { id: 'jee_optional', title: 'JEE Score (Optional)', component: 'JEE_OptionalStep' },
+      { id: 'combined_optional', title: 'Optional Exam Scores', component: 'CombinedOptionalExamsStep' },
       { id: 'personal', title: 'Personal Details', component: 'PersonalDetailsStep' },
       { id: 'quota', title: 'Reservation & Quota', component: 'QuotaStep' },
       { id: 'preferences', title: 'Academic Preferences', component: 'AcademicPreferencesStep' },
