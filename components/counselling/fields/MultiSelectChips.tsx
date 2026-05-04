@@ -3,17 +3,18 @@
 import React, { useState } from 'react';
 import { TextInput } from './TextInput';
 
-export const MultiSelectChips = ({ label, sublabel, options, value = [], onChange, required, error }: any) => {
-  const [showOtherInput, setShowOtherInput] = useState(value.some((v: string) => !options.includes(v) && v !== 'Others*'));
+export const MultiSelectChips = ({ label, sublabel, options, value, onChange, required, error, disableOthers }: any) => {
+  const safeValue = Array.isArray(value) ? value : [];
+  const [showOtherInput, setShowOtherInput] = useState(!disableOthers && safeValue.some((v: string) => !options.includes(v) && v !== 'Others*'));
   const hasOthers = options.includes('Others*');
 
   const toggleOption = (option: string) => {
     let newValue;
-    if (value.includes(option)) {
-      newValue = value.filter((v: string) => v !== option);
+    if (safeValue.includes(option)) {
+      newValue = safeValue.filter((v: string) => v !== option);
       if (option === 'Others*') setShowOtherInput(false);
     } else {
-      newValue = [...value, option];
+      newValue = [...safeValue, option];
       if (option === 'Others*') setShowOtherInput(true);
     }
     onChange(newValue);
@@ -21,7 +22,7 @@ export const MultiSelectChips = ({ label, sublabel, options, value = [], onChang
 
   const handleOtherChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const otherVal = e.target.value;
-    const filtered = value.filter((v: string) => options.includes(v) || v === 'Others*');
+    const filtered = safeValue.filter((v: string) => options.includes(v) || v === 'Others*');
     onChange([...filtered, otherVal]);
   };
 
@@ -37,7 +38,7 @@ export const MultiSelectChips = ({ label, sublabel, options, value = [], onChang
 
       <div className="flex flex-wrap gap-2">
         {options.map((option: string) => {
-          const isSelected = value.includes(option);
+          const isSelected = safeValue.includes(option);
           return (
             <div
               key={option}
@@ -66,7 +67,7 @@ export const MultiSelectChips = ({ label, sublabel, options, value = [], onChang
             label="Specify Other"
             placeholder="Please specify..."
             onChange={handleOtherChange}
-            value={value.find((v: string) => !options.includes(v)) || ''}
+            value={safeValue.find((v: string) => !options.includes(v)) || ''}
           />
         </div>
       )}
