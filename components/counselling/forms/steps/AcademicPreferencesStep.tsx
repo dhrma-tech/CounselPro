@@ -4,7 +4,7 @@ import React from 'react';
 import { useApplicationStore } from '@/store/applicationStore';
 import { MultiSearchableSelect } from '../../fields/MultiSearchableSelect';
 import { MultiSelectChips } from '../../fields/MultiSelectChips';
-import { ENGINEERING_BRANCHES, MEDICAL_COURSES, AGRICULTURE_PROGRAMS, NURSING_PROGRAMS } from '@/lib/fieldMaps';
+import { ENGINEERING_BRANCHES, MEDICAL_COURSES, AGRICULTURE_PROGRAMS, NURSING_PROGRAMS, MAHARASHTRA_DISTRICTS } from '@/lib/fieldMaps';
 import { StepProgress } from '../../StepProgress';
 import { StepFooter } from '../../StepFooter';
 
@@ -23,8 +23,9 @@ export const AcademicPreferencesStep = () => {
       "Information Technology (IT)",
       "Electronics and Communication Engineering (ECE)"
     ];
-    let courseTypes = ['B.Tech', 'B.E.', 'B.Arch', 'B.Planning', 'B.Tech + M.Tech (Dual)', 'B.S.', 'Others*'];
+    let courseTypes = ['B.Tech', 'B.E.', 'B.Tech + M.Tech (Dual)', 'B.S.', 'Others*'];
     let instituteTypes = ['IIT', 'NIT', 'IIIT', 'GFTI', 'Others*'];
+    let locations = MAHARASHTRA_DISTRICTS;
 
     if (counsellingType?.includes('Medical')) {
       programs = MEDICAL_COURSES;
@@ -41,22 +42,22 @@ export const AcademicPreferencesStep = () => {
     } else if (counsellingType?.includes('Nursing')) {
       programs = NURSING_PROGRAMS;
       recommendations = ["Basic B.Sc. Nursing", "GNM (General Nursing and Midwifery)"];
-      courseTypes = ['B.Sc. Nursing', 'Post Basic B.Sc.', 'Diploma', 'Others*'];
+      courseTypes = ['B.Sc. Nursing', 'Others*'];
       instituteTypes = ['Government Nursing College', 'Private/Aided Nursing Institute', 'Others*'];
       
     } else if (counsellingType?.includes('Agriculture')) {
       programs = AGRICULTURE_PROGRAMS;
       recommendations = ["B.Sc. (Hons.) Agriculture", "B.Tech. (Food Technology)"];
       courseTypes = ['B.Sc. (Hons.)', 'B.Tech.', 'Others*'];
-      instituteTypes = ['State Agricultural University (SAU)', 'Government Aided College', 'Private/Unaided College', 'Others*'];
+      instituteTypes = ['Government', 'Private', 'Unaided', 'Others*'];
     } else if (counsellingType === 'MHT_CET_Engineering') {
       programs = ENGINEERING_BRANCHES;
       recommendations = ["Computer Science and Engineering (CSE)", "Information Technology (IT)", "Electronics and Telecommunication (E&TC)"];
-      courseTypes = ['B.E. / B.Tech', 'B.Arch', 'B.Planning', 'Others*'];
-      instituteTypes = ['Government Autonomous (COEP/VJTI/ICT)', 'Government Aided', 'University Department', 'Private (Unaided)', 'Others*'];
+      courseTypes = ['B.E. / B.Tech', 'Others*'];
+      instituteTypes = ['Government Autonomous', 'Government Aided', 'University Department', 'Private', 'Others*'];
     }
 
-    return { programs, recommendations, courseTypes, instituteTypes };
+    return { programs, recommendations, courseTypes, instituteTypes, locations };
   };
 
   const config = getPreferenceConfig();
@@ -72,6 +73,9 @@ export const AcademicPreferencesStep = () => {
     }
     if (!formData.instituteTypes || formData.instituteTypes.length === 0) {
       newErrors.instituteTypes = "Please select at least one preferred institute type";
+    }
+    if (!formData.preferredLocations || formData.preferredLocations.length === 0) {
+      newErrors.preferredLocations = "Please select at least one preferred location (Priority-wise)";
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -112,6 +116,20 @@ export const AcademicPreferencesStep = () => {
             updateField('courseType', v);
             if (errors.courseType) setErrors(prev => ({ ...prev, courseType: '' }));
           }}
+        />
+
+        <MultiSearchableSelect
+          label="Preferred Locations (Maharashtra Districts)"
+          sublabel="Search and select districts in order of your preference (Priority-wise)"
+          placeholder="Search and add districts..."
+          options={config.locations}
+          value={formData.preferredLocations || []}
+          error={errors.preferredLocations}
+          onChange={(v: string[]) => {
+            updateField('preferredLocations', v);
+            if (errors.preferredLocations) setErrors(prev => ({ ...prev, preferredLocations: '' }));
+          }}
+          required
         />
 
         <MultiSelectChips
