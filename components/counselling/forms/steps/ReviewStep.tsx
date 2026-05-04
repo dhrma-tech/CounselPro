@@ -96,12 +96,30 @@ export const ReviewStep = () => {
           ]} 
         />
         
-        {/* Exam Specific Summaries would go here dynamically */}
-        <div className="p-6 bg-brand-blue/5 border border-dashed border-brand-blue/30 rounded-2xl text-center">
-          <p className="text-[13px] text-text-secondary">
-            Full form summary generated based on your <span className="font-bold text-brand-blue">{counsellingType?.replace(/_/g, ' ')}</span> selection.
-          </p>
-        </div>
+        <SummarySection 
+          title="Exam Scores" 
+          stepIndex={2}
+          fields={[
+            ...(formData.hasPCM === 'Yes' ? [
+              ['MHT-CET PCM Percentile', formData.mhtcetPercentilePCM || formData.mhtcetPercentile],
+              ['PCM Merit Rank', formData.mhtcetMeritRankPCM || formData.mhtcetAllStateMeritRank],
+              ['PCM Category Rank', formData.mhtcetCategoryRankPCM || formData.mhtcetCategoryRank]
+            ] : []),
+            ...(formData.hasPCB === 'Yes' ? [
+              ['MHT-CET PCB Percentile', formData.mhtcetPercentilePCB],
+              ['PCB Merit Rank', formData.mhtcetMeritRankPCB],
+              ['PCB Category Rank', formData.mhtcetCategoryRankPCB]
+            ] : []),
+            ...(formData.hasJEEScore === 'Yes' ? [
+              ['JEE Percentile', formData.jeePercentile],
+              ['JEE AIR', formData.jeeAllIndiaRank]
+            ] : []),
+            ...(formData.hasNEETScore === 'Yes' ? [
+              ['NEET Score', formData.neetScore],
+              ['NEET AIR', formData.neetAllIndiaRank]
+            ] : []),
+          ]} 
+        />
       </div>
 
       <div className="bg-white border border-border rounded-2xl p-6 mb-10">

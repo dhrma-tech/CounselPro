@@ -28,7 +28,7 @@ export const NEET_OptionalStep = () => {
 
         <ConditionalSection isVisible={hasNEET} label="NEET Score Details">
           <NumberInput
-            label="NEET Score (SML)"
+            label="NEET Score (/720)"
             placeholder="Score out of 720"
             value={formData.neetScore || ''}
             onChange={(e: any) => updateField('neetScore', e.target.value)}

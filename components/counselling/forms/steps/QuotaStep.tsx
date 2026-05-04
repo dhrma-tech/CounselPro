@@ -15,7 +15,7 @@ export const QuotaStep = () => {
 
   const handleNext = () => {
     const newErrors: Record<string, string> = {};
-    const requiredFields = ['isPwd', 'isDefence', 'isOMS', 'isTFWS', 'isMinority'];
+    const requiredFields = ['isPwd', 'isDefence', 'isOMS', 'isTFWS', 'isMinority', 'isOrphan'];
     
     requiredFields.forEach(field => {
       if (!formData[field]) {
@@ -23,14 +23,14 @@ export const QuotaStep = () => {
       }
     });
 
-    if (!formData.mahSeatType || formData.mahSeatType.length === 0) {
-      newErrors.mahSeatType = "Please select at least one applicable seat type";
+    if (formData.isDefence === 'Yes' && !formData.defenceType) {
+      newErrors.defenceType = "Please select your defence category";
     }
 
     if (formData.isMinority === 'Yes' && !formData.minorityDetails) {
       newErrors.minorityDetails = "Please specify your minority type/name";
     }
-
+    
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       return;
@@ -50,6 +50,7 @@ export const QuotaStep = () => {
       <StepProgress currentTitle="Reservation & Quota" />
       
       <div className="space-y-6">
+        {/* Row 1: PwD & Defence */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <RadioCards
             label="Person with Disability (PwD)"
@@ -63,20 +64,37 @@ export const QuotaStep = () => {
             }}
             gridCols={2}
           />
-          <RadioCards
-            label="Defence Quota"
-            required
-            options={YES_NO}
-            value={formData.isDefence}
-            error={errors.isDefence}
-            onChange={(v: string) => {
-              updateField('isDefence', v);
-              if (errors.isDefence) setErrors(prev => ({ ...prev, isDefence: '' }));
-            }}
-            gridCols={2}
-          />
+          <div className="space-y-4">
+            <RadioCards
+              label="Defence Quota"
+              required
+              options={YES_NO}
+              value={formData.isDefence}
+              error={errors.isDefence}
+              onChange={(v: string) => {
+                updateField('isDefence', v);
+                if (errors.isDefence) setErrors(prev => ({ ...prev, isDefence: '' }));
+              }}
+              gridCols={2}
+            />
+            <ConditionalSection isVisible={formData.isDefence === 'Yes'}>
+              <RadioCards
+                label="Select Defence Category"
+                required
+                options={['DEF-1', 'DEF-2', 'DEF-3']}
+                value={formData.defenceType}
+                error={errors.defenceType}
+                onChange={(v: string) => {
+                  updateField('defenceType', v);
+                  if (errors.defenceType) setErrors(prev => ({ ...prev, defenceType: '' }));
+                }}
+                gridCols={3}
+              />
+            </ConditionalSection>
+          </div>
         </div>
 
+        {/* Row 2: OMS & TFWS */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <RadioCards
             label="Outside Maharashtra (OMS)"
@@ -104,51 +122,55 @@ export const QuotaStep = () => {
           />
         </div>
 
-        <MultiSelectChips
-          label="Seat Type Applicable"
-          sublabel="Select all that apply to you"
-          required
-          options={[
-            'Home University', 'Other Than Home University', 'State Level', 
-            'Ladies', 'VJ-DT', 'NT-B', 'NT-C', 'NT-D', 'SBC', 'Defence', 
-            'TFWS', 'PwD', 'EWS', 'MI', 'HA (Hilly Area)', 'D1 DEF1', 
-            'D2 DEF2', 'D3 DEF3', 'Orphan C', 'Others*'
-          ]}
-          value={formData.mahSeatType || []}
-          error={errors.mahSeatType}
-          onChange={(v: string[]) => {
-            updateField('mahSeatType', v);
-            if (errors.mahSeatType) setErrors(prev => ({ ...prev, mahSeatType: '' }));
-          }}
-        />
-
-        <RadioCards
-          label="Are you a Minority?"
-          required
-          options={YES_NO}
-          value={formData.isMinority}
-          error={errors.isMinority}
-          onChange={(v: string) => {
-            updateField('isMinority', v);
-            if (errors.isMinority) setErrors(prev => ({ ...prev, isMinority: '' }));
-          }}
-          gridCols={2}
-        />
-
-        <ConditionalSection isVisible={formData.isMinority === 'Yes'}>
-          <TextInput
-            label="Minority Type / Name"
+        {/* Row 3: Orphan */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <RadioCards
+            label="Are you an Orphan?"
             required
-            sublabel="Example: Linguistic (Hindi/Gujarati/etc), Religious (Muslim/Christian/etc), etc*"
-            placeholder="Specify your minority category"
-            value={formData.minorityDetails}
-            error={errors.minorityDetails}
-            onChange={(e) => {
-              updateField('minorityDetails', e.target.value);
-              if (errors.minorityDetails) setErrors(prev => ({ ...prev, minorityDetails: '' }));
+            options={YES_NO}
+            value={formData.isOrphan}
+            error={errors.isOrphan}
+            onChange={(v: string) => {
+              updateField('isOrphan', v);
+              if (errors.isOrphan) setErrors(prev => ({ ...prev, isOrphan: '' }));
             }}
+            gridCols={2}
           />
-        </ConditionalSection>
+        </div>
+
+
+
+        {/* Minority */}
+        <div className="space-y-6 pt-4 border-t border-border/50">
+          <RadioCards
+            label="Are you a Minority?"
+            required
+            options={YES_NO}
+            value={formData.isMinority}
+            error={errors.isMinority}
+            onChange={(v: string) => {
+              updateField('isMinority', v);
+              if (errors.isMinority) setErrors(prev => ({ ...prev, isMinority: '' }));
+            }}
+            gridCols={2}
+          />
+
+          <ConditionalSection isVisible={formData.isMinority === 'Yes'}>
+            <TextInput
+              label="Minority Type / Name"
+              required
+              sublabel="Example: Linguistic (Hindi/Gujarati/etc), Religious (Muslim/Christian/etc), etc*"
+              placeholder="Specify your minority category"
+              value={formData.minorityDetails}
+              error={errors.minorityDetails}
+              onChange={(e) => {
+                updateField('minorityDetails', e.target.value);
+                if (errors.minorityDetails) setErrors(prev => ({ ...prev, minorityDetails: '' }));
+              }}
+            />
+          </ConditionalSection>
+        </div>
+
       </div>
 
       <StepFooter onNext={handleNext} />
