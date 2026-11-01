@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Bell } from 'lucide-react';
 import MobileNav from './MobileNav';
+import AccountButton from '../auth/AccountButton';
 
 export default function Header() {
   const pathname = usePathname();
@@ -120,6 +121,7 @@ export default function Header() {
               </div>
             </div>
             
+            <Link href="/tests" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Mock Tests</Link>
             <Link href="/colleges" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Colleges</Link>
             <Link href="/branches" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Branches</Link>
             <Link href="/scholarships" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Scholarships</Link>
@@ -154,6 +156,8 @@ export default function Header() {
                 Apply Now
               </Link>
             )}
+
+            <AccountButton />
 
             {/* Mobile Menu Toggle - Enhanced hit area */}
             <button 

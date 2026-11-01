@@ -77,6 +77,18 @@
   }
 }
 
+/* Mock tests: question HTML (tables in match-the-list questions) and instructions */
+.math-html table { border-collapse: collapse; margin: 0.75rem 0; }
+.math-html th, .math-html td { border: 1px solid var(--border); padding: 0.4rem 0.75rem; text-align: left; }
+.math-html th { background: var(--surface-light); font-weight: 600; }
+.math-html img { max-width: 100%; height: auto; }
+.math-html p + p { margin-top: 0.5rem; }
+.instructions-html ul { list-style: disc; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; }
+
+@media print {
+  body > header, body > footer, .print\:hidden { display: none !important; }
+}
+
 /* Custom selection color */
 ::selection {
   background-color: theme('colors.brand.blue');

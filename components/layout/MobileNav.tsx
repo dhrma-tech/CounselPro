@@ -21,6 +21,7 @@ const NAV_GROUPS = [
   {
     label: 'Explore',
     links: [
+      { href: '/tests', label: 'Mock Tests' },
       { href: '/colleges', label: 'Colleges' },
       { href: '/branches', label: 'Branches' },
       { href: '/scholarships', label: 'Scholarships' },

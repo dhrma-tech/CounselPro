@@ -3,6 +3,7 @@ import TrustBar from '@/components/landing/TrustBar';
 import HowItWorks from '@/components/landing/HowItWorks';
 import CounsellingTypes from '@/components/landing/CounsellingTypes';
 import WhyCounselPro from '@/components/landing/WhyCounselPro';
+import MockTestHook from '@/components/landing/MockTestHook';
 import ResourcePreview from '@/components/landing/ResourcePreview';
 import Testimonials from '@/components/landing/Testimonials';
 import FAQStrip from '@/components/landing/FAQStrip';
@@ -14,6 +15,7 @@ export default function Home() {
       <TrustBar />
       <HowItWorks />
       <CounsellingTypes />
+      <MockTestHook />
       <WhyCounselPro />
       <ResourcePreview />
       <Testimonials />

@@ -84,6 +84,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Research</h4>
             <ul className="space-y-3 text-sm">
+              <li><Link href="/tests" className="hover:text-white transition-colors">Free Mock Tests</Link></li>
               <li><Link href="/resources" className="hover:text-white transition-colors">Resource Hub</Link></li>
               <li><Link href="/colleges" className="hover:text-white transition-colors">College Directory</Link></li>
               <li><Link href="/branches" className="hover:text-white transition-colors">Branch Explorer</Link></li>

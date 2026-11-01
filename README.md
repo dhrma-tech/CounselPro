@@ -22,6 +22,8 @@ Expert college admission counselling service for Indian students navigating JoSA
    ```bash
    SHEET_URL=your_google_apps_script_url
    ```
+   The Mock Tests module also needs the Supabase variables listed in
+   [docs/mock-tests/PLAN.md](docs/mock-tests/PLAN.md#environment-variables).
 
 3. **Run**:
    ```bash
