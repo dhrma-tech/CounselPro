@@ -19,13 +19,29 @@ const NAV_GROUPS = [
     ],
   },
   {
-    label: 'Explore',
+    label: 'Mock Tests',
     links: [
-      { href: '/tests', label: 'Mock Tests' },
+      { href: '/tests', label: 'All Mock Tests' },
+      { href: '/tests?exam=jee-main', label: 'JEE Main' },
+      { href: '/tests?exam=jee-advanced', label: 'JEE Advanced' },
+      { href: '/tests?exam=neet', label: 'NEET' },
+      { href: '/tests?exam=mht-cet-pcm', label: 'MHT-CET PCM' },
+      { href: '/tests?exam=mht-cet-pcb', label: 'MHT-CET PCB' },
+      { href: '/tests/daily', label: 'Daily Quiz' },
+      { href: '/practice', label: 'Chapter-wise Practice' },
+      { href: '/tests/revision', label: 'My Revision' },
+    ],
+  },
+  {
+    label: 'Resources',
+    links: [
       { href: '/colleges', label: 'Colleges' },
+      { href: '/colleges/compare', label: 'Compare Colleges' },
       { href: '/branches', label: 'Branches' },
       { href: '/scholarships', label: 'Scholarships' },
       { href: '/syllabus', label: 'Syllabus' },
+      { href: '/resources/calendar', label: 'Admission Calendar' },
+      { href: '/resources/checklist', label: 'Document Checklist' },
     ],
   },
   {

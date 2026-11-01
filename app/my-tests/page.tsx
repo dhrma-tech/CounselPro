@@ -6,6 +6,7 @@ import { listMyAttempts } from '@/lib/tests/server/attempts';
 import Breadcrumb from '@/components/shared/Breadcrumb';
 import Badge from '@/components/shared/Badge';
 import SignOutButton from '@/components/auth/SignOutButton';
+import { connection } from 'next/server';
 
 export const metadata: Metadata = {
   title: 'My tests | CounselPro',
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
 const fmt = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(2));
 
 export default async function MyTestsPage() {
+  // Per-student and live data: render on each request, never at build time
+  await connection();
   const viewer = await getViewer();
   const attempts = await listMyAttempts(viewer);
 

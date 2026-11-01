@@ -6,6 +6,7 @@ import { listSavedQuestions, revisionSummary } from '@/lib/tests/server/revision
 import { REVIEW_LADDER } from '@/lib/tests/spacedRepetition';
 import Breadcrumb from '@/components/shared/Breadcrumb';
 import RevisionBoard from '@/components/tests/RevisionBoard';
+import { connection } from 'next/server';
 
 export const metadata: Metadata = {
   title: 'My revision | CounselPro',
@@ -13,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default async function RevisionPage() {
+  // Per-student and live data: render on each request, never at build time
+  await connection();
   const user = await getCurrentUser();
   const [summary, saved] = user
     ? await Promise.all([revisionSummary(user.id), listSavedQuestions(user.id)])

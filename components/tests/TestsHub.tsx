@@ -22,8 +22,8 @@ function minutes(seconds: number) {
 
 const istWhen = (iso: string) => new Date(iso).toLocaleString('en-IN', { weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', timeZone: 'Asia/Kolkata' });
 
-export default function TestsHub({ tests, signedIn, weekly }: { tests: TestListItem[]; signedIn: boolean; weekly: WeeklyMockInfo | null }) {
-  const [tab, setTab] = useState('all');
+export default function TestsHub({ tests, signedIn, weekly, initialTab = 'all' }: { tests: TestListItem[]; signedIn: boolean; weekly: WeeklyMockInfo | null; initialTab?: string }) {
+  const [tab, setTab] = useState(initialTab);
   const filtered = useMemo(() => {
     if (tab === 'all') return tests;
     const presetIds = EXAM_TABS.find((t) => t.id === tab)?.presetIds ?? [];

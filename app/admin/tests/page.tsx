@@ -1,8 +1,11 @@
+import { connection } from 'next/server';
 import Link from 'next/link';
 import { listTestsForAdmin } from '@/lib/tests/server/admin';
 import { setTestStatus } from '../actions';
 
 export default async function AdminTests() {
+  // Admin data must be read per request, never at build time
+  await connection();
   const tests = await listTestsForAdmin();
   return (
     <div className="space-y-5">

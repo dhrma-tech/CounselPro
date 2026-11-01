@@ -1,7 +1,10 @@
+import { connection } from 'next/server';
 import Link from 'next/link';
 import { adminStats } from '@/lib/tests/server/admin';
 
 export default async function AdminHome() {
+  // Admin data must be read per request, never at build time
+  await connection();
   const s = await adminStats();
   const cards = [
     ['Approved questions', `${s.approved} / ${s.questions}`],

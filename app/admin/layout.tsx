@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { connection } from 'next/server';
 import { requireAdminPage } from '@/lib/auth';
 
 export const metadata: Metadata = {
@@ -18,6 +19,8 @@ const NAV = [
 ];
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
+  // The admin check must run on every request, never once at build time
+  await connection();
   const user = await requireAdminPage();
   return (
     <div className="min-h-screen bg-surface-white">

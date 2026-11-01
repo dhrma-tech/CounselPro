@@ -1,7 +1,10 @@
+import { connection } from 'next/server';
 import Link from 'next/link';
 import { recentAttempts } from '@/lib/tests/server/admin';
 
 export default async function AdminAttempts() {
+  // Admin data must be read per request, never at build time
+  await connection();
   const rows = await recentAttempts(150);
   return (
     <div className="space-y-4">

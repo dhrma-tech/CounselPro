@@ -1,8 +1,11 @@
+import { connection } from 'next/server';
 import { listPresets } from '@/lib/tests/server/content';
 import { supabaseAdmin } from '@/lib/supabase/admin';
 import { addRankReference, updatePreset } from '../actions';
 
 export default async function AdminPresets() {
+  // Admin data must be read per request, never at build time
+  await connection();
   const presets = await listPresets();
   const { data: refs } = await supabaseAdmin()
     .from('rank_reference')

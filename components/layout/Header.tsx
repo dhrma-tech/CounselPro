@@ -6,6 +6,15 @@ import { usePathname } from 'next/navigation';
 import { Menu, X, Bell } from 'lucide-react';
 import MobileNav from './MobileNav';
 import AccountButton from '../auth/AccountButton';
+import { EXAM_TABS } from '@/lib/tests/presetExams';
+
+const EXAM_SUBJECTS: Record<string, string> = {
+  'jee-main': 'Physics · Chemistry · Maths',
+  'jee-advanced': 'Paper 1 & Paper 2',
+  neet: 'Physics · Chemistry · Biology',
+  'mht-cet-pcm': 'Physics · Chemistry · Maths',
+  'mht-cet-pcb': 'Physics · Chemistry · Biology',
+};
 
 export default function Header() {
   const pathname = usePathname();
@@ -121,19 +130,63 @@ export default function Header() {
               </div>
             </div>
             
-            <Link href="/tests" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Mock Tests</Link>
-            <Link href="/colleges" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Colleges</Link>
-            <Link href="/branches" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Branches</Link>
-            <Link href="/scholarships" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">Scholarships</Link>
+            <div className="relative group flex items-center h-full py-4">
+              <Link href="/tests" className="text-[14px] font-medium text-text-primary hover:text-brand-blue transition-colors">
+                Mock Tests
+              </Link>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pt-2">
+                <div className="bg-white border border-border rounded-xl shadow-xl p-6 grid grid-cols-2 gap-8 w-[520px]">
+                  <div>
+                    <h4 className="text-[11px] font-bold text-text-muted uppercase tracking-wider mb-3">Choose your exam</h4>
+                    <div className="flex flex-col gap-1">
+                      {EXAM_TABS.map((exam) => (
+                        <Link key={exam.id} href={`/tests?exam=${exam.id}`} className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">
+                          {exam.label}
+                          <span className="block text-[12px] text-text-muted font-normal">{EXAM_SUBJECTS[exam.id]}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-[11px] font-bold text-text-muted uppercase tracking-wider mb-3">Practice</h4>
+                    <div className="flex flex-col gap-1">
+                      <Link href="/tests" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">All Mock Tests</Link>
+                      <Link href="/tests/daily" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">Daily Quiz</Link>
+                      <Link href="/practice" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">Chapter-wise Practice</Link>
+                      <div className="h-px bg-border my-1 mx-3" />
+                      <Link href="/tests/revision" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">My Revision</Link>
+                      <Link href="/my-tests" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">My Tests &amp; Results</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="relative group flex items-center h-full py-4">
               <span className="text-[14px] font-medium cursor-pointer text-text-primary hover:text-brand-blue transition-colors">
                 Resources
               </span>
               <div className="absolute top-full left-1/2 -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pt-2">
-                <div className="bg-white border border-border rounded-xl shadow-lg p-2 flex flex-col w-40">
-                  <Link href="/syllabus" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">Syllabus</Link>
-                  <Link href="/faq" className="px-3 py-2 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg">FAQ</Link>
+                <div className="bg-white border border-border rounded-xl shadow-xl p-6 grid grid-cols-2 gap-8 w-[480px]">
+                  <div>
+                    <h4 className="text-[11px] font-bold text-text-muted uppercase tracking-wider mb-3">Explore</h4>
+                    <div className="flex flex-col gap-1">
+                      <Link href="/colleges" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">Colleges</Link>
+                      <Link href="/colleges/compare" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">Compare Colleges</Link>
+                      <Link href="/branches" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">Branches</Link>
+                      <Link href="/scholarships" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">Scholarships</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-[11px] font-bold text-text-muted uppercase tracking-wider mb-3">Guides</h4>
+                    <div className="flex flex-col gap-1">
+                      <Link href="/syllabus" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">Syllabus</Link>
+                      <Link href="/resources/calendar" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">Admission Calendar</Link>
+                      <Link href="/resources/checklist" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">Document Checklist</Link>
+                      <div className="h-px bg-border my-1 mx-3" />
+                      <Link href="/faq" className="px-3 py-1.5 text-sm text-text-secondary hover:text-brand-blue hover:bg-surface-light rounded-lg transition-colors font-medium">FAQ</Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

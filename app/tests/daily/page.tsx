@@ -9,6 +9,7 @@ import { addDays, istDate, weekStart } from '@/lib/tests/istDate';
 import { DAILY_PRESET_COOKIE } from '@/lib/tests/presetExams';
 import Breadcrumb from '@/components/shared/Breadcrumb';
 import DailyQuizPicker from '@/components/tests/DailyQuizPicker';
+import { connection } from 'next/server';
 
 export const metadata: Metadata = {
   title: 'Daily Quiz for JEE, NEET & MHT-CET | CounselPro',
@@ -18,6 +19,8 @@ export const metadata: Metadata = {
 const WEEKDAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
 export default async function DailyQuizPage() {
+  // Per-student and live data: render on each request, never at build time
+  await connection();
   const viewer = await getViewer();
   const today = istDate();
   const [presets, statuses, streak, cookieStore] = await Promise.all([

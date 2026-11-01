@@ -1,6 +1,9 @@
+import { connection } from 'next/server';
 import { leads } from '@/lib/tests/server/admin';
 
 export default async function AdminLeads() {
+  // Admin data must be read per request, never at build time
+  await connection();
   const rows = await leads();
   return (
     <div className="space-y-4">
